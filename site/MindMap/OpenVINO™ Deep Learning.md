@@ -1,0 +1,39 @@
+# OpenVINO™ Deep Learning
+- build 
+- optimize
+    - model optimizer -&gt; IR -&gt; inference engine
+    - deep learning streamer; openCV, openCL
+    - post training optimization tool
+    - deep learning workbench
+        - web base tool
+            - convert model to IR
+            - optimization of model performance
+            - profiling and benchmarking capabilities
+        - import/select model
+        - select target
+            - INT8 quantization
+                - low precision quantization
+                    - technique that reduces model size into low-precision without re-training
+                    - converts FP32/FP16 weights to INT8
+                - quantization algorithms
+                    - max performance (with uncontrollable accuracy drop ˜1%)
+                    - max accuracy: performance boost with controllable accuracy drop
+        - performance fine-tuning
+            - benchmarking
+            - hyper parameters tuning
+            - performance/accuracy analysis
+            - Explainable AI
+            - detailed profiling data
+            - rich visualization capabilities
+        - import/select dataset
+        - run
+- deploy
+    - batch
+    - streams
+    - several praller to inference
+- live demo
+    - create project
+    - import model
+    - it based on Docker
+    - trust the model by see it in validation dataset which can see the model where to detect information
+    - comparison of optimized

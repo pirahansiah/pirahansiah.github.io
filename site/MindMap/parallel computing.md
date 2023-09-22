@@ -1,0 +1,39 @@
+# Parallel Computing
+
+
+- Libraries/Frameworks: ffmpeg, GStreamer, celery
+- GPU Computing: PyCUDA, NumbaPro, PyOpenCL, CuPy
+- Message Passing: mpi4py (brew install mpi4py)
+- Distributed Systems: 
+	- erlang (brew install erlang), 
+	- rabbitmq (brew install rabbitmq), 
+	- flower (pip install flower), 
+	- ZeroMQ (brew install ZeroMQ), 
+	- scoop (pip install scoop), 
+	- pyro4 (pip install pyro4), 
+	- pyCSP (pip install python-csp), 
+	- RPyC (pip install rpyc)
+- CUDA: PyCUDA, NumbaPro
+- OpenCL: PyOpenCL (pip install pyopencl)
+- Threading: threading, concurrent.futures, asyncio
+- Multiprocessing: multiprocessing
+- Synchronization: Lock, Event, Condition, Semaphore, Rlock, Barrier
+- Asynchronous: concurrent.futures, Asyncio
+- Distributed Computing: 
+	- Celery, SCOOP, Pyro4, PyCSP, MapReduce with Disco, RPyC
+- Models: Shared Memory Model (async), Multithread Model (Intel), Distributed Memory (MPI), Data Parallel Model (GPUs)
+- MPI (Message Passing Interface): 
+	- mpi4py, comm, rank, send, recv, bcast, scatter, 
+	- gather, Allgather, Alltoall, Reduce, 
+	- MPI.MAX, MPI.MIN, MPI.SUM, MPI.PROD, 
+	- MPI.LAND, MPI.MAXLOC, MPI.MINLOC, 
+	- cartesian.communicator
+- Concepts: 
+	- SISD, SIMD, MISD, MIMD, 
+	- Shared Memory Systems (UMA, NUMA, NORMA, COMA), 
+	- Distributed Memory Systems, 
+	- Heterogeneous
+- Objects/Concepts: 
+	- thread object, lock object, RLock object, 
+	- semaphore object, condition object, event object, 
+	- deadlock, Global Interpreter Lock or GIL

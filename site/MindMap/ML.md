@@ -1,0 +1,111 @@
+- ML
+    - Week1  
+        Introduction to  
+        Machine Learning  
+        - Applications of machine learning              
+        - what is machine learning, supervised learning, unsupervised learning  
+            - regression model predicts numbers                  
+            - supervised learning model data has "right answers"                  
+            - classification model predicts categories                  
+        - supervised learning  
+            - input(X)-&gt;output(Y)
+            - regression: housing price prediction                  
+            - classification : breast cancer detection  
+                class=category                  
+        - unsupervised learning  
+            - find something interesting in unlabeled data                  
+            - algorithm has to find structure in the data                  
+            - clustering  
+                - Group similar data points together                      
+                - DNA microarray
+                - google news
+                - grouping customers                      
+            - anomaly detection  
+                - find unusual data points                      
+            - dimensionality reduction  
+                - compress data using fewer numbers                                  
+        - regression model  
+            - linear regression model  
+                - f(x)=wx+b
+                - linear regression with one variable (single feature)                      
+                - univariate linear regression. (uni=one; variate=variable)                      
+                - cost function  
+                    - w,b: parameters=coefficients=weights                          
+                    - J(w,b) squared error cost function  
+                        - never local minimum                              
+                        - bowl shape                              
+                        - convex function                              
+                - gradient descent algorithm  
+                    - can be more than one local minimum                          
+        - train the model with gradient descent  
+            - not squared error cost or not linear regression                  
+            - batch gradient descent  
+                - "batch"=each step of gradient descent uses all the training examples                      
+    - Week2  
+        Regression with  
+        multiple input variables  
+        - Multiple features(variables)
+        - Vectorization
+            - f=np.dot(w,x)+b
+        - Gradient descent for multiple linear regression
+        - an alternative to gradient descent  
+            - normal equation  
+                - only for linear regression                      
+                - solve for w,b without iterations                      
+                - disadvantages
+                    - doesn't generalize to other learning algorithms                          
+                    - slow when number of features is large (&gt;10000)                          
+        - Feature scaling
+            - to run faster                  
+            - mean/average normalization                  
+            - z-score normalization  
+                - standard deviation                      
+        - Checking gradient descent for convergence
+            - automatic convergence test  
+                - epsilon be 10^-3                      
+                - if J decreases by &lt; epsilon in one iteration                      
+                - declare convergence                      
+        - Choosing the learning rate
+        - Feature engineering
+            - using intuition to design new features, by transforming or combining original features
+        - Polynomial regression
+    - Week 3  
+        Classification
+        - Logistic regression
+            - class=category
+            - 0=false=no=negative class=absence                  
+            - 1=true=yes=positive class=presence                  
+            - sigmoid function                  
+            - logistic function                  
+        - Decision boundary  
+            - linear decision boundaries                  
+            - non-linear decision boundaries                  
+        - Cost function for logistic regression
+            - squared error cost                  
+            - linear regression  
+                - convex
+            - logistic regression  
+                - non-convex
+                - logistic loss function                      
+        - Simplified Cost Function for Logistic Regression
+            - maximum likelihood                  
+        - Gradient Descent Implementation
+        - The problem of overfitting
+            - under-fit: does not fit the training set well; high bias                  
+            - just right: fits training set pretty well : generalization                  
+            - overfitting: fits the training set extremely well: high variance                  
+        - Addressing overfitting
+            - overfit
+                - collect more training examples                      
+                - select features to include/exclude  
+                    - all features+insufficient data=overfit                          
+                    - selected features but good features may los                          
+                - regularization: reduce the size of parameters; eliminate feature                      
+        - Cost function with regularization
+            - simpler model  
+                - less likely to overfit                      
+            - lambda: regularization parameter (regularization term)                  
+            - + - if lambda 0 =overfit                  
+            - if lambda big=underfit                  
+        - Regularized linear regression
+        - Regularized logistic regression

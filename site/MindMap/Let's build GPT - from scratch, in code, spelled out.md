@@ -1,0 +1,30 @@
+# 0
+- Paper
+	- attention is all you need
+- dataset
+	- Shakespeare 
+- token = word chuck 
+	- simple one used in code
+	- better one is google **sentencepiece**
+	- openAI: tiktoken
+	- bag of words is average before characters/tokens up to this character/tokens
+- different attention
+	- self attention
+		- the keys, queries and the values are all coming from the same source
+		- we have nodes that would like to look at each other and talk to teach other 
+	- cross attention
+		- when there's a separate source of nodes we'd like to pull information form into our nodes 
+	- scaled attention
+		- is kind of normalization
+- normalization
+	- batch normalization
+		- make sure that across the batch dimension any individual neuron had unit gaussian distribution so it was zero mean and and unit standard deviation one standard deviation output
+		- based on **columns** only
+	- layer norm
+		- just instead of columns normalize **rows** 
+		- code change
+			- xmean=x.mean(1,keepdim=True) # batch mean
+			- xvar = x.var(0,keepdim=True) # batch variance
+- update method
+	- apply the norm before transformation: pre-norm formulation 
+- 

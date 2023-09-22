@@ -1,0 +1,79 @@
+# LLMs : reduce size & increase speed
+* Pruning
+	* go for bigger size of network with many layers then pruning much better and faster
+	* model pruning: reducing redundant parameters which are not sensitive to the performance
+		* aim: remove all connections with absolute weights below a threshold
+* Quantization
+	* The best way is using Google library which support most comprehensive methods
+	- compresses by reducing the number of bits used to represent the weights
+	- quantization effectively constraints the number of different weights we can use inside our kernels
+	- per-channel quantization for weights, which improves performance by model compression and latency reduction.
+- Ensemble Methods
+	- **bagging** is a type of ensemble method where multiple models are trained in parallel on subsampled datasets (reduces error due to variance);
+	- feature-based, compact representation, easy to reduce model size, model size can be reduced post-training
+	- **boosting** is a type of ensemble method where multiple models are trained in sequence to improve upon the errors of the previous model (reduces error due to bias)
+- Distillation Techniques
+	- Distill-Net: Application-Specific Distillation of Deep Convolutional Neural Networks 
+		- for Resource-Constrained IoT Platforms
+- Binarized Neural Networks (BNNs)
+	- It is not support by GPU hardware such as Jetson Nano
+	- mostly based on CPU
+- Apache TVM
+	- TVM (incubating) is a compiler stack for deep learning systems
+		- challenges with large scale models
+		- deep neural networks are:
+			- expensive
+			- computationally expensive
+			- memory intensive
+		- hindering their deployment in:
+			- devices with low memory resources
+			- applications with strict latency requirements
+		- other issues:
+			- data security: tend to memorize everything including PII
+			- bias e.g. profanity: trained on large scale public data
+		- self discovering: instead of manually configuring conversational flows, automatically discover them from your data
+		- self training: let your system train itself with new examples
+		- self managing: let your system optimize by itself
+		- knowledge distillation
+- Distributed machine learning and load balancing strategy
+	- run models which use all processing power like CPU,GPU,DSP,AI chip together to enhance inference performance
+	- dynamic pruning of kernels which aims to the parsimonious inference by learning to exploit and dynamically remove the redundant capacity of a CNN architecture.
+	- partitioning techniques through convolution layer fusion to dynamically select the optimal partition according to the availability of computational resources and network conditions
+- parallel computing
+	- ffmpeg
+	- GStreamer
+	- celery
+	- GPU library for python: PyCUDA, NumbaPro, PyOpenCL, CuPy
+- Low rank matrix factorization (LRMF)
+	- there exists latent structures in the data, by uncovering which we can obtain a compressed representation of the data
+	- LRMF factorizes the original matrix into lower rank matrices while preserving latent structures and addressing the issue of sparseness
+- Compact convolutional filters (Video/CNN)
+	- designing special structural convolutional filters to save parameters
+	- replace over parametric filters with compact filters to achieve overall speedup while maintaining comparable accuracy
+- Knowledge distillation
+	- training a compact neural network with distilled knowledge of a large model
+	- distillation (knowledge transfer) from an ensemble of big networks into a much smaller network which learns directly from the cumbersome model's outputs, that is lighter to deploy
+- Neural Networks Compression Framework (NNCF)
+- if the object is large and we do not need small anchor
+	- decrease size of image input but reduce the accuracy
+	- in mobileNet we can remove small part of network which related to small objects
+	- in YOLO reduce number of anchor
+- frameworks
+	- CoreML
+	- ML kit
+	- FRITZ
+	- PyTorch Lightning
+	- PyTorch Mobile
+	- TensorFlow Lite
+	- TensorFlow.js
+	- NVIDIA TensorRT
+	- Intel® Distribution of OpenVINO Toolkit
+	- tinyML	 
+		- enabling ultra-low power
+		- machine learning at the edge
+		- tiny machine learning with Arduino
+			- TensorFlow Lite on Microcontroller
+			- Gesture Recognition
+			- OpenMV/Tensorflow/
+			- studio.edgeimpulse.com
+	- MediaPipe
