@@ -1,6 +1,6 @@
 ---
 layout: page
-title: index
+title: Computer Vision
 permalink: /
 parent: nil
 ---

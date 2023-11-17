@@ -1,7 +1,7 @@
 ---
 layout: page
 title: list
-parent: index
+parent: nil
 permalink: /src/
 ---
 
