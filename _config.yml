@@ -8,3 +8,9 @@ github_username:  pirahansiah
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  linkify: true
