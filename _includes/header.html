@@ -12,83 +12,66 @@
           <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
         </svg>
       </a>
+<!-- Code in your layout file (e.g., _layouts/default.html) -->
 
+{% for page in site.pages %}
+  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+{% endfor %}
 
-      <!-- Code in your layout file (e.g., _layouts/default.html) -->
+{% if page.title == 'list' %}
+  <!-- Display links to subpages if on list page -->
+  <div class="sub-menu">
+    {% for subpage in site.pages %}
+      {% if subpage.parent == page.title %}
+        <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
-        {% if page.title == 'list' %}
-        <!-- Display links to a, b, c if on listA page -->
-        <div class="sub-menu">
-          {% for subpage in site.pages %}
-            {% if subpage.parent == page.title %}
-              <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+{% if page.title == 'Blog' %}
+  <!-- Display links to subpages if on Blog page -->
+  <div class="sub-menu">
+    {% for subpage in site.pages %}
+      {% if subpage.parent == page.title %}
+        <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
-        {% if page.title == 'Blog' %}
-        <!-- Display links to a, b, c if on listA page -->
-        <div class="sub-menu">
-          {% for subpage in site.pages %}
-            {% if subpage.parent == page.title %}
-              <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-        {% if page.title == 'Projects & Products' %}
-        <!-- Display links to a, b, c if on listA page -->
-        <div class="sub-menu">
-          {% for subpage in site.pages %}
-            {% if subpage.parent == page.title %}
-              <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-        {% if page.title == 'Startup consulting and coaching' %}
-        <!-- Display links to a, b, c if on listA page -->
-        <div class="sub-menu">
-          {% for subpage in site.pages %}
-            {% if subpage.parent == page.title %}
-              <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-        {% if page.title == 'About' %}
-        <!-- Display links to a, b, c if on listA page -->
-        <div class="sub-menu">
-          {% for subpage in site.pages %}
-            {% if subpage.parent == page.title %}
-              <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+{% if page.title == 'Projects & Products' %}
+  <!-- Display links to subpages if on Projects & Products page -->
+  <div class="sub-menu">
+    {% for subpage in site.pages %}
+      {% if subpage.parent == page.title %}
+        <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
+{% if page.title == 'Startup consulting and coaching' %}
+  <!-- Display links to subpages if on Startup consulting and coaching page -->
+  <div class="sub-menu">
+    {% for subpage in site.pages %}
+      {% if subpage.parent == page.title %}
+        <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
-
-
-
-
-
-
-        {% else %}
-        <!-- Display link to listA on other pages -->
-        {% for page in site.pages %}
-          {% if page.title == 'Blog' %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-          {% if page.title == 'Projects & Products' %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-          {% if page.title == 'Startup consulting and coaching' %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-          {% if page.title == 'About' %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        {% endif %}
-
-
+{% if page.title == 'About' %}
+  <!-- Display links to subpages if on About page -->
+  <div class="sub-menu">
+    {% for subpage in site.pages %}
+      {% if subpage.parent == page.title %}
+        <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
 
 
       
