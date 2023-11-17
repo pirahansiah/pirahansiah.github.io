@@ -16,10 +16,10 @@
 <!-- List Top-Level Pages -->
 <div class="top-level-pages">
   {% for page in site.pages %}
-    {% if page.parent == MainPage %}
+    {% if page.parent == "MainPage" %}
       <!-- Check if the page is not a subpage itself -->
       <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-
+      
       <!-- List Subpages for Each Top-Level Page -->
       <div class="sub-pages">
         {% for subpage in site.pages %}
