@@ -2,7 +2,6 @@
 layout: page
 permalink: /
 title: Computer Vision
-parent: nil
 ---
 
 

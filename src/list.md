@@ -1,7 +1,6 @@
 ---
 layout: page
-title: List
-parent: "nil"
+title: list
 ---
 
 

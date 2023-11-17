@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C++
-parent: List
+parent: list
 ---
 
 
