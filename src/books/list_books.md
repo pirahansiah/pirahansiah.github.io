@@ -1,6 +1,7 @@
 ---
-layout: null
-title: Home
+layout: page
+title: About
+permalink: /src/books/
 ---
 
 

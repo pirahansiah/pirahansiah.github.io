@@ -1,6 +1,10 @@
 ---
 
+layout: page
+title: List
+permalink: /src/
 ---
+
 
 # a  <!-- Corrected Header -->
 list 
