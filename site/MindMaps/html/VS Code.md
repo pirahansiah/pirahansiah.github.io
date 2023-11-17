@@ -1,5 +1,7 @@
 ---
-
+layout: page
+title: list
+parent: list
 ---
 
 # VS Code

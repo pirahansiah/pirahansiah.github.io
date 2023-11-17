@@ -2,7 +2,7 @@
 layout: page
 title: list
 parent: nil
-permalink: /src/
+
 ---
 
 
