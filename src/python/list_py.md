@@ -1,8 +1,7 @@
 ---
 layout: page
-title: py
+title: Python
 parent: list
-permalink: /src/python
 ---
 
 # list of all python functions 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title:  "Books"
 date:   2023-10-18 12:58:29
 categories: book
-parent: list
+title:  Books
+parent: List
 ---
 
 

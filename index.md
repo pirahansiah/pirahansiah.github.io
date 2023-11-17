@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Computer Vision
 permalink: /
+title: Computer Vision
 parent: nil
 ---
 
