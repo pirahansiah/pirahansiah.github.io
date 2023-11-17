@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 
+title: index
 permalink: /
+parent: nil
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: List
+title: list
+parent: index
 permalink: /src/
 ---
 
