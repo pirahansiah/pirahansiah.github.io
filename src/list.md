@@ -1,27 +1,25 @@
 ---
 layout: page
 title: List
-permalink: https://pirahansiah.com/src/listing
+permalink: /src/listing/
 ---
-
 
 # a  <!-- Corrected Header -->
 list 
 a 
 b
-layout: page
 
 ## Navigation
 - [Home](../index.html)
-- [Books](books/list_books.md)
-- [Python](python/list_py.md)
-- [C++](cpp/list_cpp.md)
-- [MATLAB](MATLAB/list_MATLAB.md)
+- [Books](books/list_books.html)
+- [Python](python/list_py.html)
+- [C++](cpp/list_cpp.html)
+- [MATLAB](MATLAB/list_MATLAB.html)
 
 ## Links 
 
 - [Home](../index.html)
-- [Books](books/list_books.md)
-- [Python](python/list_py.md)
-- [C++](cpp/list_cpp.md)
-- [MATLAB](MATLAB/list_MATLAB.md)
+- [Books](books/list_books.html)
+- [Python](python/list_py.html)
+- [C++](cpp/list_cpp.html)
+- [MATLAB](MATLAB/list_MATLAB.html)
