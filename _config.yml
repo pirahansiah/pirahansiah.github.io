@@ -1,13 +1,11 @@
-
 title: Farshid PirahanSiah
 email: change_to_siteName_@gmail.com  
-description: > 
+description: 
   Expertise in Computer Vision and Language Models
 baseurl: "/"  
 url: "https://pirahansiah.com"  
 twitter_username: pirahansiah
 github_username:  pirahansiah
-
 
 markdown: kramdown
 permalink: /:year/:title:output_ext
