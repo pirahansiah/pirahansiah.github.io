@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: html
 title: xEdit-Wiki
 permalink: /src/listing.md
 ---
