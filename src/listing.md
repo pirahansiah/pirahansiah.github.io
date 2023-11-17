@@ -1,7 +1,7 @@
 ---
 layout: page
 title: List
-permalink: /src/
+permalink: https://pirahansiah.com/src/listing
 ---
 
 
