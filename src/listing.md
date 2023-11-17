@@ -1,6 +1,7 @@
 ---
-layout: page  # You can define a specific layout if you have custom layouts
-title: "Your Page Title"  # Optional: add a title to your page
+layout: default
+title: xEdit-Wiki
+permalink: /src/listing.md
 ---
 
 # a  <!-- Corrected Header -->
