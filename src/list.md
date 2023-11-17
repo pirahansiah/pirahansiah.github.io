@@ -1,5 +1,4 @@
-[[2023-12-17]]
-[[list_books]]
+# 2023-12-17
 
-[[./pirahansiah/pirahansiah.github.io/src/books/list_books.md]]
+[[books/list_books.md]]
 
