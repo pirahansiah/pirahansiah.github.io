@@ -1,11 +1,12 @@
 ---
-layout: page
+
 ---
 
 # a  <!-- Corrected Header -->
 list 
 a 
 b
+layout: page
 
 ## Navigation
 - [Home](../index.html)
