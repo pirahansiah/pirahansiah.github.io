@@ -1,7 +1,5 @@
 ---
-layout: post
-title: Books
-permalink: /src/books/
+layout: page
 ---
 
 
