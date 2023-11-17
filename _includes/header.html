@@ -18,10 +18,10 @@
                   <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                 {% endif %}
               {% endfor %}
-            </div>
+        </div>
                   <div class="sub-pages">
-                    {% for subpage in site.pages %}
-                      {% if subpage.parent == page.title %}
+                      {% for subpage in site.pages %}
+                      {% if subpage.parent == page.title and subpage.parent != "MainPage"  %}
                         <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a>
                       {% endif %}
                     {% endfor %}
