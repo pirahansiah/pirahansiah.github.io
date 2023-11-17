@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: post
 title: List
-permalink: /src/listing/
 ---
 
 # a  <!-- Corrected Header -->
@@ -23,3 +22,14 @@ b
 - [Python](python/list_py.html)
 - [C++](cpp/list_cpp.html)
 - [MATLAB](MATLAB/list_MATLAB.html)
+
+
+sadfsaffksa;fhdsakljfhdsklfjhadsflkdshfldkashfdsakljfjhdasklfh
+dssfadfsafasdf
+dsf
+dasf
+dasf
+dsa
+f
+dsaf
+dsaf
