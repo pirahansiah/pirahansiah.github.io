@@ -1,6 +1,6 @@
 ---
 layout: page
-title: list
+title: Main List
 parent: MainPage
 ---
 

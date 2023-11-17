@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Matlab
-parent: list
+parent: Main List
 ---
 # List of all MATLAB functions 
 MATLAB
