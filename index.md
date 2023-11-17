@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Farshid
+title: 
 permalink: /
 ---
-Farshid
+
 
 - [Blog](index.html)
   - [Mind-Maps](index.html)

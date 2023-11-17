@@ -20,6 +20,3 @@ permalink: /src/
 - [C++](cpp/list_cpp.html)
 - [MATLAB](MATLAB/list_MATLAB.html)
 
-
-{{ page.title }}
-================
