@@ -1,5 +1,5 @@
 ---
-layout: html
+layout: page
 ---
 
 # a  <!-- Corrected Header -->
