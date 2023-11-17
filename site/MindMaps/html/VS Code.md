@@ -7,9 +7,9 @@ parent: Blog
 # VS Code
 * Download 
 	* Insider
-		* https://code.visualstudio.com/insiders/ 
+		* [code.visualstudio.com/insiders/ ](https://code.visualstudio.com/insiders/) 
 	* Portable 
-		* https://code.visualstudio.com/sha/download?build=insider&os=win32-x64-archive
+		* [insider](https://code.visualstudio.com/sha/download?build=insider&os=win32-x64-archive)
 * Extensions
 	* Sourcery
 	* Remote * SSH
@@ -35,9 +35,9 @@ parent: Blog
 		* create a new window
 * Shortcut
 	* PDF
-		* https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf 
-		* https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
-		* https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf 
+		* [keyboard-shortcuts-windows.pdf ](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf )
+		* [keyboard-shortcuts-macos.pdf](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+		* [keyboard-shortcuts-linux.pdf ](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) 
 	* F2 + click on name to change all 
 	* Command Palette
 		* open
@@ -65,7 +65,7 @@ parent: Blog
 		    *  Windows: Ctrl+K V
   * IoT
 	   * Install 1
-			* git clone https://github.com/JetsonHacksNano/installVSCode.git
+			* git clone [installVSCode.git](https://github.com/JetsonHacksNano/installVSCode.git)
 			* cd installVSCode
 			* ./installVSCode.sh
 			* ./installVSCodeWithPython.sh
