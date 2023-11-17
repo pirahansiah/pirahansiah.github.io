@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Python
-parent: list
+parent: List
 ---
 
 # list of all python functions 
+Python

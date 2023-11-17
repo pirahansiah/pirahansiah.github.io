@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Blog
-parent: nil
+parent: "nil"
 ---
 
 # Blog
