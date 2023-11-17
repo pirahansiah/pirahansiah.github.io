@@ -1,7 +1,7 @@
 ---
 layout: page
 title: VSCode
-parent: list
+parent: Blog
 ---
 
 # VS Code
