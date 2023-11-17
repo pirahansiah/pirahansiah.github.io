@@ -19,7 +19,8 @@
     {% if page.parent == "MainPage" %}
       <!-- Check if the page is not a subpage itself -->
       <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      
+      {% endif %}
+      {% else %}
       <!-- List Subpages for Each Top-Level Page -->
       <div class="sub-pages">
         {% for subpage in site.pages %}
