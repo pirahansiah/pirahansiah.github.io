@@ -3,6 +3,9 @@ layout: post
 title: List
 ---
 
+{{ page.title }}
+================
+
 # a  <!-- Corrected Header -->
 list 
 a 
