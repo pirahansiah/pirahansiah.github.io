@@ -13,10 +13,8 @@
         </svg>
       </a>
 
-      <button onclick="toggleMenu()">Menu</button>
-      <div id="navMenuTop" class="top-level-pages" style="display: none;">
       
-
+      <div id="navMenuTop" class="top-level-pages" style="display: none;">
         {% for page in site.pages %}
           {% if page.parent == "MainPage" %}
             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}  |   </a>
