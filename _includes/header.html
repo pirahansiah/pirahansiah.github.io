@@ -15,16 +15,16 @@
       <div id="navMenuTop" class="top-level-pages">
         {% for page in site.pages %}
           {% if page.parent == "MainPage" %}
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }} | </a>
-
-            <div id="navMenuSub" class="sub-pages">
-              {% for subpage in site.pages %}
-                {% if subpage.parent == page.title and subpage.parent != "MainPage" %}
-                  <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }} | </a>
-                {% endif %}
-              {% endfor %}
-            </div>
-
+            <details>
+              <summary>{{ page.title }}</summary>
+              <div class="sub-pages">
+                {% for subpage in site.pages %}
+                  {% if subpage.parent == page.title and subpage.parent != "MainPage" %}
+                    <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}</a><br>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </details>
           {% endif %}
         {% endfor %}
       </div>
