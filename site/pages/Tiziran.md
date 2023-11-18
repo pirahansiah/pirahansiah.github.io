@@ -1,5 +1,7 @@
 ---
-
+layout: page
+title: Tiziran
+parent: Blog
 ---
 
 ## Python Programming for Computer Vision and Deep Learning
