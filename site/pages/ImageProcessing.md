@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV
+title: Image Processing AI
 parent: Blog
 ---
 
