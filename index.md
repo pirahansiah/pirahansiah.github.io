@@ -9,16 +9,16 @@ parent: MainPage
 
 
 - Career Companion: Enhance your CV, prepare for interviews, and find your ideal job with our dedicated job assistant service.
-  - Career Companion: A dedicated job assistant for CV enhancement, interview prep, and job matching. [Link](https://chat.openai.com/g/)g-VrtNMlXDg-career-companion  
+  - Career Companion: A dedicated job assistant for CV enhancement, interview prep, and job matching. [Link](https://chat.openai.com/g/g-VrtNMlXDg-career-companion)  
 
 - Image Processing Developer: Specializing in Python and OpenCV, I offer expertise in image processing and computer vision.
   - Image Processing / Computer Vision Developer: Expert in Python, OpenCV for image processing and computer vision applications. [Link](https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer )
   
 - MLOps & DevOps Expert: Professional MLOps engineer for your DevOps needs, specializing in pipeline optimization.
-  - MLOps & DevOps: An expert MLOps engineer assisting in DevOps and pipeline optimization. [Link](https://chat.openai.com/g/)g-sWtYkb391-mlops-devops 
+  - MLOps & DevOps: An expert MLOps engineer assisting in DevOps and pipeline optimization. [Link](https://chat.openai.com/g/g-sWtYkb391-mlops-devops )
 
 - German TutorBot: Your go-to German language teacher for text corrections and simple translations.
-  - German TutorBot: A German teacher for text correction and simple translations. [Link](https://chat.openai.com/g/)g-Fkg5ts1II-german-tutorbot 
+  - German TutorBot: A German teacher for text correction and simple translations. [Link](https://chat.openai.com/g/g-Fkg5ts1II-german-tutorbot) 
 
 - Simpli3D Creator: Converting images to 3D models effortlessly, without any text requirement.
   - Simpli3D Creator: Image-to-3D model conversion, no text involved. [Link](https://chat.openai.com/g/g-AmzCWmmQa-simpli3d-creator )
