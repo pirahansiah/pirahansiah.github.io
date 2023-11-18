@@ -14,7 +14,7 @@
       </a>
 
       
-      <div id="navMenuTop" class="top-level-pages" style="display: none;">
+      <div id="navMenuTop" class="top-level-pages">
         {% for page in site.pages %}
           {% if page.parent == "MainPage" %}
             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}  |   </a>
@@ -22,7 +22,7 @@
         {% endfor %}
       </div>
       
-      <div id="navMenuSub" class="sub-pages" style="display: none;">
+      <div id="navMenuSub" class="sub-pages">
         <a href="{{ page.url | prepend: site.baseurl }}">{{ subpage.parent }}  |   </a>
         {% for subpage in site.pages %}
           {% if subpage.parent == page.title and subpage.parent != "MainPage" %}
