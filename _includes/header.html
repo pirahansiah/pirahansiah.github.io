@@ -13,7 +13,7 @@
         </svg>
       </a>
       <div class="top-level-pages">
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}  |   </a>
+
         {% for page in site.pages %}
           {% if page.parent == "MainPage" %}
             <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}  |   </a>
@@ -22,6 +22,7 @@
       </div>
       
       <div class="sub-pages">
+        <a href="{{ page.url | prepend: site.baseurl }}">{{ subpage.parent }}  |   </a>
         {% for subpage in site.pages %}
           {% if subpage.parent == page.title and subpage.parent != "MainPage" %}
             <a href="{{ subpage.url | prepend: site.baseurl }}">{{ subpage.title }}  |   </a>

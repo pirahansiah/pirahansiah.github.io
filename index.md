@@ -6,7 +6,7 @@ parent: MainPage
 ---
 
 
-- [Blog](index.html)
+- [Blog](/site/blog.html)
   - [Mind-Maps](index.html)
     - [Mind-Maps-Html](index.html)
       - [Prompt Engineering for ChatGPT](site/MindMaps/html/Prompt-Engineering-for-ChatGPT.html)
@@ -28,5 +28,5 @@ parent: MainPage
   - [Cloud-Based Solutions](https://www.linkedin.com/in/pirahansiah/)
   - [PyOrganize](https://www.linkedin.com/in/pirahansiah/)
 - [About](index.html)
-    - [Ads](Ads.txt)
+    - [Ads](ads.txt)
     - [Public Privacy Policy](site/pages/privacy_policy_url.html)
