@@ -63,6 +63,14 @@ parent: Blog
 		    * Mac: CMD+OPT+UP/Down arrow
 	   * Side by side Markdown edit and preview
 		    *  Windows: Ctrl+K V
+* Good to know
+	* [You Must Checkout New Profiles in VS Code #tipsandtricks](https://www.youtube.com/watch?v=d335VHyHq-M)
+	* [use Foam in your iPad with Github Codespaces](https://www.youtube.com/watch?v=KI5m4Uy8_4I)
+	* [Open-source binary distributions of VSCode without telemetry](https://vscodium.com/)
+	* 
+Link	Description
+cartoon-creator	cartoon creator
+VSCodium	
   * IoT
 	   * Install 1
 			* git clone [installVSCode.git](https://github.com/JetsonHacksNano/installVSCode.git)
