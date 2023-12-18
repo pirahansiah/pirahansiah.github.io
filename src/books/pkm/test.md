@@ -12,7 +12,7 @@
 - ...\n
 #### Personal Stuff:
 - [x] a
-- [:heavy_check_mark:] Water plants
+- [] Water plants
 - ...\n
 ### Feel Good Checklist
 - [ ] 8 hours of sleep
