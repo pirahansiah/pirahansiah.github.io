@@ -97,5 +97,112 @@
 			],
 			"description": "Overview of Personal Knowledge Management (PKM) strategies"
 		}
-	}
+	
 		
+	
+		"Project Goal Setting": {
+			"prefix": "project-goal",
+			"body": [
+				"## Project: ${1:Project_Name}",
+				"- **Goal:** ${2:Define your main goal}",
+				"- **Key Tasks:**",
+				"   - [ ] ${3:Task_1}",
+				"   - [ ] ${4:Task_2}",
+				"- **Deadlines:**",
+				"   - ${5:Deadline_1}",
+				"   - ${6:Deadline_2}",
+				"- **Resources:**",
+				"   - ${7:Resource_1}",
+				"   - ${8:Resource_2}",
+				"- **Progress Review Date:** ${9:Set a date}"
+			],
+			"description": "Template for setting goals and tasks for a new project"
+		},
+		"Daily Learning Session": {
+			"prefix": "daily-learning",
+			"body": [
+				"## Learning Topic: ${1:Topic_Name}",
+				"- **Date:** ${2:YYYY-MM-DD}",
+				"- **Key Takeaways:**",
+				"   - ${3:Key_Point_1}",
+				"   - ${4:Key_Point_2}",
+				"- **Application:** ${5:How can this be applied?}",
+				"- **Further Reading:** ${6:Additional resources or follow-up topics}"
+			],
+			"description": "Template for a daily learning session with key takeaways"
+		},
+		"Idea Brainstorming": {
+			"prefix": "idea-brainstorm",
+			"body": [
+				"## Idea: ${1:Idea_Title}",
+				"- **Description:** ${2:Describe the idea}",
+				"- **Potential Impact:** ${3:What impact could this idea have?}",
+				"- **Next Steps:**",
+				"   - [ ] ${4:Step_1}",
+				"   - [ ] ${5:Step_2}",
+				"- **Review Date:** ${6:Set a date for review}"
+			],
+			"description": "Template for brainstorming and outlining a new idea"
+		},
+		// Continue adding templates for each section...
+	}
+	{
+		"Project Goal Setting": {
+			"prefix": "project-goal",
+			"body": [
+				"## Project: ${1:Project_Name}",
+				"- **Goal:** ${2:Define your main goal}",
+				"- **Key Tasks:**",
+				"   - [ ] ${3:Task_1}",
+				"   - [ ] ${4:Task_2}",
+				"- **Deadlines:**",
+				"   - ${5:Deadline_1}",
+				"   - ${6:Deadline_2}",
+				"- **Resources:**",
+				"   - ${7:Resource_1}",
+				"   - ${8:Resource_2}",
+				"- **Progress Review Date:** ${9:Set a date}"
+			],
+			"description": "Template for setting goals and tasks for a new project"
+		},
+		"Daily Learning Session": {
+			"prefix": "daily-learning",
+			"body": [
+				"## Learning Topic: ${1:Topic_Name}",
+				"- **Date:** ${2:YYYY-MM-DD}",
+				"- **Key Takeaways:**",
+				"   - ${3:Key_Point_1}",
+				"   - ${4:Key_Point_2}",
+				"- **Application:** ${5:How can this be applied?}",
+				"- **Further Reading:** ${6:Additional resources or follow-up topics}"
+			],
+			"description": "Template for a daily learning session with key takeaways"
+		},
+		"Idea Brainstorming": {
+			"prefix": "idea-brainstorm",
+			"body": [
+				"## Idea: ${1:Idea_Title}",
+				"- **Description:** ${2:Describe the idea}",
+				"- **Potential Impact:** ${3:What impact could this idea have?}",
+				"- **Next Steps:**",
+				"   - [ ] ${4:Step_1}",
+				"   - [ ] ${5:Step_2}",
+				"- **Review Date:** ${6:Set a date for review}"
+			],
+			"description": "Template for brainstorming and outlining a new idea"
+		},
+		"Time Management Plan": {
+			"prefix": "time-management-plan",
+			"body": [
+				"## Time Management Plan",
+				"- **Daily Schedule:**",
+				"   - [ ] ${1:Task} at ${2:Time}",
+				"   - [ ] ${3:Task} at ${4:Time}",
+				"- **Pomodoro Sessions:**",
+				"   - [ ] ${5:Pomodoro task} for ${6:Number of Pomodoros}",
+				"- **Weekly Review:**",
+				"   - [ ] Review accomplishments and plan next week on ${7:Day}"
+			],
+			"description": "Template for planning and managing time effectively"
+		}
+	}

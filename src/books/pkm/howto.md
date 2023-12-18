@@ -1,5 +1,8 @@
-# How to Set Up VSCode
+# The Developer's Ultimate Guide: Mastering Time Management, Effective Strategies, and Organized Thinking in VSCode
 
+
+# How to Set Up VSCode
+it is not for smartphone or tablet just for computer 
 ## Getting VSCode Ready
 
 ### Step 1: Downloading VSCode
