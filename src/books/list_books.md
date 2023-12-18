@@ -12,10 +12,10 @@ List of books:
 
 - OpenCV Book
 - PKM
-    - [/pkm/personal knowledge management (PKM) methods with To-Do Lists](/pkm/personal knowledge management (PKM) methods with To-Do Lists)
-    - [/pkm/Time Management and Productivity Principles with To-Do Lists](/pkm/Time Management and Productivity Principles with To-Do Lists)
-    - [/pkm/reference](/pkm/reference)
-    - [/pkm/howto](/pkm/howto)
+    - [src/books/pkm/personal knowledge management (PKM) methods with To-Do Lists](src/books/pkm/personal knowledge management (PKM) methods with To-Do Lists)
+    - [src/books/pkm/Time Management and Productivity Principles with To-Do Lists](src/books/pkm/Time Management and Productivity Principles with To-Do Lists)
+    - [src/books/pkm/reference](src/books/pkm/reference)
+    - [src/books/pkm/howto](src/books/pkm/howto)
 
 
 
