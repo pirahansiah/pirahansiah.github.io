@@ -1,4 +1,5 @@
-🚀 Master the art of learning and organization with these top Personal Knowledge Management strategies! 🧠 Dive into methods like Zettelkasten, Feynman Technique, Mind Mapping, and more. Perfect for students, professionals, and lifelong learners! #KnowledgeManagement #LearningTips
+🚀 Art of learning and organization with these top Personal Knowledge Management strategies! 🧠 List of methods like Zettelkasten, Feynman Technique, Mind Mapping, and more. Perfect for students, professionals, and lifelong learners! #KnowledgeManagement #LearningTips
+https://pirahansiah.com/src/books/pkm/personal%20knowledge%20management%20(PKM)%20methods%20with%20To-Do%20Lists 
 
 # Efficient Personal Knowledge Management Strategies
 

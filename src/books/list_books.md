@@ -8,14 +8,14 @@ parent: Main List
 
 
 ## Books
-List of books:
+[List of books](https://pirahansiah.com/src/books/list_books):
 
 - OpenCV Book
 - PKM
     - [personal knowledge management (PKM) methods with To-Do Lists](https://pirahansiah.com/src/books/pkm/personal knowledge management (PKM) methods with To-Do Lists)
     - [Time Management and Productivity Principles with To-Do Lists](https://pirahansiah.com/src/books/pkm/Time Management and Productivity Principles with To-Do Lists)
-    - [reference](https://pirahansiah.com/src/books/pkm/reference)
-    - [howto](https://pirahansiah.com/src/books/pkm/howto)
+    - [Reference](https://pirahansiah.com/src/books/pkm/reference)
+    - [How To](https://pirahansiah.com/src/books/pkm/howto)
 
 
 
