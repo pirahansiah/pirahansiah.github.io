@@ -1,4 +1,5 @@
-🚀 Boost your productivity with these top Time Management principles! Discover techniques like the 80/20 rule, Pomodoro, Deep Work, and more. Perfect for anyone looking to streamline their workflow and achieve more! #ProductivityTips #TimeManagement
+🚀 Boost your productivity with these top Time Management principles! ToDo list for techniques like the 80/20 rule, Pomodoro, Deep Work, and more. Perfect for anyone looking to streamline their workflow and achieve more! #ProductivityTips #TimeManagement
+https://pirahansiah.com/src/books/pkm/Time%20Management%20and%20Productivity%20Principles%20with%20To-Do%20Lists
 
 # Key Time Management & Productivity Principles
 
