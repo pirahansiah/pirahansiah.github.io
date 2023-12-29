@@ -4,7 +4,7 @@
 - [Link]( https://huggingface.co/spaces/pirahansiah/ComputerVision) : huggingface
 - [Link]( https://ankiweb.net/account/login) : ankiweb
 - [Link]( https://www.coursera.org/professional-certificates/google-it-automation) : python google-it-automation
-- [Link]( ) : 
+- [Link](https://ankiuser.net/study ) : ankiuser
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -92,10 +92,10 @@
 - [Link](https://www.youtube.com/playlist?list=PLbAJGHgm1c0jk9tfYDpROveJIoDzO28cO ) : Purdue ECE 595 Computer Vision for Embedded Systems was a shor
 - [Link](https://www.youtube.com/watch?v=qtBVS16l-FA&list=PLjiPh7vdm10Jfks2RjnTaJNPPE7TqA7zm&index=9 ) : YouTube TUTORIALS
 - [Link]( https://www.youtube.com/@ProfessorLeonard) : Professor Leonard ** Math **
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
+- [Link](https://m.youtube.com/watch?si=IMch8yHsITGu9kaY&v=vg01Q1BI4WM&feature=youtu.be ) : Foundations: this is your brain 
+- [Link](https://m.youtube.com/playlist?list=PLNzQX4H1-dVT8eWy_byDlhUYaOIWsblHX ) : tips, raycast, macos
+- [Link](https://m.youtube.com/watch?v=kICh_d6tHQk&feature=youtu.be ) : study 12 hours 
+- [Link]( https://www.youtube.com/@ParkerNotes) : ParkerNotes **
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -173,7 +173,7 @@
 - [Link](https://www.trychroma.com ) : chroma; the AI-native open-source embedding database
 - [Link]( https://marketplace.visualstudio.com/items?itemName=gsGupta.opencv-snippets) : opencv-snippets
 - [Link](https://github.com/ml-explore/mlx ) : Apple GPU mlx for python
-- [Link]( ) : 
+- [Link]( https://roboflow.com) : training model cheap 
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -515,7 +515,7 @@
 - [Link](https://encord.com/blog/multimodal-learning-guide/ ) : multimodal-learning-guide
 - [Link](https://github.com/97-things/97-things-every-programmer-should-know/tree/master/fa ) : 97-things-every-programmer-should-know
 - [Link](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29 ) : clean code 
-- [Link]( ) : 
+- [Link](https://undo.io/resources/how-to-debug-race_conditions_linux_cpp ) : how-to-debug-race_conditions_linux_cpp
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -592,12 +592,12 @@
 - [Link]( ) : 
 
 
-# Links German
+# Links Germany
 - [Link](https://www.pfarrverband-stephanskirchen.de/wp-content/uploads/SpielgruppeReimeonline2018_06.pdf ) :  Hallo, schon dass du da bist ...
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
+- [Link]( https://www.zenjob.com/de) : mini job germany
+- [Link]( https://www.ardmediathek.de/elefant?isChildContent) : kids
+- [Link]( https://wundertax.de/) : tax
+- [Link](https://m.youtube.com/watch?v=MqR3K1alUio ) : learn 15 minit a day
 - [Link]( ) : 
 - [Link]( ) : 
 
@@ -607,8 +607,8 @@
 - [Link]( https://www.youtube.com/watch?v=hqxz6-hjf-E) : کتاب قدرت عادت 
 - [Link](https://github.com/97-things/97-things-every-programmer-should-know/tree/master/fa ) : 97-things-every-programmer-should-know
 - [Link]( https://www.youtube.com/@AmirMotahari/videos) : python very good ** 
-- [Link]( ) : 
-- [Link]( ) : 
+- [Link]( https://www.youtube.com/@raoofiali) : python trading 
+- [Link]( https://m.youtube.com/playlist?list=PLz8Ry7m7rW0h8VbYTEl3LWV8bCwjTBR65) : programming blockchain based on book 
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -688,8 +688,8 @@
 - [Link]( ) : 
 
 # Links
-- [Link]( ) : 
-- [Link]( ) : 
+- [Link](https://www.soldev.app/library?types=projects ) : soldev
+- [Link]( https://earn.superteam.fun/bounties/) : earn from crypto prjects
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
