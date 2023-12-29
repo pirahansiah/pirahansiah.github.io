@@ -174,7 +174,7 @@
 - [Link]( https://marketplace.visualstudio.com/items?itemName=gsGupta.opencv-snippets) : opencv-snippets
 - [Link](https://github.com/ml-explore/mlx ) : Apple GPU mlx for python
 - [Link]( https://roboflow.com) : training model cheap 
-- [Link]( ) : 
+- [Link]( https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716/revisions) : semantic commit messages
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -516,7 +516,7 @@
 - [Link](https://github.com/97-things/97-things-every-programmer-should-know/tree/master/fa ) : 97-things-every-programmer-should-know
 - [Link](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29 ) : clean code 
 - [Link](https://undo.io/resources/how-to-debug-race_conditions_linux_cpp ) : how-to-debug-race_conditions_linux_cpp
-- [Link]( ) : 
+- [Link]( https://algotrading101.com/learn/pine-script-tradingview-guide/) : algotrading101
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
@@ -609,7 +609,7 @@
 - [Link]( https://www.youtube.com/@AmirMotahari/videos) : python very good ** 
 - [Link]( https://www.youtube.com/@raoofiali) : python trading 
 - [Link]( https://m.youtube.com/playlist?list=PLz8Ry7m7rW0h8VbYTEl3LWV8bCwjTBR65) : programming blockchain based on book 
-- [Link]( ) : 
+- [Link](https://m.youtube.com/watch?v=NTX7VZ_0h34&list=PLmKrvAD6HAATBg_NADgZyXxrfUwj2Vlm7&index=3&pp=iAQB) : book tips python **
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
