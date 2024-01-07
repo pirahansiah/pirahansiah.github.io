@@ -1,11 +1,58 @@
 
 
+
+
+# Links ChatGPT
+- [Link](https://chat.openai.com/g/g-AfImwtIOb-productivity-pages ) : Productivity Pages
+Insightful summaries from productivity books
+- [Link](https://chat.openai.com/g/g-bSpnRV1as-goal-guide ) : GPT
+Goal Guide
+Expert in various goal-setting methods, providing guidance and practical tips.
+- [Link](https://chat.openai.com/g/g-JiUQrpdWs-holistic-planner ) : GPT
+Holistic Planner
+Enhances daily to-do lists for personal development with holistic planning.
+- [Link]( https://chat.openai.com/g/g-6Zg3KRS0l-cartoon-transformer) : GPT
+Cartoon Transformer
+Transforms images into 3D cartoon style with DALL-E
+- [Link]( https://chat.openai.com/g/g-SPaCqwvmZ-cartoon-creator) : GPT
+Cartoon Creator
+Creating 3D cartoon versions of images, with a fun approach.
+- [Link](https://chat.openai.com/g/g-YHNv6svFJ-image-inspirer ) : GPT
+Image Inspirer
+Generates new images from descriptions of uploaded photos.
+- [Link](https://chat.openai.com/g/g-sWtYkb391-mlops-devops ) : GPT
+MLOps & DevOps
+An expert MLOps engineer assisting in DevOps and pipeline optimization.
+- [Link](https://chat.openai.com/g/g-MoVfu0k5m-english-enhancer ) : GPT
+English Enhancer
+Professional English proofreader for B2 level.
+- [Link]( https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer) : GPT
+Computer Vision Developer
+Expert in Python, OpenCV for image processing and computer vision applications.
+- [Link](https://chat.openai.com/g/g-Fkg5ts1II-german-tutorbot ) : GPT
+German TutorBot
+A B1 level German teacher for text correction and simple translations.
+- [Link]( https://chat.openai.com/g/g-VrtNMlXDg-career-companion) : GPT
+Career Companion
+A dedicated job assistant for CV enhancement, interview prep, and job matching.
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+
+
 # Links
 - [Link]( https://huggingface.co/spaces/pirahansiah/ComputerVision) : huggingface
 - [Link]( https://ankiweb.net/account/login) : ankiweb
 - [Link]( https://www.coursera.org/professional-certificates/google-it-automation) : python google-it-automation
 - [Link](https://ankiuser.net/study ) : ankiuser
-- [Link]( ) : 
+- [Link]( http://subscriptions.viddler.com/SimonCorcoran) : Learn my best techniques for the IELTS test
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
