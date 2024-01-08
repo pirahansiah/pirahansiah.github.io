@@ -1,4 +1,4 @@
-<h1><img src="smart.png">SMART</h1>
+<h1><img src="smart.png"></h1>
 
 # SMART
 ## Enhanced Introduction to SMART Goals
@@ -43,9 +43,9 @@ SMART goals stand out from other methodologies with their focus on measurability
 SMART goals are effective for both large-scale and day-to-day goals.
 ### Expert Insights
 Tony Robbins: "Setting goals is the first step in turning the invisible into the visible."
-### Interactive Resources
+### Customize a version of ChatGPT 
 Scan the QR code for access to an online SMART goal-setting tool.
-- [Interactive Tool](https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru): Goal Setting Guru
+- [Customize a version of ChatGPT ](https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru): Goal Setting 
 
 ## Conclusion and Next Steps
 Adopt the SMART framework for clear, actionable, and simple goals. This guide provides the tools and insights for effective SMART goal implementation.
@@ -62,3 +62,6 @@ For more on effective goal setting, explore "The 7 Habits of Highly Effective Pe
 - [ ] Mentor Consultation: Seek guidance from experienced professionals for better outcomes.
 - [ ] Documentation: Keep records updated throughout the development process.
 - [ ] Reflective Analysis: Review the process post-completion for continuous improvement.
+
+
+<h1><img src="SMART-mindMap.png"></h1>
