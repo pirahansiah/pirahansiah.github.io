@@ -1,3 +1,41 @@
+# AI Tools
+## https://pirahansiah.com/site/pages/ChatGPT
+https://pirahansiah.com/site/pages/ChatGPT
+- [An AI Assistant Manager](https://pirahansiah.com/site/pages/ChatGPT)
+
+
+- [Link]( https://chat.openai.com/g/g-rW6iZ1cMm-market-insight) : Market Insight: Summarizes business news into tables, text, and predictions
+    - Summarize today's market trends from top financial websites.
+    - Predict the stock values based on recent business news.
+    - Create a summary table of the latest economic indicators.
+    - Provide a professional analysis of a company's financial report.
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+- [Link]( ) : 
+
+
+
+
 - [Link](https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru ) : Goal Setting Guru
 Markdown expert in goal-setting, personalizing methods and actionable plans.
 
