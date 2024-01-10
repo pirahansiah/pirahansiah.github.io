@@ -11,10 +11,6 @@ Covering a comprehensive list including Backward Goal Setting, WIGs, KPIs, the G
 
 Embrace a new perspective where your goals transform from distant dreams to tangible, precise, and achievable milestones. "Goal-Setting Methods: Selecting the Best Strategy for Goal Planning" is your comprehensive guide to navigating the diverse landscape of goal-setting strategies, ensuring you find the perfect fit for your individual needs and preferences. Unlock the full potential of your productivity journey with this essential guide to goal-setting mastery.
 
-[[src/books/goal/FAST/fast.md]]
-![[pirahansiah/pirahansiah.github.io/src/books/goal/FAST/fast.md]]
-
-
 - [Action_Plans/Action_Plans](https://pirahansiah.com/src/books/goal/Action_Plans/Action_Plans )
 - [Backward_Goal_Setting/Backward_Goal_Setting](https://pirahansiah.com/src/books/goal/Backward_Goal_Setting/Backward_Goal_Setting )
 - [BHAG/BHAG](https://pirahansiah.com/src/books/goal/BHAG/BHAG )
