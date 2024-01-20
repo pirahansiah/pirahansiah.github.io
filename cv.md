@@ -3,10 +3,10 @@ LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansi
 
 ## About Me
 **Lead Researcher in Computer Vision and Image Processing**
-With over 7 years in image processing and computer vision, I bring extensive experience from working in multinational companies across two countries. My academic qualifications include a PhD in Computer Science, specializing in Computer Vision. My skills cover areas like Machine Learning in Vision (Object Detection, Video Tracking), IoT, Medical Imaging, and Robotics. I am adept in algorithm design for Image Analysis and have a proven record in developing robust solutions and writing high-standard code using OpenCV and Deep Learning tools like TensorFlow and PyTorch.
+With over 7 years in image processing and computer vision, I bring extensive experience from working in multinational companies across two continents. My academic qualifications include a PhD in Computer Science, specializing in Computer Vision. My skills cover areas like Machine Learning in Vision (Object Detection, Video Tracking), IoT, Medical Imaging, and Robotics. I am adept in algorithm design for Image Analysis and have a proven record in developing robust solutions and writing high-standard code using OpenCV and Deep Learning tools like TensorFlow and PyTorch.
 
 ## Work Experience
-### (2.5 years) 01/08/2021 - Present: Alcon, Teltow, Germany
+### (over 2.5 years) 01/08/2021 - Present: Alcon, Teltow, Germany
 **Technical Lead, R&D in Image Processing (Medical Devices)**
 - Lead the R&D team in software development for medical imaging.
 - Focus on real-time data processing, mining, and visualization for ophthalmology tools.
@@ -14,14 +14,14 @@ With over 7 years in image processing and computer vision, I bring extensive exp
 - Handle technical specification and prototype design.
 - Key technologies: Python, C++, MATLAB, GPU.
 
-###  (1.5 years)  22/09/2019 - 30/05/2021: Tier Mobility GmbH, Berlin, Germany
+###  (over 1.5 years)  22/09/2019 - 30/05/2021: Tier Mobility GmbH, Berlin, Germany
 **Computer Vision Research Engineer**
 - Engaged in computer vision projects using deep learning in IoT environments.
 - Specialized in object and people tracking, GDPR compliance.
 - Worked with various hardware like Raspberry Pi, Intel Neural Compute Stick, Nvidia Jetson.
 - Developed an AWS-based pipeline for pedestrian density detection using PyTorch.
 
-###  (over 3 years) 20/06/2016 - 15/09/2019: MIMOS Berhad, Kuala Lumpur, Malaysia
+### (over 3 years) 20/06/2016 - 15/09/2019: MIMOS Berhad, Kuala Lumpur, Malaysia
 **Senior Researcher**
 - Focused on deep learning applications in security and analytics.
 - Developed methods using TensorFlow and other deep learning frameworks.
@@ -48,7 +48,9 @@ With over 7 years in image processing and computer vision, I bring extensive exp
 - robotics
 
 ## Skills
-- OpenCV, Python, C++
+- **Python**, **C++**
+- **OpenCV**
+- LLMs 
 - Git, PyTorch, Deep Learning Frameworks
 - IoT, Raspberry Pi, NVIDIA Jetson
 - Operating Systems: Windows, MacOS, Linux
