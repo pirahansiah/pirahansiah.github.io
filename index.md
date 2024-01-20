@@ -5,6 +5,8 @@ title: Computer Vision
 parent: MainPage
 ---
 
+# Farshid Pirahansiah
+
 Welcome to a world where Artificial Intelligence meets practical application and innovation – dive into our comprehensive LLMs projects, blog for insights, explore mind-maps for enhanced understanding, stay updated with our newsletter, discover our diverse projects and products, leverage expert startup consulting, and learn more .
 
 # AI LLMs
