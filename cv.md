@@ -3,7 +3,7 @@ LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansi
 
 ## About Me
 **Lead Researcher in Computer Vision and Image Processing**
-With over 7 years in image processing and computer vision, I bring extensive experience from working in multinational companies across two continents. My academic qualifications include a PhD in Computer Science, specializing in Computer Vision. My skills cover areas like Machine Learning in Vision (Object Detection, Video Tracking), IoT, Medical Imaging, and Robotics. I am adept in algorithm design for Image Analysis and have a proven record in developing robust solutions and writing high-standard code using OpenCV and Deep Learning tools like TensorFlow and PyTorch.
+With more than 7+ years of experience in computer vision and large language models, I have gained extensive expertise through roles in multinational companies across two continents. My academic background includes a PhD and a Master's degree in Computer Science, with a focus on Computer Vision, as well as a Bachelor's degree in Software Engineering. My expertise extends to areas such as Machine Learning in Vision, including Object Detection and Video Tracking, as well as IoT, Medical Imaging, and Robotics. I am skilled in designing algorithms for Image Analysis and have a track record of developing robust solutions and writing high-quality code using OpenCV, TensorFlow, and PyTorch. Additionally, I have contributed several patents, books, and papers in the field of computer vision.
 
 ## Work Experience
 ### (over 2.5 years) 01/08/2021 - Present: Alcon, Teltow, Germany
