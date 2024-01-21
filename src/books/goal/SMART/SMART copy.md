@@ -1,5 +1,5 @@
 <h1><img src="smart.png"></h1>
-[SMART](https://pirahansiah.com/src/books/goal/SMART/SMART)
+
 # SMART
 ## Enhanced Introduction to SMART Goals
 ### Setting the Stage for Success with SMART Goals
