@@ -1,6 +1,9 @@
-<h1><img src="smart.png"></h1>
+<h1><img src="smart2.png"></h1>
+
 [SMART](https://pirahansiah.com/src/books/goal/SMART/SMART)
+
 # SMART
+
 ## Enhanced Introduction to SMART Goals
 ### Setting the Stage for Success with SMART Goals
 Setting goals is a crucial component in achieving success across various fields. SMART goals, introduced by George T. Doran in 1981, provide a structured and effective approach to setting clear, achievable, and meaningful objectives. This method has gained widespread acceptance due to its practicality and ease of implementation.
@@ -62,6 +65,5 @@ For more on effective goal setting, explore "The 7 Habits of Highly Effective Pe
 - [ ] Mentor Consultation: Seek guidance from experienced professionals for better outcomes.
 - [ ] Documentation: Keep records updated throughout the development process.
 - [ ] Reflective Analysis: Review the process post-completion for continuous improvement.
-
 
 <h1><img src="SMART-mindMap.png"></h1>

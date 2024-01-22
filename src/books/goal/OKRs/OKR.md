@@ -1,5 +1,5 @@
 
-<h1><img src="okrs1.png">OKRs</h1>
+<h1><img src="okr1.png">OKRs</h1>
 
 # Introduction to OKRs (Objectives and Key Results)
 

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BHAG.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1><img src="bhag1.png">BHAG</h1>
+<h1 id="introduction-to-bhag-big-hairy-audacious-goals">Introduction to BHAG (Big Hairy Audacious Goals)</h1>
+<h2 id="embracing-the-bhag-framework">Embracing the BHAG Framework</h2>
+<p>BHAG (Big Hairy Audacious Goals) represents a concept in strategic business planning, encouraging organizations to define visionary goals that are more strategic and emotionally compelling. These goals are typically long-term, requiring a decade or more to achieve.</p>
+<h2 id="the-essence-of-bhag">The Essence of BHAG</h2>
+<p>A BHAG is a powerful way to stimulate progress and capture the imagination. It is ambitious, potentially transformative, and encompasses a long-term vision that drives change and innovation.</p>
+<h3 id="characteristics-of-a-bhag">Characteristics of a BHAG</h3>
+<ul>
+<li><strong>Bold and Risk-Taking:</strong> BHAGs are designed to be audacious and risk-embracing, pushing beyond the boundaries of the current comfort zone.</li>
+<li><strong>Visionary:</strong> These goals embody a clear and compelling vision, often connecting with the core values and purpose of an organization.</li>
+<li><strong>Long-Term Focus:</strong> BHAGs are not short-term targets but long-range goals that require years, often decades, to accomplish.</li>
+<li><strong>Inspirational:</strong> They inspire and motivate stakeholders, creating a unifying focal point of effort.</li>
+</ul>
+<h2 id="implementing-bhag">Implementing BHAG</h2>
+<p>To apply BHAG effectively, follow these guidelines:</p>
+<ol>
+<li>Dream big and set audacious, long-term goals.</li>
+<li>Align the BHAG with the core values and purpose of the organization or individual.</li>
+<li>Communicate the BHAG clearly to inspire and unify the team.</li>
+<li>Plan strategically, understanding that achieving a BHAG is a long-term endeavor.</li>
+</ol>
+<h2 id="recommended-readings">Recommended Readings</h2>
+<ul>
+<li>&quot;Built to Last: Successful Habits of Visionary Companies&quot; by Jim Collins and Jerry I. Porras: This seminal book introduces the concept of BHAG and illustrates how visionary companies use bold missions to stimulate progress.
+<ul>
+<li><strong>Key Takeaways:</strong> Insight into how enduringly great companies achieve lasting success; introduction of the BHAG concept.</li>
+</ul>
+</li>
+<li>&quot;Good to Great: Why Some Companies Make the Leap and Others Don't&quot; by Jim Collins: Explores what differentiates companies that make the leap from good to great, including the role of BHAGs in driving transformation.
+<ul>
+<li><strong>Key Takeaways:</strong> Understanding the principles that propel companies from mediocrity to excellence; insights into the role of leadership and vision.</li>
+</ul>
+</li>
+<li>&quot;The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail&quot; by Clayton M. Christensen: Discusses how even outstanding companies can lose their market leadership due to technological innovation and the importance of visionary goals in staying ahead.
+<ul>
+<li><strong>Key Takeaways:</strong> Understanding the challenges of disruptive technologies; strategies for maintaining market leadership through innovation and ambitious goal-setting.</li>
+</ul>
+</li>
+</ul>
+<h3 id="applying-bhag-examples">Applying BHAG: Examples</h3>
+<p>Use BHAG in various scenarios, such as setting revolutionary business goals or defining long-term personal visions.</p>
+<h3 id="comparative-analysis">Comparative Analysis</h3>
+<p>BHAGs stand out for their ambitious nature and long-term vision, making them ideal for organizations and individuals seeking transformative change and innovation.</p>
+<h3 id="addressing-misconceptions">Addressing Misconceptions</h3>
+<p>BHAGs are not just for business settings; they can be effectively applied in any context where visionary, long-term goals are desired.</p>
+<h3 id="insights-from-leaders">Insights from Leaders</h3>
+<p>Quotes from industry leaders can underscore the importance of visionary thinking and audacious goal setting.</p>
+<h3 id="customize-a-version-of-chatgpt">Customize a version of ChatGPT</h3>
+<ul>
+<li><a href="https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru">Customize a version of ChatGPT </a></li>
+</ul>
+<h2 id="conclusion-and-moving-forward">Conclusion and Moving Forward</h2>
+<p>By integrating the BHAG approach, you can set goals that are visionary, transformative, and long-term. This guide has offered insights into effectively using the BHAG methodology in various aspects of life and work.</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<p>For a deeper understanding of visionary planning and audacious goal setting, explore related literature and case studies.</p>
+<h1 id="personal-and-professional-bhag-checklist">Personal and Professional BHAG Checklist</h1>
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">Visionary and Bold: Set goals that are grand in scale and imagination.</label></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Long-Term Focus: Plan for achievements that span years or decades.</label></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">Inspirational: Ensure your BHAG motivates and unites those involved.</label></li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Aligned with Core Values: Connect your BHAG with personal or organizational values.</label></li>
+</ul>
+<h1><img src="bhag-mindmap.png"></h1>
+
+</body>
+</html>

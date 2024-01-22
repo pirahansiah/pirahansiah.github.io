@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SMART.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1><img src="smart2.png"></h1>
+<p><a href="https://pirahansiah.com/src/books/goal/SMART/SMART">SMART</a></p>
+<h1 id="smart">SMART</h1>
+<h2 id="enhanced-introduction-to-smart-goals">Enhanced Introduction to SMART Goals</h2>
+<h3 id="setting-the-stage-for-success-with-smart-goals">Setting the Stage for Success with SMART Goals</h3>
+<p>Setting goals is a crucial component in achieving success across various fields. SMART goals, introduced by George T. Doran in 1981, provide a structured and effective approach to setting clear, achievable, and meaningful objectives. This method has gained widespread acceptance due to its practicality and ease of implementation.</p>
+<h3 id="the-crucial-role-of-smart-goals">The Crucial Role of SMART Goals</h3>
+<p>In areas such as business, education, and personal development, well-defined and achievable goals are vital. The SMART framework addresses the common challenge of where to start and how to structure goals, guiding the formation of goals that are Specific, Measurable, Achievable, Relevant, and Time-bound.</p>
+<h4 id="specific">Specific</h4>
+<ul>
+<li>Definition: Goals must be clear and precise.</li>
+<li>Strategy: Determine your exact aims with detail and specificity.</li>
+</ul>
+<h4 id="measurable">Measurable</h4>
+<ul>
+<li>Definition: Goals need to be quantifiable.</li>
+<li>Strategy: Set criteria for tracking progress and identifying achievements.</li>
+</ul>
+<h4 id="achievable">Achievable</h4>
+<ul>
+<li>Definition: Goals should be realistic.</li>
+<li>Strategy: Balance ambition with realism, ensuring goals are within reach.</li>
+</ul>
+<h4 id="relevant">Relevant</h4>
+<ul>
+<li>Definition: Goals should be significant and align with broader aims.</li>
+<li>Strategy: Select goals that are meaningful and align with your values.</li>
+</ul>
+<h4 id="time-bound">Time-bound</h4>
+<ul>
+<li>Definition: Goals require a specific deadline.</li>
+<li>Strategy: Set deadlines to maintain focus and drive efforts.</li>
+</ul>
+<h2 id="implementing-smart-goals">Implementing SMART Goals</h2>
+<p>To effectively utilize SMART goals, follow these steps:</p>
+<ol>
+<li>Detail your goal explicitly.</li>
+<li>Define metrics for measuring progress.</li>
+<li>Check the feasibility of your goal.</li>
+<li>Ensure alignment with your core values.</li>
+<li>Set a specific deadline.</li>
+</ol>
+<h2 id="recommended-literature">Recommended Literature</h2>
+<ul>
+<li>Book Suggestion: &quot;Goals!: How to Get Everything You Want — Faster Than You Ever Thought Possible&quot; by Brian Tracy.</li>
+</ul>
+<h3 id="applying-smart-criteria-examples">Applying SMART Criteria: Examples</h3>
+<p>Adapt the SMART criteria to different contexts, like a professional goal to increase revenue or a personal goal to improve fitness.</p>
+<h3 id="comparative-perspective">Comparative Perspective</h3>
+<p>SMART goals stand out from other methodologies with their focus on measurability and time constraints, suitable for short- to medium-term goals.</p>
+<h3 id="practical-application-exercises">Practical Application: Exercises</h3>
+<ul>
+<li>Exercise 1: Create a personal goal using the SMART framework.</li>
+<li>Exercise 2: Transform a past unsuccessful goal into a SMART goal.</li>
+</ul>
+<h3 id="dispelling-myths">Dispelling Myths</h3>
+<p>SMART goals are effective for both large-scale and day-to-day goals.</p>
+<h3 id="expert-insights">Expert Insights</h3>
+<p>Tony Robbins: &quot;Setting goals is the first step in turning the invisible into the visible.&quot;</p>
+<h3 id="customize-a-version-of-chatgpt">Customize a version of ChatGPT</h3>
+<p>Scan the QR code for access to an online SMART goal-setting tool.</p>
+<ul>
+<li><a href="https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru">Customize a version of ChatGPT </a>: Goal Setting</li>
+</ul>
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>Adopt the SMART framework for clear, actionable, and simple goals. This guide provides the tools and insights for effective SMART goal implementation.</p>
+<h2 id="advanced-resources">Advanced Resources</h2>
+<p>For more on effective goal setting, explore &quot;The 7 Habits of Highly Effective People.&quot;</p>
+<h2 id="developers-smart-goal-checklist">Developer's SMART Goal Checklist</h2>
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">Specific: Define a clear development task, like creating a user authentication module.</label></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Measurable: Set benchmarks, such as completing specific features.</label></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">Achievable: Align goals with your skills and resources, like applying JavaScript knowledge and learning new techniques.</label></li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Relevant: Ensure goals align with broader objectives, such as enhancing web application security.</label></li>
+<li><input type="checkbox" id="checkbox4"><label for="checkbox4">Time-bound: Assign deadlines, like completing a module in four weeks.</label></li>
+<li><input type="checkbox" id="checkbox5"><label for="checkbox5">Task Breakdown: Divide the project into smaller tasks, like designing UI and implementing backend logic.</label></li>
+<li><input type="checkbox" id="checkbox6"><label for="checkbox6">Regular Reviews: Schedule evaluations to assess progress and plan ahead.</label></li>
+<li><input type="checkbox" id="checkbox7"><label for="checkbox7">Mentor Consultation: Seek guidance from experienced professionals for better outcomes.</label></li>
+<li><input type="checkbox" id="checkbox8"><label for="checkbox8">Documentation: Keep records updated throughout the development process.</label></li>
+<li><input type="checkbox" id="checkbox9"><label for="checkbox9">Reflective Analysis: Review the process post-completion for continuous improvement.</label></li>
+</ul>
+<h1><img src="SMART-mindMap.png"></h1>
+</body>
+</html>
