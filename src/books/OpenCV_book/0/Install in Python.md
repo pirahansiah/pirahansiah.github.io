@@ -1,3 +1,22 @@
+# Windows; python 3.10 ; OpenCV 5.0
+conda install -c conda-forge ffmpeg -y && conda install -c conda-forge gstreamer -y && conda install -c anaconda opencv opencv-contrib -y && conda install -c conda-forge pirahansiah -y
+
+
+pip install opencv-python
+pip install opencv-contrib-python
+pip install pirahansiah
+conda install -c conda-forge ffmpeg -y
+conda install -c conda-forge gstreamer -y
+
+
+conda install -c anaconda opencv
+conda install -c anaconda opencv-contrib
+conda install -c conda-forge pirahansiah
+
+
+
+
+
 ```
 pip install opencv-python​
 ```
