@@ -18,7 +18,7 @@ Image Processing GPT
 # AI LLMs
 
 - [Blog](/site/blog.html)
-  - [IoT, Generative AI and Edge Computing](https://pirahansiah.com/site/pages/edge)
+  - [IoT, Generative AI and Edge Computing](https://pirahansiah.com/site/pages/Edge)
   - [GPT Store's Top 10 Custom ChatGPT Variants](https://pirahansiah.com/site/pages/ChatGPT)
   - [Mind-Maps](index.html)  
     - [Mind-Maps-Html](index.html)

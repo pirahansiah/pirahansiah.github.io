@@ -792,6 +792,8 @@ Generates images showing 'x' at various luxury levels.
 # Links
 - [Link](https://www.soldev.app/library?types=projects ) : soldev
 - [Link]( https://earn.superteam.fun/bounties/) : earn from crypto prjects
+- [excelCPU](https://github.com/InkboxSoftware/excelCPU)
+
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
