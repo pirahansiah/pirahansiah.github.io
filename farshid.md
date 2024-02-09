@@ -1,0 +1,2 @@
+I'm currently employed full-time but am interested in freelance, consultancy, or part-time opportunities in computer vision. My availability includes Fridays and Saturdays, with the possibility of a few more days each month, and I'm looking for on-site projects in Berlin, Germany only. My expertise lies in advancing image processing and AI, utilizing tools such as ChatGPT and LangChain. For my latest CV, please visit my website.
+https://pirahansiah.com/cv

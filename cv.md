@@ -1,4 +1,12 @@
 # Dr. Farshid Pirahansiah
+I love working with computer vision and image processing. I have worked in this area for more than 7 years. My study gave me a PhD and a Master's degree in Computer Science. This helped me learn a lot about computer vision. I also have a Bachelor's degree in Software Engineering.
+
+I have worked in different places where I led teams to make new software for eye health at Alcon, Germany, and to create smart computer vision systems at Tier Mobility GmbH, Berlin. My work includes many areas like learning machines, seeing and following objects in videos, IoT, looking at medical images, and robots. I use tools like OpenCV, TensorFlow, and PyTorch to make new things and solve problems.
+
+I have made new inventions and written many articles and books to share my ideas. I want to make technology better and help people with my work.
+
+I am working full time but I am also looking for freelance, consultancy, or part-time work. I can work on Fridays and Saturdays, and maybe a few more days each month. My work is only in the field of computer vision. I can take image processing and AI to the next level with LLMs like ChatGPT and LangChain. I only work on projects in Berlin, Germany, where I can be on-site. 
+
 LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansiah/)
 ## About Me
 **Lead Researcher in Computer Vision and Image Processing**
