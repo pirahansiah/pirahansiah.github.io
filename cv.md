@@ -2,27 +2,27 @@
 LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansiah/)
 ## About Me
 **Lead Researcher in Computer Vision and Image Processing**
-With more than 7+ years of experience in computer vision and large language models, I have gained extensive expertise through roles in multinational companies across two continents. My academic background includes a PhD and a Master's degree in Computer Science, with a focus on Computer Vision, as well as a Bachelor's degree in Software Engineering. My expertise extends to areas such as Machine Learning in Vision, including Object Detection and Video Tracking, as well as IoT, Medical Imaging, and Robotics. I am skilled in designing algorithms for Image Analysis and have a track record of developing robust solutions and writing high-quality code using OpenCV, TensorFlow, and PyTorch. Additionally, I have contributed several patents, books, and papers in the field of computer vision.
+With more than 7+ years of experience in computer vision, I have gained extensive expertise through roles in multinational companies across two continents. My academic background includes a PhD and a Master's degree in Computer Science, with a focus on Computer Vision, as well as a Bachelor's degree in Software Engineering. My expertise extends to areas such as Machine Learning in Vision, including Object Detection and Video Tracking, as well as IoT, Medical Imaging, and Robotics. I am skilled in designing algorithms for Image Analysis and have a track record of developing robust solutions and writing high-quality code using OpenCV, TensorFlow, and PyTorch. Additionally, I have contributed several patents, books, and papers in the field of computer vision.
 ## Work Experience
-### (over 2.5 years) 01/08/2021 - Present: Alcon, Teltow, Germany
+### 01.08.2021 - 31.03.2024 : Alcon, Teltow, Germany
 **Technical Lead, R&D in Image Processing (Medical Devices)**
 - Lead the R&D team in software development for medical imaging.
 - Focus on real-time data processing, mining, and visualization for ophthalmology tools.
-- Develop medical software for native and web platforms.
+- Develop medical software 
 - Handle technical specification and prototype design.
-- Key technologies: Python, C++, MATLAB
-###  (over 1.5 years)  22/09/2019 - 30/05/2021: Tier Mobility GmbH, Berlin, Germany
+- Key technologies: OpenCV, Python, C++, MATLAB
+### 22.09.2019 - 30.05.2021: Tier Mobility GmbH, Berlin, Germany
 **Computer Vision Research Engineer**
 - Engaged in computer vision projects using deep learning in IoT environments.
 - Specialized in object and people tracking, GDPR compliance.
 - Worked with various hardware like Raspberry Pi, Intel Neural Compute Stick, Nvidia Jetson.
 - Developed an AWS-based pipeline for pedestrian density detection using PyTorch.
-### (over 3 years) 20/06/2016 - 15/09/2019: MIMOS Berhad, Kuala Lumpur, Malaysia
+### 20.06.2016 - 15.09.2019: MIMOS Berhad, Kuala Lumpur, Malaysia
 **Senior Researcher**
 - Focused on deep learning applications in security and analytics.
 - Developed methods using TensorFlow and other deep learning frameworks.
 - Patented a facial analysis-based advertisement system.
-### (over 3 years) 31/08/2012 - 31/01/2015: National University of Malaysia
+### 31.08.2012 - 31.01.2015: National University of Malaysia
 **PhD Fellow**
 - Worked on license plate detection using C++ and OpenCV.
 - Served as a teaching and lab assistant in AI and Computer Vision.
@@ -36,12 +36,11 @@ With more than 7+ years of experience in computer vision and large language mode
 - OCR, Thresholding, image segmentation
 ### BS in Software Engineering
 - Azad University, Tafresh, 2006 - 2008
-- robotics
+- Robotics
 ## Skills
 - **Python**, **C++**
-- **OpenCV**
-- LLMs 
-- Git, PyTorch, Deep Learning Frameworks
+- **OpenCV** 
+- Deep Learning Frameworks: TensorFlow and PyTorch
 - IoT, Raspberry Pi, NVIDIA Jetson
 - Operating Systems: Windows, MacOS, Linux
 - Containerization: Docker
