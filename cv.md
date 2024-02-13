@@ -1,8 +1,11 @@
 # Dr. Farshid Pirahansiah
 LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansiah/)
+
 ## About Me
+
 **Lead Researcher in Computer Vision and Image Processing**
 With more than 7+ years of experience in computer vision, I have gained extensive expertise through roles in multinational companies across two continents. My academic background includes a PhD and a Master's degree in Computer Science, with a focus on Computer Vision, as well as a Bachelor's degree in Software Engineering. My expertise extends to areas such as Machine Learning in Vision, including Object Detection and Video Tracking, as well as IoT, Medical Imaging, and Robotics. I am skilled in designing algorithms for Image Analysis and have a track record of developing robust solutions and writing high-quality code using OpenCV, TensorFlow, and PyTorch. Additionally, I have contributed several patents, books, and papers in the field of computer vision.
+
 ## Work Experience
 
 ### 01.08.2021 - 31.03.2024 : Alcon, Teltow, Germany
@@ -31,6 +34,7 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 - Worked on license plate detection using C++ and OpenCV.
 - Served as a teaching and lab assistant in AI and Computer Vision.
 - Published tutorials and papers in computer vision.
+
 ## Education and Training
 
 ### PhD in Computer Science
@@ -44,6 +48,7 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 ### BS in Software Engineering
 - Azad University, Tafresh, 2006 - 2008
 - Robotics
+
 ## Skills
 - **Python**, **C++**
 - **OpenCV** 
@@ -53,6 +58,7 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 - Containerization: Docker
 - Cloud: Amazon Web Services (AWS)
 - Strong Teamwork and Leadership Abilities
+
 ## Patents and Publications
 - **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
     - The present invention relates to a method for increasing data for face analysis in video surveillance. 
