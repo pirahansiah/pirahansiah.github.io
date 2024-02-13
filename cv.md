@@ -12,29 +12,35 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 - Develop medical software 
 - Handle technical specification and prototype design.
 - Key technologies: OpenCV, Python, C++, MATLAB
+
 ### 22.09.2019 - 30.05.2021: Tier Mobility GmbH, Berlin, Germany
 **Computer Vision Research Engineer**
 - Engaged in computer vision projects using deep learning in IoT environments.
 - Specialized in object and people tracking, GDPR compliance.
 - Worked with various hardware like Raspberry Pi, Intel Neural Compute Stick, Nvidia Jetson.
 - Developed an AWS-based pipeline for pedestrian density detection using PyTorch.
+
 ### 20.06.2016 - 15.09.2019: MIMOS Berhad, Kuala Lumpur, Malaysia
 **Senior Researcher**
 - Focused on deep learning applications in security and analytics.
 - Developed methods using TensorFlow and other deep learning frameworks.
 - Patented a facial analysis-based advertisement system.
+
 ### 31.08.2012 - 31.01.2015: National University of Malaysia
 **PhD Fellow**
 - Worked on license plate detection using C++ and OpenCV.
 - Served as a teaching and lab assistant in AI and Computer Vision.
 - Published tutorials and papers in computer vision.
 ## Education and Training
+
 ### PhD in Computer Science
 - National University of Malaysia, 2011 - 2017
 - 3D SLAM, humanoid robot, camera calibration
+
 ### Master in Computer Science
 - National University of Malaysia, 2009 - 2011
 - OCR, Thresholding, image segmentation
+
 ### BS in Software Engineering
 - Azad University, Tafresh, 2006 - 2008
 - Robotics
