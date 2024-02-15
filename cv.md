@@ -8,7 +8,7 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 
 ## Work Experience
 
-### 01.08.2021 - 31.03.2024 : Alcon, Teltow, Germany
+### 01.08.2021 - Present (2 years 6 months): Alcon, Teltow, Germany
 **Technical Lead, R&D in Image Processing (Medical Devices)**
 - Lead the R&D team in software development for medical imaging.
 - Focus on real-time data processing, mining, and visualization for ophthalmology tools.
@@ -16,14 +16,14 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 - Handle technical specification and prototype design.
 - Key technologies: OpenCV, Python, C++, MATLAB
 
-### 22.09.2019 - 30.05.2021: Tier Mobility GmbH, Berlin, Germany
+### 22.09.2019 - 30.05.2021 (1 year 8 months): Tier Mobility GmbH, Berlin, Germany
 **Computer Vision Research Engineer**
 - Engaged in computer vision projects using deep learning in IoT environments.
 - Specialized in object and people tracking, GDPR compliance.
 - Worked with various hardware like Raspberry Pi, Intel Neural Compute Stick, Nvidia Jetson.
 - Developed an AWS-based pipeline for pedestrian density detection using PyTorch.
 
-### 20.06.2016 - 15.09.2019: MIMOS Berhad, Kuala Lumpur, Malaysia
+### 20.06.2016 - 15.09.2019 (3 years 3 months): MIMOS Berhad, Kuala Lumpur, Malaysia
 **Senior Researcher**
 - Focused on deep learning applications in security and analytics.
 - Developed methods using TensorFlow and other deep learning frameworks.
@@ -71,3 +71,5 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
     - WO2020141969A2 WIPO (PCT) 
 - **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
 - Authored over 16 publications in books, journals, and conferences globally.
+
+[Download CV as PDF](https://pirahansiah.com/farshid/cv.pdf)
