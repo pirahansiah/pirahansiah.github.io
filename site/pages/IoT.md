@@ -1,3 +1,4 @@
+# Computer Vision on Edge
 # Generative AI on Edge Computing + Prompt Engineering 
 # Edge AI & AI IoT + LLMs
 # real time fine tune model on Edge devices 

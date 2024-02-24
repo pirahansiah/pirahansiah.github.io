@@ -163,3 +163,65 @@ Immediate processing capabilities for critical applications such as autonomous d
 Enhanced privacy for sensitive data by processing it locally.
 Simplified and efficient software deployment tailored to specific edge devices.
 This concise overview captures the essence of integrating generative AI into edge computing, emphasizing the hardware, tools, and strategic benefits. The shift towards edge AI not only makes cutting-edge technology accessible for various applications but also ensures efficiency, privacy, and real-time processing, marking a significant step forward in the IoT and smart device ecosystem.
+
+
+
+
+
+
+
+============
+The basics for the calculation come down to the precision of model weights and the fine tuning method you’re using. Let’s assume for simplicity that you want to do a full model fine tune for a 7B parameter LLM in float 16bit precision. The calculation is as follows:
+
+Bytes per parameter: 16 bits = 2 bytes
+
+Total memory for model weights: 2 bytes * 7B parameters = 14B bytes = 14 GB
+
+Now that’s just the memory to load the model weights onto the GPU. To do full model fine tuning you will also need to store optimizer states, gradients and other stuff on the GPU. Let’s continue breaking it down:
+
+AdamW optimizer states: 2 per parameter = 28 GB
+
+Gradients: 4 bytes * number of parameters = 28 GB
+
+So excluding the data being used to train the model, we’re already looking at 70 GB which is more than single GPUs contain on the market.
+
+So it’s pretty much impossible to do full model fine tuning of a LLM on a single GPU unless you’re leveraging every trick possible like 4 bit quantization, gradient accumulation/check pointing, etc. Instead, most people opt for LoRA fine tuning, in which case you can repeat this calculation but substitute in the number of parameters you will be fine tuning in the place of 7B.
+he amount of RAM needed to fine-tune an LLM depends heavily on several factors:
+
+ 1. Size of the LLM: Larger models with more parameters naturally require more memory. For example, fine-tuning a 150B parameter model like Megatron-Turing NLG would require significantly more RAM than a 1.5B parameter model like Bard.
+
+ 2. Fine-tuning technique:
+
+Full fine-tuning: This approach updates all model parameters, and typically requires the most RAM, often exceeding the capacity of single GPUs. Even smaller models like Bard might struggle with this on standard consumer hardware.
+Adapter-based fine-tuning: Techniques like LoRA (Low-Rank Adaptation) utilize smaller "adapters" on top of the pre-trained model, significantly reducing memory requirements. For smaller models like Bard, LoRA can enable fine-tuning on a single GPU with 16GB RAM.
+Knowledge distillation: While not yet widely successful, transferring knowledge from a larger model to a smaller one may require comparable RAM to the larger model for processing.
+ 3. Batch size: In a training batch, multiple data points are processed simultaneously. Larger batch sizes improve training efficiency but consume more memory. Finding a balance between efficiency and available RAM is crucial.
+
+ 4. Optimizations: Techniques like Automatic Mixed Precision (AMP) and gradient checkpointing can reduce memory footprint but might require specific hardware support or come with performance trade-offs.
+
+ General RAM requirements:
+
+Small models (under 1 billion parameters): LoRA-based fine-tuning might be achievable on 16GB RAM with optimizations.
+Medium models (1-10 billion parameters): Full fine-tuning might require multiple GPUs or specialized hardware, even with optimizations. Adapter-based methods offer better possibilities on single high-end GPUs.
+Large models (over 10 billion parameters): Full fine-tuning typically pushes beyond single machines, requiring distributed training setups across multiple GPUs or specialized AI accelerators. Even adapter-based methods might involve significant RAM on individual machines.
+ Remember: It's more than just a "minimum RAM" requirement. Consider potential bottlenecks, optimization strategies, and trade-offs between efficiency and performance when planning your fine-tuning process.
+
+ LLaVA-13B with 4-bit quantization allows you to run on a GPU with as few as 12GB VRAM! 
+QLoRA by Dettmers et al., short for quantized LoRA, is a technique that further reduces memory usage during finetuning. 
+Model Size: Large Language Models (LLMs) are massive, with billions of parameters, making them resource-intensive to work with.
+Gradients: Storing gradients for a 7-billion-parameter LLM alone requires a whopping 28GB of memory.
+Optimizers: Advanced optimizers like AdamW are commonly used in LLM fine-tuning, contributing to memory requirements.
+Precision Change: Transitioning from 32-bit floating-point precision to 16-bit can halve memory usage, but it comes with a trade-off of reduced representational capacity.
+Quantization: Quantization is a technique that maps continuous values to discrete ones, a strategy employed to reduce memory usage. However, it necessitates a careful balance between memory efficiency and model accuracy.
+During training, optimizers also store gradients, and this is what explains that the actual memory usage is 2x - 3x bigger. Additionally, the memory usage will also increase as per the batch size.
+
+16 bytes per param * 1B = 16GB per param. That's 48GB for a 3B param model and 112GB for a 7B
+112GB for a 7B gets us to about 20% the 8x A100 memory
+
+
+Llama-7B model weight is around 12 GB. That means we require ~48 GB+ GPU memory per card to finetune Llama-7B. The typical A-100 GPU card available on AWS has a memory of only 40 GB.
+Activations too consume GPU memory. These are dependent on your batch size and sequence length (the easiest knobs to turn).
+
+QLoRA is now the default method for fine-tuning large language models (LLM) on consumer hardware. For instance, with QLoRA, we only need 8 GB of GPU VRAM to fine-tune Mistral 7B and Llama 2 7B while a standard fine-tuning would require at least 24 GB of VRAM.
+
+QLoRA reduces memory consumption thanks to 4-bit quantization. This is usually performed with the bitsandbytes package which optimizes the quantization and QLoRA fine-tuning on GPU.

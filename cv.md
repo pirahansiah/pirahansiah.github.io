@@ -1,9 +1,11 @@
 # Dr. Farshid Pirahansiah
+AI Researcher 
+
 LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansiah/)
 
 ## About Me
 
-**Lead Researcher in Computer Vision and Image Processing**
+**Lead Researcher in Computer Vision**
 With more than 7+ years of experience in computer vision, I have gained extensive expertise through roles in multinational companies across two continents. My academic background includes a PhD and a Master's degree in Computer Science, with a focus on Computer Vision, as well as a Bachelor's degree in Software Engineering. My expertise extends to areas such as Machine Learning in Vision, including Object Detection and Video Tracking, as well as IoT, Medical Imaging, and Robotics. I am skilled in designing algorithms for Image Analysis and have a track record of developing robust solutions and writing high-quality code using OpenCV, TensorFlow, and PyTorch. Additionally, I have contributed several patents, books, and papers in the field of computer vision.
 
 ## Work Experience
