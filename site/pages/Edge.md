@@ -1,6 +1,18 @@
 <h1><img src="images/Edge.webp">Action Plans</h1>
-
+# Embedded Engineer Specializing in LLM and Computer Vision
+# Unlocking the Future: An Embedded Engineer's Journey into LLM and Computer Vision
 # Edge + LLMs
+Unlocking the Future: An Embedded Engineer's Journey into LLM and Computer Vision tested on : 
+Hardware:
+    - Raspberry Pi 3/4/5 (with accelerator support)
+    - Google Coral (TPU)
+    - Intel® Neural Compute Stick 2
+    - NVIDIA Jetson Series (Nano, AGX Xavier, AGX Orin)
+    - OpenCV AI Kits (OAK, OAK-D, OAK-D with WiFi, OAK-D-PoE, OAK-D lite)
+LLMs:
+    - Llamacpp
+    - geminicpp
+
 
 ## Generative AI and Edge Computing Overview
 
@@ -8,8 +20,7 @@ Generative AI, including large language models (LLMs) like ChatGPT, is becoming 
 
 ### Edge Hardware Capabilities
 
-Raspberry Pi 3/4 (with accelerator support)
-Raspberry Pi 5
+Raspberry Pi 3/4/5 (with accelerator support)
 Google Coral (TPU)
 Intel® Neural Compute Stick 2
 NVIDIA Jetson Series (Nano, AGX Xavier, AGX Orin)
