@@ -1,0 +1,12 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/farshid/farshid/pirahansiah.github.io/src/cpp/version.out'
+relocations:
+  - { offsetInCU: 0xF3, offset: 0xF3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E6A, symSize: 0x3F }
+  - { offsetInCU: 0x3CB9, offset: 0x3CB9, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0x15D28, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x4545, offset: 0x4545, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_version.cpp, symObjAddr: 0x91, symBinAddr: 0x100003EFB, symSize: 0x15 }
+  - { offsetInCU: 0x456E, offset: 0x456E, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0ii, symObjAddr: 0x3F, symBinAddr: 0x100003EA9, symSize: 0x52 }
+  - { offsetInCU: 0x4576, offset: 0x4576, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_version.cpp, symObjAddr: 0x91, symBinAddr: 0x100003EFB, symSize: 0x15 }
+  - { offsetInCU: 0x4591, offset: 0x4591, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003E6A, symSize: 0x3F }
+  - { offsetInCU: 0x4599, offset: 0x4599, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0ii, symObjAddr: 0x3F, symBinAddr: 0x100003EA9, symSize: 0x52 }
+...

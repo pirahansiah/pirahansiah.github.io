@@ -1,4 +1,6 @@
-# Dr. Farshid Pirahansiah
+With over 7 years of dedicated experience in the field of computer vision and a solid academic foundation with a PhD and Master's in Computer Science and a Bachelor's degree in Software Engineering, I bring a wealth of knowledge and expertise to the table. Based in Berlin with my family, I hold Permanent Residency in Germany and do not require visa sponsorship. I am open to working onsite in Berlin and remotely for projects worldwide. My goal is to secure a full-time position where I can contribute my skills to impactful projects, with a salary expectation ranging from 100,000 to 110,000 Euros annually.
+
+# Farshid Pirahansiah
 LinkedIn: [http://linkedin.com/in/pirahansiah/](http://linkedin.com/in/pirahansiah/)
 
 ## About Me

@@ -9,9 +9,9 @@
             ],
             "defines": [],
             "macFrameworkPath": [],
-            "compilerPath": "/usr/bin/g++",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "/usr/bin/g++-12",
+            "cStandard": "c++2b",
+            "cppStandard": "c++2b",
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [

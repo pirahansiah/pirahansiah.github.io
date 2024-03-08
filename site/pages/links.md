@@ -807,63 +807,69 @@ Generates images showing 'x' at various luxury levels.
 - [Link]( ) : 
 - [Link]( ) : 
 - [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
-- [Link]( ) : 
+- [https://pi.ai/talk](https://pi.ai/talk ) : 
+- [PyTorch for Deep Learning & Machine Learning – Full Course](https://www.youtube.com/watch?app=desktop&v=V_xro1bcAuA ) : 
+- [40 APIs Every Developer Should Use ]( https://www.youtube.com/watch?app=desktop&v=YHxj3LvZoLQ&embeds_referring_euri=https%3A%2F%2Ftwitter.com%2F&source_ve_path=Mjg2NjY&feature=emb_logo) : 
+- [Link]( https://docs.google.com/presentation/d/17gYjRsfNYoG4oyQMx23goHI1viyh15Gdwij-D3ZGNOs/mobilepresent?slide=id.g2bc5095fb79_0_317) : 
+- [Link](https://www.youtube.com/watch?app=desktop&v=5M5qiDJvuv0 ) : 
+- [Link]( https://github.com/ollama/ollama) : 
+- [Link](https://github.com/PacktPublishing/Modern-Cpp-Programming-Cookbook-Third-Edition ) : 
+- [Link](https://www.youtube.com/watch?app=desktop&v=XHT2c8jT3Bc&feature=youtu.be ) : 
+- [Link](https://learnopencv.com/ultralytics-explorer-api/ ) : 
+- [Link](https://learnopencv.com/train-yolov8-on-custom-dataset/ ) : 
+- [Link]( https://github.com/mlabonne/llm-course?utm_source=substack&utm_medium=email) : 
+- [QLoRA — How to Fine-Tune an LLM on a Single GPU]( https://towardsdatascience.com/qlora-how-to-fine-tune-an-llm-on-a-single-gpu-4e44d6b5be32) : 
+- [** Fine-Tuning LLMs using PEFT](https://learnopencv.com/fine-tuning-llms-using-peft/ ) : 
+- [Link](https://www.youtube.com/@SophiaYangDS ) : 
+- [Link](https://www.youtube.com/@NeuralNine ) : 
+- [Link](https://github.com/WongKinYiu/yolor/tree/main ) : 
+- [Link]( https://ai.google.dev/gemma/docs/gemma_cpp) : 
+- [** awesome-system-design-resources **](https://github.com/ashishps1/awesome-system-design-resources ) : 
+- [** Docker Bootcamp: Master Docker in 1 Hour (Complete Course)](https://www.youtube.com/watch?app=desktop&v=s69slvfVp0I&feature=youtu.be ) : 
+- [Link](https://gptwallets.co ) : 
+- [Link](https://developers.googleblog.com/2024/02/gemma-models-in-keras.html?m=1 ) : 
+
+
+
+
+
+- [* ashishps1/awesome-system-design-resources: This repository contains System Design resources which are useful while preparing for interviews and learning Distributed Systems
+](https://github.com/ashishps1/awesome-system-design-resources ) : 
+- [* Jeremy Howard - YouTube - cuda python ](https://m.youtube.com/@howardjeremyp/videos ) : 
+- [Link]( * Pinokio | Pinokio) : 
+- [Link](https://github.com/Stability-AI/StableCascade ) : 
+- [Link](https://www.anyscale.com/endpoints ) : 
+- [hot code reloading in c]( https://m.youtube.com/watch?v=Y57ruDOwH1g&t=645s) : 
+- [awesome-diagramming]( https://github.com/shubhamgrg04/awesome-diagramming?tab=readme-ov-file) : 
+- [business ** repeat](https://www.youtube.com/watch?v=jjlO5hNcLiM ) : 
+- [ilets ** how to ** ](http://subscriptions.viddler.com/SimonCorcoran ) : 
+- [How to Register Your Online Business in Germany: Timeline, Documents & Filling the Form! 🇩🇪]( https://www.youtube.com/watch?v=rK_sA_KApyU) : 
+- [Link](https://vlp-tutorial.github.io ) : 
+- [Link](https://github.com/ggerganov/llama.cpp ) : 
+- [hackerrank **]( https://www.hackerrank.com/challenges/no-idea/problem?isFullScreen=true) : 
+- [leetcode **](https://leetcode.com/problems/power-of-four/submissions/1197114026/?envType=daily-question&envId=2024-03-07 ) : 
+- [Link]( https://www.linkedin.com/learning/machine-learning-with-python-foundations/what-is-not-machine-learning-23458529?autoSkip=true&resume=false&u=2154545) : 
+- [Link](https://www.linkedin.com/learning/building-computer-vision-applications-with-python/computer-vision-under-the-hood?u=2154545 ) : 
+- [Link](https://www.linkedin.com/learning/advanced-ai-transformers-for-computer-vision/getting-images-in-the-correct-format?autoSkip=true&resume=false&u=2154545 ) : 
+- [ultralytics](https://github.com/ultralytics/ultralytics ) : 
+- [Stable Cascade](https://github.com/Stability-AI/StableCascade ) : 
+- [Link]( https://www.youtube.com/@TechWorldwithNana) : 
+- [Ace your next tech interview with confidence]( https://devinterview.io/questions/machine-learning-and-data-science/ml-design-patterns-interview-questions/) : 
+- [Fine-tuning large language models (LLMs) in 2024](https://www.superannotate.com/blog/llm-fine-tuning#:~:text=One%20drawback%20of%20multi%2Dtask,examples%20in%20your%20training%20set. ) : 
+- [Build an Alpaca/Vicuna 13B Streaming API with Python, FastAPI & Starlette](https://www.youtube.com/watch?v=ITV1wv5HiX4 ) : 
+- [FSLLM *]( https://fullstackdeeplearning.com/llm-bootcamp/spring-2023/) : 
+- [detectron 2](https://www.youtube.com/watch?v=Pb3opEFP94U ) : 
+- [python tips](https://www.youtube.com/shorts/iIOGbk2QLtM ) : 
+- [mistral](https://auth.mistral.ai/ui/login?flow=4d03e71e-d099-4c69-8298-d88dd591e32f ) : 
+- [Link]( https://europa.eu/europass/eportfolio/screen/my-skills?lang=en) : 
+- [Leveraging the Power of C++ for Efficient Machine Learning on Embedded Devices - Adrian Stanciu](https://www.youtube.com/watch?v=5j05RWh1ypk ) : 
+- [pyqt]( https://www.youtube.com/watch?v=DLJM7o0B8zk) : 
+- [learn 1 hour everything]( https://www.youtube.com/@TechWorldwithNana/videos) : 
+- [Link](https://www.youtube.com/watch?v=6NaNX7fGeRs ) : 
+- [https://pi.ai/talk](https://pi.ai/talk ) : 
+- [cv]( https://www.linkedin.com/learning/building-computer-vision-applications-with-python/computer-vision-under-the-hood?u=2154545) : 
+- [Python: Programming Efficiently  Time profiling](https://www.linkedin.com/learning/python-programming-efficiently-2/time-profiling?resume=false&u=2154545 ) : 
+- [Link]( https://github.com/LinkedInLearning/learning-cpp-4489005/tree/main/src/Ch00) : 
+- [udacity iot intel](https://learn.udacity.com/courses/ud132/lessons/c39ab7b4-2c56-47e0-858e-3e0203288e52/concepts/f6cd7900-2bd7-4d26-8a11-9aaf8c762337 ) : 
+- [Tutorial: CUDA programming in Python with numba and cupy]( https://www.youtube.com/watch?v=9bBsvpg-Xlk) : 
+- [Link](https://github.com/Syllo/nvtop ) : 
