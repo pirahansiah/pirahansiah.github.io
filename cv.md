@@ -75,3 +75,6 @@ With more than 7+ years of experience in computer vision, I have gained extensiv
 - Authored over 16 publications in books, journals, and conferences globally.
 
 [Download CV as PDF](https://pirahansiah.com/farshid/cv.pdf)
+
+[LinkedIn](https://pirahansiah.com/site/pages/images/qrcode.png)
+<h1><img src="https://pirahansiah.com/site/pages/images/qrcode.png">LinkedIn</h1>

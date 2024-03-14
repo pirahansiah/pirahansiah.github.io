@@ -1,3 +1,83 @@
+KerasCV
+JAX backend
+CVAT
+YOLO
+RCNN
+CLIP facebook
+UNIT TEST
+GOOGLE TEST
+array in protobuf is repeat
+
+Vision Transformer (ViT) (Doso- vitskiy et al., 2021; Vaswani et al., 2017)
+architecture AWS, LLM
+
+
+Several components in the Genie architecture are based on the Vision Transformer (ViT) (Doso- vitskiy et al., 2021; Vaswani et al., 2017). No- tably, the quadratic memory cost of transformers poses challenges for videos, which can contain up to 𝑂(104) tokens. We thus adopt a memory efficient ST-transformer architecture (inspired by Xu et al. (2020), see Figure 4) across all model components, balancing model capacity with com- putational constraints.
+
+1 × 𝐻 × 𝑊 tokens within each time step, and in the temporal layer attends over 𝑇 × 1 × 1 tokens across the 𝑇 time steps.
+1) a latent action model that infers the latent action 𝒂 between each pair of frames and 
+2) a video tokenizer that converts raw video frames into discrete tokens 𝒛 and 
+3) a dynamics model that, given a latent action and past frame tokens, predicts the next frame of the video. 
+VQ-VAE- based objective (van den Oord et al., 2017)
+Video Tokenizer Following prior work (Gupta et al., 2023; Villegas et al., 2023; Yan et al., 2023), we compress videos into discrete tokens to re- duce dimensionality and enable higher quality video generation
+ST-transformer based tokenizer (ST- ViViT) is much more compute efficient with the dominating factor in its cost increasing linearly with the number of frames.
+
+
+Training Details Flowchart:
+
+1. Video Tokenizer
+   - Parameters: 200M
+   - Patch Size: 4
+   - Codebook: Embedding Size 32, 1024 Unique Codes
+   - Objective: Optimal Trade-off Between Reconstruction Quality and Downstream Performance
+
+2. Latent Action Model
+   - Parameters: 300M
+   - Patch Size: 16
+   - Codebook: Embedding Size 32, 8 Unique Codes (Latent Actions)
+
+3. Common Modelling Components
+   - Sequence Length: 16 Frames
+   - FPS: 10
+   - Training Enhancements: bfloat16, QK Norm
+     - Purpose: Stabilize Training at Large Scale
+     - References: Dehghani et al., 2023; Henry et al., 2020
+
+4. Inference Time
+   - Procedure: 25 MaskGIT Steps per Frame
+   - Temperature: 2
+   - Sampling Method: Random Sampling
+
+Tokenizer architecture ablations We com- pare the performance of three choices of tokeniz- ers, including 1) (spatial-only) ViT, 2) (spatial- temporal) ST-ViViT and 3) (spatial-temporal) C- ViViT (Table 3). For comparison we use similar number of parameters for all tokenizers, with patch size 10, batch size 128 and sequence length 16. We then train the same dynamics and latent action model on these three different tokenizers, and report their FVD as well as Δ PSNR.
+𝑡
+Table 3 | Tokenizer architecture ablation: Our ST-ViViT architecture results in the best perform- ing tokenizer.
+1B 257.8 1.65 1B 136.4 2.07
+ViT
+C-ViViT (Villegas et al., 2023) ST-ViViT (ours)
+#Params Memory
+230M 0.3GB 225M 1.6GB 205M 0.9GB
+FVD (↓) 114.5
+272.7
+81.4
+Δ PSNR(↑) 𝑡
+1.39 1.37 1.66
+
+
+
+Training Agents
+
+
+
+
+spatial attention layer
+
+onnx
+spatiotemporal video tokenizer
+an autoregressive dynamics model
+a simple and scalable latent action model
+MaskGIT (Chang et al., 2022)
+
+
 stable diffusion
 transformers
 NeRFs
@@ -154,3 +234,21 @@ full stack mlops
     - Refers to the process of reducing the precision of weights and activations in neural networks to accelerate inference.
 - Related Technologies
     - Quantization
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+# To know
+- less *.cpp :n :p q
+- opencv all functions into cmake, opencv world : yes, buld_shared_libs off, static no need dll, it change 200K to 18MB for statics; c/c++>code generation>runtime library>multi-threaded(/mt)
+
