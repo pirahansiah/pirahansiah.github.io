@@ -1,0 +1,104 @@
+# Define the build stage
+FROM ubuntu:22.04 as build-stage
+
+# Use noninteractive to avoid any apt-get prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Set the working directory
+WORKDIR /opt
+
+# Install build tools and dependencies for OpenCV and C++ environment
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    cmake \
+    git \
+    pkg-config \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgstreamer1.0-0 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    gstreamer1.0-doc \
+    gstreamer1.0-tools \
+    gstreamer1.0-x \
+    gstreamer1.0-alsa \
+    gstreamer1.0-gl \
+    gstreamer1.0-gtk3 \
+    gstreamer1.0-qt5 \
+    gstreamer1.0-pulseaudio \
+    ffmpeg \
+    libopencv-dev \
+    qt5-default \
+    libgtk-3-dev \
+    python3-dev \
+    python3-pip \
+    python3-numpy \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Optionally, install a newer version of GCC and CMake if required
+RUN apt-get update && apt-get install -y gcc-10 g++-10 && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 100 --slave /usr/bin/g++ g++ /usr/bin/g++-10
+
+# Clone OpenCV and OpenCV Contrib
+RUN git clone --branch 4.x https://github.com/opencv/opencv.git \
+    && git clone --branch 4.x https://github.com/opencv/opencv_contrib.git
+
+# Build OpenCV with C++ configurations
+RUN cd /opt/opencv && mkdir build && cd build && \
+    cmake -D CMAKE_BUILD_TYPE=RELEASE \
+          -D CMAKE_INSTALL_PREFIX=/usr/local \
+          -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+          -D BUILD_NEW_PYTHON_SUPPORT=ON \
+          -D BUILD_opencv_python2=OFF \
+          -D BUILD_opencv_python3=ON \
+          -D INSTALL_C_EXAMPLES=OFF \
+          -D INSTALL_PYTHON_EXAMPLES=OFF \
+          -D OPENCV_GENERATE_PKGCONFIG=ON \
+          -D OPENCV_ENABLE_NONFREE=ON \
+          -D WITH_GSTREAMER=ON \
+          -D WITH_OPENGL=ON \
+          -D BUILD_EXAMPLES=OFF .. \
+    && make -j2 \
+    && make install
+
+# Define the final image
+FROM ubuntu:22.04
+
+# Copy the built OpenCV from the build stage
+COPY --from=build-stage /usr/local /usr/local
+
+# Install runtime libraries
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libsm6 \
+    libxext6 \
+    libxrender1 \
+    libgstreamer1.0-0 \
+    gstreamer1.0-plugins-base \
+    ffmpeg \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python and tools
+RUN apt-get update && apt-get install -y python3-pip python3-numpy && apt-get clean
+
+# Install TensorFlow, PyTorch, torchvision, torchaudio, and transformers for Python
+RUN pip3 install tensorflow torch torchvision torchaudio transformers
+
+# Install code-server (VS Code in the browser)
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+
+# Set up environment variables for runtime
+ENV LD_LIBRARY_PATH=/usr/local/lib
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Make port 8080 available
+EXPOSE 8080
+
+# Default command to run
+CMD ["bash"]

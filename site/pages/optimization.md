@@ -1,4 +1,73 @@
-# LLM & DL optimization for computer vision
+# Ensemble learning
+- multiple weak models are trained on data and then combined to create a single strong model
+- Methods
+    - Boosting
+        - adaptive boosting, gradient boosting & (XGBoost), 
+    - Bagging
+        - random forest, 
+    - Stacking
+        - sklearn.ensemble.StackingClassifier
+- compare 
+| Ensemble Method | Training Data Sampling | Base Model Bias | Base Model Variance | Train Speed | Predict Speed | Interpretability |
+|-----------------|------------------------|-----------------|---------------------|-------------|---------------|------------------|
+| Boosting        | Weighted for errors    | High            | Low                 | Slow        | Fast          | Low              |
+| Bagging         | Random                 | Low             | High                | Moderate    | Moderate      | Low              |
+| Stacking        | None                   | Low             | High                | Moderate    | Moderate      | Low              |
+
+
+Thank you to my 9,000+ LinkedIn followers! Your support motivates me to share more about AI, machine learning, computer vision, and more. Let's keep exploring technology together. Follow for updates. #AI #ML #ComputerVision #LLM
+
+
+# LLM (Large Langure Model) & DL ( Deep Learning ) Model Optimization and Tuning for CV (Computer Vision)
+
+### Target *Inference* Deployment Platform:
+#### better accuracy: higher model metrics(like F1), avoid variance and bias
+#### lower costs: smaller model sizes, minimal inference latency, lower CPU, GPU, memory, and disk requirements
+
+- IoT & Edge Devices: Focus on techniques like quantization, pruning, and model architecture search (NAS) to reduce model size and computational complexity while maintaining accuracy. Utilize libraries like TensorFlow Lite Micro or TFLite for Microcontrollers.
+- Cloud Platforms (e.g., AWS): Leverage hardware acceleration (GPUs, TPUs) and efficient data pipelines for faster inference. Explore frameworks like PyTorch or TensorFlow with distributed training capabilities.
+- Local Laptop/PC: Balance model size and accuracy based on your hardware specifications. Consider techniques like knowledge distillation to transfer knowledge from a larger model.
+Training, Fine-Tuning, and Transfer Learning
+
+### Target Training Environment:training, fine-tuning, transfer learning, ... 
+#### lower training time, 
+batch normalization
+- normalize inputs before each hidden layer to be same scale, center and scale, help with higher accuracies with lower epochs, additional computations and increase inference time
+optimizers
+    - SGD (stochastic gradient descent)
+    - RMSprop
+    - Adam
+    - Adagrad
+
+
+#### higher the batch size: better GPU utilization, lower number of training iterations, instability during training progree
+
+- IoT & Edge Devices: Utilize on-device learning techniques or federated learning for privacy-preserving training on distributed devices.
+- Cloud Platforms (e.g., AWS): Leverage cloud resources for large-scale datasets and high-performance computing for training complex models. Explore cloud-based training platforms like Amazon SageMaker or Google AI Platform.
+- Local Laptop/PC: For smaller datasets or experimentation, train models locally. Consider using libraries like PyTorch or TensorFlow with GPU acceleration if available on your machine.
+
+
+
+
+# RL
+- agenent
+- action
+- environment
+- reward
+- policy
+- goal
+
+
+---
+
+---
+
+
+pattern matching
+
+
+
+
 
 - Hardware-Aware Optimization 
     - Optimizing models for specific hardware platforms by leveraging techniques like hardware co-design and exploiting hardware accelerators.

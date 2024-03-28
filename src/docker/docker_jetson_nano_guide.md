@@ -1,3 +1,19 @@
+# My docker in docker Hub
+docker login
+TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"pirahansiah": "pirahansiah", "password": "password"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
+curl -s -H "Authorization: JWT ${TOKEN}" "https://hub.docker.com/v2/repositories/pirahansiah/?page_size=100" | jq -r '.results|.[]|.name'
+docker build --no-cache -t pirahansiah/llm-cv:latest .
+docker system prune -a
+docker builder prune -f
+docker scout quickview
+docker run -d -p 8081:8080 --privileged -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY pirahansiah/cv:latest
+http://127.0.0.1:8080
+xhost +localhost
+brew install XQuartz
+
+
+
+
 # Docker on Jetson Nano
 
 ## Installation and Setup

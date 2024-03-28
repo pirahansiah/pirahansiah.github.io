@@ -1,3 +1,11 @@
+Next-Generation Computer Vision Capabilities with Project **Florence**: 
+    - pretrained models: languge encoder, image encoder
+    - adaptation models
+    - classification, retrival,object detection,segmentation,caption,visual question answering, action recognition, object tracking. 
+    - summarize video, locate specific frames using a search query, frame analysis
+    - https://learn.microsoft.com/en-us/shows/ai-show/next-generation-computer-vision-capabilities-with-project-florence
+
+
 KerasCV
 JAX backend
 CVAT
