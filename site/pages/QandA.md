@@ -1,3 +1,6 @@
+
+
+
 Next-Generation Computer Vision Capabilities with Project **Florence**: 
     - pretrained models: languge encoder, image encoder
     - adaptation models
