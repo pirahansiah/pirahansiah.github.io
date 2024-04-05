@@ -1,3 +1,69 @@
+[TAX](https://wundertax.de)
+[Q4-2023 AWS NAMER DNB Meetup: AWS Tech Talk - Generative AI and multi-modal agents in AWS](https://m.youtube.com/watch?v=YGpAR5uzdHo&pp=ygUTYXdzIG11bHRpIG1vZGFsIGxsbQ%3D%3D)
+
+[YOUTUBE verygood DL CV ...](https://www.youtube.com/@NicolaiAI/playlists)
+[Python Leetcode Easy Questions ](https://www.youtube.com/watch?v=2Casg7B5QqA&list=PLI1dq6Zw28xchHu0MgHTEGPWR5r9GXw4V&index=8)
+[Databricks DBRX Instruct](https://huggingface.co/spaces/databricks/dbrx-instruct)
+[What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://www.youtube.com/watch?app=desktop&v=sal78ACtGTc)
+[Multiple Object Tracking using OpenCV in Python - Part 1](https://www.youtube.com/watch?v=O1ABXetrMGs&list=PLVgEzPHodXi128SIjFVvlF2XzJEUluDR_)
+[Hugging Face Local Pipelines](https://python.langchain.com/docs/integrations/llms/huggingface_pipelines#inference-with-openvino-backend)
+[Dynamic Object Detection and Segmentation with YOLOv9+SAM](https://medium.com/@sunidhi.ashtekar/dynamic-object-detection-and-segmentation-with-yolov9-sam-de258238546f)
+
+LVMs
+[1](https://www.snowflake.com/data-economy/data-economy-home/?utm_source=snowflake&utm_medium=email&utm_campaign=em--en-welcome-nurture-known-contacts-eml-one-data-economy-lp&utm_content=-data-economy-home&mkt_tok=MjUyLVJGTy0yMjcAAAGSQZJphOEkV2VhlsE7I4hGi9VcrAMNRiUGZLM8W9KGF_UawdspoZ88QdkO1jLAxaNXr7RfehpTVcqTQ_vAuk1KHNpS5EhbYHAxMUtB3-yZskrGLMVb5Q)
+[2](https://www.snowflake.com/about/webinars/?utm_source=on24&utm_medium=referral&utm_campaign=0n24-webinars-feature-box)
+[3](https://signup.snowflake.com/?utm_source=on24&utm_medium=referral&utm_campaign=0n24-free-trial-feature-box)
+[4](https://www.snowflake.com/webinar/virtual-hands-on-labs/learn-how-to-use-generative-ai-with-snowflake-and-microsoft-azure-open-ai-emea-10-april/)
+[5](https://www.snowflake.com/webinar/virtual-hands-on-labs/snowpark-day-where-python-developers-can-learn-the-latest-innovations-for-ai-ml-workflows-in-snowflake-emea-24-april/)
+[6](https://quickstarts.snowflake.com/guide/intro_to_snowpark_container_services/?utm_source=on24&utm_medium=referral&utm_campaign=0n24-webinars-resource-boxindex.html?index=..%2F..index#0)
+[7](https://www.snowflake.com/blog/unlock-gen-ai-snowpark-gpu-powered-compute/?utm_source=on24&utm_medium=referral&utm_campaign=0n24-webinars-resource-box)
+
+
+
+
+[GUI C++](https://juce.com)
+[Accelerate machine learning with Metal](https://developer.apple.com/videos/play/wwdc2022/10063/)
+[Learn PyTorch for Deep Learning: Zero to Mastery book](https://www.learnpytorch.io)
+[TensorFlow: Working with Images](https://github.com/LinkedInLearning/tensorFlow-working-with-images-3021324)
+[Building Deep Learning Applications with Keras](https://github.com/LinkedInLearning/building-deep-learning-applications-with-keras-3837000)
+[Deep_Reinforcement_Learning](https://github.com/Khaulat/Deep_Reinforcement_Learning)
+[Training Neural Networks in Python](https://github.com/LinkedInLearning/training-neural-networks-in-python-3215347)
+[Distributed ML training with PyTorch and Amazon SageMaker - AWS Virtual Workshop](https://www.youtube.com/watch?v=D9n_GPfcFhc)
+[Hackerrank](https://www.youtube.com/watch?v=CTrjlJ4aFY0&list=PLreP-RNWk6RkA2CiEER5sKZwQIAudtXv2&index=6)
+[Technical Interview Question](https://www.youtube.com/watch?v=B-Yc10DUaM8&list=PLtQWXpf5JNGJagakc_kBtOH5-gd8btjEW&index=5)
+[Grok-1](https://github.com/xai-org/grok-1/tree/main)
+[C++ Weekly - Ep 420 - Moving From C++17 to C++20 (More constexpr!)](https://m.youtube.com/watch?v=s2XWAxbxk9M&feature=youtu.be)
+
+
+
+
+
+
+Thank You for Attending the Microsoft AI Tour!
+[AI](https://github.com/microsoft/Fabric-Readiness/blob/main/events/2024-microsoft-ai-tour.md)
+[Browse all courses, learning paths, and modules](https://learn.microsoft.com/en-us/training/browse/?products=fabric)
+[LAB](https://labclient.labondemand.com/LabClient/9635121c-34c5-4c6f-8dd5-d2545a5fc44e)
+[Farsi](https://lms.donya-e-eqtesad.com/course/10910/دوره-تصویری-آشنایی-با-مکاتب-اقتصادی)
+[LAB ](https://ms-ai-tour-workshop-ca.gentleglacier-53284628.swedencentral.azurecontainerapps.io)
+[Code](https://microsoft.github.io/Workshop-Interact-with-OpenAI-models/summary/)
+[Keras 3: Revolutionizing Deep Learning with Cross-Framework Support for TensorFlow, PyTorch, & JAX](https://www.youtube.com/watch?v=c_L6p9wk4bU)
+[Overview of KerasCV and KerasNLP](https://www.youtube.com/watch?v=8aAghDxgXhY&list=PLQY2H8rRoyvzor4yH2nFktNo-ug6RiNZ_&index=2)
+[Huggingface Open-Source AI Cookbook ](https://github.com/huggingface/cookbook)
+[C Book](https://beej.us/guide/bgc/pdf/bgc_usl_c_2.pdf#page18)
+
+[Animate Algorithms](https://github.com/krahets/hello-algo)
+[Local Laptop - Perplexity-Inspired LLM Answer Engine](https://github.com/developersdigest/llm-answer-engine)
+[Farsi LLM](https://www.youtube.com/watch?v=a6p37KIbIk0)
+[How I Failed the Google Coding Interview](https://www.youtube.com/watch?v=4SUJt3dP2Jc&list=PLot-Xpze53lcBX3BPCUoqlt4-KL-3XFHz)
+[NeetCode](https://www.youtube.com/@NeetCode/playlists)
+[Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/?couponCode=ST13MT40224)
+
+
+
+
+
+
+
 - [Link](https://chat.openai.com/g/g-3JEKe3tVr-goal-setting-guru ) : Goal Setting Guru
 Markdown expert in goal-setting, personalizing methods and actionable plans.
 
