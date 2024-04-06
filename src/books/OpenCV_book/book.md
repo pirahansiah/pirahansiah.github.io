@@ -15,7 +15,7 @@
 	* [[test]]
 	* [[OpenCV_book/4/DL]]
 	* [[OpenCV_book/4/Makefile|Makefile]]
-	* [[optimization]]
+	* [[md/optimization]]
 	* 
 * chapter 5
 	* [[mindMap]]
