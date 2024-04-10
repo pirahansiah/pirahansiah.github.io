@@ -40,13 +40,14 @@ def pretty_print_hierarchy(sitemap, output_file):
             file.write(f"{indent}- [{title}]({link})\n")
 
 if __name__ == "__main__":
+    print('farshid')
     
-    output_file = os.path.join(root_directory, 'links.md')
+    # output_file = os.path.join(root_directory, 'links.md')
 
-    md_files = list(find_md_files(root_directory))
-    print(f"Found {len(md_files)} Markdown files.")
+    # md_files = list(find_md_files(root_directory))
+    # print(f"Found {len(md_files)} Markdown files.")
 
-    sitemap = generate_sitemap(md_files, root_directory)
-    pretty_print_hierarchy(sitemap, output_file)
+    # sitemap = generate_sitemap(md_files, root_directory)
+    # pretty_print_hierarchy(sitemap, output_file)
 
-    print(f"Sitemap generated in {output_file}.")
+    # print(f"Sitemap generated in {output_file}.")

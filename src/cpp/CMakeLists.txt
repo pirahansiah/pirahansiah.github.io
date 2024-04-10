@@ -1,9 +1,9 @@
 
-cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+cmake_minimum_required (VERSION 3.6)
 project(pytorchCPP)
 set(CMAKE_PREFIX_PATH "/Users/farshid/farshid/2024/libtorch")
 set(CMAKE_CXX_STANDARD 17)
-find_package(Torch REQUIRED)
+find_package(OpenCV REQUIRED)
 add_executable(pytorchCPP src/pytorchCPP.cpp)
 target_include_directories(pytorchCPP PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_link_libraries(pytorchCPP "${TORCH_LIBRARIES}")
