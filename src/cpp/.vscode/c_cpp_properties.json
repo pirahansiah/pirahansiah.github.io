@@ -4,14 +4,15 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
+                "/usr/local/Cellar/opencv/4.9.0_3/include/opencv4/opencv2",
                 "/usr/local/Cellar/opencv/4.9.0_3/include/opencv4",
                 "/usr/local/Cellar/opencv/4.9.0_3/include"
             ],
             "defines": [],
             "macFrameworkPath": [],
-            "compilerPath": "/usr/bin/g++-12",
-            "cStandard": "c++2b",
-            "cppStandard": "c++2b",
+            "compilerPath": "/usr/bin/clang",              
+            "cStandard": "c17",
+            "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [

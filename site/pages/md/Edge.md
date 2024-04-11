@@ -1,4 +1,15 @@
 # LLMs are pivotal for businesses, especially startups, as the future of AI leans heavily towards inference applications.
+- applications
+  - Active tracking
+  - Intrusion detection
+  - Safety monitoring of workers
+  - Visual inspection and assembly detection
+  - Object and anomaly detection in manufacturing
+  - Quality control through image analysis
+  - Real-time equipment monitoring
+  - Facial recognition for security and attendance
+  - Automated vehicle navigation in warehouses
+  - Gesture recognition for hands-free operation
 ### speed up & scale up
 - Speed, Scale, Local Inference, AI Acceleration 
   - **What is Model Inference?**

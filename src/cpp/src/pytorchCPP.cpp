@@ -1,13 +1,13 @@
 #include <iostream>
 #include <stdlib.h>
-#include <torch/torch.h>
-#include "opencv2/opencv.hpp"
+//#include <torch/torch.h>
+//#include "opencv2/opencv.hpp"
 
 using namespace std;
 
 int main() {
-    torch::Tensor tensor = torch::rand({2, 3});
-    cv::Mat image = cv::imread("image.jpg");
+//    torch::Tensor tensor = torch::rand({2, 3});
+//    cv::Mat image = cv::imread("image.jpg");
     
     char *heap = (char*)malloc(11);
     heap[11] = 1; // Accessing heap[11] is out-of-bounds
@@ -15,6 +15,7 @@ int main() {
     free(heap); // Freeing the allocated memory
     return 0;
 }
+
 
 
 

@@ -4,9 +4,9 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "g++-12",
+            "command": "clang",             
             "args": [
-                "-std=c++2b",
+                "-std=c++17",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out",
@@ -102,6 +102,7 @@
                 "opencv_imgproc",
                 "-l",
                 "opencv_core",
+                "-lc++", 
                 "-g"
             ],
             "group": {
