@@ -250,6 +250,7 @@
 
 
 ## Code
+``` cpp
 - rm -rf build/
 - clang -fsanitize=address -g main.cpp
 - for (const auto& value: container){}
@@ -263,6 +264,7 @@
 
 - int main(int argc, char const *argv[])
 - auto [a,b,c]= make_tuple(4,2.2,"farshid");
+``` 
 
 -nameing
     - variables, function arguments,  = snake_case

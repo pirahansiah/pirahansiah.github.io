@@ -1,6 +1,85 @@
 <span style="color: red;">2024.</span>
+<span style="color: green;">Edge-based Generative AI for Image Processing Aplication</span>
+On-device processing: Prioritizing privacy and accessibility, LLMs on-device processing, ensuring that your data remains on your device. This not only enhances security but also has the potential to minimize latency, contributing to a more efficient user experience.
+
+Generative AI models are a class of AI that can generate new data that resembles existing data. They include foundation models that can be fine-tuned for different tasks, Variational Autoencoders (VAEs) that reduce the dimensionality of data and Generative Adversarial Networks (GANs) that use competing networks to generate realistic samples. Other models include Transformer-based models that use attention mechanisms to model long-term text dependencies, diffusion models that address information decay by removing noise in the latent space, and multimodal large language models (LLMs) that integrate image and text understanding.
+In summary, generative AI models are a class of AI that can generate new data that resembles existing data. They include foundation models, VAEs, GANs, Transformer-based models, diffusion models, and multimodal LLMs.
 
 # Farshid PirahanSiah
+## Generative AI models on Edge with on-device training 
+- CNN, RNN, Transformer-based models, LLMs (GPT, )
+- Generative AI models
+    - foundation model
+        - train on huge data -> adapt to applications
+        - GPT, CLIP, DALL-E, 
+    - Variational Autoencoders (VAEs)
+        - rapidly reduce the dimensionality of samples
+        - input (image) -> encoder -> latent space -> decoder -> reconstructed output (image)
+        - use for 
+            - image synthesis
+            - data compression
+            - anomaly detection
+        - **Standard VAEs**
+            - **Beta-VAE**: Balances latent capacity and reconstruction.
+        - **Conditional VAEs (CVAEs)**
+            - **Conditional Beta-VAE**: Adds conditional variables for targeted generation.
+        - **Hierarchical VAEs**
+            - **NVAE**: Deep hierarchy, residual connections for stable high-quality output.
+    - Generative Adversarial Networks (GANs)
+        - use competing networks to produce realistic samples
+        - generator ; discriminator
+        - GANs in finance, spaceGAN (geospatial data), styleGAN2 (create video game characters)
+        - **Convolutional GANs**
+            - **DCGAN**: Deep convolutional networks for stable, quality generation.
+        - **Style-based GANs**
+            - **StyleGAN**: Fine-grained style control, realistic faces.
+            - **StyleGAN2**: Redesigns normalization, reduces artifacts.
+        - **Progressive Growing GANs**
+            - **PGGAN**: Increases network size during training for high-resolution output.
+    - Transformer-based Models
+        - use attention mechanisms to model long-term text dependencies
+        - **Autoregressive Models**
+            - **GPT-3**: Predictive text generation based on input.
+            - **Image GPT (iGPT)**: Generates images pixel by pixel.
+        - **Multimodal Transformers**
+            - **DALL-E**: Generates images from text descriptions.
+    - Diffusion Models
+        - address information decay by removing noise in the latent space
+        - step 1: forward diffusion to add random noise to the data; 
+        - step 2: reverse diffusion: turn the noise , recover data, generate the desired output
+        - **Basic Diffusion Models**
+            - **DDPM**: Generates data from noise by reversing diffusion.
+        - **Advanced Diffusion Techniques**
+            - **Improved DDPM**: More efficient, improved sampling.
+            - **Guided Diffusion**: Produces specific outputs with classifier guidance.
+    - Multimodal Large Language Models (LLMs)
+        - **CLIP**
+            - Integrates image and text understanding.
+        - **Perceiver IO**
+            - Handles audio, visual, text with a generalized architecture.
+        - **FLAVA**
+            - Self-supervised, unified model for vision, language, and multimodal tasks.
+- LLMOps: MLOps Tools: MLflow and Hugging Face    
+    - <span style="color: green; font-weight: bold; font-style: italic; white-space: nowrap;"> 📚 🤔 MLflow <span style="display: inline-block; animation: slide 2s infinite linear;">→</span> </span>  <style>            @keyframes slide {            0% { transform: translateX(0); }            100% { transform:translateX(20px); }            }            </style>
+ 
+        - MLflow Tracking - Logs key metrics, parameters, models, and other artifacts when running ML code to monitor experiments
+        - MLflow Projects - Configurable standard format for organizing ML code to ensure consistency and reproducibility
+        - MLflow Models - Package ML model files with their dependencies so they can be deployed on diverse platforms
+        - pip install mlflow
+        - mlflow ui
+        - mlflow experiments create --experiment-name metrics-test ==> id 2
+        - MLFLOW_EXPERIMENT_ID=2 python test-mlflow.py
+        - load_model= mlflow.pyfunc.load_model(logged_model)
+        - mlflow run . -P filename=inputfile
+        - 
+
+
+
+
+
+
+
+
 
 ## Large Vision Models (LVMs)
 -  Stable Diffusion
