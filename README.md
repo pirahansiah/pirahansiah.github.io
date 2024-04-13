@@ -30,3 +30,81 @@ I am currently seeking opportunities in Berlin, Germany, focusing on the develop
 - **Community Contribution and Collaboration**: Actively engaged in community forums and collaborative projects, contributing to open-source projects and providing innovative solutions to complex problems in the AI space.
 
 I am eager to bring my expertise to a dynamic team in Berlin, where I can contribute to groundbreaking projects and further advance the field of artificial intelligence.
+
+
+## Patents and Publications
+- **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
+    - The present invention relates to a method for increasing data for face analysis in video surveillance. 
+    - WO2021060971A1   
+- **Patents**: A METHOD FOR DETECTING A MOVING VEHICLE - 2021 
+    - The present invention relates to a method for detecting a moving vehicle.
+    - WO2021107761 
+- **Patents**: System and method for providing advertisement contents based on facial analysis - 2020 
+    - Invented an algorithm, methods, and system for advanced facial attribute detection, leading to improvements in advertising systems.
+    - WO2020141969A2 WIPO (PCT) 
+- **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
+- Authored over 16 publications in books, journals, and conferences globally.
+
+
+## My works on LLMs:
+- Image Processing GPT
+  - GPTs: [Computer Vision Developer](https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer)
+  - Expert in Python, OpenCV for image processing and computer vision applications.  
+- MindMap about LLMs & LLMOps
+  - [My Note LLMs](https://pirahansiah.com/site/pages/md/DL.html)
+- Code for chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
+  - [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
+- fine-tune LLMs
+  - [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
+- Microsoft AI Lab: RAG Workflow with Azure AI
+  - Lab Focus: Hands-on RAG workflow development using Azure AI Studio and Prompt Flow.
+  - Skills Acquired: Mastery in LLMOps, Azure AI Studio usage, and Prompt Flow integration.
+  - Tools Used: GitHub Codespaces, Visual Studio Code, Azure AI & ML Studio, Azure Portal.
+  - Outcome: Successfully developed and deployed "Contoso Chat", enhancing skills in scalable AI solution development.   
+
+
+
+### Professional Profiles and Networks
+- [My LinkedIn Group 34K](https://www.linkedin.com/groups/10320678/)
+- [Stack Overflow](https://stackoverflow.com/users/3533188/farshid-pirahansiah)
+- [GitHub](https://github.com/pirahansiah)
+- [Tiziran](https://www.tiziran.com/)
+- [Personal Website](https://pirahansiah.com/)
+
+### Coding Challenges and Competitions
+- [HackerRank](https://www.hackerrank.com/profile/pirahansiah)
+- [LeetCode](https://leetcode.com/pirahansiah/)
+
+### Academic Contributions and Publications
+- [Google Scholar](https://scholar.google.com/citations?user=GvCEy4QAAAAJ&hl=en)
+- [ScienceOpen Collection](https://www.scienceopen.com/collection/da288fa0-3d52-46dc-9e07-73dfc597dfb8)
+
+### Project Repositories and Code Sharing
+- [Hugging Face Spaces](https://huggingface.co/spaces/pirahansiah/ComputerVision)
+- [Kaggle](https://www.kaggle.com/pirahansiah)
+- [NuGet](https://www.nuget.org/profiles/Farshid_Pirahansiah)
+- [PyPI](https://pypi.org/project/pirahansiah/)
+- [Docker Hub](https://hub.docker.com/u/pirahansiah)
+
+### Social Media and Community Engagement
+- [Twitter](https://twitter.com/pirahansiah)
+- [My Facebook Group 14K](https://www.facebook.com/groups/computervisiondeeplearning)
+- [Reddit](https://www.reddit.com/user/pirahansiah/)
+- [Telegram](https://t.me/computer_vision_llm)
+- [Mastodon](https://mastodon.social/@pirahansiah)
+- [Instagram](https://www.instagram.com/computer_vision_deep_learning/)
+- [WhatsApp Group](https://chat.whatsapp.com/COguUhOlNprFIjjaHTRppW)
+- [TikTok](https://www.tiktok.com/@pirahansiah)
+
+### Content Creation and Sharing
+- [Medium Blog](https://medium.com/@pirahansiah)
+- [YouTube Channel](https://www.youtube.com/@ComputerVisionDeepLearning)
+
+### Learning and Development Platforms
+- [GPT Store - Creator Profile](https://gptstore.ai/creators/user-bXM5WI8Cx4fppw1EEywZj2ZV)
+- [GPT Store - GPTs](https://gptstore.ai/gpts/x3pf_hdpR6-computer-vision-developer)
+- [Anaconda Cloud](https://anaconda.cloud/share/notebooks/b3402347-efbb-4a92-b754-fe8195b8ad63/overview)
+
+### Reading and Literature
+- [Goodreads](http://goodreads.com/pirahansiah)
+
