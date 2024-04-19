@@ -94,7 +94,7 @@ I am eager to bring my expertise to a dynamic team in Berlin, where I can contri
 - Large Language Models (LLM) · Generative AI
 - MLOps Tools: MLflow and Hugging Face
 - GGUF-Quantization-of-any-LLM for IoT devices 
-
+- ollama pull llama3:8b
      
 
 
