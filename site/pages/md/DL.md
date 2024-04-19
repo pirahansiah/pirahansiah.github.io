@@ -1,11 +1,58 @@
 <span style="color: red;">2024.</span>
 <span style="color: green;">Edge-based Generative AI for Image Processing Aplication</span>
+Implementing over-the-air (OTA) updates for edge devices that run large language models (LLMs) as part of their operations (referred to here as "LLM ops")
+
 On-device processing: Prioritizing privacy and accessibility, LLMs on-device processing, ensuring that your data remains on your device. This not only enhances security but also has the potential to minimize latency, contributing to a more efficient user experience.
 
 Generative AI models are a class of AI that can generate new data that resembles existing data. They include foundation models that can be fine-tuned for different tasks, Variational Autoencoders (VAEs) that reduce the dimensionality of data and Generative Adversarial Networks (GANs) that use competing networks to generate realistic samples. Other models include Transformer-based models that use attention mechanisms to model long-term text dependencies, diffusion models that address information decay by removing noise in the latent space, and multimodal large language models (LLMs) that integrate image and text understanding.
 In summary, generative AI models are a class of AI that can generate new data that resembles existing data. They include foundation models, VAEs, GANs, Transformer-based models, diffusion models, and multimodal LLMs.
 
 # Farshid PirahanSiah
+## OTA Updates for Edge Devices with LLM Ops
+
+- **Deployment Architecture**
+  - **Containerized**
+    - Use Docker for easy update rollout.
+    - Restart apps with new container images.
+  - **Microservices**
+    - Independently update smaller services.
+
+- **Version Control and Rollback**
+  - **Version Tracking**
+    - Assign unique IDs to each update.
+  - **Rollback Mechanism**
+    - Revert to previous version if update fails.
+
+- **Security**
+  - **Secure Channels**
+    - Use HTTPS or MQTT over TLS.
+  - **Authentication and Integrity**
+    - Employ digital signatures for updates.
+
+- **Update Process**
+  - **Minimal Downtime**
+    - **Delta Updates**
+      - Send only differences to reduce data needs.
+    - **Staged Rollouts**
+      - Update devices in stages to minimize risks.
+  - **Automation**
+    - **Scheduled Updates**
+      - Plan updates during low-usage times.
+    - **Monitoring**
+      - Automatically monitor and log the update process.
+
+- **User Interaction**
+  - **Notifications**
+    - Inform about upcoming updates.
+  - **Feedback Mechanism**
+    - Provide channels for user feedback on updates.
+
+- **Testing and Validation**
+  - **Simulated Environment Testing**
+    - Test updates in a controlled setting.
+  - **Field Testing**
+    - Conduct testing on a small set of devices before full rollout.
+
 ## Generative AI models on Edge with on-device training 
 - CNN, RNN, Transformer-based models, LLMs (GPT, )
 - Generative AI models
@@ -71,9 +118,78 @@ In summary, generative AI models are a class of AI that can generate new data th
         - MLFLOW_EXPERIMENT_ID=2 python test-mlflow.py
         - load_model= mlflow.pyfunc.load_model(logged_model)
         - mlflow run . -P filename=inputfile
+        - hugging face 
+            - models, dataset, spaces
+            - streamlit, gradio
+            - pip install huggingface_hub
+            - huggingface-cli login
+            - git lfs install
+            - git clone <model url>
+            - GGUF-Quantization-of-any-LLM
+                - MiniCPM-V and OmniLMM are open-source multimodal large models designed for image and text understanding
+                - ggml
+                - git clone https://github.com/ggerganov/llama.cpp
+                - cd llama.cpp && LLAMA_CUBLAS=1 make && pip install -r requirements/requirements-convert-hf-to-gguf.txt
+                - for m in methods:
+                    qtype = f"{quantized_path}/{m.upper()}.gguf"
+                    os.system("./llama.cpp/quantize "+quantized_path+"/FP16.gguf "+qtype+" "+m)
+                - ./llama.cpp/main -m ./quantized_model/Q4_K_M.gguf -n 90 --repeat_penalty 1.0 --color -i -r "User:" -f llama.cpp/prompts/chat-with-bob.txt
+                - type 0 quant > w=d*q 
+                - type 1 quant > w=d*q+m
+                - 4-bit
+                - Q2_K
+            - datasets
+            - fastAPI, uvicorn, 
+            - docker build -t huggingface:local .
+            - docker run -i -p 8000:8000 huggingface:local
+            - in url /docs -> put your text input
+            - CI/CD github action 
+            - [code](https://github.com/alfredodeza/huggingface-ghcr/tree/main)
+            - fine-tune
+                - transfer learning
+                - ONNX on hugging face
+                - 
+## Llama cpp
+- Size
+    - 7B = 7 B * 4 bytes = 28 GB
+    - 14B = 14 B * 4 bytes = 56 GB
+    - 70B = 70 B * 4 bytes = 280 GB
+- model
+    - tokenizer
+        - The role of tokenization then is to convert the input text into the numeric values and vice versa
+        - each model has own tokenization format
+        - llama2 is 32000 token large
         - 
+- Memory Reduction Techniques
+
+    | Technique                | Description                                                                                                                                 | RAM Reduction               | Notes                                                                                                                   |
+    |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------------------------------------------------------------------------------------------------------------------|
+    | **Quantization**         | Reduces the number of bits used to represent weights and activations.                                                                       | Significant                 | Popular options include 8-bit (int8), 4-bit, and 1-bit. Accuracy might degrade slightly with lower bit widths.           |
+    | **Pruning**              | Removes redundant or unimportant weights from the model.                                                                                    | Moderate                    | Can lead to sparsity in the weight matrix, allowing for compressed storage.                                             |
+    | **Knowledge Distillation** | Trains a smaller student model to mimic the behavior of a larger teacher model (LLAMA2 70B).                                               | Significant                 | The student model will have lower memory requirements, but might not achieve the same performance as the teacher.       |
+    | **Model Parallelism**    | Distributes the model across multiple GPUs, each holding a portion of the weights.                                                          | N/A (reduces memory per device) | Requires specialized hardware and software for efficient communication between GPUs.                                   |
+    | **Adaptive Quantization (2024)** | Tailors the bit width for each weight based on its importance, achieving a better balance between memory reduction and accuracy.         | Potentially higher           | Expected to be a key advancement in 2024 for memory-efficient model deployment.                                         |
+    | **Hierarchical Quantization (2024)** | Applies different quantization levels to different parts of the model based on their sensitivity to precision loss.                      | Potentially significant     | A promising technique in research for further memory savings while preserving accuracy.                                 |
+    | **Transformer Sparsification (2024)** | Explores techniques like weight clustering and structured pruning specifically for Transformer architectures like LLAMA2.                | Moderate to high            | An active research area with potential for memory reduction in large language models.                                   |
+
+- RAM Requirements with Reduction Techniques (Estimates)
+
+    | Technique                         | RAM Reduction | Estimated RAM | Notes                                                                                                       |
+    |-----------------------------------|---------------|---------------|-------------------------------------------------------------------------------------------------------------|
+    | **Quantization (8-bit)**          | 2x            | 70 GB         | Achievable with minimal accuracy loss.                                                                      |
+    | **Quantization (4-bit)**          | 4x            | 35 GB         | May require specific hardware support and potentially more accuracy loss.                                   |
+    | **Quantization (1-bit)**          | 8x            | 17.5 GB       | Significant accuracy drop expected. Use with caution.                                                       |
+    | **Pruning (moderate)**            | 20-30%        | 112-98 GB     | Effectiveness depends on pruning strategy and impact on accuracy.                                           |
+    | **Knowledge Distillation (smaller student model)** | 70-90%    | 14-42 GB      | Student model performance depends on teacher model and training strategy.                                   |
+    | **Adaptive Quantization (2024)**  | Up to 3x      | 47-56 GB      | Expected to offer better accuracy-efficiency trade-off.                                                     |
+    | **Hierarchical Quantization (2024)** | 3x-5x       | 28-47 GB      | Research is ongoing, effectiveness depends on implementation.                                               |
+    | **Transformer Sparsification (2024)** | 20-40%      | 84-112 GB     | An active research area, estimates may vary.                                                                |
 
 
+- other
+    - quantize 32F to 16, 8,4,2,1
+    - float to int
+    - 
 
 
 

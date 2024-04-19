@@ -1,6 +1,6 @@
 # Dr. Farshid PirahanSiah
 
-I am currently seeking opportunities in Berlin, Germany, focusing on the development of Large Language Models and advanced AI systems. My extensive experience in R&D for computer vision and multimodal applications positions me to effectively lead and innovate in this field.
+I am currently seeking opportunities in Berlin, Germany, focusing on the development of Computer Vision, Large Language Models and advanced AI systems. My extensive experience in R&D for computer vision and multimodal applications positions me to effectively lead and innovate in this field.
 
 ## Seeking Position in Berlin, Germany only:
 
@@ -8,14 +8,36 @@ I am currently seeking opportunities in Berlin, Germany, focusing on the develop
 - **End-to-end generative AI pipeline for cloud-based solutions**
 - **Multimodal LLMs for image processing applications**
 - **Large Vision Models (LVMs) for edge computing**
+- **Large Language and Vision Assistant training**
+- 
 
-## Development of Generative AI Pipelines:
+## Skills Overview
 
-- Engineered end-to-end, cloud-based generative AI solutions, overseeing the entire pipeline from data ingestion and model training to deployment and scaling.
-- **Expertise in Multimodal Large Language Models (LLMs)**:
-  - Specialized in integrating multimodal LLMs for image processing applications, enhancing system capabilities to interpret and analyze visual and textual data simultaneously.
-- **Innovations with Large Vision Models (LVMs)**:
-  - Developed and optimized Large Vision Models for edge computing, ensuring efficient processing and responsiveness in IoT devices.
+### Programming Languages
+- **Python**
+- **C++**
+### Computer Vision
+- **OpenCV**
+
+
+## Generative AI Development
+
+### On-Device Training & Edge Inference
+- **Optimization**: On-device training
+- **Inference**: Real-time LLMs
+- **Configuration**: LLM tuning
+- **Resources**: Power & speed balance
+
+### End-to-End Solutions
+- **Cloud-Based**: AI pipeline development
+- **Deployment**: Data to scaling
+
+### Multimodal LLMs
+- **Integration**: Image & video processing
+
+### Large Vision Models (LVMs)
+- **Optimization**: For edge computing
+- **Innovations**: IoT responsiveness
 
 ## Technical Expertise in Large Language Models (LLMs) and AI Development:
 
@@ -44,7 +66,7 @@ I am eager to bring my expertise to a dynamic team in Berlin, where I can contri
     - WO2020141969A2 WIPO (PCT) 
 - **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
 - Authored over 16 publications in books, journals, and conferences globally.
-
+- My Google Scholar citation metrics are: Total Citations  **141**, h-index  **7**, i10-index  **6**
 
 ## My works on LLMs:
 - Image Processing GPT
@@ -60,7 +82,37 @@ I am eager to bring my expertise to a dynamic team in Berlin, where I can contri
   - Lab Focus: Hands-on RAG workflow development using Azure AI Studio and Prompt Flow.
   - Skills Acquired: Mastery in LLMOps, Azure AI Studio usage, and Prompt Flow integration.
   - Tools Used: GitHub Codespaces, Visual Studio Code, Azure AI & ML Studio, Azure Portal.
-  - Outcome: Successfully developed and deployed "Contoso Chat", enhancing skills in scalable AI solution development.   
+  - Outcome: Successfully developed and deployed "Contoso Chat", enhancing skills in scalable AI solution development.  
+  - Multimodal Conversational Interfaces with GPT and Vision AI
+  -  
+
+
+### LLM and Generative AI Focused Courses
+- Hands-On Generative AI with Diffusion Models: Building Real-World Applications
+- Generative AI and LLMOps: Building Blocks and Applications
+- Advanced AI: Transformers for Computer Vision
+- Large Language Models (LLM) · Generative AI
+- MLOps Tools: MLflow and Hugging Face
+- GGUF-Quantization-of-any-LLM for IoT devices 
+
+     
+
+
+### Tools and models I use for LLM
+- OpenAI API
+- langchain
+- Hugging face
+- Ollama
+- LM Studio
+- [open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
+- [LLaVA: Large Language and Vision Assistant](https://llava-vl.github.io)
+
+
+
+
+
+
+
 
 
 
@@ -107,4 +159,7 @@ I am eager to bring my expertise to a dynamic team in Berlin, where I can contri
 
 ### Reading and Literature
 - [Goodreads](http://goodreads.com/pirahansiah)
+
+
+
 

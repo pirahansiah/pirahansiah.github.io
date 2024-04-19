@@ -1,1 +1,0 @@
-https://pirahansiah.com/cv

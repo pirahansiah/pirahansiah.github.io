@@ -1,3 +1,0 @@
-/Users/farshid/farshid/pirahansiah.github.io/src/cpp/CMakeFiles/pytorchCPP.dir
-/Users/farshid/farshid/pirahansiah.github.io/src/cpp/CMakeFiles/edit_cache.dir
-/Users/farshid/farshid/pirahansiah.github.io/src/cpp/CMakeFiles/rebuild_cache.dir

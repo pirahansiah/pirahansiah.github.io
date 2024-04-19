@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/farshid/farshid/pirahansiah.github.io/src/cpp",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/farshid/farshid/pirahansiah.github.io/src/cpp/include -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/pytorchCPP.dir/src/pytorchCPP.cpp.o -c /Users/farshid/farshid/pirahansiah.github.io/src/cpp/src/pytorchCPP.cpp",
-  "file": "/Users/farshid/farshid/pirahansiah.github.io/src/cpp/src/pytorchCPP.cpp",
-  "output": "CMakeFiles/pytorchCPP.dir/src/pytorchCPP.cpp.o"
-}
-]
