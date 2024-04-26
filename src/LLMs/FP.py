@@ -26,7 +26,7 @@ class CVFunctionTester(QMainWindow):
         self.load_image_button.clicked.connect(self.loadImage)
 
         self.textbox = QTextEdit(self)
-        self.textbox.setPlaceholderText('Enter OpenCV function here (e.g., cv2.GaussianBlur(img, (7, 7), 1.5))')
+        self.textbox.setPlaceholderText('Enter OpenCV function here (e.g., img=cv2.GaussianBlur(img, (7, 7), 3.5))')
         #cv2.resize(img,None,img,fx=0.5,fy=0.5,interpolation=cv2.INTER_AREA)
         # opencv to blob analysis
         #img=cv2.imread('image.jpg')

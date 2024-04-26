@@ -1,5 +1,28 @@
 # Dr. Farshid PirahanSiah
 
+Update:
+- [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
+  - This script logs into KaggleHub, downloads a pretrained Gemma model and tokenizer, sets up the model, and enables interactive chat simulation. ## Libraries: os, sys, torch, kagglehub, gemma_pytorch
+- [Source Code](https://pirahansiah.com/src/LLMs/FP.py)
+  - This Python script uses PyQt5 to create a GUI application for real-time testing of OpenCV functions on images. ## Libraries: sys, PyQt5, cv2, numpy, screeninfo
+- [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
+  - his Python script defines an asynchronous chat application that uses the aiohttp library to interact with a chat model API, handling concurrency with semaphores and maintaining conversation history. ## Libraries: asyncio, aiohttp, collections, json, re
+- [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
+  - LLMOps & RAG: This Python script integrates various machine learning models and APIs to process financial data, interactively analyze text, images, and tables, and generate structured outputs. It employs libraries like langchain, transformers, and torch, alongside environmental variables for secure API key handling.
+- [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
+  - Launch your chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
+- [Source Code]('https://pirahansiah.com/src/LLMs/RAG using CPU-based (No-GPU required) Hugging Face Models with LLMWare on your laptop.py')
+  - This Python script demonstrates how to use the LLMware library to interact with various models hosted on HuggingFace for natural language understanding tasks. It performs a specific query about an invoice using a provided context and compares the response from the model with a pre-defined answer. The script uses time measurement to track model loading and processing times.
+- [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
+
+-llamafile
+- LLaMA
+- Ollama
+- LLava
+- OpenELM
+
+
+
 I am currently seeking opportunities in Berlin, Germany, focusing on the development of Computer Vision, Large Language Models and advanced AI systems. My extensive experience in R&D for computer vision and multimodal applications positions me to effectively lead and innovate in this field.
 
 ## Seeking Position in Berlin, Germany only:
