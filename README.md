@@ -1,6 +1,8 @@
 # Dr. Farshid PirahanSiah
 
 Update:
+The collection of Python scripts provides a range of functionalities: one script automates logging into KaggleHub and setting up a pretrained Gemma model for chat simulations, another builds a GUI for real-time OpenCV function testing using PyQt5, while a third manages an asynchronous chat application with aiohttp. Additionally, there's a script integrating machine learning models for data analysis using advanced libraries like langchain, another launching AI-powered chat applications, and one demonstrating interactions with natural language understanding models on HuggingFace using LLMware. There's also a script using MLflow to manage the machine learning lifecycle and another detailing the local setup of Kubernetes via Terraform, showcasing infrastructure management and resource cleanup. These scripts employ a variety of technologies including Python, Gemma, PyQt5, OpenCV, aiohttp, asyncio, langchain, transformers, MLflow, Kubernetes, Terraform, and Docker, useful for tasks ranging from machine learning to software deployment. #MachineLearning #SoftwareDevelopment
+
 - [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
   - This script logs into KaggleHub, downloads a pretrained Gemma model and tokenizer, sets up the model, and enables interactive chat simulation. ## Libraries: os, sys, torch, kagglehub, gemma_pytorch
 - [Source Code](https://pirahansiah.com/src/LLMs/FP.py)
@@ -11,9 +13,14 @@ Update:
   - LLMOps & RAG: This Python script integrates various machine learning models and APIs to process financial data, interactively analyze text, images, and tables, and generate structured outputs. It employs libraries like langchain, transformers, and torch, alongside environmental variables for secure API key handling.
 - [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
   - Launch your chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
-- [Source Code]('https://pirahansiah.com/src/LLMs/RAG using CPU-based (No-GPU required) Hugging Face Models with LLMWare on your laptop.py')
+- [Source Code](https://pirahansiah.com/src/LLMs/RAG%20using%20CPU-based%20(No-GPU%20required)%20Hugging%20Face%20Models%20with%20LLMWare%20on%20your%20laptop.py)
   - This Python script demonstrates how to use the LLMware library to interact with various models hosted on HuggingFace for natural language understanding tasks. It performs a specific query about an invoice using a provided context and compares the response from the model with a pre-defined answer. The script uses time measurement to track model loading and processing times.
-- [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
+- [Source Code](https://pirahansiah.com/src/LLMs/mlflow/test-mlflow.py)
+  -  This Python script uses MLflow, a platform for managing the machine learning lifecycle, including experimentation, reproducibility, and deployment. It demonstrates how to log parameters, metrics, and artifacts within an MLflow experiment. Specifically, it logs a parameter named "param1" with a value of 5, logs multiple values for a metric called "foo," and records a markdown file as an artifact.
+- [Source Code](https://pirahansiah.com/src/LLMs/Kubernetes_Terraform/Kubernetes_Terraform.py)
+  -This script outlines the setup and use of Kubernetes on a local machine using Terraform, along with tools like Docker and Kubernetes command-line interface (CLI) utilities, all managed through Homebrew on macOS. It demonstrates the installation of required software, setting up Kubernetes with Terraform, querying the Kubernetes cluster, and visualizing Terraform plans. Finally, it guides through cleaning up resources with Terraform. This sequence ensures a practical approach to infrastructure as code (IaC) development and testing in a controlled, local environment.
+
+
 
 -llamafile
 - LLaMA

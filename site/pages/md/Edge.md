@@ -1,3 +1,32 @@
+
+
+
+
+https://www.youtube.com/watch?v=lgdJ90G50HY
+
+
+modify and change Edge/IoT to robotics and related keywords to robotics:
+
+Leveraging OpenCV AI Kit (OAK-D) with NVIDIA Jetson Nano for Enhanced Stereo Vision and Depth Sensing
+The OpenCV AI Kit (OAK-D) integrated with NVIDIA Jetson Nano brings cutting-edge stereo vision and depth camera capabilities to a variety of applications. This powerful combination not only accelerates AI computing but also enhances imaging and depth perception across multiple scenarios.
+
+Color and Mono Camera Enhancements: Advanced scripts for auto-exposure, scene analysis, and image undistortion improve real-time video quality and application responsiveness.
+Stereo Depth Perception: Utilizing dual cameras, our systems can now calculate depth with incredible accuracy, opening doors for 3D mapping and object recognition applications.
+Robust Calibration and Configuration Tools: Ensure precision and reliability with our easy-to-use calibration and system configuration tools.
+Edge Detection and Image Manipulation: These tools are designed to support advanced image processing tasks, enhancing edge clarity and offering flexible image transformation capabilities.
+Whether you're developing smart city infrastructure or enhancing industrial automation, our projects are designed to deliver unparalleled performance and reliability.
+
+Depth Colormap
+Depth Crop Control
+Depth Post Processing
+Depth Preview (Left/Right/Stereo)
+RGB and Depth Alignment
+Stereo Depth from Host
+Stereo Depth Video
+
+
+
+
 # LLMs are pivotal for businesses, especially startups, as the future of AI leans heavily towards inference applications.
 - applications
   - Active tracking

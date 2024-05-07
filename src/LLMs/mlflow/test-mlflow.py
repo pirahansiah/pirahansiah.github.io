@@ -6,3 +6,4 @@ if __name__ == "__main__":
     log_metric("foo", 2)
     
     log_artifact("/Users/farshid/farshid/pirahansiah.github.io/site/pages/md/DL.md")
+# mlflow ui

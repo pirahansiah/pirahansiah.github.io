@@ -1,3 +1,161 @@
+# CPP
+
+- ## Review C++
+  - ### Basics
+    - **General-purpose programming language.**
+    - Supports **object-oriented**, **procedural**, and **generic programming**.
+
+  - ### Syntax & Operators
+    - Basics: **Variables**, **data types**, and **functions**.
+    - Operators: **Arithmetic**, **comparison**, and **logical**.
+
+- ## Object-Oriented Programming
+  - ### Classes & Objects
+    - Blueprints for creating objects.
+    - Support **encapsulation**.
+
+  - ### Inheritance
+    - Allows inheriting traits from other classes.
+    - Supports **code reuse**.
+
+  - ### Polymorphism
+    - Entities take many forms.
+    - Through **function overloading** and **overriding**.
+
+  - ### Encapsulation
+    - Bundles data and methods.
+    - Restricts direct component access.
+
+  - ### Abstraction
+    - Hides complexities, exposes essentials.
+
+- ## Memory Management
+  - ### Dynamic Allocation
+    - Manual management with **new** and **delete**.
+    - Automated with **smart pointers**.
+
+  - ### Resource Management
+    - **RAII pattern** for resource management.
+
+- ## Templates & STL
+  - ### Function Templates
+    - Operate with generic types.
+
+  - ### Class Templates
+    - Work with any data type.
+
+  - ### STL Components
+    - **Containers**, **algorithms**, **iterators**, **functors**.
+
+- ## Modern C++ Features
+  - ### Smart Pointers
+    - Automate memory management.
+
+  - ### Lambda Expressions
+    - Define inline anonymous functions.
+
+  - ### Auto & Decltype
+    - **Auto** for automatic type deduction.
+    - **Decltype** for expression type deduction.
+
+  - ### Move Semantics
+    - Efficient resource transfer.
+
+  - ### Range-based Loops
+    - Simplify collection iteration.
+
+- ## Advanced Concepts
+  - ### Concurrency
+    - Multi-threading and asynchronous operations.
+
+  - ### Templates & Meta-programming
+    - Manipulate code during compilation.
+
+  - ### Modules (C++20)
+    - New code organization and compilation method.
+
+- ## Best Practices
+  - ### Code Organization
+    - Use **namespaces** to prevent name collisions.
+
+  - ### Error Handling
+    - Use **exceptions** for runtime errors.
+    - Prefer **noexcept** for non-exception cases.
+
+  - ### Resource Management
+    - Use **RAII** and **smart pointers** for resources.
+
+- ## Tools & Techniques
+  - ### Debugging
+    - Use debuggers and analysis tools.
+
+  - ### Performance Optimization
+    - Profile to find bottlenecks.
+    - Understand time and space complexity.
+
+- ## Tools for Debugging and Performance Analysis
+  - ### Overview
+    - Focuses on tools like **Valgrind**, **AddressSanitizer**, and others.
+    - Helps identify runtime errors and optimize performance.
+
+  - ### Key Tools
+    - **Valgrind**, **AddressSanitizer (ASan)**, **MemorySanitizer (MSan)**, **ThreadSanitizer (TSan)**.
+
+  - ### Best Practices
+    - Integrate these tools into regular testing routines.
+    - Use in automated tests to catch errors early.
+    - Incorporate into CI pipelines for ongoing quality assurance.
+
+  - ### Integration with Development Environments
+    - Many IDEs and editors support integration with these tools.
+    - Enhances debugging and profiling within the development workflow.
+
+  - ### Conclusion
+    - These tools are essential for maintaining high-quality, performant software.
+    - Regular use and integration into development practices can significantly reduce bugs and improve performance.
+
+- ## CMake Fundamentals
+  - ### Introduction
+    - **Build system generator** for software projects.
+    - Supports cross-platform projects.
+
+  - ### Configuration
+    - **Out-of-source builds**: Keeps source and build directories separate.
+    - **Variable** usage to manage paths and settings.
+
+  - ### Commands
+    - **add_executable()**, **add_library()**, **find_package()**.
+
+  - ### Best Practices
+    - Organize source and header files clearly.
+    - Use **subdirectories** and **target_link_libraries()** for modular projects.
+
+  - ### Advanced Features
+    - Custom Commands and Targets, Testing Support, Exporting Builds.
+
+  - ### Toolchain Files
+    - Specify compiler and tool options for cross-compiling.
+
+  - ### Tips
+    - Use CMake GUI for easier configuration and generation.
+    - Refer to official documentation for detailed options and commands.
+
+  - ### Tools & Integration
+    - Integrated support in popular IDEs for easier development.
+    - CTest for Testing, Techniques to speed up build times and manage dependencies efficiently.
+
+
+
+
+
+
+
+
+
+
+---
+
+
 # CPP 
 
 ## Review C++ 
@@ -94,10 +252,6 @@
 - Profile to find bottlenecks.
 - Understand time and space complexity.
 
-
-
-
-
 ## Tools for Debugging and Performance Analysis
 
 ### Overview
@@ -168,11 +322,6 @@
 ### Conclusion
 - These tools are essential for maintaining high-quality, performant software.
 - Regular use and integration into development practices can significantly reduce bugs and improve performance.
-
-
-
-
-
 
 ## CMake Fundamentals
 

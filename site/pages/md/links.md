@@ -1,3 +1,64 @@
+
+
+
+https://www.youtube.com/watch?v=sD468LfeVdc
+https://www.youtube.com/watch?v=h2aLDuwJuok&list=PLk6CEY9XxSIDy8qVHZV-Nf-r9f2BkRZ6p&index=4
+
+
+
+
+[LLaVa-Next, leveraging mistralai/Mistral-7B-Instruct-v0.2 as LLM](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf)
+[Llama 2 coursera](https://www.coursera.org/learn/llama-for-python-programmers/lecture/O9FRw/llama-2-chat-and-conversations)
+[C++ farsi](https://www.youtube.com/@peacism_live/videos)
+[But what is a GPT? Visual intro to transformers | Chapter 5, Deep Learning](https://www.youtube.com/watch?app=desktop&v=wjZofJX0v4M&embeds_referring_euri=https%3A%2F%2Ftwitter.com%2F&source_ve_path=Mjg2NjY&feature=emb_logo)
+[https://course.fast.ai](https://course.fast.ai)
+[https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+
+
+
+
+
+
+
+GitHub
+[LLMFarm](https://github.com/guinmoon/LLMFarm?tab=readme-ov-file)
+[LoftQ](https://github.com/yxli2123/LoftQ)
+
+
+
+
+
+[Using VSCode to browse OpenCV code on Ubuntu](https://gist.github.com/kinchungwong/adf613f0c5544e125085644b8e8125b4)
+[Continuous Integration With Python: An Introduction](https://realpython.com/python-continuous-integration/)
+[Opencv Snippets](https://marketplace.visualstudio.com/items?itemName=gsGupta.opencv-snippets)
+[Llamafile](https://ashishware.com/2024/01/05/Llamafile/)
+[introducing-llamafile](https://hacks.mozilla.org/2023/11/introducing-llamafile/)
+[llamafile github](https://github.com/Mozilla-Ocho/llamafile?tab=readme-ov-file)
+[isual-language assistant with LLaVA and OpenVINO](https://docs.openvino.ai/2024/notebooks/257-llava-multimodal-chatbot-with-output.html)
+[How to Fine-Tune LLaVA on Your Custom Dataset?](https://medium.com/ubiai-nlp/how-to-fine-tune-llava-on-your-custom-dataset-aca118a90bc3)
+[Create a Visual Chatbot on AWS EC2 with LLaVA-1.5, 🤗 Transformers and Runhouse](https://dev.to/denisyay/create-a-visual-chatbot-on-aws-ec2-with-llava-15-transformers-and-runhouse-hm1)
+
+
+
+# Keywords
+mlagentbench
+
+# Best Youtube
+[MLLMs](https://www.youtube.com/@aipapersacademy)
+
+
+
+
+
+
+
+
+[https://lightning.ai/onboarding](https://lightning.ai/onboarding)
+
+[@Professor.Aliakbar.Jalali](https://www.youtube.com/@professor.aliakbar.jalali)
+[farsi farcaster](https://www.youtube.com/channel/UCC5Da8mh_IDYeDnfhLfPi0w?app=desktop)
+[The Future of Culture is Tokenized](https://lucanetz.substack.com/p/the-future-of-culture-is-tokenized?utm_campaign=post&utm_medium=web&triedRedirect=true)
+[GigaIO & AMD–Shattering the 8-GPU Server Ceiling Without Changing a Line of Code](https://www.brighttalk.com/webcast/20035/611038?utm_campaign=communication_missed_you&utm_medium=email&utm_source=brighttalk-transact&utm_content=title&player-preauth=WbQEZYQ33%2B%2FYRiDQNqRHKBg1V%2F7kFYGt1XuCDXIw%2F4E%3D)
 [TAX](https://wundertax.de)
 [Q4-2023 AWS NAMER DNB Meetup: AWS Tech Talk - Generative AI and multi-modal agents in AWS](https://m.youtube.com/watch?v=YGpAR5uzdHo&pp=ygUTYXdzIG11bHRpIG1vZGFsIGxsbQ%3D%3D)
 
