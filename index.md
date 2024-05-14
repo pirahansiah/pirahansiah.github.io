@@ -78,3 +78,21 @@ Image Processing GPT
   - [LLMs on GPU](https://pirahansiah.com/site/pages/md/nvidia_llm.html)
   - [Ensemble learning](https://pirahansiah.com/site/pages/md/optimization.html)  
   - [How to Win Kaggle ML Competitions](https://pirahansiah.com/site/pages/md/winKaggle.html)
+
+
+
+## As an AI consultant, 
+I specialize in computer vision and leverage advanced technologies like machine learning, deep learning, and data analytics to solve complex business challenges. My approach involves collaborating closely with stakeholders to understand their objectives and translate them into robust AI-driven solutions that enhance revenue, reduce costs, and improve profitability.
+I have a strong focus on leveraging IoT, robotics, and cloud computing platforms like AWS to develop scalable and efficient AI solutions. This includes the application of OpenCV, TensorFlow, PyTorch, and Docker for real-time image processing, neural network model development, and containerization.
+My expertise lies in integrating these technologies to exceed operational expectations, driving substantial business growth and technological advancement in competitive markets.
+
+Additionally, I'm working on the next frontier of AI: agentic workflows. My solution, LLM Vision Agent, aims to provide an experience by allowing users to describe their problem in text and utilizing LLM agent to solve the task for them, eliminating the need for time-consuming model selection, programming, or training.
+
+
+## Schedule a No-Cost Consulting session with me to ensure your computer vision project's success. In this one-on-one session, we'll cover:
+
+Understanding your business needs or use case
+Feasibility assessment
+Solution recommendations
+Cost considerations
+Next steps

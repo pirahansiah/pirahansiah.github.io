@@ -168,9 +168,9 @@ In summary, generative AI models are a class of AI that can generate new data th
     | **Pruning**              | Removes redundant or unimportant weights from the model.                                                                                    | Moderate                    | Can lead to sparsity in the weight matrix, allowing for compressed storage.                                             |
     | **Knowledge Distillation** | Trains a smaller student model to mimic the behavior of a larger teacher model (LLAMA2 70B).                                               | Significant                 | The student model will have lower memory requirements, but might not achieve the same performance as the teacher.       |
     | **Model Parallelism**    | Distributes the model across multiple GPUs, each holding a portion of the weights.                                                          | N/A (reduces memory per device) | Requires specialized hardware and software for efficient communication between GPUs.                                   |
-    | **Adaptive Quantization (2024)** | Tailors the bit width for each weight based on its importance, achieving a better balance between memory reduction and accuracy.         | Potentially higher           | Expected to be a key advancement in 2024 for memory-efficient model deployment.                                         |
-    | **Hierarchical Quantization (2024)** | Applies different quantization levels to different parts of the model based on their sensitivity to precision loss.                      | Potentially significant     | A promising technique in research for further memory savings while preserving accuracy.                                 |
-    | **Transformer Sparsification (2024)** | Explores techniques like weight clustering and structured pruning specifically for Transformer architectures like LLAMA2.                | Moderate to high            | An active research area with potential for memory reduction in large language models.                                   |
+    | **Adaptive Quantization ** | Tailors the bit width for each weight based on its importance, achieving a better balance between memory reduction and accuracy.         | Potentially higher           | Expected to be a key advancement for memory-efficient model deployment.                                         |
+    | **Hierarchical Quantization ** | Applies different quantization levels to different parts of the model based on their sensitivity to precision loss.                      | Potentially significant     | A promising technique in research for further memory savings while preserving accuracy.                                 |
+    | **Transformer Sparsification ** | Explores techniques like weight clustering and structured pruning specifically for Transformer architectures like LLAMA2.                | Moderate to high            | An active research area with potential for memory reduction in large language models.                                   |
 
 - RAM Requirements with Reduction Techniques (Estimates)
 
@@ -181,9 +181,9 @@ In summary, generative AI models are a class of AI that can generate new data th
     | **Quantization (1-bit)**          | 8x            | 17.5 GB       | Significant accuracy drop expected. Use with caution.                                                       |
     | **Pruning (moderate)**            | 20-30%        | 112-98 GB     | Effectiveness depends on pruning strategy and impact on accuracy.                                           |
     | **Knowledge Distillation (smaller student model)** | 70-90%    | 14-42 GB      | Student model performance depends on teacher model and training strategy.                                   |
-    | **Adaptive Quantization (2024)**  | Up to 3x      | 47-56 GB      | Expected to offer better accuracy-efficiency trade-off.                                                     |
-    | **Hierarchical Quantization (2024)** | 3x-5x       | 28-47 GB      | Research is ongoing, effectiveness depends on implementation.                                               |
-    | **Transformer Sparsification (2024)** | 20-40%      | 84-112 GB     | An active research area, estimates may vary.                                                                |
+    | **Adaptive Quantization **  | Up to 3x      | 47-56 GB      | Expected to offer better accuracy-efficiency trade-off.                                                     |
+    | **Hierarchical Quantization ** | 3x-5x       | 28-47 GB      | Research is ongoing, effectiveness depends on implementation.                                               |
+    | **Transformer Sparsification ** | 20-40%      | 84-112 GB     | An active research area, estimates may vary.                                                                |
 
 
 - other
@@ -955,6 +955,8 @@ In summary, generative AI models are a class of AI that can generate new data th
             - **Impact:** Demonstrates strong performance on image classification and semantic segmentation tasks, further bridging the techniques between NLP and computer vision.
         - DINOv2 (Distilled-INspired NOisy self-supervised learning)
         - BLIP-2 (Bootstrapped Language-Image Pre-training)
+        - Mobile SAM : segement everythings
+        - 
 
  
 
