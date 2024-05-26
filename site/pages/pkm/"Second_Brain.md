@@ -1,4 +1,6 @@
-# "Building a Second Brain: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte
+# "Building a Second Brain
+
+## "Building a Second Brain: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte
 
 Organize Folders by Areas of Responsibility: Align with the Second Brain methodology by creating folders within your workspace for each of your major areas of responsibility or interests (e.g., Projects, Health, Learning, etc.).
 
@@ -19,4 +21,4 @@ Regular Review and Maintenance
     Regular Review: Periodically review your notes to update or archive them, ensuring that your digital second brain stays current and useful.
     Refine Your System: Adapt and refine your note-taking system as you discover what works best for your specific needs.
 
-main : [[note]]
+main : [[Organize_notes]]

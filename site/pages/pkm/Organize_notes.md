@@ -1,5 +1,7 @@
 Second Brain
-[["Building a Second Brain: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte]]    
+[["Second_Brain]]: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte]]    
+
+
 "Digital Zettelkasten: Principles, Methods, & Examples" by David Kadavy
 "How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking" by Sönke Ahrens
 Zettelkasten
@@ -52,3 +54,4 @@ This aligns with... — for ideas that are in agreement or alignment.
 This helps predict... — for information that aids in forecasting or predictions.
 This is an exception to... — for identifying outliers or exceptions.
 Using these prompts, you can enhance the organization, metadata handling, and connectivity in your note-taking system, making it easier to navigate and utilize your notes for research and writing.
+
