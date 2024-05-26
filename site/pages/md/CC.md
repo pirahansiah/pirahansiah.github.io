@@ -1,3 +1,7 @@
+![[a.excalidraw.svg]]
+
+![[chatGPT.md]]
+
 # My research about camera calibration:
 
 Geometric Analysis, Calibration Patterns, MATLAB, Python, C++, OpenCV, Subpixel Precision. A C++ implemented algorithm was used for high-speed, high-accuracy corner detection within calibration patterns, focusing on rotation and orientation. The process was refined by subpixel accuracy and noise reduction techniques.
