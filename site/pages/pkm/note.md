@@ -52,3 +52,5 @@ This aligns with... — for ideas that are in agreement or alignment.
 This helps predict... — for information that aids in forecasting or predictions.
 This is an exception to... — for identifying outliers or exceptions.
 Using these prompts, you can enhance the organization, metadata handling, and connectivity in your note-taking system, making it easier to navigate and utilize your notes for research and writing.
+
+[[2a]]

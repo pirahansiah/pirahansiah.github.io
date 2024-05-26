@@ -20,3 +20,7 @@ Regular Review and Maintenance
     Refine Your System: Adapt and refine your note-taking system as you discover what works best for your specific needs.
 
 main : [[note]]
+[[pirahansiah.github.io/site/pages/pkm/"Building a Second Brain: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte.md]]
+
+
+[[pirahansiah.com/site/pages/pkm/note.md]]
