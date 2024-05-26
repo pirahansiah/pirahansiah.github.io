@@ -20,5 +20,3 @@ Automate and Streamline
 Regular Review and Maintenance
     Regular Review: Periodically review your notes to update or archive them, ensuring that your digital second brain stays current and useful.
     Refine Your System: Adapt and refine your note-taking system as you discover what works best for your specific needs.
-
-main : [[Organize_notes]]
