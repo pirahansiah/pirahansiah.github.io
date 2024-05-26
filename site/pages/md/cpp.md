@@ -1,5 +1,150 @@
-# CPP
+C++23 keywords for parallel programming: Reviewing multi-threading features including concurrency, parallelism, thread management, mutexes, atomic operations, condition variables, semaphores, deadlocks, livelocks, performance metrics, and thread pools.
 
+# C++23 Multi-threading and Parallel Programming Overview
+
+- **Concurrency**
+    - *Definition*: Ability of a program to handle more than one task at the same time.
+        - **Program Structure**
+             - Manage how a program executes tasks concurrently.
+        - **Dealing with Multiple Things**
+             - Enhance responsiveness by handling various operations simultaneously.
+
+- **Parallelism**
+    - *Definition*: Execution of multiple calculations or execution processes simultaneously.
+        - **Simultaneous Execution**
+            - Improve application performance by running tasks in parallel.
+
+- **Context Switch**
+    - *Definition*: Mechanism to switch between different tasks or threads.
+        - **Saving and Loading State**
+            - Save the state of a current task and load a new one to efficiently manage multiple tasks.
+
+- **Thread Management**
+    - *Basic Operations*
+        - **.join()**
+            - Ensures a thread finishes before the main program continues.
+        - **.detach()**
+            - Allows a thread to operate independently of the main program flow.
+    - *Thread IDs and Process IDs*
+        - Example Code:
+            ```cpp
+            printf(" Process ID: %d\n", getpid());
+            printf(" Thread ID: %d\n", std::this_thread::get_id());
+            ```
+
+- **Synchronization Primitives**
+    - *Mutexes and Locks*
+        - **std::mutex**
+            - Prevents simultaneous access to shared resources.
+        - **std::recursive_mutex, std::shared_mutex**
+            - Allows locks to be applied in a hierarchical manner.
+    - *Atomic Operations*
+        - **std::atomic**
+            - Ensures operations are performed without interference from other threads.
+    - *Condition Variables and Semaphores*
+        - **std::condition_variable**
+            - Coordinates the execution sequence between threads.
+        - **Semaphores (Counting and Binary)**
+            - Manages access to resources by multiple threads.
+
+- **Deadlocks and Livelocks**
+    - *Handling and Avoidance*
+        - **Deadlock**
+            - Condition where two or more threads are waiting on each other to release resources.
+        - **Livelock**
+            - Threads continuously change states in response to each other without making progress.
+
+- **Performance Metrics**
+    - *Efficiency Measures*
+        - **Speedup and Efficiency**
+            - Calculations that measure the improvement in performance when using parallel processing.
+        - **Amdahl's Law**
+            - Theoretical prediction of the possible speedup of program processing.
+
+- **Design Patterns for Parallelism**
+    - *Thread Pool and Futures*
+        - **Thread Pool**
+            - Reuses a number of threads for various tasks.
+        - **Future and Promise**
+            - Manages asynchronous operations and their results.
+    - *Computational Graphs*
+        - **DAG (Directed Acyclic Graph)**
+            - Manages task dependencies and execution order.
+
+- **Communication and Decomposition**
+    - *Types and Strategies*
+        - **Domain and Functional Decomposition**
+            - Techniques for dividing tasks and data among processors.
+        - **Communication**
+            - Managing data flow between tasks, either synchronously or asynchronously.
+
+
+
+
+
+
+
+
+
+
+<!-- # CPP 2023: Parallel and Concurrent Programming with C++
+## create markdown format to copy .md file about below review keywords of c++ 23 for multi thread/multi cores/parallel programming
+- example: 
+Process ID, Thread ID
+printf(" Process ID: %d\n", getpid());
+printf(" Thread ID: %d\n", std::this_thread::get_id());
+
+- concurrency: ability of a program to be broken into parts that can run independently of each other. 
+  - program structure
+  - **dealing** with multiple things at once
+- parallelism
+    - simultaneous execution
+    - **doing** multiple things at once
+- context switch
+  - storing the state of a process or thread to resume later
+  - loading the saved state for the new process or thread to run
+- .join()
+- std::thread th1(f); printf("  th1 is joinable? %s\n", th1.joinable() ? "true" : "false");
+- .detached()
+- std::mutex a1; a1.lock(); ... a1.unlock()
+- std::atomic<unsigned int> a1(0); printf("%u",a1.locad())
+- std::recursive_mutex a1;
+- .try_lock()
+- std::shared_mutex a1; .lock_shared(); .unlock_shared();
+- deadlock: lock ordering, std::scoped_lock
+- abandoned lock: std::scoped_lock(a1);
+- starvation, livelock, std::this_thread::yield
+- std::condition_variable a1;
+- std::queue<int> a1;
+- semaphore; std::counting_semaphore ; std::binary_semaphore;
+- heisenbug; Race condition
+- barrier; std::experimental::barrier
+- latch; 
+- Computational graph
+  - DAG: directed acyclic graph 
+- Thread pool
+- future; std::future<int> result= std::async(std::launch::async, func1);
+- Speedup, latency, and throughput
+- amdahl's law: 1000 cpu only incread up to 20x faster!
+  - printf("Average Sequential Time: %.1f ms\n", sequential_time.count()*1000);
+    printf("  Average Parallel Time: %.1f ms\n", parallel_time.count()*1000);
+    printf("Speedup: %.2f\n", sequential_time/parallel_time);
+    printf("Efficiency %.2f%%\n", 100*(sequential_time/parallel_time)/std::thread::hardware_concurrency());
+- paritioning 
+    - domain competiion: block decomposition, cyclic decomposition, 
+    - functional decompostion: 
+- communication
+  - point-to-point communication
+  - collective communication: broadcast, scatter, gather 
+  - synchronous: blocking 
+  - asynchronous: nonblocking
+- agglomeration; granularity; fine-grained parallelism; coarse-grained parallelism; 
+- mapping;  -->
+
+
+<!-- # C++ 
+
+## CPP
 - ## Review C++
   - ### Basics
     - **General-purpose programming language.**
@@ -397,4 +542,4 @@
 
 
 
-
+ -->
