@@ -22,5 +22,7 @@ Regular Review and Maintenance
 main : [[note]]
 [[pirahansiah.github.io/site/pages/pkm/"Building a Second Brain: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte.md]]
 
-
-[[pirahansiah.com/site/pages/pkm/note.md]]
+the original path is
+[[./site/pages/pkm/note.md]]
+but in vscode web shows
+The editor could not be opened due to an unexpected error: Unable to read file 'github:/pirahansiah/pirahansiah.github.io/site/pages/pkm/pirahansiah.com/site/pages/pkm/note.md' (Error: No provider registered with )
