@@ -1,3 +1,11 @@
+Action Plans are step-by-step roadmaps to achieve specific goals, involving clear goal definition, task breakdown, resource allocation, deadline setting, and regular review. Applicable to various goals, this approach helps systematically pursue and accomplish objectives.
+
+https://pirahansiah.com/src/books/goal/Action_Plans/Action_Plans
+
+
+- [Action_Plans](https://pirahansiah.com/src/books/goal/Action_Plans/Action_Plans)
+
+
 <h1><img src="action_plans1.png">Action Plans</h1>
 
 # Introduction to Action Plans
@@ -39,7 +47,7 @@ Action Plans stand out for their detailed and structured approach to achieving g
 Action Plans are not just for business or project management; they can be effectively applied in personal goal setting.
 
 ### An AI Assistant Manager
-- [An AI Assistant Manager](https://pirahansiah.com/site/pages/ChatGPT)
+- [An AI Assistant Manager](https://pirahansiah.com/site/pages/md/ChatGPT)
 
 ## Conclusion and Moving Forward
 By adopting the Action Plans approach, you can systematically pursue and achieve your goals. This guide has offered insights into effectively using Action Plans in various aspects of life and work.
