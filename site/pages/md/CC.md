@@ -1,6 +1,6 @@
 ![[a.excalidraw.svg]]
 
-![[chatGPT.md]]
+![[ChatGPT]]
 
 # My research about camera calibration:
 
