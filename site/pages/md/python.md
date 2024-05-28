@@ -1,4 +1,5 @@
-
+[python coding x.com](https://x.com/clcoding/status/1793539716165284046)
+[type hint](https://arash-hatami.ir/python-advance-type-hints/)
 
 ###  Powerful Python Features
 - 

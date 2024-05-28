@@ -1,0 +1,7 @@
+pandas
+Pillow
+plotly
+dash
+jupyter-dash
+numpy
+statsmodels

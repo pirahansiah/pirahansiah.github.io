@@ -1,4 +1,12 @@
-C++23 keywords for parallel programming: Reviewing multi-threading features including concurrency, parallelism, thread management, mutexes, atomic operations, condition variables, semaphores, deadlocks, livelocks, performance metrics, and thread pools.
+
+
+
+### Test-driven development (TDD) & Unit Testing & Google Test, TDD
+
+
+
+
+<!-- C++23 keywords for parallel programming: Reviewing multi-threading features including concurrency, parallelism, thread management, mutexes, atomic operations, condition variables, semaphores, deadlocks, livelocks, performance metrics, and thread pools.
 
 # C++23 Multi-threading and Parallel Programming Overview
 
@@ -76,12 +84,7 @@ C++23 keywords for parallel programming: Reviewing multi-threading features incl
         - **Domain and Functional Decomposition**
             - Techniques for dividing tasks and data among processors.
         - **Communication**
-            - Managing data flow between tasks, either synchronously or asynchronously.
-
-
-
-
-
+            - Managing data flow between tasks, either synchronously or asynchronously. -->
 
 
 
