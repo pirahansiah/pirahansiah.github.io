@@ -72,13 +72,15 @@ def gather_metadata(folder_path):
         logging.error(f"Failed to gather metadata from {folder_path}: {e}")
         return pd.DataFrame()
 if __name__ == '__main__':
-    config_file_path = '/Users/farshid/code/pirahansiah.github.io/src/docker/BI/folder_path.txt'
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_file_path = os.path.join(script_dir, 'folder_path.txt')
+    # config_file_path = 'folder_path.txt'
     folder_path = get_folder_path_from_file(config_file_path)
     metadata_df = gather_metadata(folder_path)
     if metadata_df.empty:
         logging.warning("No metadata found. Check the folder path or the file types.")
     else:
-        metadata_df.to_csv('metadata.csv', index=False)
+        metadata_df.to_csv(os.path.join(script_dir,'metadata.csv'), index=False)
         logging.info("Metadata CSV file has been created successfully.")
         app = JupyterDash(__name__, suppress_callback_exceptions=True)
         app.layout = html.Div([

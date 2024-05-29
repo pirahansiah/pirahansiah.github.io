@@ -1,6 +1,113 @@
-# Dr. Farshid PirahanSiah
+# Farshid PirahanSiah
 
-Update:
+I am currently seeking opportunities in **computer vision**.
+
+## About Me
+
+I am an accomplished Research Engineer with over 7 years of experience, including a PhD in Computer Science and a Bachelor's in Software Engineering. My career has been dedicated to the fields of Computer Vision, Machine Learning, and ML Operations. I have a proven track record of transforming complex algorithms into production-ready applications, utilizing cloud technologies and containerization, and optimizing ML pipelines and infrastructure in fast-paced environments.
+
+With expertise in Machine Learning, IoT, Medical Imaging, and Robotics, I am proficient in designing image analysis algorithms and have made significant contributions to patents, books, and research papers. As a Technical Lead and Research Engineer, I have collaborated with stakeholders to define and achieve KPIs, managed cross-functional team projects, and deployed scalable AI solutions across cities and cloud platforms.
+
+## Experience
+
+- **10+ years:** PhD, R&D in Computer Vision, C++
+- **7+ years:** Machine Learning/Deep Learning, Python
+- **5+ years:** IoT, Model Optimization on Edge, Robotics, Medical Image Processing, Cloud Solutions (AWS)
+- **3+ years:** Technical Lead, Global Collaboration, Development Leadership
+- **1+ years:** LLM, Multimodal LLM, Vision-Based LLM, RAG, Langchain, OpenAI API
+
+## Core Skills
+
+- **Computer Vision and AI:** Advanced expertise in image processing, deep learning model development, and application deployment.
+- **Project Management:** Experienced in leading complex, cross-functional projects internationally.
+- **Technological Proficiency:** Skilled in **OpenCV**, **NumPy**, **Pandas**, **Matplotlib**, **PyTorch**, **TensorFlow**, **Docker**, and **AWS**.
+
+## Technical Skills
+
+- **Languages:** Python, C++, MATLAB
+- **Frameworks:** TensorFlow, PyTorch, Keras
+- **Tools:** Docker, Kubernetes, AWS, Git, Datadog, MLflow
+- **Operating Systems:** Windows, MacOS, Linux
+- **Containerization:** Docker
+- **Cloud Computing:** Amazon Web Services (AWS)
+- **Others:** CI/CD, GitHub Actions
+
+## Leadership and Collaboration
+
+Strong teamwork and leadership capabilities have enabled me to lead international projects that exceed business expectations, driving growth and technological innovation in computer vision and machine learning.
+
+---
+
+Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/pirahansiah/) or follow my updates on [GitHub](https://github.com/pirahansiah). I am always interested in discussing potential opportunities or collaborations in computer vision and AI-related projects.
+
+
+
+## Patents and Publications
+- **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
+    - The present invention relates to a method for increasing data for face analysis in video surveillance. 
+    - WO2021060971A1   
+- **Patents**: A METHOD FOR DETECTING A MOVING VEHICLE - 2021 
+    - The present invention relates to a method for detecting a moving vehicle.
+    - WO2021107761 
+- **Patents**: System and method for providing advertisement contents based on facial analysis - 2020 
+    - Invented an algorithm, methods, and system for advanced facial attribute detection, leading to improvements in advertising systems.
+    - WO2020141969A2 WIPO (PCT) 
+- **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
+- Authored over 16 publications in books, journals, and conferences globally.
+- My Google Scholar citation metrics are: Total Citations  **141**, h-index  **7**, i10-index  **6**
+
+
+
+
+- [LinkedIn Group over 34K members](https://www.linkedin.com/groups/10320678/)
+- [Facebook Group 14K](https://www.facebook.com/groups/computervisiondeeplearning)
+### Professional Profiles and Networks
+
+- [Stack Overflow](https://stackoverflow.com/users/3533188/farshid-pirahansiah)
+- [GitHub](https://github.com/pirahansiah)
+- [Tiziran](https://www.tiziran.com/)
+- [Personal Website](https://pirahansiah.com/)
+
+### Coding Challenges and Competitions
+- [HackerRank](https://www.hackerrank.com/profile/pirahansiah)
+- [LeetCode](https://leetcode.com/pirahansiah/)
+
+### Academic Contributions and Publications
+- [Google Scholar](https://scholar.google.com/citations?user=GvCEy4QAAAAJ&hl=en)
+- [ScienceOpen Collection](https://www.scienceopen.com/collection/da288fa0-3d52-46dc-9e07-73dfc597dfb8)
+
+### Project Repositories and Code Sharing
+- [Hugging Face Spaces](https://huggingface.co/spaces/pirahansiah/ComputerVision)
+- [Kaggle](https://www.kaggle.com/pirahansiah)
+- [NuGet](https://www.nuget.org/profiles/Farshid_Pirahansiah)
+- [PyPI](https://pypi.org/project/pirahansiah/)
+- [Docker Hub](https://hub.docker.com/u/pirahansiah)
+
+### Social Media and Community Engagement
+- [Twitter](https://twitter.com/pirahansiah)
+
+- [Reddit](https://www.reddit.com/user/pirahansiah/)
+- [Telegram](https://t.me/computer_vision_llm)
+- [Mastodon](https://mastodon.social/@pirahansiah)
+- [Instagram](https://www.instagram.com/computer_vision_deep_learning/)
+- [WhatsApp Group](https://chat.whatsapp.com/COguUhOlNprFIjjaHTRppW)
+- [TikTok](https://www.tiktok.com/@pirahansiah)
+
+### Content Creation and Sharing
+- [Medium Blog](https://medium.com/@pirahansiah)
+- [YouTube Channel](https://www.youtube.com/@ComputerVisionDeepLearning)
+
+### Learning and Development Platforms
+- [GPT Store - Creator Profile](https://gptstore.ai/creators/user-bXM5WI8Cx4fppw1EEywZj2ZV)
+- [GPT Store - GPTs](https://gptstore.ai/gpts/x3pf_hdpR6-computer-vision-developer)
+- [Anaconda Cloud](https://anaconda.cloud/share/notebooks/b3402347-efbb-4a92-b754-fe8195b8ad63/overview)
+
+### Reading and Literature
+- [Goodreads](http://goodreads.com/pirahansiah)
+
+
+
+
 The collection of Python scripts provides a range of functionalities: one script automates logging into KaggleHub and setting up a pretrained Gemma model for chat simulations, another builds a GUI for real-time OpenCV function testing using PyQt5, while a third manages an asynchronous chat application with aiohttp. Additionally, there's a script integrating machine learning models for data analysis using advanced libraries like langchain, another launching AI-powered chat applications, and one demonstrating interactions with natural language understanding models on HuggingFace using LLMware. There's also a script using MLflow to manage the machine learning lifecycle and another detailing the local setup of Kubernetes via Terraform, showcasing infrastructure management and resource cleanup. These scripts employ a variety of technologies including Python, Gemma, PyQt5, OpenCV, aiohttp, asyncio, langchain, transformers, MLflow, Kubernetes, Terraform, and Docker, useful for tasks ranging from machine learning to software deployment. #MachineLearning #SoftwareDevelopment
 
 - [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
@@ -27,27 +134,6 @@ The collection of Python scripts provides a range of functionalities: one script
 - Ollama
 - LLava
 - OpenELM
-
-
-
-I am currently seeking opportunities in Berlin, Germany, focusing on the development of Computer Vision, Large Language Models and advanced AI systems. My extensive experience in R&D for computer vision and multimodal applications positions me to effectively lead and innovate in this field.
-
-## Seeking Position in Berlin, Germany only:
-
-- **Technical Lead in R&D for Computer Vision**
-- **End-to-end generative AI pipeline for cloud-based solutions**
-- **Multimodal LLMs for image processing applications**
-- **Large Vision Models (LVMs) for edge computing**
-- **Large Language and Vision Assistant training**
-- 
-
-## Skills Overview
-
-### Programming Languages
-- **Python**
-- **C++**
-### Computer Vision
-- **OpenCV**
 
 
 ## Generative AI Development
@@ -81,22 +167,8 @@ I am currently seeking opportunities in Berlin, Germany, focusing on the develop
 - **AI-Powered Summarization**: Developed capabilities for summarizing diverse data elements (text, tables, images) using AI-driven approaches, significantly improving information accessibility and user engagement.
 - **Community Contribution and Collaboration**: Actively engaged in community forums and collaborative projects, contributing to open-source projects and providing innovative solutions to complex problems in the AI space.
 
+
 I am eager to bring my expertise to a dynamic team in Berlin, where I can contribute to groundbreaking projects and further advance the field of artificial intelligence.
-
-
-## Patents and Publications
-- **Patents**: A METHOD FOR AUGMENTING A PLURALITY OF FACE IMAGES - 2021 
-    - The present invention relates to a method for increasing data for face analysis in video surveillance. 
-    - WO2021060971A1   
-- **Patents**: A METHOD FOR DETECTING A MOVING VEHICLE - 2021 
-    - The present invention relates to a method for detecting a moving vehicle.
-    - WO2021107761 
-- **Patents**: System and method for providing advertisement contents based on facial analysis - 2020 
-    - Invented an algorithm, methods, and system for advanced facial attribute detection, leading to improvements in advertising systems.
-    - WO2020141969A2 WIPO (PCT) 
-- **Book Chapter**: Camera Calibration and Video Stabilization for Robot Localization, Springer, 2021.
-- Authored over 16 publications in books, journals, and conferences globally.
-- My Google Scholar citation metrics are: Total Citations  **141**, h-index  **7**, i10-index  **6**
 
 ## My works on LLMs:
 - Image Processing GPT
@@ -136,60 +208,3 @@ I am eager to bring my expertise to a dynamic team in Berlin, where I can contri
 - LM Studio
 - [open-interpreter](https://github.com/OpenInterpreter/open-interpreter)
 - [LLaVA: Large Language and Vision Assistant](https://llava-vl.github.io)
-
-
-
-
-
-
-
-
-
-
-### Professional Profiles and Networks
-- [My LinkedIn Group 34K](https://www.linkedin.com/groups/10320678/)
-- [Stack Overflow](https://stackoverflow.com/users/3533188/farshid-pirahansiah)
-- [GitHub](https://github.com/pirahansiah)
-- [Tiziran](https://www.tiziran.com/)
-- [Personal Website](https://pirahansiah.com/)
-
-### Coding Challenges and Competitions
-- [HackerRank](https://www.hackerrank.com/profile/pirahansiah)
-- [LeetCode](https://leetcode.com/pirahansiah/)
-
-### Academic Contributions and Publications
-- [Google Scholar](https://scholar.google.com/citations?user=GvCEy4QAAAAJ&hl=en)
-- [ScienceOpen Collection](https://www.scienceopen.com/collection/da288fa0-3d52-46dc-9e07-73dfc597dfb8)
-
-### Project Repositories and Code Sharing
-- [Hugging Face Spaces](https://huggingface.co/spaces/pirahansiah/ComputerVision)
-- [Kaggle](https://www.kaggle.com/pirahansiah)
-- [NuGet](https://www.nuget.org/profiles/Farshid_Pirahansiah)
-- [PyPI](https://pypi.org/project/pirahansiah/)
-- [Docker Hub](https://hub.docker.com/u/pirahansiah)
-
-### Social Media and Community Engagement
-- [Twitter](https://twitter.com/pirahansiah)
-- [My Facebook Group 14K](https://www.facebook.com/groups/computervisiondeeplearning)
-- [Reddit](https://www.reddit.com/user/pirahansiah/)
-- [Telegram](https://t.me/computer_vision_llm)
-- [Mastodon](https://mastodon.social/@pirahansiah)
-- [Instagram](https://www.instagram.com/computer_vision_deep_learning/)
-- [WhatsApp Group](https://chat.whatsapp.com/COguUhOlNprFIjjaHTRppW)
-- [TikTok](https://www.tiktok.com/@pirahansiah)
-
-### Content Creation and Sharing
-- [Medium Blog](https://medium.com/@pirahansiah)
-- [YouTube Channel](https://www.youtube.com/@ComputerVisionDeepLearning)
-
-### Learning and Development Platforms
-- [GPT Store - Creator Profile](https://gptstore.ai/creators/user-bXM5WI8Cx4fppw1EEywZj2ZV)
-- [GPT Store - GPTs](https://gptstore.ai/gpts/x3pf_hdpR6-computer-vision-developer)
-- [Anaconda Cloud](https://anaconda.cloud/share/notebooks/b3402347-efbb-4a92-b754-fe8195b8ad63/overview)
-
-### Reading and Literature
-- [Goodreads](http://goodreads.com/pirahansiah)
-
-
-
-
