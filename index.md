@@ -5,18 +5,47 @@ title: Computer Vision
 parent: MainPage
 ---
 
-# Farshid Pirahansiah
-Welcome to my website! I'm Farshid Pirahansiah, a PhD holder specializing in computer vision and LLMs. My expertise lies in Python and C++, and I've contributed to numerous projects and publications in these fields. Here, you'll find a blend of Artificial Intelligence, practical application, and innovation. Explore our LLM projects, delve into insightful blogs, and understand complex topics through our mind-maps. Stay informed with our newsletter, discover our diverse projects and products, and benefit from expert startup consulting. 
+# Farshid PirahanSiah
 
-Seeking Position in Berlin, Germany only:
+I am currently seeking opportunities in **computer vision**.
 
-  - **Technical Lead in R&D for Computer Vision**
-  - **End-to-end generative AI pipeline for cloud-based solutions**
-  - **Multimodal LLMs for image processing applications**
-  - **Large Vision Models (LVMs) for edge computing**
+## About Me
 
-"Please note: I am currently not seeking opportunities through recruiters."
+I am an accomplished Research Engineer with over 7 years of experience, including a PhD in Computer Science and a Bachelor's in Software Engineering. My career has been dedicated to the fields of Computer Vision, Machine Learning, and ML Operations. I have a proven track record of transforming complex algorithms into production-ready applications, utilizing cloud technologies and containerization, and optimizing ML pipelines and infrastructure in fast-paced environments.
 
+With expertise in Machine Learning, IoT, Medical Imaging, and Robotics, I am proficient in designing image analysis algorithms and have made significant contributions to patents, books, and research papers. As a Technical Lead and Research Engineer, I have collaborated with stakeholders to define and achieve KPIs, managed cross-functional team projects, and deployed scalable AI solutions across cities and cloud platforms.
+
+## Experience
+
+- **10+ years:** PhD, R&D in Computer Vision, C++
+- **7+ years:** Machine Learning/Deep Learning, Python
+- **5+ years:** IoT, Model Optimization on Edge, Robotics, Medical Image Processing, Cloud Solutions (AWS)
+- **3+ years:** Technical Lead, Global Collaboration, Development Leadership
+- **1+ years:** LLM, Multimodal LLM, Vision-Based LLM, RAG, Langchain, OpenAI API
+
+## Core Skills
+
+- **Computer Vision and AI:** Advanced expertise in image processing, deep learning model development, and application deployment.
+- **Project Management:** Experienced in leading complex, cross-functional projects internationally.
+- **Technological Proficiency:** Skilled in **OpenCV**, **NumPy**, **Pandas**, **Matplotlib**, **PyTorch**, **TensorFlow**, **Docker**, and **AWS**.
+
+## Technical Skills
+
+- **Languages:** Python, C++, MATLAB
+- **Frameworks:** TensorFlow, PyTorch, Keras
+- **Tools:** Docker, Kubernetes, AWS, Git, Datadog, MLflow
+- **Operating Systems:** Windows, MacOS, Linux
+- **Containerization:** Docker
+- **Cloud Computing:** Amazon Web Services (AWS)
+- **Others:** CI/CD, GitHub Actions
+
+## Leadership and Collaboration
+
+Strong teamwork and leadership capabilities have enabled me to lead international projects that exceed business expectations, driving growth and technological innovation in computer vision and machine learning.
+
+---
+
+Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/pirahansiah/) or follow my updates on [GitHub](https://github.com/pirahansiah). I am always interested in discussing potential opportunities or collaborations in computer vision and AI-related projects.
 
 
 
@@ -60,7 +89,6 @@ Image Processing GPT
   - [Public Privacy Policy](site/pages/html/privacy_policy_url.html)
   - [Tiziran](index1.html)
 
-# Update April 2024:
 
   - [AI](https://pirahansiah.com/site/pages/md/AI.html)
   - [My research about camera calibration:](https://pirahansiah.com/site/pages/md/CC.html)
@@ -82,6 +110,7 @@ Image Processing GPT
 
 
 ## As an AI consultant, 
+
 I specialize in computer vision and leverage advanced technologies like machine learning, deep learning, and data analytics to solve complex business challenges. My approach involves collaborating closely with stakeholders to understand their objectives and translate them into robust AI-driven solutions that enhance revenue, reduce costs, and improve profitability.
 I have a strong focus on leveraging IoT, robotics, and cloud computing platforms like AWS to develop scalable and efficient AI solutions. This includes the application of OpenCV, TensorFlow, PyTorch, and Docker for real-time image processing, neural network model development, and containerization.
 My expertise lies in integrating these technologies to exceed operational expectations, driving substantial business growth and technological advancement in competitive markets.
@@ -89,7 +118,8 @@ My expertise lies in integrating these technologies to exceed operational expect
 Additionally, I'm working on the next frontier of AI: agentic workflows. My solution, LLM Vision Agent, aims to provide an experience by allowing users to describe their problem in text and utilizing LLM agent to solve the task for them, eliminating the need for time-consuming model selection, programming, or training.
 
 
-## Schedule a No-Cost Consulting session with me to ensure your computer vision project's success. In this one-on-one session, we'll cover:
+## Schedule a No-Cost Consulting session with me 
+to ensure your computer vision project's success. In this one-on-one session, we'll cover:
 
 Understanding your business needs or use case
 Feasibility assessment

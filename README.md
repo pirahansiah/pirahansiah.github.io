@@ -106,26 +106,53 @@ Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/pira
 - [Goodreads](http://goodreads.com/pirahansiah)
 
 
+## List of My GitHub Repositories:
 
+### 1. Generative AI Business Intelligence Computer Vision (BI4CV)
+- **Repository Link**: [BI4CV](https://github.com/pirahansiah/BI4CV)
+- **Description**: Welcome to the BI4CV repository! This project is dedicated to revolutionizing how businesses utilize image and video data for insightful Business Intelligence (BI). Our tools are designed to enhance data storytelling through advanced visualizations, interactive dashboards, and comprehensive reports. Our system smartly selects the optimal visual representations based on the complexity of your dataset, making analytics accessible to all users.
+- **Key Features**:
+  - Advanced Visualization Tools
+  - Smart Dashboard Creation
+  - Anomaly Detection
+  - Local LLM Integration
+  - User-Friendly Interface
+
+### 2. CV_metaverse/3D Multi-Camera Calibration
+- **Repository Link**: [3D Multi-Camera Calibration](https://github.com/pirahansiah/pirahansiah/tree/master/CV_metaverse/3D_multi_camera_calibration)
+- **Overview**: This project focuses on geometric camera calibration techniques to estimate the parameters of a lens and image sensor. Such calibration is crucial for applications in machine vision, robotics, navigation systems, and 3-D scene reconstruction.
+- **Research Links**:
+  - [Camera calibration for multi-modal robot vision based on image quality assessment](https://www.researchgate.net/publication/288174690_Camera_calibration_for_multi-modal_robot_vision_based_on_image_quality_assessment)
+  - [Pattern image significance for camera calibration](https://ieeexplore.ieee.org/document/8305440)
+  - [Camera Calibration and Video Stabilization Framework for Robot Localization](https://link.springer.com/chapter/10.1007/978-3-030-74540-0_12)
+
+### 3. Advanced Programming with Modern C++ 23 for Image Processing
+- **Repository Link**: [C++ Image Processing](https://github.com/pirahansiah/cvtest)
+- **Functionality**: This repository contains advanced C++ code examples for image processing tasks. The main function, `int func_image_info(cv::Mat src, cv::Mat &dst)`, provides detailed information about an image including size, histogram, and more.
+- **Additional Resources**: [YouTube tutorial on OpenCV](https://www.youtube.com/watch?v=gK1ybsWOqhs)
+
+### 3. LLM
 
 The collection of Python scripts provides a range of functionalities: one script automates logging into KaggleHub and setting up a pretrained Gemma model for chat simulations, another builds a GUI for real-time OpenCV function testing using PyQt5, while a third manages an asynchronous chat application with aiohttp. Additionally, there's a script integrating machine learning models for data analysis using advanced libraries like langchain, another launching AI-powered chat applications, and one demonstrating interactions with natural language understanding models on HuggingFace using LLMware. There's also a script using MLflow to manage the machine learning lifecycle and another detailing the local setup of Kubernetes via Terraform, showcasing infrastructure management and resource cleanup. These scripts employ a variety of technologies including Python, Gemma, PyQt5, OpenCV, aiohttp, asyncio, langchain, transformers, MLflow, Kubernetes, Terraform, and Docker, useful for tasks ranging from machine learning to software deployment. #MachineLearning #SoftwareDevelopment
 
-- [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
-  - This script logs into KaggleHub, downloads a pretrained Gemma model and tokenizer, sets up the model, and enables interactive chat simulation. ## Libraries: os, sys, torch, kagglehub, gemma_pytorch
-- [Source Code](https://pirahansiah.com/src/LLMs/FP.py)
-  - This Python script uses PyQt5 to create a GUI application for real-time testing of OpenCV functions on images. ## Libraries: sys, PyQt5, cv2, numpy, screeninfo
-- [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
-  - his Python script defines an asynchronous chat application that uses the aiohttp library to interact with a chat model API, handling concurrency with semaphores and maintaining conversation history. ## Libraries: asyncio, aiohttp, collections, json, re
-- [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
-  - LLMOps & RAG: This Python script integrates various machine learning models and APIs to process financial data, interactively analyze text, images, and tables, and generate structured outputs. It employs libraries like langchain, transformers, and torch, alongside environmental variables for secure API key handling.
-- [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
-  - Launch your chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
-- [Source Code](https://pirahansiah.com/src/LLMs/RAG%20using%20CPU-based%20(No-GPU%20required)%20Hugging%20Face%20Models%20with%20LLMWare%20on%20your%20laptop.py)
-  - This Python script demonstrates how to use the LLMware library to interact with various models hosted on HuggingFace for natural language understanding tasks. It performs a specific query about an invoice using a provided context and compares the response from the model with a pre-defined answer. The script uses time measurement to track model loading and processing times.
-- [Source Code](https://pirahansiah.com/src/LLMs/mlflow/test-mlflow.py)
-  -  This Python script uses MLflow, a platform for managing the machine learning lifecycle, including experimentation, reproducibility, and deployment. It demonstrates how to log parameters, metrics, and artifacts within an MLflow experiment. Specifically, it logs a parameter named "param1" with a value of 5, logs multiple values for a metric called "foo," and records a markdown file as an artifact.
-- [Source Code](https://pirahansiah.com/src/LLMs/Kubernetes_Terraform/Kubernetes_Terraform.py)
-  -This script outlines the setup and use of Kubernetes on a local machine using Terraform, along with tools like Docker and Kubernetes command-line interface (CLI) utilities, all managed through Homebrew on macOS. It demonstrates the installation of required software, setting up Kubernetes with Terraform, querying the Kubernetes cluster, and visualizing Terraform plans. Finally, it guides through cleaning up resources with Terraform. This sequence ensures a practical approach to infrastructure as code (IaC) development and testing in a controlled, local environment.
+  - [Source Code](https://pirahansiah.com/src/LLMs/1gemma-test.py)
+    - This script logs into KaggleHub, downloads a pretrained Gemma model and tokenizer, sets up the model, and enables interactive chat simulation. ## Libraries: os, sys, torch, kagglehub, gemma_pytorch
+  - [Source Code](https://pirahansiah.com/src/LLMs/FP.py)
+    - This Python script uses PyQt5 to create a GUI application for real-time testing of OpenCV functions on images. ## Libraries: sys, PyQt5, cv2, numpy, screeninfo
+  - [Source Code](https://pirahansiah.com/src/LLMs/chatWithLLMs.py)
+    - his Python script defines an asynchronous chat application that uses the aiohttp library to interact with a chat model API, handling concurrency with semaphores and maintaining conversation history. ## Libraries: asyncio, aiohttp, collections, json, re
+  - [Source Code](https://pirahansiah.com/src/LLMs/LLMOPs.ipynb)
+    - LLMOps & RAG: This Python script integrates various machine learning models and APIs to process financial data, interactively analyze text, images, and tables, and generate structured outputs. It employs libraries like langchain, transformers, and torch, alongside environmental variables for secure API key handling.
+  - [Source Code](https://pirahansiah.com/src/LLMs/OpenRouter.py)
+    - Launch your chat app with OpenRouter's AI! 🚀 Utilize asyncio and aiohttp for seamless conversations and manage interactions with a smart queue. Dive into the future of chat applications now!"
+  - [Source Code](https://pirahansiah.com/src/LLMs/RAG%20using%20CPU-based%20(No-GPU%20required)%20Hugging%20Face%20Models%20with%20LLMWare%20on%20your%20laptop.py)
+    - This Python script demonstrates how to use the LLMware library to interact with various models hosted on HuggingFace for natural language understanding tasks. It performs a specific query about an invoice using a provided context and compares the response from the model with a pre-defined answer. The script uses time measurement to track model loading and processing times.
+  - [Source Code](https://pirahansiah.com/src/LLMs/mlflow/test-mlflow.py)
+    -  This Python script uses MLflow, a platform for managing the machine learning lifecycle, including experimentation, reproducibility, and deployment. It demonstrates how to log parameters, metrics, and artifacts within an MLflow experiment. Specifically, it logs a parameter named "param1" with a value of 5, logs multiple values for a metric called "foo," and records a markdown file as an artifact.
+
+  - [Source Code](https://pirahansiah.com/src/LLMs/Kubernetes_Terraform/Kubernetes_Terraform.py)
+
+    -This script outlines the setup and use of Kubernetes on a local machine using Terraform, along with tools like Docker and Kubernetes command-line interface (CLI) utilities, all managed through Homebrew on macOS. It demonstrates the installation of required software, setting up Kubernetes with Terraform, querying the Kubernetes cluster, and visualizing Terraform plans. Finally, it guides through cleaning up resources with Terraform. This sequence ensures a practical approach to infrastructure as code (IaC) development and testing in a controlled, local environment.
 
 
 
