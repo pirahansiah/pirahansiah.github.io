@@ -1,7 +1,7 @@
 - [x] - blank
 - [x] - dotted paper
 - [] - squared paper
-- [] - ruled narrow
+- [x] - ruled narrow
 - [] - ruled wide
 - [x] - cornell
 - [] - legal
@@ -13,12 +13,12 @@
 - [] - dot page
 - [] - weekly planner
 - [] - daily planner
-- [] - storyboard
+- [x] - storyboard
 - [] - isometric grid
 - [] - music staff
 - [] - calligraphy guide
 - [] - hexagonal grid
-- [] - meeting notes
+- [x] - meeting notes
 - [] - project planner
 - [] - task list
 - [] - sketch paper

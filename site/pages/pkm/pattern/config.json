@@ -1,22 +1,63 @@
 {
-  "journal_dot_pattern": {
+  "default": {
     "size_cm": [14.8, 21],
+    "line_spacing_cm": 0.85,
+    "dot_diameter_cm": 0.2,
+    "file_name_base": "default",
+    "colors": ["black", "red", "green", "blue", "purple", "orange", "brown", "pink", "cyan"]
+  },
+  "journal_dot_pattern": {
     "dot_spacing_cm": 1,
-    "dot_diameter_cm": 0.1,
-    "file_name_base": "journal_dot_pattern_1"
+    "file_name_base": "journal_dot_pattern",
+    "colors": ["black"]
   },
   "double_bubble_map": {
     "main_nodes": 2,
     "total_nodes": 10,
-    "file_name_base": "double_bubble_map"
+    "file_name_base": "double_bubble_map",
+    "colors": ["lightblue", "lightgreen", "yellow", "orange", "pink", "cyan"]
   },
-  "cornell_note": {    
-    "size_cm": [14.8, 21],
-    "file_name_base": "cornell_note"
+  "cornell_note": {
+    "file_name_base": "cornell_note",
+    "colors": ["black", "gray", "red", "blue", "green"]
   },
   "ruled_narrow": {
-    "size_cm": [14.8, 21],
     "line_spacing_cm": 0.7,
-    "file_name_base": "ruled_narrow"
+    "file_name_base": "ruled_narrow",
+    "colors": ["red", "green", "blue", "purple", "orange", "pink", "cyan"]
+  },
+  "storyboard": {
+    "rows": 3,
+    "columns": 3,
+    "file_name_base": "storyboard",
+    "colors": ["black", "gray", "red", "blue", "green", "purple"]
+  },
+  "meeting_notes": {
+    "file_name_base": "meeting_notes",
+    "colors": ["red", "green", "blue", "purple", "orange", "pink", "cyan"]
+  },
+  "conference_notes": {
+    "file_name_base": "conference_notes",
+    "colors": ["blue", "green", "orange", "purple", "red", "pink", "cyan"]
+  },
+  "workshop_notes": {
+    "file_name_base": "workshop_notes",
+    "colors": ["purple", "red", "blue", "green", "orange", "pink", "cyan"]
+  },
+  "study_notes": {
+    "file_name_base": "study_notes",
+    "colors": ["green", "blue", "red", "purple", "orange", "pink", "cyan"]
+  },
+  "second_brain": {
+    "file_name_base": "second_brain",
+    "colors": ["black", "blue", "green", "orange", "purple", "pink", "cyan"]
+  },
+  "digital_zettelkasten": {
+    "file_name_base": "digital_zettelkasten",
+    "colors": ["red", "green", "blue", "purple", "orange", "brown", "cyan"]
+  },
+  "smart_notes": {
+    "file_name_base": "smart_notes",
+    "colors": ["blue", "green", "red", "purple", "orange", "pink", "cyan"]
   }
 }

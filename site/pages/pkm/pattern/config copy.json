@@ -1,0 +1,52 @@
+{
+  "default": {
+    "size_cm": [14.8, 21], 
+    "line_spacing_cm": 0.85,
+    "dot_diameter_cm": 0.2,
+    "file_name_base": "default",
+    "colors": ["black", "red", "green", "blue", "purple"]
+  },
+  "journal_dot_pattern": {
+    "dot_spacing_cm": 1,
+    "file_name_base": "journal_dot_pattern",
+    "colors": ["black"]
+  },
+  "double_bubble_map": {
+    "main_nodes": 2,
+    "total_nodes": 10,
+    "file_name_base": "double_bubble_map",
+    "colors": ["lightblue", "lightgreen", "yellow"]
+  },
+  "cornell_note": {
+    "size_cm": [21, 29.7],  
+    "file_name_base": "cornell_note",
+    "colors": ["black", "gray"]
+  },
+  "ruled_narrow": {
+    "line_spacing_cm": 0.7,
+    "file_name_base": "ruled_narrow",
+    "colors": ["red", "green", "blue", "purple", "orange"]
+  },
+  "storyboard": {
+    "rows": 3,
+    "columns": 3,
+    "file_name_base": "storyboard",
+    "colors": ["black"]
+  },
+  "meeting_notes": {
+    "file_name_base": "meeting_notes",
+    "colors": ["red", "green", "blue", "purple", "orange"]
+  },
+  "conference_notes": {
+    "file_name_base": "conference_notes",
+    "colors": ["blue", "green", "orange", "purple", "red"]
+  },
+  "workshop_notes": {
+    "file_name_base": "workshop_notes",
+    "colors": ["purple", "red", "blue", "green", "orange"]
+  },
+  "study_notes": {
+    "file_name_base": "study_notes",
+    "colors": ["green", "blue", "red", "purple", "orange"]
+  }
+}
