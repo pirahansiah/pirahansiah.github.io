@@ -1,3 +1,6 @@
+tips to level up your note taking productivity
+
+
 Second Brain
 [[second_brain]]: A Proven Method to Organize Your Digital Life and Unlock Your Creative Potential" by Tiago Forte]]    
 

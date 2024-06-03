@@ -1,0 +1,22 @@
+{
+  "journal_dot_pattern": {
+    "size_cm": [14.8, 21],
+    "dot_spacing_cm": 1,
+    "dot_diameter_cm": 0.1,
+    "file_name_base": "journal_dot_pattern_1"
+  },
+  "double_bubble_map": {
+    "main_nodes": 2,
+    "total_nodes": 10,
+    "file_name_base": "double_bubble_map"
+  },
+  "cornell_note": {    
+    "size_cm": [14.8, 21],
+    "file_name_base": "cornell_note"
+  },
+  "ruled_narrow": {
+    "size_cm": [14.8, 21],
+    "line_spacing_cm": 0.7,
+    "file_name_base": "ruled_narrow"
+  }
+}

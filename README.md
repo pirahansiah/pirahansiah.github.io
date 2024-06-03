@@ -108,17 +108,30 @@ Feel free to connect with me through [LinkedIn](https://www.linkedin.com/in/pira
 
 ## List of My GitHub Repositories:
 
-### 1. Generative AI Business Intelligence Computer Vision (BI4CV)
-- **Repository Link**: [BI4CV](https://github.com/pirahansiah/BI4CV)
-- **Description**: Welcome to the BI4CV repository! This project is dedicated to revolutionizing how businesses utilize image and video data for insightful Business Intelligence (BI). Our tools are designed to enhance data storytelling through advanced visualizations, interactive dashboards, and comprehensive reports. Our system smartly selects the optimal visual representations based on the complexity of your dataset, making analytics accessible to all users.
-- **Key Features**:
-  - Advanced Visualization Tools
-  - Smart Dashboard Creation
-  - Anomaly Detection
-  - Local LLM Integration
-  - User-Friendly Interface
+### 1. BI4CV
+# Business Intelligence (BI) tools for media content (Image/Video)
+# Generative AI Business Intelligence Computer Vision (BI4CV)
 
-### 2. CV_metaverse/3D Multi-Camera Calibration
+[![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/pirahansiah/BI4CV)
+
+**Repository Link**: [BI4CV](https://github.com/pirahansiah/BI4CV)
+
+**Description**: This project is dedicated to revolutionizing how businesses utilize image and video data for insightful Business Intelligence (BI). Our tools are designed to enhance data storytelling through advanced visualizations, interactive dashboards, and comprehensive reports. Our system smartly selects the optimal visual representations based on the complexity of your dataset, making analytics accessible to all users.
+
+**Key Features**:
+- Advanced Visualization Tools
+- Smart Dashboard Creation
+- Anomaly Detection
+- Local LLM Integration
+- User-Friendly Interface
+
+Update: 2024 - May
+- Add 8 Blind/Referenceless Image Quality methods
+- Add CI/CD Github Action
+- Add Documents for the project plan
+
+
+### 2. 3D Multi-Camera Calibration
 - **Repository Link**: [3D Multi-Camera Calibration](https://github.com/pirahansiah/pirahansiah/tree/master/CV_metaverse/3D_multi_camera_calibration)
 - **Overview**: This project focuses on geometric camera calibration techniques to estimate the parameters of a lens and image sensor. Such calibration is crucial for applications in machine vision, robotics, navigation systems, and 3-D scene reconstruction.
 - **Research Links**:

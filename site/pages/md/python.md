@@ -1,3 +1,17 @@
+# Pandas: Hands-On Data Science: Sales Analysis in Python
+- some times need to use encoding to read cvs file
+- def.info()
+- describe()
+- .to_csv(""....)
+- .tail(10)
+- .plot(kind='hist',bins=10)
+- 
+
+
+# jupyter
+clear output
+do not use all one line pythonism code use many line easy to use other people and easy to fallow and easy to debug
+
 [python coding x.com](https://x.com/clcoding/status/1793539716165284046)
 [type hint](https://arash-hatami.ir/python-advance-type-hints/)
 

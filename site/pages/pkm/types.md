@@ -1,0 +1,40 @@
+- [x] - blank
+- [x] - dotted paper
+- [] - squared paper
+- [] - ruled narrow
+- [] - ruled wide
+- [x] - cornell
+- [] - legal
+- [] - single column mix
+- [] - single column
+- [] - three column
+- [] - dodos
+- [] - monthly planner
+- [] - dot page
+- [] - weekly planner
+- [] - daily planner
+- [] - storyboard
+- [] - isometric grid
+- [] - music staff
+- [] - calligraphy guide
+- [] - hexagonal grid
+- [] - meeting notes
+- [] - project planner
+- [] - task list
+- [] - sketch paper
+- [x] - bullet journal
+- [] - second brain
+- [] - digital zettelkasten
+- [] - smart notes
+- [] - storytelling with data
+- [] - evergreen notes
+- [] - circle map
+- [] - bubble map
+- [x] - double bubble map
+- [] - tree map
+- [] - brace map
+- [] - flow map
+- [] - multi-flow map
+- [] - bridge map
+- [] - fishbone diagram
+- [] - venn diagram

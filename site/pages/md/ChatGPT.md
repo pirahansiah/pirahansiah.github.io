@@ -1,6 +1,69 @@
 
 <h1><img src="QRCode_ChatGPT.png"></h1>
 
+
+I received an email from ChatGPT announcing that all ChatGPT Free users can now access GPTs in the GPT Store! 🎉 Check out my top custom GPTs:
+Visit https://pirahansiah.com/site/pages/ChatGPT for more!
+#AI #Innovation #Productivity
+
+
+https://pirahansiah.com/site/pages/md/ChatGPT
+Exciting News from ChatGPT!
+
+I received an email from ChatGPT announcing that all ChatGPT Free users will use GPTs in the GPT Store. This means more than 100 million weekly active users can experience my GPT creations. 
+
+My Top Custom GPTs
+
+I am thrilled to share the list of the top custom GPTs I've created, now available for everyone to use:
+
+Computer Vision Developer
+https://chat.openai.com/g/g-vHELtCqJq-computer-vision-developer
+Specializes in Python and OpenCV for image processing and computer vision applications.
+
+Image2Cartoon
+https://chat.openai.com/g/g-EVV73fLHb-image2cartoon
+Transforms images into cartoons with a creative and fun approach.
+
+Career Companion
+https://chat.openai.com/g/g-VrtNMlXDg-career-companion
+Enhances your CV, prepares you for interviews, and helps you find your ideal job.
+
+MLOps & DevOps Expert
+https://chat.openai.com/g/g-sWtYkb391-mlops-devops
+Provides professional MLOps engineering for DevOps needs, specializing in pipeline optimization.
+
+German TutorBot
+https://chat.openai.com/g/g-Fkg5ts1II-german-tutorbot
+Your go-to German language teacher for text corrections and simple translations.
+
+Simpli3D Creator
+https://chat.openai.com/g/g-AmzCWmmQa-simpli3d-creator
+Converts images to 3D models effortlessly, without any text requirement.
+
+Image Inspirer
+https://chat.openai.com/g/g-YHNv6svFJ-image-inspirer
+Unlocks creative potential with innovative image inspiration services.
+
+Cartoon Transformer
+https://chat.openai.com/g/g-6Zg3KRS0l-cartoon-transformer
+Transforms images into 3D cartoon style with DALL-E.
+
+Explore these and more at https://pirahansiah.com/site/pages/md/ChatGPT
+
+#AI #Innovation #Productivity #ChatGPT #CustomGPT #AIForEveryone
+
+
+
+
+
+
+
+
+
+
+
+
+
 # AI Tools
 ## https://pirahansiah.com/site/pages/ChatGPT
 https://pirahansiah.com/site/pages/ChatGPT
