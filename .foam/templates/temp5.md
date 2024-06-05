@@ -2,7 +2,14 @@
 foam_template:
   name: My Note Template
   filepath: 'journal/${FOAM_TITLE}.md'
-  foam_filepath: '${FOAM_FILEPATH}'
+  
+---
+
+---
+existing_frontmatter: "Existing Frontmatter block"
+# ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}
+<!-- 
+foam_filepath: '${FOAM_FILEPATH}'
   foam_name: '${FOAM_NAME}'
   foam_description: '${FOAM_DESCRIPTION}'
   background: '${FOAM_BACKGROUND_IMAGE}'
@@ -39,36 +46,4 @@ foam_template:
   alias: '${FOAM_ALIAS}'
   lang: '${FOAM_LANG}'
   nocite: '${FOAM_NOCITE}'
-  category: '${FOAM_CATEGORY}'
----
-
----
-existing_frontmatter: "Existing Frontmatter block"
-# ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}
-
-
-
-
-Title: ${FOAM_TITLE}
-Description: ${FOAM_DESCRIPTION}
-
-
-Link Title: ${FOAM_LINK_TITLE}
-Custom Param: ${FOAM_CUSTOM_PARAM}
-Publish Date: ${FOAM_PUBLISH_DATE}
-Image Source: ${FOAM_IMAGE_SRC}
-Image Title: ${FOAM_IMAGE_TITLE}
-Change Frequency: ${FOAM_CHANGEFREQ}
-Priority: ${FOAM_PRIORITY}
-Summary: ${FOAM_SUMMARY}
-Translation Key: ${FOAM_TRANSLATION_KEY}
-Alias: ${FOAM_ALIAS}
-CSS Class: ${FOAM_CSSCLASS}
-Author 1: ${FOAM_AUTHOR1}
-Affiliation 1: ${FOAM_AFFILIATION1}
-Author 2: ${FOAM_AUTHOR2}
-Affiliation 2: ${FOAM_AFFILIATION2}
-Language: ${FOAM_LANG}
-No Cite: ${FOAM_NOCITE}
-Category: ${FOAM_CATEGORY}
----
+  category: '${FOAM_CATEGORY}' -->
