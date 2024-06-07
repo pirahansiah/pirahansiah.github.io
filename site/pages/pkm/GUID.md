@@ -1,21 +1,64 @@
 
+# Step 1:
+- <span style="color: darkgreen; font-weight: bold;">\=== **ideas - Dark Green**</span>
+- <span style="color: purple ; font-weight: bold;">\+++ **Very important points - purple**</span>
+- <span style="color: blue; font-weight: bold;">\&&& **Useful examples - Blue**</span>
+- <span style="color: red; font-weight: bold;">\! **Attention-grabbing - Red**</span>
+
+Tags:
+    #AI
+    #PersonalDevelopment 
+    #PKM
+
+SecondBrain/
+├── MOC
+│   ├── [[Topic_MOC]]             # .md file with references to SubTopic_MOC files
+│   │   ├── [[SubTopic_MOC]]      # .md file with references to Primary_Source_MOC files
+│   │   │   ├── [[Primary_Source_MOC]]  # .md file with references to notes, Files, Codes, VisualNotes, Reference files
+├── Slipbox
+│   ├── Note1.md
+│   ├── Note2.md
+├── Files   
+│   ├── Docs                      # PDF, Docx, ppt, txt files
+│   ├── Images/Videos
+│   ├── Codes
+
+
+
+
+SecondBrain/
+├── MOC ==folder name==
+│   ├── [[Topic_MOC]] ==.md file inside manually put all reference to the SubTopic_MOC files==
+│   │   ├── [[SubTopic_MOC]] ==.md file inside manually put all reference to the Primary_Source_MOC files==
+│   │   │   ├── [[Primary_Source_MOC]] ==.md file inside manually put all reference to the (refer to notes and Files, Codes, VisualNotes, Reference) files==
+├── Slipbox ==folder name==
+│   ├── Note1.md
+│   ├── Note2.md
+├── Files ==folder name==   
+│   ├── Docs (PDF, Docx, ppt, txt)
+│   ├── Images/Videos
+│   ├── Codes
+
+
+
+
 
 
 
 ## GUID
 
-- <span style="color: red; font-weight: bold;">\! **Attention-grabbing - Red**</span>
+- <span style="color: darkgreen; font-weight: bold;">\=== **Summarizing points - Dark Green**</span>
 - <span style="color: orange; font-weight: bold;">\? **Ambiguity-inducing - Orange**</span>
-- <span style="color: purple; font-weight: bold;">\^ **Change in perspective - Purple**</span>
-- <span style="color: darkblue; font-weight: bold;">\* **Very important points - Dark Blue**</span>
+- <span style="color: darkblue; font-weight: bold;">\^ **Change in perspective - darkblue**</span>
+
 - <span style="color: teal; font-weight: bold;">\~ **Interesting facts - Teal**</span>
 - <span style="color: green; font-weight: bold;">\# **Key concepts - Green**</span>
-- <span style="color: blue; font-weight: bold;">\& **Useful examples - Blue**</span>
+
 - <span style="color: lightgreen; font-weight: bold;">\+ **Additional insights - Light Green**</span>
 - <span style="color: grey; font-weight: bold;">\% **Statistical data - Grey**</span>
 - <span style="color: brown; font-weight: bold;">\@ **Author's commentary - Brown**</span>
 - <span style="color: gold; font-weight: bold;">\$ **Practical applications - Gold**</span>
-- <span style="color: darkgreen; font-weight: bold;">\= **Summarizing points - Dark Green**</span>
+
 - <span style="color: maroon; font-weight: bold;">\- **Contrasting ideas - Maroon**</span>
 - <span style="color: pink; font-weight: bold;">\/ **Common misconceptions - Pink**</span>
 

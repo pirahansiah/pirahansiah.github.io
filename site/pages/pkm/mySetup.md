@@ -201,10 +201,10 @@ https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
 # TODO
 
 
-04:24 Fleeting Notes
-05:23 Literature Notes
-07:46 Map of Content (MoC)
-10:52 Permanent Notes
+ Fleeting Notes
+ Literature Notes
+ Map of Content (MoC)
+ Permanent Notes
 
 
 
@@ -229,6 +229,7 @@ Boxing Note-Taking Method
 Charting Note-Taking Method
 Mapping Note-Taking Method
 Sentence Note-Taking Method
+
 This concept is focused on behavior and habits first, rather than tools, and consists of 4 universal steps called CODE.
  
 C (COLLECT)

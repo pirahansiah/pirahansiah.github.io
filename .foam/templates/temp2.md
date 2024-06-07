@@ -1,16 +1,50 @@
 ---
 foam_template:
-  name: My Note Template
-  description: This is my note template for organizing thoughts and projects.
-  filepath: 'src/pkm/drafts/$FOAM_TITLE.md'
+  name: Farshid's Note Template
+  description: Farshid.
+  filepath: 'SecondBrain/2_Slipbox/$FOAM_TITLE.md'
 ---
 
-$FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE
-MAP/menus: [[Topic_MOC]] | [[SubTopic_MOC]] | [[Primary_Source_MOC]]
+Navigation 
+[[1_Topic_MOC]] 
+[[2_SubTopic_MOC]] 
+[[3_Primary_Source_MOC]] 
+$FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE 
+==Accessed==:   2024
+==Grouping==:   @ 
+==Tags==:       # 
 
-Last Date Used/Read: 
-Types/category: @MD, 
-Keywords /Tags: #AI, 
+
+
+
+
+
+
+
+
+
+                             
+                            
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Fill Out Metadata: Prompt Examples
 
@@ -45,7 +79,7 @@ It's bad because...
 
 ## Metadata Fields
 
-/Priority/How important it is     
+important      
 Idea      
 Why      
 Language      
@@ -63,9 +97,6 @@ Detailed description and analysis.
 - Related notes: 
 - External links: 
 
-## References
-
-
 ## Tasks
 
 - [ ] Task 1
@@ -75,3 +106,5 @@ Detailed description and analysis.
 
 - Idea 1
 - Idea 2
+
+## References

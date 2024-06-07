@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-std=c++11",
+                "-I/usr/local/include/opencv4",
+                "-L/usr/local/lib",
+                "-lopencv_core",
+                "-lopencv_highgui",
+                "-lopencv_imgproc",
+                "-lopencv_imgcodecs",
+                "main.cpp",
+                "-o",
+                "main"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
