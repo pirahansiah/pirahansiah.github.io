@@ -59,6 +59,8 @@ coverImage: /site/pages/images/qrcode.png
   lines of code
 ```
 
+[VS Code tips — Markdown automatic link updates](https://www.youtube.com/watch?v=3hcN0yfOAzQ)
+
 ## Plugin Information
 
 ---
@@ -132,6 +134,13 @@ coverImage: /site/pages/images/qrcode.png
 
 https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
 
+Name: Markdown All in One
+Id: yzhang.markdown-all-in-one
+Description: All you need to write Markdown (keyboard shortcuts, table of contents, auto preview and more)
+Version: 3.6.2
+Publisher: Yu Zhang
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+
 
 
 ## My folders
@@ -196,6 +205,96 @@ https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode
 <https://sspaeti.com/blog/pkm-workflow-for-a-deeper-life/>
 
 <https://johnmavrick.gumroad.com/l/obsidian-starter-vault?recommended_by=library >
+
+
+i combine many different methods such as second brain & MOC, CODE, Zettelkasten & Slip Box, 
+
+# My current setup
+
+
+## Capture
+- Quick notes
+- Ideas
+- Resources
+
+## Organize
+- Categories
+- Tags
+
+## Distill
+- Summaries
+- Highlights
+
+## Express
+- Articles
+- Projects
+
+## MOC
+- [Overview](#overview)
+- [Projects](#projects)
+- [Resources](#resources)
+
+# CODE
+
+## Collect
+- Articles
+- Books
+- Notes
+
+## Organize
+- Folders
+- Tags
+
+## Distill
+- Summaries
+- Key Points
+
+## Express
+- Blog Posts
+- Reports
+
+## MOC
+- [Main Index](#main-index)
+- [Categories](#categories)
+- [Tags](#tags)
+
+# Zettelkasten
+
+## Atomic Notes
+- Single ideas
+- Concepts
+
+## Index
+- References
+- Topics
+
+## Links
+- Related notes
+- Cross-references
+
+## MOC
+- [Index](#index)
+- [Topics](#topics)
+- [Links](#links)
+
+# Slip Box
+
+## Index Cards
+- Notes
+- Ideas
+
+## Connections
+- Linked notes
+- References
+
+## Box
+- Physical box
+- Digital folder
+
+## MOC
+- [Index](#index)
+- [Topics](#topics)
+- [Links](#links)
 
 
 # TODO

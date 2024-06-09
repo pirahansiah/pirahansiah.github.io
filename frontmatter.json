@@ -1,3 +1,22 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json"
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "pkm",
+      "path": "[[workspace]]/src/pkm"
+    },
+    {
+      "title": "2_Drafting",
+      "path": "[[workspace]]/SecondBrain/2_Drafting"
+    },
+    {
+      "title": "4_MOC",
+      "path": "[[workspace]]/SecondBrain/4_MOC"
+    },
+    {
+      "title": "2_Capture",
+      "path": "[[workspace]]/SecondBrain/6_Slipbox/2_Capture"
+    }
+  ],
+  "frontMatter.git.enabled": true
 }
