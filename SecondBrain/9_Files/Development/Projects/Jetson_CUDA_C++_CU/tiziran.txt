@@ -1,0 +1,11 @@
+tiziran
+
+sudo apt-get install python3.9
+
+
+m /usr/bin/python3
+ln -s /usr/bin/python3.9 /usr/bin/python3
+
+sudo apt-get --reinstall install python3-minimal 
+
+

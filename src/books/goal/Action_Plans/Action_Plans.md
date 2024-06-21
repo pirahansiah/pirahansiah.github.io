@@ -1,11 +1,3 @@
-Action Plans are step-by-step roadmaps to achieve specific goals, involving clear goal definition, task breakdown, resource allocation, deadline setting, and regular review. Applicable to various goals, this approach helps systematically pursue and accomplish objectives.
-
-https://pirahansiah.com/src/books/goal/Action_Plans/Action_Plans
-
-
-- [Action_Plans](https://pirahansiah.com/src/books/goal/Action_Plans/Action_Plans)
-
-
 <h1><img src="action_plans1.png">Action Plans</h1>
 
 # Introduction to Action Plans

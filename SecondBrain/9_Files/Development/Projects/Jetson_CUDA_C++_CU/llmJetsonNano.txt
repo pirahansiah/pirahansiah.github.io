@@ -1,0 +1,102 @@
+AI on Jetson Nano: Performance, Monitoring, and Development Essentials
+--------------
+Maximizing your #JetsonNano for AI!
+    Enhance Performance: Use a swap file to expand memory for larger models.
+    Power Management: Employ a 5V 4A power supply for stability during intense computations.
+    Cooling: Add a fan to prevent thermal throttling during heavy loads.
+    Storage: Opt for a high-speed SD card or SSD to speed up read/write operations.
+-------
+Monitoring System Resources on NVIDIA Jetson Nano
+Unlike typical NVIDIA desktop GPUs, the Jetson Nano does not support nvidia-smi. Instead, you can use the following tools to monitor and manage system resources:
+1. Tegrastats Utility: Use the tegrastats utility for real-time system monitoring: "sudo /usr/bin/tegrastats"
+This command displays live data about CPU, GPU, memory usage, and temperature.
+2. Installing jtop
+jtop is an advanced tool for monitoring the Jetson Nano, akin to htop on PCs. It offers a comprehensive overview of system resources, including CPU, GPU, memory, and temperature.
+How to Install and Use jtop: sudo -H pip3 install jetson-stats
+Usage: To start monitoring your system with jtop, run: "sudo jtop"
+---------
+Easily forward GUI apps from your #JetsonNano to your PC! Use SSH with the -X option for secure, seamless integration. Enable X11 Forwarding
+ssh -X username@IPAddress
+-------
+https://github.com/CppCon
+Compiling CUDA+OpenCV on #JetsonNano made easy! Update your PATH and LD_LIBRARY_PATH, then use nvcc to handle your .cu files. Here’s how:
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+nvcc -std=c++11 -o f farshid.cu $(pkg-config --cflags --libs opencv4)
+-----
+Dive into AI with OAK-D! Get started with DepthAI, OpenCV, and OpenVINO. Install and run your first AI-powered camera experiments
+    Installing Camera driver on jetson nano: 
+        sudo wget -qO- https://docs.luxonis.com/install_dependencies.sh | bash
+        python3 -m pip install depthai
+        git clone https://github.com/luxonis/depthai-python.git
+    Example 1:
+        cd depthai-python/examples
+        python3 ColorCamera/rgb_preview.py
+        python depth_colormap.py 
+    Example 2:
+        git clone https://github.com/luxonis/depthai-experiments.git
+        cd gen2-gaz..
+        python3 -m pip install -r requirements.txt
+        pip install chardet
+        python3 main.py
+---------------
+sudo vi /etc/ssh/sshd_config
+
+
+
+
+
+c++
+
+git submodule update --init --recursive
+
+mkdir -p build && cd build
+cmake ..
+cmake --build . --parallel
+
+
+
+
+nvcc -std=c++14 -o cuda_vector_adding cuda_vector_adding.cu
+
+
+nvcc -std=c++14 -o cuda_vector_adding cuda_vector_adding.cu $(pkg-config --cflags --libs opencv4)
+
+
+
+usign gui 
+ssh -X tiziran@192.168.1.115
+
+
+
+c++ jupyter lap 
+
+sudo apt-get update
+sudo apt-get install llvm clang
+
+
+git clone https://github.com/jupyter-xeus/xeus-cling.git
+cd xeus-cling
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
+
+
+nvcc -std=c++11 -o opencv5Test opencv5Test.cpp $(pkg-config --cflags --libs opencv5)
+#pragma cling add_library_path("/path/to/opencv/lib")
+#pragma cling load("libopencv_core.so")
+
+
+1
+pkg-config --cflags --libs opencv4  # If using OpenCV 4.x
+nvcc -std=c++11 -o opencvTest opencvTest.cpp $(pkg-config --cflags --libs opencv4)
+
+
+#pragma cling add_library_path("/usr/local/lib")  // Example path
+#pragma cling load("libopencv_core.so")
+#pragma cling load("libopencv_highgui.so")
+#pragma cling load("libopencv_imgcodecs.so")

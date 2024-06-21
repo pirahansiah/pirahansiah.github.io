@@ -2,7 +2,7 @@
 foam_template:
   name: Farshid's Note Template
   description: Farshid.
-  filepath: 'SecondBrain/6_Slipbox/2_Capture/$FOAM_TITLE.md'
+  filepath: 'SecondBrain/[[FileOrganization]]/2_Capture/$FOAM_TITLE.md'
 
 Tags:
   - Farshid
@@ -14,8 +14,13 @@ Tags:
 [[6_Primary_Source_MOC]]
 
 
-2024-06-07 
-==Accessed==: 2024-06-07  
+$FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE
+---
+
+
+
+
+==Accessed==: $FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE
 ==Grouping==: @HowTo @Review  
 ==Tags==: #HowTo #Guide #md #tips  
 

@@ -16,6 +16,12 @@ Navigation
 [[2_Topic_MOC#Notes]]
 - [[Guide_Markdown]]
 - [[MOC_NoteTakingMethods]]
+- [[File_Organization]]
 
-[[2_Topic_MOC#Notes]]
-- [[Guide_Markdown]]
+[[2_Topic_MOC#python]]
+- [[MOC_Python]]
+- 
+
+
+[[2_Topic_MOC#Nvidia Jetson]]
+- [[llmJetsonNano.txt]]

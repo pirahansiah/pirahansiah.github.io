@@ -6,7 +6,7 @@
 
 
 
-<!-- C++23 keywords for parallel programming: Reviewing multi-threading features including concurrency, parallelism, thread management, mutexes, atomic operations, condition variables, semaphores, deadlocks, livelocks, performance metrics, and thread pools.
+ C++23 keywords for parallel programming: Reviewing multi-threading features including concurrency, parallelism, thread management, mutexes, atomic operations, condition variables, semaphores, deadlocks, livelocks, performance metrics, and thread pools.
 
 # C++23 Multi-threading and Parallel Programming Overview
 
@@ -88,9 +88,7 @@
 
 
 
-
-
-<!-- # CPP 2023: Parallel and Concurrent Programming with C++
+ CPP 2023: Parallel and Concurrent Programming with C++
 ## create markdown format to copy .md file about below review keywords of c++ 23 for multi thread/multi cores/parallel programming
 - example: 
 Process ID, Thread ID
@@ -142,10 +140,9 @@ printf(" Thread ID: %d\n", std::this_thread::get_id());
   - synchronous: blocking 
   - asynchronous: nonblocking
 - agglomeration; granularity; fine-grained parallelism; coarse-grained parallelism; 
-- mapping;  -->
+- mapping;  
 
 
-<!-- # C++ 
 
 ## CPP
 - ## Review C++
@@ -297,11 +294,6 @@ printf(" Thread ID: %d\n", std::this_thread::get_id());
 
 
 
-
-
-
-
----
 
 
 # CPP 
@@ -545,4 +537,3 @@ printf(" Thread ID: %d\n", std::this_thread::get_id());
 
 
 
- -->

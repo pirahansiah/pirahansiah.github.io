@@ -6,6 +6,15 @@ Navigation
 # MOC_NoteTakingMethods
 
 
+[aa](../6_Slipbox/2_Capture/NoteTakingMethods.md)
+
+[aaaaa](../9_Files/Resources/Images/NoteTemplates/cornell_note.png)
+
+[sub](../4_MOC/2_Topic_MOC.md#index)
+
+
+
+
 1. [VS Code tips — Markdown automatic link updates](https://www.youtube.com/watch?v=3hcN0yfOAzQ)
 
 
@@ -18,9 +27,6 @@ Navigation
 - **Publisher:** pomdtr
 - **VS Marketplace Link:** [Excalidraw](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor)
 
-the list of image template for all these visual notes is in the folder [[/Users/farshid/code/Projects/pirahansiah.github.io/SecondBrain/9_Files/Resources/Images/NoteTemplates]]
-
-The list of image templates for all these visual notes is in the folder [`/Users/farshid/code/Projects/pirahansiah.github.io/SecondBrain/9_Files/Resources/Images/NoteTemplates`](NoteTemplates)
 
 
 
@@ -33,4 +39,4 @@ based on my setup
 
 
 
-[[NoteTakingMethods]]
+

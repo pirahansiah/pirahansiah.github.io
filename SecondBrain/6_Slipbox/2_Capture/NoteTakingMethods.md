@@ -131,9 +131,6 @@ conceptMap
 flowcharts
 mindmap
 
-
-The list of image templates for all these visual notes is in the folder 
-
 The list of image templates for all these visual notes is in the folder:
 
 ### PNG Images
