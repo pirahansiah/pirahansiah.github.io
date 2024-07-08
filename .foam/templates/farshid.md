@@ -16,8 +16,51 @@ Tags:
 
 $FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE
 ---
+# To Do's
+> **Color coding:**
+> 🟨 = Important
+> 🟥 = Urgent
+> 🟪 = Urgent AND Important
+
+<p style="font-size: 148mm; line-height: 210mm; display: inline-block;">🟩</p>
 
 
+Color Emojis:
+Red: 🟥
+Orange: 🟧
+Yellow: 🟨
+Green: 🟩
+Blue: 🟦
+Purple: 🟪
+Brown: 🟫
+Black: ⬛
+White: ⬜
+
+Colored Shapes:
+Red Circle: 🔴
+Orange Circle: 🟠
+Yellow Circle: 🟡
+Green Circle: 🟢
+Blue Circle: 🔵
+Purple Circle: 🟣
+Brown Circle: 🟤
+Black Circle: ⚫
+White Circle: ⚪
+
+Red Diamond: 🔶
+Blue Diamond: 🔷
+Orange Diamond: 🔸
+Yellow Diamond: 🔹
+
+Red Heart: ❤️
+Orange Heart: 🧡
+Yellow Heart: 💛
+Green Heart: 💚
+Blue Heart: 💙
+Purple Heart: 💜
+Brown Heart: 🤎
+Black Heart: 🖤
+White Heart: 🤍
 
 
 ==Accessed==: $FOAM_DATE_YEAR-$FOAM_DATE_MONTH-$FOAM_DATE_DATE
@@ -233,3 +276,182 @@ Detailed description and analysis.
 - **Company-related documents and projects**.
 
 ## Luhmann's Slip-box Levels
+
+
+
+# 2022-08-06
+<< [[2022-08-05]] - [[2022-08-07]] >>
+## Reminders
+- Check Google Calendar for any events
+- [[My Daily Laws]]
+- ![[2022-08-05#Improvement for Tomorrow]]
+### Today's Tasks
+> Refer to [[To Do's (Tq)]]
+
+**ONE 1-2+ Hours Task:**
+- [ ] 
+
+
+
+**THREE 30-60 Minute Tasks**:
+- [ ] 
+
+**FIVE 10-30 Minute Tasks**:
+- [ ] 
+## Journals
+### Gratitude
+#### Life (3)
+<% tp.file.cursor(4) %>
+#### Personal (3)
+<% tp.file.cursor(5) %>
+
+### Schedule
+
+## Reflection
+### Lingering Feelings, Observations, Thoughts
+
+### Productivity
+#### Book Implementation
+**What was today's event? What do I feel about my behavior? Is there something I can work on?**
+- 
+**Was I personal with my conversations, or was I generic? How did other people respond?**
+- 
+#### Previous Improvement Effectiveness 
+- 
+#### Good
+- 
+#### Bad
+**What's one point of pain from today? How did it feel? How can I learn from it?**
+- 
+#### Improvement for Tomorrow
+- 
+___
+## Today's Notes
+
+
+
+
+[[2022-W31]] <== This Week ==> [[2022-W33]]
+- [ ] Remind yourself about the plans in higher-view reviews
+
+> “Your decisions about allocating your personal time, energy, and talent ultimately shape your life’s strategy.”
+## Days
+[[2022-07-30]]
+[[2022-07-31]]
+[[2022-08-01]]
+[[2022-08-02]]
+[[2022-08-03]]
+[[2022-08-04]]
+[[2022-08-05]]
+## Reflection
+Sentence:: 
+### Ratings (Out of 10)
+Happiness:: 
+Productivity:: 
+Relationships:: 
+Focus:: 
+### Events
+**Biggest Personal Milestone**
+- 
+
+**Biggest Career Milestone**
+- 
+### Projects
+#### Book Implementation
+**Did I commit to my weekly implementation?**
+- 
+
+**Is there anything I would like to continue doing?**
+- 
+#### Career
+##### Project - 
+**What did I accomplish?**
+- 
+
+**Am I satisfied with my progress?**
+- 
+
+**What setbacks did I face?**
+- 
+
+**What are some possible improvements and plans for the future??**
+- 
+##### Misc
+#### Personal
+##### Project - 
+**What did I accomplish?**
+- 
+
+**Am I satisfied with my progress?**
+- 
+
+**What setbacks did I face?**
+- 
+
+**What are some possible improvements and plans for the future??**
+- 
+##### Misc
+## Overview
+### Key Metrics
+Mon- 
+Tues-
+Wed-
+Thurs- 
+Fri- 
+Sat- 
+Sun- 
+Total Hours:
+Hours average: 
+Thoughts?
+### Prompts
+**Did you complete what you set out to do in the previous weekly review? Are you content?**
+- 
+
+**Does your calendar (and commitments) match your priorities and values?**
+- 
+
+**What was the completion rate of my projects? How was the workload?**
+- 
+
+**Did I do something outside of my plans? How did it influence the week?**
+- 
+
+### What Went Good?
+- 
+### What Went Bad?
+- 
+### The Learned
+**What is one valuable lesson?**
+- 
+
+**What can I improve on?**
+- 
+
+**What should I start/stop doing?**
+- 
+
+## Future Plan
+> **Focus on**: 
+### Book Implementation
+**Choose a book and create:**
+- One to do, daily, and habit for the week
+	1. 
+	1. 
+	1. 
+- Two reflection questions to ask myself every day
+	1. 
+	1. 
+### Action
+> ***Be throrough in planning!***
+- [ ] Update [[Regular Commitments]]
+- [ ] Come up with projects for the week
+	- Consider someday/maybe list
+- [ ] Integrate the tasks into habitica and tq
+#### Projects
+**Career:**
+- 
+
+**Personal:**
+- 
+___
+References:

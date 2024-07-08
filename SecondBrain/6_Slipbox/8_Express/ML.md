@@ -1,0 +1,31 @@
+
+# Lecture 01
+- When to Use ML and Course Vision
+    - Intro
+        -  more ML product
+        -  commoditization of model training
+        -  translation research to real-world products
+        -  ML production engineering
+        -  MLOps
+    - When to use machine learning
+        -  lots of ML projects fail
+            -  ML is still research
+            -  technically infeasible or poorly scoped
+            -  unclear success criteria
+            -  #paper: ML: The high-interest credit card of technical dbt
+        -  #book: The economics of AI
+        -  #paper: Three Principles for designing ML-powered product        
+    - How to pick problems to solve with ML
+        -  TL/DR: high impact, low-cost
+    - Life-cycle of a ML project
+        -  planning & project setup
+        -  data collection & labeling
+        -  training & debugging
+        -  deploying & testing
+- Labs 1-3: CNNs, Transformers, PyTorch Lightning
+    - Lab 00: Overview
+    - Lab 01: Deep Neural Networks in PyTorch              
+    - Lab 02a: PyTorch Lightning
+    - Lab 02b: Training a CNN on Synthetic Handwriting Data
+    - Lab 03: Transformers and Paragraphs          
+  
