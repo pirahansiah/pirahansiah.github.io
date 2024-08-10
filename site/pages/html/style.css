@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#todoSections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.todo-section {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.calendar {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#weekCalendar, #yearCalendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#weekCalendar div, #yearCalendar div {
+    flex: 1 1 calc(14% - 5px);
+    text-align: center;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+#monthCalendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+#monthCalendar span {
+    text-align: center;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+#addTodoBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTodoBtn:hover {
+    background-color: #45a049;
+}
