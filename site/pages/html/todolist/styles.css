@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#todoSections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.todo-section {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+.todo-section h2 {
+    margin-top: 0;
+}
+.calendar {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.todo-item.done {
+    text-decoration: line-through;
+    color: #888;
+}
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.week-section {
+    background-color: #e6f7ff;
+    border-color: #91d5ff;
+}
+.add-todo {
+    display: flex;
+    margin-bottom: 10px;
+}
+.add-todo input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 5px;
+}
+.add-todo button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.file-input {
+    display: none;
+}

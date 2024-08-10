@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App (Local Storage)</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Todo App (Local Storage)</h1>
+    <div class="controls">
+        <button id="exportBtn">Export Todos</button>
+        <div>
+            <input type="file" id="fileInput" class="file-input">
+            <button id="importBtn">Import Todos</button>
+        </div>
+    </div>
+    <div id="todoSections">
+        <div class="todo-section">
+            <h2>Day</h2>
+            <div id="dayCalendar" class="calendar"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a daily todo">
+                <button>Add</button>
+            </div>
+            <ul id="dayTodos" class="todo-list"></ul>
+        </div>
+
+        <div class="todo-section week-section">
+            <h2>Week</h2>
+            <div id="weekCalendar" class="calendar"></div>
+            <div class="week-days" id="weekDays"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a weekly todo">
+                <button>Add</button>
+            </div>
+            <ul id="weekTodos" class="todo-list"></ul>
+        </div>
+
+        <div class="todo-section">
+            <h2>Month</h2>
+            <div id="monthCalendar" class="calendar"></div>
+            <div class="month-days" id="monthDays"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a monthly todo">
+                <button>Add</button>
+            </div>
+            <ul id="monthTodos" class="todo-list"></ul>
+        </div>
+
+        <div class="todo-section">
+            <h2>Year</h2>
+            <div id="yearCalendar" class="calendar"></div>
+            <div class="year-months" id="yearMonths"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a yearly todo">
+                <button>Add</button>
+            </div>
+            <ul id="yearTodos" class="todo-list"></ul>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
