@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App (Local Storage) Telegram miniapp LLM AI</title>
+    <title>Todo App (Local Storage)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,289 +11,358 @@
             margin: 0 auto;
             padding: 20px;
         }
+        #todoSections {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
         .todo-section {
-            margin-bottom: 30px;
-            border: 1px solid #ddd;
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
             padding: 15px;
             border-radius: 5px;
         }
-        .todo-item {
-            cursor: pointer;
-            padding: 5px;
-            margin: 5px 0;
-            border-radius: 3px;
+        .todo-section h2 {
+            margin-top: 0;
         }
-        .todo-item:hover {
-            background-color: #f0f0f0;
+        .calendar {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            cursor: pointer;
         }
         .todo-item.done {
             text-decoration: line-through;
             color: #888;
         }
-        .calendar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-bottom: 15px;
-        }
-        .calendar-day {
-            border: 1px solid #ccc;
-            padding: 5px;
-            text-align: center;
-            cursor: pointer;
-            min-width: 30px;
-        }
-        .calendar-day.selected {
-            background-color: #007bff;
-            color: white;
-        }
-        #addTodoForm {
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
-        }
-        #addTodoForm input, #addTodoForm button {
-            padding: 5px;
-        }
-        #addTodoForm button {
-            cursor: pointer;
-            background-color: #007bff;
+        .delete-btn {
+            background-color: #ff4d4d;
             color: white;
             border: none;
+            padding: 2px 5px;
+            cursor: pointer;
             border-radius: 3px;
+        }
+        .week-section {
+            background-color: #e6f7ff;
+            border-color: #91d5ff;
+        }
+        .add-todo {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .add-todo input {
+            flex-grow: 1;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .add-todo button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .date-selector {
+            margin-bottom: 10px;
+        }
+        .date-selector select {
+            margin-right: 5px;
+        }
+        .week-days {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .week-day {
+            text-align: center;
+            cursor: pointer;
+        }
+        .week-day.selected {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .month-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .month-day {
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .month-day.selected {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .year-months {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .year-month {
+            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+        .year-month.selected {
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
     <h1>Todo App (Local Storage)</h1>
+
     <div id="todoSections">
         <div class="todo-section">
             <h2>Day</h2>
             <div id="dayCalendar" class="calendar"></div>
-            <div id="dayTodos"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a daily todo">
+                <button>Add</button>
+            </div>
+            <ul id="dayTodos" class="todo-list"></ul>
         </div>
-        <div class="todo-section">
+
+        <div class="todo-section week-section">
             <h2>Week</h2>
             <div id="weekCalendar" class="calendar"></div>
-            <div id="weekTodos"></div>
+            <div class="week-days" id="weekDays"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a weekly todo">
+                <button>Add</button>
+            </div>
+            <ul id="weekTodos" class="todo-list"></ul>
         </div>
+
         <div class="todo-section">
             <h2>Month</h2>
             <div id="monthCalendar" class="calendar"></div>
-            <div id="monthTodos"></div>
+            <div class="month-days" id="monthDays"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a monthly todo">
+                <button>Add</button>
+            </div>
+            <ul id="monthTodos" class="todo-list"></ul>
         </div>
+
         <div class="todo-section">
             <h2>Year</h2>
             <div id="yearCalendar" class="calendar"></div>
-            <div id="yearTodos"></div>
+            <div class="year-months" id="yearMonths"></div>
+            <div class="add-todo">
+                <input type="text" placeholder="Add a yearly todo">
+                <button>Add</button>
+            </div>
+            <ul id="yearTodos" class="todo-list"></ul>
         </div>
     </div>
-    <form id="addTodoForm">
-        <input type="date" id="todoDate" required>
-        <input type="text" id="todoItem" required placeholder="Enter new todo">
-        <button type="submit">Add Todo</button>
-    </form>
 
     <script>
-         (function() {
-        const originalFetch = fetch;
-        window.fetch = function() {
-            arguments[1] = arguments[1] || {};
-            arguments[1].headers = arguments[1].headers || {};
-            arguments[1].headers['ngrok-skip-browser-warning'] = 'true';
-            return originalFetch.apply(this, arguments);
-        };
-    })();
-    
-        const addTodoForm = document.getElementById('addTodoForm');
-        const todoItem = document.getElementById('todoItem');
-        const todoDate = document.getElementById('todoDate');
-        let currentDate = new Date();
+        const todoSections = ['day', 'week', 'month', 'year'];
+        let todos = {};
+        let selectedDate = new Date();
 
-        function loadCalendars() {
-            loadDayCalendar();
-            loadWeekCalendar();
-            loadMonthCalendar();
-            loadYearCalendar();
-        }
-
-        function loadDayCalendar() {
-            const calendarDiv = document.getElementById('dayCalendar');
-            calendarDiv.innerHTML = '';
-            
-            const dayElement = document.createElement('div');
-            dayElement.className = 'calendar-day selected';
-            dayElement.textContent = formatDate(currentDate);
-            dayElement.onclick = () => showAddTodoForm(currentDate);
-            calendarDiv.appendChild(dayElement);
-
-            loadTodos('day', currentDate);
-        }
-
-        function loadWeekCalendar() {
-    const weekDiv = document.getElementById('weekCalendar');
-    weekDiv.innerHTML = '';
-
-    const startOfWeek = new Date(currentDate);
-    startOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
-
-    for (let i = 0; i < 7; i++) {
-        const date = new Date(startOfWeek);
-        date.setDate(startOfWeek.getDate() + i);
-        
-        const weekElement = document.createElement('div');
-        weekElement.className = 'calendar-week-day';
-        weekElement.textContent = date.getDate(); // Display only the day
-        weekElement.onclick = () => {
-            currentDate = new Date(date);
-            loadDayCalendar();
-        };
-        weekDiv.appendChild(weekElement);
-    }
-}
-
-        function loadMonthCalendar() {
-            const calendarDiv = document.getElementById('monthCalendar');
-            calendarDiv.innerHTML = '';
-            
-            const year = currentDate.getFullYear();
-            const month = currentDate.getMonth();
-            const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-            for (let i = 1; i <= daysInMonth; i++) {
-                const dayElement = document.createElement('div');
-                dayElement.className = 'calendar-day';
-                dayElement.textContent = i;
-                if (i === currentDate.getDate()) {
-                    dayElement.classList.add('selected');
-                }
-                const day = new Date(year, month, i);
-                dayElement.onclick = () => {
-                    selectDate(day);
-                    showAddTodoForm(day);
-                };
-                calendarDiv.appendChild(dayElement);
-            }
-
-            loadTodos('month', currentDate);
-        }
-
-        function loadYearCalendar() {
-            const calendarDiv = document.getElementById('yearCalendar');
-            calendarDiv.innerHTML = '';
-            
-            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-            
-            monthNames.forEach((month, index) => {
-                const monthElement = document.createElement('div');
-                monthElement.className = 'calendar-day';
-                monthElement.textContent = month;
-                if (index === currentDate.getMonth()) {
-                    monthElement.classList.add('selected');
-                }
-                const firstDayOfMonth = new Date(currentDate.getFullYear(), index, 1);
-                monthElement.onclick = () => {
-                    selectDate(firstDayOfMonth);
-                    showAddTodoForm(firstDayOfMonth);
-                };
-                calendarDiv.appendChild(monthElement);
-            });
-
-            loadTodos('year', currentDate);
-        }
-
-        function selectDate(date) {
-            currentDate = date;
-            loadCalendars();
-        }
-
-        function loadTodos(view, date) {
-            let startDate, endDate;
-
-            if (view === 'day') {
-                startDate = endDate = date;
-            } else if (view === 'week') {
-                startDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
-                endDate = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + 6);
-            } else if (view === 'month') {
-                startDate = new Date(date.getFullYear(), date.getMonth(), 1);
-                endDate = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-            } else if (view === 'year') {
-                startDate = new Date(date.getFullYear(), 0, 1);
-                endDate = new Date(date.getFullYear(), 11, 31);
-            }
-
-            const todos = getTodos(formatDate(startDate), formatDate(endDate));
-            const todosDiv = document.getElementById(`${view}Todos`);
-            todosDiv.innerHTML = '';
-            todos.forEach(todo => {
-                const todoElement = document.createElement('div');
-                todoElement.className = 'todo-item';
-                const [todoDate, todoContent] = todo.split(': - ');
-                const isDone = todoContent.startsWith('[x]');
-                todoElement.textContent = `${todoDate}: ${todoContent.substring(4)}`;
-                if (isDone) {
-                    todoElement.classList.add('done');
-                }
-                todoElement.onclick = () => toggleTodo(todoDate, todoContent.substring(4), isDone);
-                todosDiv.appendChild(todoElement);
-            });
-        }
-
-        function toggleTodo(date, content, currentStatus) {
-            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
-            const index = todos.findIndex(todo => todo.startsWith(`${date}: - `));
-            if (index !== -1) {
-                const newStatus = currentStatus ? '[ ]' : '[x]';
-                todos[index] = `${date}: - ${newStatus} ${content}`;
-                localStorage.setItem('todos', JSON.stringify(todos));
-                loadCalendars();
-            }
-        }
-
-        function showAddTodoForm(date) {
-            todoDate.value = formatDate(date);
-            todoItem.focus();
-        }
-
-        addTodoForm.onsubmit = (e) => {
-            e.preventDefault();
-            addTodo(todoDate.value, todoItem.value);
-            loadCalendars();
-            todoItem.value = '';
-        };
-
-        // function formatDate(date) {
-        //     return date.toISOString().split('T')[0];
-        // }
-
-        function formatDate(date) {
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    return `${year}-${month}-${day}`;
-}
-
-
-
-
-
-        function addTodo(date, item) {
-            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
-            todos.push(`${date}: - [ ] ${item}`);
+        function saveToLocalStorage() {
             localStorage.setItem('todos', JSON.stringify(todos));
         }
 
-        function getTodos(startDate, endDate) {
-            const todos = JSON.parse(localStorage.getItem('todos') || '[]');
-            return todos.filter(todo => {
-                const todoDate = new Date(todo.split(':')[0]);
-                return todoDate >= new Date(startDate) && todoDate <= new Date(endDate);
+        function loadFromLocalStorage() {
+            const storedTodos = localStorage.getItem('todos');
+            if (storedTodos) {
+                todos = JSON.parse(storedTodos);
+            } else {
+                todoSections.forEach(section => {
+                    todos[section] = [];
+                });
+            }
+        }
+
+        function updateCalendars() {
+            // Day
+            document.getElementById('dayCalendar').textContent = selectedDate.toLocaleDateString();
+
+            // Week
+            const weekStart = new Date(selectedDate);
+            weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+            const weekDays = document.getElementById('weekDays');
+            weekDays.innerHTML = '';
+            for (let i = 0; i < 7; i++) {
+                const day = new Date(weekStart);
+                day.setDate(day.getDate() + i);
+                const dayElement = document.createElement('div');
+                dayElement.className = 'week-day';
+                dayElement.textContent = `${day.toLocaleString('default', { weekday: 'short' })} ${day.getDate()}`;
+                if (day.toDateString() === selectedDate.toDateString()) {
+                    dayElement.classList.add('selected');
+                }
+                dayElement.addEventListener('click', () => {
+                    selectedDate = new Date(day);
+                    updateCalendars();
+                    renderTodos('day');
+                });
+                weekDays.appendChild(dayElement);
+            }
+            document.getElementById('weekCalendar').textContent = `Week ${getWeekNumber(selectedDate)}, ${selectedDate.getFullYear()}`;
+
+            // Month
+            const monthDays = document.getElementById('monthDays');
+            monthDays.innerHTML = '';
+            const firstDay = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1);
+            const lastDay = new Date(selectedDate.getFullYear(), selectedDate.getMonth() + 1, 0);
+            for (let i = 1; i <= lastDay.getDate(); i++) {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'month-day';
+                dayElement.textContent = i;
+                if (i === selectedDate.getDate()) {
+                    dayElement.classList.add('selected');
+                }
+                dayElement.addEventListener('click', () => {
+                    selectedDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), i);
+                    updateCalendars();
+                    renderTodos('day');
+                });
+                monthDays.appendChild(dayElement);
+            }
+            document.getElementById('monthCalendar').textContent = selectedDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+            // Year
+            const yearMonths = document.getElementById('yearMonths');
+            yearMonths.innerHTML = '';
+            for (let i = 0; i < 12; i++) {
+                const monthElement = document.createElement('div');
+                monthElement.className = 'year-month';
+                monthElement.textContent = new Date(selectedDate.getFullYear(), i, 1).toLocaleString('default', { month: 'long' });
+                if (i === selectedDate.getMonth()) {
+                    monthElement.classList.add('selected');
+                }
+                monthElement.addEventListener('click', () => {
+                    selectedDate = new Date(selectedDate.getFullYear(), i, 1);
+                    updateCalendars();
+                    renderTodos('month');
+                });
+                yearMonths.appendChild(monthElement);
+            }
+            document.getElementById('yearCalendar').textContent = selectedDate.getFullYear();
+        }
+
+        function getWeekNumber(d) {
+            d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+        }
+
+        function addTodoItem(section, text) {
+            const todo = {
+                id: Date.now(),
+                text: text,
+                done: false,
+                date: selectedDate.toISOString()
+            };
+            todos[section].push(todo);
+            saveToLocalStorage();
+            renderTodos(section);
+        }
+
+        function toggleTodo(section, id) {
+            const todo = todos[section].find(t => t.id === id);
+            if (todo) {
+                todo.done = !todo.done;
+                saveToLocalStorage();
+                renderTodos(section);
+            }
+        }
+
+        function deleteTodo(section, id) {
+            todos[section] = todos[section].filter(t => t.id !== id);
+            saveToLocalStorage();
+            renderTodos(section);
+        }
+
+        function renderTodos(section) {
+            const list = document.getElementById(`${section}Todos`);
+            list.innerHTML = '';
+            todos[section].forEach(todo => {
+                const todoDate = new Date(todo.date);
+                let showTodo = false;
+                switch (section) {
+                    case 'day':
+                        showTodo = todoDate.toDateString() === selectedDate.toDateString();
+                        break;
+                    case 'week':
+                        const weekStart = new Date(selectedDate);
+                        weekStart.setDate(weekStart.getDate() - weekStart.getDay());
+                        const weekEnd = new Date(weekStart);
+                        weekEnd.setDate(weekEnd.getDate() + 6);
+                        showTodo = todoDate >= weekStart && todoDate <= weekEnd;
+                        break;
+                    case 'month':
+                        showTodo = todoDate.getMonth() === selectedDate.getMonth() && todoDate.getFullYear() === selectedDate.getFullYear();
+                        break;
+                    case 'year':
+                        showTodo = todoDate.getFullYear() === selectedDate.getFullYear();
+                        break;
+                }
+                if (showTodo) {
+                    const li = document.createElement('li');
+                    li.className = `todo-item ${todo.done ? 'done' : ''}`;
+                    li.innerHTML = `
+                        <span>${todo.text}</span>
+                        <button class="delete-btn">Delete</button>
+                    `;
+                    li.querySelector('span').addEventListener('click', () => toggleTodo(section, todo.id));
+                    li.querySelector('.delete-btn').addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        deleteTodo(section, todo.id);
+                    });
+                    list.appendChild(li);
+                }
             });
         }
-        document.addEventListener("DOMContentLoaded", function() {
-    loadCalendars();
-});
+
+        document.querySelectorAll('.add-todo').forEach(addTodo => {
+            const input = addTodo.querySelector('input');
+            const button = addTodo.querySelector('button');
+            const section = addTodo.parentElement.querySelector('.todo-list').id.replace('Todos', '');
+
+            button.addEventListener('click', () => {
+                if (input.value.trim()) {
+                    addTodoItem(section, input.value.trim());
+                    input.value = '';
+                }
+            });
+
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter' && input.value.trim()) {
+                    addTodoItem(section, input.value.trim());
+                    input.value = '';
+                }
+            });
+        });
+
+        function initApp() {
+            loadFromLocalStorage();
+            updateCalendars();
+            todoSections.forEach(section => renderTodos(section));
+        }
+
+        initApp();
     </script>
 </body>
 </html>

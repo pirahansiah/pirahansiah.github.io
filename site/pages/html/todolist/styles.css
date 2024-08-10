@@ -1,75 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Base styles */
+body, header, section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 8px;
+    color: #333;
+    background-color: #f4f4f9;
 }
-#todoSections {
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.todo-section {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calendar {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #e3e4e6;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-around;
 }
-.todo-section {
-    flex: 1 1 300px;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-}
-.todo-section h2 {
-    margin-top: 0;
-}
-.calendar {
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.todo-list {
+
+.task-list {
     list-style-type: none;
     padding: 0;
 }
-.todo-item {
+
+.task-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 5px;
+    border-radius: 5px;
     cursor: pointer;
 }
-.todo-item.done {
+
+.task-item.done {
     text-decoration: line-through;
-    color: #888;
+    color: #6c757d;
 }
-.delete-btn {
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 2px 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-.week-section {
-    background-color: #e6f7ff;
-    border-color: #91d5ff;
-}
-.add-todo {
-    display: flex;
-    margin-bottom: 10px;
-}
-.add-todo input {
-    flex-grow: 1;
-    padding: 5px;
-    margin-right: 5px;
-}
-.add-todo button {
-    background-color: #4CAF50;
+
+.delete-button {
+    background-color: #dc3545;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
-.controls {
+
+input[type="text"], button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.calendar-item {
+    padding: 5px;
+    background-color: #c0c2c9;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 20%;
+    margin: 2px;
+}
+
+.calendar-item.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.todo-input {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
-.file-input {
-    display: none;
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    .calendar {
+        flex-direction: column;
+    }
+
+    .calendar-item {
+        flex: none;
+        width: 100%;
+    }
+
+    .todo-input button, .todo-input input {
+        width: 100%;
+    }
+
+    .task-item span, .delete-button {
+        flex: 1;
+    }
 }

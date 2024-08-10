@@ -3,62 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App (Local Storage)</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Todo App with Local Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #todoSections {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .todo-section {
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .todo-section h2 {
+            margin-top: 0;
+        }
+        .calendar {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            cursor: pointer;
+        }
+        .task-item.done {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .delete-button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 2px 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .week-section {
+            background-color: #e6f7ff;
+            border-color: #91d5ff;
+        }
+        .add-todo {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .add-todo input {
+            flex-grow: 1;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .add-todo button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .week-days {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .calendar-item {
+            text-align: center;
+            cursor: pointer;
+        }
+        .calendar-item.selected {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .month-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .year-months {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Todo App (Local Storage)</h1>
-    <div class="controls">
-        <button id="exportBtn">Export Todos</button>
-        <div>
-            <input type="file" id="fileInput" class="file-input">
-            <button id="importBtn">Import Todos</button>
-        </div>
-    </div>
+    <h1>Todo App with Local Storage</h1>
+
     <div id="todoSections">
+        <!-- Daily Tasks Section -->
         <div class="todo-section">
-            <h2>Day</h2>
-            <div id="dayCalendar" class="calendar"></div>
+            <h2>Daily Tasks</h2>
+            <div id="dailyCalendar" class="calendar"></div>
             <div class="add-todo">
-                <input type="text" placeholder="Add a daily todo">
+                <input type="text" id="dailyTaskInput" placeholder="Add a daily task">
                 <button>Add</button>
             </div>
-            <ul id="dayTodos" class="todo-list"></ul>
+            <ul id="dailyTaskList" class="todo-list"></ul>
         </div>
 
+        <!-- Weekly Tasks Section -->
         <div class="todo-section week-section">
-            <h2>Week</h2>
-            <div id="weekCalendar" class="calendar"></div>
-            <div class="week-days" id="weekDays"></div>
+            <h2>Weekly Tasks</h2>
+            <div id="weeklyCalendar" class="calendar"></div>
+            <div id="weekDays" class="week-days"></div>
             <div class="add-todo">
-                <input type="text" placeholder="Add a weekly todo">
+                <input type="text" id="weeklyTaskInput" placeholder="Add a weekly task">
                 <button>Add</button>
             </div>
-            <ul id="weekTodos" class="todo-list"></ul>
+            <ul id="weeklyTaskList" class="todo-list"></ul>
         </div>
 
+        <!-- Monthly Tasks Section -->
         <div class="todo-section">
-            <h2>Month</h2>
-            <div id="monthCalendar" class="calendar"></div>
-            <div class="month-days" id="monthDays"></div>
+            <h2>Monthly Tasks</h2>
+            <div id="monthlyCalendar" class="calendar"></div>
+            <div id="monthDays" class="month-days"></div>
             <div class="add-todo">
-                <input type="text" placeholder="Add a monthly todo">
+                <input type="text" id="monthlyTaskInput" placeholder="Add a monthly task">
                 <button>Add</button>
             </div>
-            <ul id="monthTodos" class="todo-list"></ul>
+            <ul id="monthlyTaskList" class="todo-list"></ul>
         </div>
 
+        <!-- Yearly Tasks Section -->
         <div class="todo-section">
-            <h2>Year</h2>
-            <div id="yearCalendar" class="calendar"></div>
-            <div class="year-months" id="yearMonths"></div>
+            <h2>Yearly Tasks</h2>
+            <div id="yearlyCalendar" class="calendar"></div>
+            <div id="yearMonths" class="year-months"></div>
             <div class="add-todo">
-                <input type="text" placeholder="Add a yearly todo">
+                <input type="text" id="yearlyTaskInput" placeholder="Add a yearly task">
                 <button>Add</button>
             </div>
-            <ul id="yearTodos" class="todo-list"></ul>
+            <ul id="yearlyTaskList" class="todo-list"></ul>
         </div>
     </div>
-    <script src="./scripts.js"></script>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
