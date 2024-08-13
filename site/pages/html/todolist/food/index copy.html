@@ -6,125 +6,67 @@
     <title>Meal Planner and Recipe Assistant</title>
     <meta name="description" content="Interactive tool for meal planning. Select items, adjust cooking time and budget, and get personalized recipes with estimated cost and nutritional information.">
     <style>
-        :root {
-            --primary-color: #007BFF;
-            --secondary-color: #6c757d;
-            --background-color: #f4f4f4;
-            --text-color: #333;
-            --border-color: #ddd;
-            --error-color: #d32f2f;
-        }
-
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 30px;
+            padding: 20px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h1, h2 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
+        h1 {
+            color: #007BFF;
         }
-
         select, input, button {
-            padding: 12px;
+            padding: 10px;
             margin: 10px 0;
             font-size: 16px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            width: 100%;
-            box-sizing: border-box;
         }
-
-        button {
-            background-color: var(--primary-color);
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
         ul {
             list-style-type: none;
             padding: 0;
         }
-
         li {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: var(--background-color);
-            margin: 10px 0;
-            padding: 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
         }
-
         .remove-btn {
-            background: var(--error-color);
+            background: #f44336;
             color: white;
             border: none;
             padding: 5px 10px;
             cursor: pointer;
-            border-radius: 4px;
         }
-
         .remove-btn:hover {
-            background: #b71c1c;
+            background: #d32f2f;
         }
-
         .slider-container {
             display: flex;
             align-items: center;
-            margin: 20px 0;
         }
-
         .slider {
             margin: 0 10px;
             flex: 1;
         }
-
         .result {
             font-weight: bold;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: var(--background-color);
-            border-radius: 4px;
         }
-
         pre {
             background: #f0f0f0;
-            padding: 15px;
+            padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
         }
     </style>
 </head>
@@ -133,9 +75,11 @@
         <h1>Meal Planner and Recipe Assistant</h1>
         <p>Welcome to the Meal Planner and Recipe Assistant! Use this tool to select items you have at home, adjust the cooking time and budget, and get personalized meal options. The tool will provide you with cooking instructions, estimated costs, and nutritional information.</p>
 
+        <!-- Item Selector -->
         <label for="itemSelect">Select an item:</label>
         <select id="itemSelect">
             <option value="">--Select an item--</option>
+            <!-- Options will be added dynamically -->
         </select>
         
         <label for="newItem">Or add a new item:</label>
@@ -146,13 +90,14 @@
         <h2>Items at Home:</h2>
         <ul id="itemList"></ul>
         
+        <!-- Sliders for Cooking Time and Price -->
+        <label for="timeSlider">Cooking Time (minutes): <span id="timeValue">30</span> minutes</label>
         <div class="slider-container">
-            <label for="timeSlider">Cooking Time: <span id="timeValue">30</span> minutes</label>
             <input type="range" id="timeSlider" min="1" max="120" value="30" class="slider">
         </div>
 
+        <label for="priceSlider">Price of Meal (€): <span id="priceValue">10</span> €</label>
         <div class="slider-container">
-            <label for="priceSlider">Price of Meal: <span id="priceValue">10</span> €</label>
             <input type="range" id="priceSlider" min="1" max="100" value="10" class="slider">
         </div>
         
@@ -163,65 +108,79 @@
 
         <button onclick="sendData()">Get Recipe Options</button>
 
-        <div id="recipeResults" class="hidden">
-            <h2>Recipe Results:</h2>
-            <p><strong>Cooking Steps:</strong></p>
-            <pre id="cookingSteps"></pre>
-            <p><strong>Price Estimation:</strong></p>
-            <pre id="priceEstimation"></pre>
-            <p><strong>Nutrition Information:</strong></p>
-            <pre id="nutritionInfo"></pre>
-        </div>
+        <h2>Recipe Results:</h2>
+        <p><strong>Cooking Steps:</strong></p>
+        <pre id="cookingSteps"></pre>
+        <p><strong>Price Estimation:</strong></p>
+        <pre id="priceEstimation"></pre>
+        <p><strong>Nutrition Information:</strong></p>
+        <pre id="nutritionInfo"></pre>
     </div>
 
     <script>
         const apiUrl = 'YOUR_API_GATEWAY_ENDPOINT';  // Replace with your API Gateway endpoint
 
+        // Common items typically found in Berlin
         const commonItems = [
             "Bratwurst", "Currywurst", "Sauerkraut", "Sauerbraten", "Pretzel",
             "Kartoffelsalat", "Rinderroulade", "Königsberger Klopse", "Berliner",
             "Doner Kebab", "Schnitzel", "Bockwurst", "Käsekrainer", "Eisbein"
         ];
 
+        // Load items from localStorage into the dropdown and list
         function loadItems() {
             const itemList = document.getElementById('itemList');
             const selectElement = document.getElementById('itemSelect');
             const storedItems = JSON.parse(localStorage.getItem('items')) || [];
 
+            // Clear existing options in the dropdown
             selectElement.innerHTML = '<option value="">--Select an item--</option>';
+
+            // Clear existing list
             itemList.innerHTML = '';
 
-            [...new Set([...commonItems, ...storedItems])].forEach(item => {
+            // Add common items to the dropdown
+            commonItems.forEach(item => {
                 const option = document.createElement('option');
                 option.value = item;
                 option.textContent = item;
                 selectElement.appendChild(option);
+            });
 
-                if (storedItems.includes(item)) {
-                    const listItem = createListItem(item);
-                    itemList.appendChild(listItem);
+            // Add stored items to the dropdown and list
+            storedItems.forEach(item => {
+                // Add item to the dropdown if not already present
+                if (!selectElement.querySelector(`option[value="${item}"]`)) {
+                    const option = document.createElement('option');
+                    option.value = item;
+                    option.textContent = item;
+                    selectElement.appendChild(option);
                 }
+
+                // Add item to the list
+                const listItem = document.createElement('li');
+                listItem.textContent = item;
+
+                // Create remove button
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.className = 'remove-btn';
+                removeButton.onclick = () => removeItem(item);
+
+                listItem.appendChild(removeButton);
+                itemList.appendChild(listItem);
             });
         }
 
-        function createListItem(item) {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-
-            const removeButton = document.createElement('button');
-            removeButton.textContent = 'Remove';
-            removeButton.className = 'remove-btn';
-            removeButton.onclick = () => removeItem(item);
-
-            listItem.appendChild(removeButton);
-            return listItem;
-        }
-
+        // Add new item or selected item to the list and store in localStorage
         function addItem() {
             const selectElement = document.getElementById('itemSelect');
             const newItemInput = document.getElementById('newItem');
             const itemList = document.getElementById('itemList');
-            const itemToAdd = selectElement.value || newItemInput.value.trim();
+            const selectedItem = selectElement.value;
+            const newItem = newItemInput.value.trim();
+
+            let itemToAdd = selectedItem || newItem;
 
             if (itemToAdd) {
                 const storedItems = JSON.parse(localStorage.getItem('items')) || [];
@@ -230,16 +189,26 @@
                     storedItems.push(itemToAdd);
                     localStorage.setItem('items', JSON.stringify(storedItems));
 
-                    const listItem = createListItem(itemToAdd);
+                    // Create a new list item
+                    const listItem = document.createElement('li');
+                    listItem.textContent = itemToAdd;
+
+                    // Create remove button
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.className = 'remove-btn';
+                    removeButton.onclick = () => removeItem(itemToAdd);
+
+                    listItem.appendChild(removeButton);
                     itemList.appendChild(listItem);
 
-                    if (!selectElement.querySelector(`option[value="${itemToAdd}"]`)) {
-                        const newOption = document.createElement('option');
-                        newOption.value = itemToAdd;
-                        newOption.textContent = itemToAdd;
-                        selectElement.appendChild(newOption);
-                    }
+                    // Add new item to the dropdown
+                    const newOption = document.createElement('option');
+                    newOption.value = itemToAdd;
+                    newOption.textContent = itemToAdd;
+                    selectElement.appendChild(newOption);
 
+                    // Clear selections and input
                     selectElement.value = '';
                     newItemInput.value = '';
                 } else {
@@ -248,8 +217,11 @@
             } else {
                 alert('Please select or enter an item.');
             }
+
+            loadItems();
         }
 
+        // Remove an item from the list and localStorage
         function removeItem(item) {
             let storedItems = JSON.parse(localStorage.getItem('items')) || [];
             storedItems = storedItems.filter(storedItem => storedItem !== item);
@@ -257,6 +229,7 @@
             loadItems();
         }
 
+        // Initialize sliders
         function initializeSliders() {
             const timeSlider = document.getElementById('timeSlider');
             const timeValue = document.getElementById('timeValue');
@@ -265,15 +238,20 @@
             const selectedTime = document.getElementById('selectedTime');
             const selectedPrice = document.getElementById('selectedPrice');
 
-            function updateSlider(slider, value, selected) {
-                value.textContent = slider.value;
-                selected.textContent = slider.value;
-            }
+            // Update cooking time value
+            timeSlider.oninput = function() {
+                timeValue.textContent = this.value;
+                selectedTime.textContent = this.value;
+            };
 
-            timeSlider.oninput = () => updateSlider(timeSlider, timeValue, selectedTime);
-            priceSlider.oninput = () => updateSlider(priceSlider, priceValue, selectedPrice);
+            // Update price value
+            priceSlider.oninput = function() {
+                priceValue.textContent = this.value;
+                selectedPrice.textContent = this.value;
+            };
         }
 
+        // Send data to AWS Lambda function via API Gateway
         function sendData() {
             const cookingTime = document.getElementById('timeSlider').value;
             const mealPrice = document.getElementById('priceSlider').value;
@@ -295,11 +273,9 @@
                 document.getElementById('cookingSteps').textContent = data.cooking_steps || 'No cooking steps available.';
                 document.getElementById('priceEstimation').textContent = data.price_estimation || 'No price estimation available.';
                 document.getElementById('nutritionInfo').textContent = data.nutrition_info || 'No nutrition information available.';
-                document.getElementById('recipeResults').classList.remove('hidden');
             })
             .catch(error => {
                 console.error('Error:', error);
-                alert('An error occurred while fetching recipe options. Please try again.');
             });
         }
 
