@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Selector with Sliders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label, .slider-container, .result {
+            margin: 10px 0;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+        }
+        .slider {
+            margin: 0 10px;
+            flex: 1;
+        }
+        .result {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Meal Selector with Sliders</h1>
+        
+        <label for="timeSlider">Cooking Time (minutes): <span id="timeValue">30</span> minutes</label>
+        <div class="slider-container">
+            <input type="range" id="timeSlider" min="1" max="120" value="30" class="slider">
+        </div>
+
+        <label for="priceSlider">Price of Meal (€): <span id="priceValue">10</span> €</label>
+        <div class="slider-container">
+            <input type="range" id="priceSlider" min="1" max="100" value="10" class="slider">
+        </div>
+        
+        <div class="result">
+            <p>Selected Cooking Time: <span id="selectedTime">30</span> minutes</p>
+            <p>Selected Price: <span id="selectedPrice">10</span> €</p>
+        </div>
+    </div>
+
+    <script>
+        // Get elements
+        const timeSlider = document.getElementById('timeSlider');
+        const timeValue = document.getElementById('timeValue');
+        const priceSlider = document.getElementById('priceSlider');
+        const priceValue = document.getElementById('priceValue');
+        const selectedTime = document.getElementById('selectedTime');
+        const selectedPrice = document.getElementById('selectedPrice');
+
+        // Update cooking time value
+        timeSlider.oninput = function() {
+            timeValue.textContent = this.value;
+            selectedTime.textContent = this.value;
+        };
+
+        // Update price value
+        priceSlider.oninput = function() {
+            priceValue.textContent = this.value;
+            selectedPrice.textContent = this.value;
+        };
+    </script>
+</body>
+</html>

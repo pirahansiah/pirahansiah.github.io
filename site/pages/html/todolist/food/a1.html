@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Item Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        select, button, input {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .remove-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .remove-btn:hover {
+            background: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Item Selector</h1>
+        <label for="itemSelect">Select an item:</label>
+        <select id="itemSelect">
+            <option value="">--Select an item--</option>
+            <!-- Common items will be added dynamically -->
+        </select>
+        
+        <label for="newItem">Or add a new item:</label>
+        <input type="text" id="newItem" placeholder="Enter new item">
+        
+        <button onclick="addItem()">Add Item</button>
+        
+        <h2>Items at Home:</h2>
+        <ul id="itemList"></ul>
+    </div>
+
+    <script>
+        // Common items typically found in Berlin
+        const commonItems = [
+            "Bratwurst", "Currywurst", "Sauerkraut", "Sauerbraten", "Pretzel",
+            "Kartoffelsalat", "Rinderroulade", "Königsberger Klopse", "Berliner",
+            "Doner Kebab", "Schnitzel", "Bockwurst", "Käsekrainer", "Eisbein"
+        ];
+
+        // Load items from localStorage into the dropdown and list
+        function loadItems() {
+            const itemList = document.getElementById('itemList');
+            const selectElement = document.getElementById('itemSelect');
+            const storedItems = JSON.parse(localStorage.getItem('items')) || [];
+
+            // Clear existing options in the dropdown
+            selectElement.innerHTML = '<option value="">--Select an item--</option>';
+
+            // Clear existing list
+            itemList.innerHTML = '';
+
+            // Add common items to the dropdown
+            commonItems.forEach(item => {
+                const option = document.createElement('option');
+                option.value = item;
+                option.textContent = item;
+                selectElement.appendChild(option);
+            });
+
+            // Add stored items to the dropdown and list
+            storedItems.forEach(item => {
+                // Add item to the dropdown if not already present
+                if (!selectElement.querySelector(`option[value="${item}"]`)) {
+                    const option = document.createElement('option');
+                    option.value = item;
+                    option.textContent = item;
+                    selectElement.appendChild(option);
+                }
+
+                // Add item to the list
+                const listItem = document.createElement('li');
+                listItem.textContent = item;
+
+                // Create remove button
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.className = 'remove-btn';
+                removeButton.onclick = () => removeItem(item);
+
+                listItem.appendChild(removeButton);
+                itemList.appendChild(listItem);
+            });
+        }
+
+        // Add new item or selected item to the list and store in localStorage
+        function addItem() {
+            const selectElement = document.getElementById('itemSelect');
+            const newItemInput = document.getElementById('newItem');
+            const itemList = document.getElementById('itemList');
+            const selectedItem = selectElement.value;
+            const newItem = newItemInput.value.trim();
+
+            let itemToAdd = selectedItem || newItem;
+
+            if (itemToAdd) {
+                const storedItems = JSON.parse(localStorage.getItem('items')) || [];
+
+                if (!storedItems.includes(itemToAdd)) {
+                    storedItems.push(itemToAdd);
+                    localStorage.setItem('items', JSON.stringify(storedItems));
+
+                    // Create a new list item
+                    const listItem = document.createElement('li');
+                    listItem.textContent = itemToAdd;
+
+                    // Create remove button
+                    const removeButton = document.createElement('button');
+                    removeButton.textContent = 'Remove';
+                    removeButton.className = 'remove-btn';
+                    removeButton.onclick = () => removeItem(itemToAdd);
+
+                    listItem.appendChild(removeButton);
+                    itemList.appendChild(listItem);
+
+                    // Add new item to the dropdown
+                    const newOption = document.createElement('option');
+                    newOption.value = itemToAdd;
+                    newOption.textContent = itemToAdd;
+                    selectElement.appendChild(newOption);
+
+                    // Clear selections and input
+                    selectElement.value = '';
+                    newItemInput.value = '';
+                } else {
+                    alert('Item is already in the list.');
+                }
+            } else {
+                alert('Please select or enter an item.');
+            }
+
+            loadItems();
+        }
+
+        // Remove an item from the list and localStorage
+        function removeItem(item) {
+            let storedItems = JSON.parse(localStorage.getItem('items')) || [];
+            storedItems = storedItems.filter(storedItem => storedItem !== item);
+            localStorage.setItem('items', JSON.stringify(storedItems));
+            loadItems();
+        }
+
+        // Initialize the page
+        loadItems();
+    </script>
+</body>
+</html>
