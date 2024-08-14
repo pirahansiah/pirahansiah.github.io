@@ -175,9 +175,7 @@
     </div>
 
     <script>
-        //const apiUrl = 'YOUR_API_GATEWAY_ENDPOINT';  // Replace with your API Gateway endpoint
-        const apiUrl = 'https://your-api-gateway-endpoint.amazonaws.com/item2cook';  // Replace with your API Gateway endpoint
-
+        const apiUrl = 'YOUR_API_GATEWAY_ENDPOINT';  // Replace with your API Gateway endpoint
 
         const commonItems = [
             "Bratwurst", "Currywurst", "Sauerkraut", "Sauerbraten", "Pretzel",
@@ -277,34 +275,33 @@
         }
 
         function sendData() {
-    const cookingTime = document.getElementById('timeSlider').value;
-    const mealPrice = document.getElementById('priceSlider').value;
-    const items = JSON.parse(localStorage.getItem('items')) || [];
+            const cookingTime = document.getElementById('timeSlider').value;
+            const mealPrice = document.getElementById('priceSlider').value;
+            const items = JSON.parse(localStorage.getItem('items')) || [];
 
-    fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            cooking_time: cookingTime,
-            meal_price: mealPrice,
-            items: items
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('cookingSteps').textContent = data.cooking_steps || 'No cooking steps available.';
-        document.getElementById('priceEstimation').textContent = data.price_estimation || 'No price estimation available.';
-        document.getElementById('nutritionInfo').textContent = data.nutrition_info || 'No nutrition information available.';
-        document.getElementById('recipeResults').classList.remove('hidden');
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('An error occurred while fetching recipe options. Please try again.');
-    });
-}
-
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    cooking_time: cookingTime,
+                    meal_price: mealPrice,
+                    items: items
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('cookingSteps').textContent = data.cooking_steps || 'No cooking steps available.';
+                document.getElementById('priceEstimation').textContent = data.price_estimation || 'No price estimation available.';
+                document.getElementById('nutritionInfo').textContent = data.nutrition_info || 'No nutrition information available.';
+                document.getElementById('recipeResults').classList.remove('hidden');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while fetching recipe options. Please try again.');
+            });
+        }
 
         // Initialize the page
         loadItems();
