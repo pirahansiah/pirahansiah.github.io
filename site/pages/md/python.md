@@ -1,3 +1,38 @@
+https://realpython.com/async-io-python/
+name of fucntion is call coroutine
+
+
+
+import asyncio
+async def foo():
+    print("1")
+    await asyncio.sleep(2)
+    print("2")
+async def another():
+    print("another")
+async def main():
+    await asyncio.gether(foo(),another())
+
+asyncio.run(main())
+
+---
+def foo()->int:
+    try:
+        raise Exception
+    except Exception:
+        print("Exception!")
+        return 0
+
+    finally:
+        return 1
+
+always return 1 :)
+
+---
+
+
+
+
 # Pandas: Hands-On Data Science: Sales Analysis in Python
 - some times need to use encoding to read cvs file
 - def.info()
