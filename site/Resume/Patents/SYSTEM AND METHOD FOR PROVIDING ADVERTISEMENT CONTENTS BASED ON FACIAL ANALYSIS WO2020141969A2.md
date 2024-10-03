@@ -1,3 +1,16 @@
+![Patent: SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2](https://pirahansiah.com/site/Resume/Patents/SYSTEM%20AND%20METHOD%20FOR%20PROVIDING%20ADVERTISEMENT%20CONTENTS%20BASED%20ON%20FACIAL%20ANALYSIS%20WO2020141969A2)
+
+![PDF Download}(https://patentimages.storage.googleapis.com/ff/3f/a5/e7b42ef58d8a03/WO2020141969A2.pdf)
+
+
+🎧 Listen and Explore 🗺️ the engaging audio discussion about the innovative patent “SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2”!
+
+This system leverages facial recognition technology to deliver personalized, dynamic ads tailored to users based on age, gender, emotions, and more—while prioritizing privacy! 🔒✨ Discover how AI is revolutionizing digital advertising by matching ads to user profiles without the need for direct personal data collection.
+
+🔗 Mindmap visualization available too! Uncover how this innovation is shaping the future of advertising. #AI #FacialRecognition #DigitalMarketing #Innovation #LLM
+
+# ![spotify](https://podcasters.spotify.com/pod/show/pirahansiah/episodes/SYSTEM-AND-METHOD-FOR-PROVIDING-ADVERTISEMENT-CONTENTS-BASED-ON-FACIAL-ANALYSIS-WO2020141969A2-e2p7342)
+
 
 # ![SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2](SYSTEM%20AND%20METHOD%20FOR%20PROVIDING%20ADVERTISEMENT%20CONTENTS%20BASED%20ON%20FACIAL%20ANALYSIS%20WO2020141969A2.png) 
 
