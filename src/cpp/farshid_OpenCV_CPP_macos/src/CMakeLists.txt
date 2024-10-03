@@ -1,0 +1,5 @@
+add_library(tools STATIC ${PROJECT_NAME}/tools.cpp ${PROJECT_NAME}/tools.h)
+target_include_directories(tools PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(tools PUBLIC ${OpenCV_LIBS})
+add_executable(${PROJECT_NAME} ${PROJECT_NAME}/main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE tools ${OpenCV_LIBS})

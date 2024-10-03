@@ -1,0 +1,6 @@
+enable_testing()
+find_package(GTest REQUIRED)
+add_executable(test_tools test_tools.cpp)
+target_link_libraries(test_tools PRIVATE GTest::GTest GTest::Main tools ${OpenCV_LIBS})
+include(GoogleTest)
+gtest_discover_tests(test_tools)

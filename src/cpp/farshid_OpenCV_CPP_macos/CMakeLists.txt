@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.12)
+project(farshid_OpenCV_CPP_macos)
+set(CMAKE_CXX_STANDARD 17)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+add_subdirectory(src)
