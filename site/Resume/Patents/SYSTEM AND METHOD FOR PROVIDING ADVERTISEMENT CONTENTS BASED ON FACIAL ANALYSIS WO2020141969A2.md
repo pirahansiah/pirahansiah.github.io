@@ -8,9 +8,9 @@ podcast:
 [https://spotifyanchor-web.app.link/e/6iZLWVqSqNb](https://spotifyanchor-web.app.link/e/6iZLWVqSqNb)
 
 
-![Patent: SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2](https://pirahansiah.com/site/Resume/Patents/SYSTEM%20AND%20METHOD%20FOR%20PROVIDING%20ADVERTISEMENT%20CONTENTS%20BASED%20ON%20FACIAL%20ANALYSIS%20WO2020141969A2)
+[Patent: SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2](https://pirahansiah.com/site/Resume/Patents/SYSTEM%20AND%20METHOD%20FOR%20PROVIDING%20ADVERTISEMENT%20CONTENTS%20BASED%20ON%20FACIAL%20ANALYSIS%20WO2020141969A2)
 
-[PDF Download}(https://patentimages.storage.googleapis.com/ff/3f/a5/e7b42ef58d8a03/WO2020141969A2.pdf)
+PDF Download}(https://patentimages.storage.googleapis.com/ff/3f/a5/e7b42ef58d8a03/WO2020141969A2.pdf)
 
 
 🎧 Listen and Explore 🗺️ the engaging audio discussion about the innovative patent “SYSTEM AND METHOD FOR PROVIDING ADVERTISEMENT CONTENTS BASED ON FACIAL ANALYSIS WO2020141969A2”!
@@ -19,7 +19,7 @@ This system leverages facial recognition technology to deliver personalized, dyn
 
 🔗 Mindmap visualization available too! Uncover how this innovation is shaping the future of advertising. #AI #FacialRecognition #DigitalMarketing #Innovation #LLM
 
-# ![spotify](https://podcasters.spotify.com/pod/show/pirahansiah/episodes/SYSTEM-AND-METHOD-FOR-PROVIDING-ADVERTISEMENT-CONTENTS-BASED-ON-FACIAL-ANALYSIS-WO2020141969A2-e2p7342)
+[spotify](https://podcasters.spotify.com/pod/show/pirahansiah/episodes/SYSTEM-AND-METHOD-FOR-PROVIDING-ADVERTISEMENT-CONTENTS-BASED-ON-FACIAL-ANALYSIS-WO2020141969A2-e2p7342)
 
 
 
