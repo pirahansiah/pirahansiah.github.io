@@ -8,33 +8,31 @@ permalink: /
 {% assign lines = site_text | split: "\n" %}
 {% capture menu_items %}{% endcapture %}
 {% capture anchored_content %}{% endcapture %}
+{% assign current_title = "" %}
+{% assign current_id = "" %}
+{% assign current_url = "" %}
 {% for line in lines %}
-  {% if line contains "### " %}
-    {% assign title = line | remove: "### " | strip %}
-    {% assign id = title | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
-    {% capture menu_item %}<li class="nav-item sublevel-3"><a href="#{{ id }}">{{ title }}</a></li>{% endcapture %}
-    {% capture menu_items %}{{ menu_items }}{{ menu_item }}{% endcapture %}
-    {% capture anchored_content %}{{ anchored_content }}<a id="{{ id }}"></a>{{ line }}
-{% endcapture %}
-  {% elsif line contains "## " %}
-    {% assign title = line | remove: "## " | strip %}
-    {% assign id = title | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
-    {% capture menu_item %}<li class="nav-item sublevel-2"><a href="#{{ id }}">{{ title }}</a></li>{% endcapture %}
-    {% capture menu_items %}{{ menu_items }}{{ menu_item }}{% endcapture %}
-    {% capture anchored_content %}{{ anchored_content }}<a id="{{ id }}"></a>{{ line }}
-{% endcapture %}
-  {% elsif line contains "# " %}
-    {% assign title = line | remove: "# " | strip %}
-    {% assign id = title | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
-    {% capture menu_item %}<li class="nav-item sublevel-1"><a href="#{{ id }}">{{ title }}</a></li>{% endcapture %}
-    {% capture menu_items %}{{ menu_items }}{{ menu_item }}{% endcapture %}
-    {% capture anchored_content %}{{ anchored_content }}<a id="{{ id }}"></a>{{ line }}
-{% endcapture %}
+  {% assign stripped = line | strip %}
+  {% if stripped contains "# " and stripped contains "## " == false %}
+    {% if current_title != "" %}
+      {% capture href %}{% if current_url != "" %}{{ current_url }}{% else %}#{{ current_id }}{% endif %}{% endcapture %}
+      {% capture menu_items %}{{ menu_items }}<li class="nav-item"><a href="{{ href }}">{{ current_title }}</a></li>{% endcapture %}
+    {% endif %}
+    {% assign current_title = stripped | remove: "# " | strip %}
+    {% assign current_id = current_title | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
+    {% assign current_url = "" %}
+    {% capture anchored_content %}{{ anchored_content }}<a id="{{ current_id }}"></a>{{ line }}\n{% endcapture %}
+  {% elsif stripped contains "/contents/" and current_title != "" %}
+    {% assign current_url = stripped %}
+    {% capture anchored_content %}{{ anchored_content }}{{ line }}\n{% endcapture %}
   {% else %}
-    {% assign raw_line = line | append: "\n" %}
-    {% capture anchored_content %}{{ anchored_content }}{{ raw_line }}{% endcapture %}
+    {% capture anchored_content %}{{ anchored_content }}{{ line }}\n{% endcapture %}
   {% endif %}
 {% endfor %}
+{% if current_title != "" %}
+  {% capture href %}{% if current_url != "" %}{{ current_url }}{% else %}#{{ current_id }}{% endif %}{% endcapture %}
+  {% capture menu_items %}{{ menu_items }}<li class="nav-item"><a href="{{ href }}">{{ current_title }}</a></li>{% endcapture %}
+{% endif %}
 
 <nav class="navbar">
   <div class="navbar-brand">

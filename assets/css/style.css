@@ -252,6 +252,12 @@ th {
   box-shadow: 0 32px 80px rgba(8, 12, 32, 0.16);
 }
 
+.glass-panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(20px);
+}
+
 .site-content h1,
 .site-content h2,
 .site-content h3 {
