@@ -1,20 +1,11 @@
 #!/bin/bash
 
-# Minimal Jekyll build and serve script
+# Jekyll build and serve script for local development
 
+echo "[JEKYLL] Installing gems..."
 bundle install
-bundle exec jekyll serve --incremental --watch
 
+echo "[JEKYLL] Starting local server..."
+echo "[JEKYLL] Open http://localhost:4000 in your browser"
 
-case "${1:-serve}" in
-  serve)
-    serve
-    ;;
-  static)
-    serve_static
-    ;;
-  *)
-    echo "Usage: ./run.sh [serve|static]"
-    exit 1
-    ;;
-esac
+bundle exec jekyll serve --host 0.0.0.0 --port 4000 --incremental --watch

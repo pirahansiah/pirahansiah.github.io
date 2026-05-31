@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title | default: site.title }}</title>
+  <title>Farshid Pirahansiah</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: system-ui, sans-serif; background: #fff; color: #222; }
@@ -124,96 +124,54 @@
 <body>
 
 <!-- ── NAV built by Jekyll from _includes/site.md ── -->
-{% capture site_src %}{% include site.md %}{% endcapture %}
 
-{% assign nav_lines = site_src | split: "\n" %}
+
+
 
 <nav>
   <a class="nav-brand" href="/">Farshid</a>
   <ul class="nav-list" id="nav-list">
 
-    {% assign i = 0 %}
-    {% assign total = nav_lines | size %}
-    {% for line in nav_lines %}
-      {% assign s = line | strip %}
-      {% assign h1_prefix = s | slice: 0, 2 %}
-      {% assign h2_prefix = s | slice: 0, 3 %}
+    
+    
+    
+      
+      
+      
 
-      {% if h1_prefix == "# " and h2_prefix != "## " %}
-        {% assign label = s | slice: 2, 100 | strip %}
-        {% assign label_id = label | downcase | replace: " ", "-" %}
+      
+        
+        
 
-        {% comment %}Look ahead for ## children and direct link{% endcomment %}
-        {% assign has_children = false %}
-        {% assign direct_url = "" %}
-        {% assign j_start = forloop.index %}
+        
+        
+        
+        
 
-        {% for lookahead in nav_lines %}
-          {% if forloop.index <= j_start %}{% continue %}{% endif %}
-          {% assign ls = lookahead | strip %}
-          {% assign lh1 = ls | slice: 0, 2 %}
-          {% assign lh2 = ls | slice: 0, 3 %}
-          {% if lh1 == "# " and lh2 != "## " %}{% break %}{% endif %}
-          {% if lh2 == "## " %}{% assign has_children = true %}{% endif %}
-          {% if ls contains "](" and lh2 != "## " and direct_url == "" %}
-            {% assign direct_url = ls | split: "](" | last | split: ")" | first %}
-          {% endif %}
-        {% endfor %}
+        
+          
 
-        {% if has_children %}
+        
           <li>
-            {% if direct_url != "" %}
-              <a href="{{ direct_url }}">{{ label }}</a>
-            {% else %}
-              <a href="#">{{ label }}</a>
-            {% endif %}
-            <ul>
-              {% assign in_this_h1 = false %}
-              {% assign pending_h2_label = "" %}
-              {% assign pending_h2_url = "" %}
-              {% for subline in nav_lines %}
-                {% assign ss = subline | strip %}
-                {% assign sh1 = ss | slice: 0, 2 %}
-                {% assign sh2 = ss | slice: 0, 3 %}
+            <a href="#cv3
+##-dl4
+##-llm5
+[cv2tot](/contents/inbox/cv2tot)
 
-                {% if sh1 == "# " and sh2 != "## " %}
-                  {% if in_this_h1 %}
-                    {% if pending_h2_label != "" %}
-                      <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-                      {% assign pending_h2_label = "" %}
-                      {% assign pending_h2_url = "" %}
-                    {% endif %}
-                    {% break %}
-                  {% endif %}
-                  {% assign this_label = ss | slice: 2, 100 | strip %}
-                  {% if this_label == label %}{% assign in_this_h1 = true %}{% endif %}
+#-test
+[llm-page](/contents/inbox/cv2tot)
+##-dl">CV3
+## DL4
+## LLM5
+[cv2ToT](/contents/inbox/cv2ToT)
 
-                {% elsif in_this_h1 and sh2 == "## " %}
-                  {% if pending_h2_label != "" %}
-                    <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-                    {% assign pending_h2_url = "" %}
-                  {% endif %}
-                  {% assign pending_h2_label = ss | slice: 3, 100 | strip %}
-
-                {% elsif in_this_h1 and ss contains "](" and pending_h2_label != "" %}
-                  {% assign pending_h2_url = ss | split: "](" | last | split: ")" | first %}
-                  <li><a href="{{ pending_h2_url }}">{{ pending_h2_label }}</a></li>
-                  {% assign pending_h2_label = "" %}
-                  {% assign pending_h2_url = "" %}
-                {% endif %}
-              {% endfor %}
-              {% if pending_h2_label != "" %}
-                <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-              {% endif %}
-            </ul>
+# test
+[LLM page](/contents/inbox/cv2ToT)
+## DL</a>
           </li>
-        {% else %}
-          <li>
-            <a href="{% if direct_url != "" %}{{ direct_url }}{% else %}#{{ label_id }}{% endif %}">{{ label }}</a>
-          </li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+        
+      
+    
 
     <li><a href="https://github.com/pirahansiah" target="_blank">GitHub</a></li>
   </ul>
@@ -228,7 +186,28 @@
 
 <!-- ── PAGE CONTENT ── -->
 <main>
-  {{ content }}
+  <div id="site-content"></div>
+
+<script>
+fetch('/contents/site.md')
+  .then(r => r.text())
+  .then(text => {
+    let html = '';
+    text.split('\n').forEach(line => {
+      const s = line.trim();
+      if (!s) { html += '<br>'; return; }
+      if (s.startsWith('### ')) { html += `<h3>${s.slice(4)}</h3>`; return; }
+      if (s.startsWith('## '))  { html += `<h2>${s.slice(3)}</h2>`; return; }
+      if (s.startsWith('# '))   { html += `<h1>${s.slice(2)}</h1>`; return; }
+      const linkMatch = s.match(/^\[(.+?)\]\((.+?)\)$/);
+      if (linkMatch) { html += `<p><a href="${linkMatch[2]}">${linkMatch[1]}</a></p>`; return; }
+      html += `<p>${s}</p>`;
+    });
+    document.getElementById('site-content').innerHTML = html;
+  });
+</script>
+
+
 </main>
 
 <script>
