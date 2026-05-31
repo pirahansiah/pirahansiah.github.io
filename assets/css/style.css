@@ -111,6 +111,14 @@ a:hover {
   margin: 0;
 }
 
+.navbar-nav .nav-item {
+  margin-right: 0.75rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
 .navbar-nav a {
   display: inline-block;
   padding: 0.55rem 0.85rem;
@@ -153,6 +161,43 @@ a:hover {
 .has-submenu:hover > .submenu,
 .has-submenu:focus-within > .submenu {
   display: block;
+}
+
+.nav-dropdown details {
+  position: relative;
+}
+
+.nav-dropdown summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  color: var(--secondary-color);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid transparent;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown details[open] summary {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.site-source {
+  width: 100%;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+  overflow-x: auto;
 }
 
 .submenu-item a {
