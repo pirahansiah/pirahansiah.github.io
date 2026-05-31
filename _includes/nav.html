@@ -4,9 +4,25 @@
   </div>
   
   <ul class="navbar-nav">
-    <li><a href="{{ '/about' | relative_url }}">about</a></li>
-    <li><a href="{{ '/projects' | relative_url }}">projects</a></li>
-    <li><a href="{{ '/writing' | relative_url }}">writing</a></li>
+    {% capture site_text %}
+    {% include_relative ../contents/site.md %}
+    {% endcapture %}
+    {% assign lines = site_text | split: "\n" %}
+    {% assign menu_raw = "" %}
+    {% for line in lines %}
+      {% if line contains "# " %}
+        {% assign title = line | remove: "# " | strip %}
+        {% assign url = title | downcase | replace: " ", "-" | replace: ".", "" %}
+        {% assign menu_raw = menu_raw | append: title | append: "|" | append: url | append: ";;" %}
+      {% endif %}
+    {% endfor %}
+    {% assign menu_items = menu_raw | split: ";;" %}
+    {% for item in menu_items %}
+      {% if item != "" %}
+        {% assign parts = item | split: "|" %}
+        <li><a href="#{{ parts[1] }}">{{ parts[0] }}</a></li>
+      {% endif %}
+    {% endfor %}
     <li><a href="https://github.com/pirahansiah">github</a></li>
   </ul>
 </nav>
