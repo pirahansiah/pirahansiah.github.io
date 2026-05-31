@@ -1,3 +1,0 @@
-# Farshid Pirahansiah
-
-[[Hardwares]]

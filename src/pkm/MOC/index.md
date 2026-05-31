@@ -1,4 +1,0 @@
-
-[[Farshid Pirahansiah]]
-
-[deep learning]

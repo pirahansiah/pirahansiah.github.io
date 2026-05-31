@@ -1,16 +1,36 @@
-title: Computer Vision & Machine Learning 
-email: siteURL@gmail.com
-description: Expertise in Computer Vision and Language Models
-baseurl: "/"  
-url: "https://pirahansiah.com"  
-twitter_username: pirahansiah
-github_username:  pirahansiah
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+title: Dr. Farshid Pirahansiah
+description: >
+  Medical Image Processing | AI Solutions | Computer Vision Consultancy
+  Expert in MRI, CT, Ultrasound, and Deep Learning for Healthcare.
 
-markdown: kramdown
-permalink: /:year/:title:output_ext
+author: Dr. Farshid Pirahansiah
+first_name: Farshid
+last_name: Pirahansiah
 
-kramdown:
-  input: GFM
-  auto_ids: true
-  hard_wrap: false
-  linkify: true
+# Important for Project Site
+url: "https://pirahansiah.github.io"
+baseurl: "/draftSite" # project site root for preview at https://pirahansiah.github.io/draftSite
+
+# SEO & Metadata
+keywords: medical image processing, ai healthcare, computer vision, mri analysis, ct segmentation, deep learning, medical ai consultancy
+lang: en
+
+# Theme Settings
+last_updated: true
+back_to_top: true
+impressum_path:
+
+# -----------------------------------------------------------------------------
+# Appearance
+# -----------------------------------------------------------------------------
+remote_theme: alshedivat/al-folio
+locale: en-US
+timezone: Europe/Berlin
+
+# You can change colors later in _sass/_variables.scss
+
+# Safeguard for optional plugin configs
+third_party_libraries: {}
