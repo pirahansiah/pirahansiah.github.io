@@ -3,6 +3,7 @@
 *farshid
 *.farshid
 
+_site
 
 .DS_Store
 ._*
