@@ -6,12 +6,13 @@ permalink: /
 
 {% capture site_text %}{% include_relative contents/site.md %}{% endcapture %}
 {% assign lines = site_text | split: "\n" %}
-{% assign menu_items = "" %}
+{% capture menu_items %}{% endcapture %}
 {% for line in lines %}
   {% if line contains "# " %}
     {% assign title = line | remove: "# " | strip %}
     {% assign id = title | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" %}
-    {% assign menu_items = menu_items | append: "<li><a href=\"#" | append: id | append: "\">" | append: title | append: "</a></li>" %}
+    {% capture menu_item %}<li><a href="#{{ id }}">{{ title }}</a></li>{% endcapture %}
+    {% capture menu_items %}{{ menu_items }}{{ menu_item }}{% endcapture %}
   {% endif %}
 {% endfor %}
 
