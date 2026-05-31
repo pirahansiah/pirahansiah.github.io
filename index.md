@@ -7,18 +7,18 @@ parent: MainPage
 
 # Farshid PirahanSiah
 
-I am currently seeking opportunities in **computer vision**.
+I am currently seeking opportunities in **Medical Imaging Processing** in Berlin, Germany.
 
 ## About Me
 
-I am an accomplished Research Engineer with over 7 years of experience, including a PhD in Computer Science and a Bachelor's in Software Engineering. My career has been dedicated to the fields of Computer Vision, Machine Learning, and ML Operations. I have a proven track record of transforming complex algorithms into production-ready applications, utilizing cloud technologies and containerization, and optimizing ML pipelines and infrastructure in fast-paced environments.
+I am an accomplished Research Engineer with over 12 years of experience, including a PhD in Computer Science and a Bachelor's in Software Engineering. My career has been dedicated to the fields of Computer Vision, Machine Learning, and ML Operations. I have a proven track record of transforming complex algorithms into production-ready applications, utilizing cloud technologies and containerization, and optimizing ML pipelines and infrastructure in fast-paced environments.
 
 With expertise in Machine Learning, IoT, Medical Imaging, and Robotics, I am proficient in designing image analysis algorithms and have made significant contributions to patents, books, and research papers. As a Technical Lead and Research Engineer, I have collaborated with stakeholders to define and achieve KPIs, managed cross-functional team projects, and deployed scalable AI solutions across cities and cloud platforms.
 
 ## Experience
 
 - **10+ years:** PhD, R&D in Computer Vision, C++
-- **7+ years:** Machine Learning/Deep Learning, Python
+- **7+ years:** Machine Learning/Deep Learning, Python, Embedded Systems, Multi Camera systems  
 - **5+ years:** IoT, Model Optimization on Edge, Robotics, Medical Image Processing, Cloud Solutions (AWS)
 - **3+ years:** Technical Lead, Global Collaboration, Development Leadership
 - **1+ years:** LLM, Multimodal LLM, Vision-Based LLM, RAG, Langchain, OpenAI API
