@@ -10,35 +10,36 @@
 
     nav {
       background: #222;
-      padding: 0 1rem;
+      padding: 0 1.5rem;
       display: flex;
       align-items: center;
-      gap: 1rem;
     }
 
-    nav .site-title {
+    .site-title {
       color: white;
       font-weight: bold;
-      padding: 0.8rem 0;
       text-decoration: none;
+      padding: 0.8rem 1rem 0.8rem 0;
       margin-right: 1rem;
+      border-right: 1px solid #555;
     }
 
-    ul.top-menu {
+    ul#dynamic-nav {
       list-style: none;
       display: flex;
-      gap: 0;
+      align-items: center;
     }
 
-    ul.top-menu > li > a {
+    ul#dynamic-nav > li > a {
       display: block;
       color: white;
       padding: 0.8rem 1.2rem;
       text-decoration: none;
       border-right: 1px solid #444;
+      cursor: pointer;
     }
 
-    ul.top-menu > li > a:hover { background: #444; }
+    ul#dynamic-nav > li > a:hover { background: #444; }
 
     li.has-submenu { position: relative; }
 
@@ -50,39 +51,42 @@
       background: #333;
       list-style: none;
       min-width: 160px;
-      z-index: 100;
-      border-top: 2px solid #888;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 
     ul.submenu li a {
       display: block;
       color: white;
-      padding: 0.6rem 1rem;
+      padding: 0.6rem 1.2rem;
       text-decoration: none;
       border-bottom: 1px solid #444;
+      white-space: nowrap;
     }
 
     ul.submenu li a:hover { background: #555; }
 
     li.has-submenu.open > ul.submenu { display: block; }
 
-    main { padding: 2rem; }
-
-    pre {
-      white-space: pre-wrap;
-      font-family: monospace;
-      background: #f5f5f5;
-      padding: 1rem;
-      border-radius: 4px;
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
+
+    main h1 { font-size: 1.6rem; margin: 1.5rem 0 0.5rem; }
+    main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #444; }
+    main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #666; }
+    main p  { margin: 0.4rem 0; line-height: 1.6; }
+    main a  { color: #0066cc; }
+    main br { display: block; margin: 0.3rem 0; }
   </style>
 </head>
 <body>
 
 <nav>
   <a class="site-title" href="/">Farshid</a>
-  <ul class="top-menu" id="dynamic-nav">
-    <!-- filled by JS -->
+  <ul id="dynamic-nav">
     <li><a href="https://github.com/pirahansiah" target="_blank">GitHub</a></li>
   </ul>
 </nav>
@@ -92,12 +96,10 @@
 </main>
 
 <script>
-  // Click to toggle submenu (not hover)
   document.addEventListener('click', function(e) {
     const li = e.target.closest('li.has-submenu');
     if (li) {
       e.preventDefault();
-      // close others
       document.querySelectorAll('li.has-submenu.open').forEach(el => {
         if (el !== li) el.classList.remove('open');
       });
