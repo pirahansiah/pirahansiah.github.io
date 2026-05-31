@@ -1,24 +1,28 @@
 /* Minimal al-folio style */
 
 :root {
-  --primary-color: #4a5568;
-  --secondary-color: #2d3748;
-  --text-color: #1a202c;
-  --light-text: #718096;
-  --border-color: #e2e8f0;
-  --background: #ffffff;
-  --code-bg: #f7fafc;
+  --primary-color: #4964ff;
+  --secondary-color: #ffffff;
+  --text-color: #f8fafc;
+  --light-text: rgba(255, 255, 255, 0.72);
+  --muted-color: #d6dbe8;
+  --border-color: rgba(255, 255, 255, 0.18);
+  --background: #0d1120;
+  --panel-bg: rgba(14, 18, 38, 0.72);
+  --panel-border: rgba(255, 255, 255, 0.14);
+  --code-bg: rgba(255, 255, 255, 0.08);
   --spacing: 1rem;
-  --max-width: 900px;
+  --max-width: 980px;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --text-color: #f7fafc;
-    --light-text: #cbd5e0;
-    --background: #1a202c;
-    --code-bg: #2d3748;
-    --border-color: #4a5568;
+    --text-color: #111827;
+    --muted-color: #4b5563;
+    --background: #f7fafc;
+    --panel-bg: rgba(255, 255, 255, 0.82);
+    --panel-border: rgba(15, 23, 42, 0.1);
+    --code-bg: #f5f7fb;
   }
 }
 
@@ -35,22 +39,25 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
   color: var(--text-color);
-  background-color: var(--background);
+  background: radial-gradient(circle at top left, rgba(73, 100, 255, 0.22), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(89, 86, 255, 0.2), transparent 24%),
+    var(--background);
   transition: background-color 0.3s, color 0.3s;
 }
 
 a {
   color: var(--primary-color);
   text-decoration: none;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s ease;
 }
 
 a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 /* Navbar */
@@ -60,8 +67,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
-  padding: 1.25rem 1rem 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 1.25rem 1rem;
+  margin: 1rem auto 0;
+  max-width: var(--max-width);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  backdrop-filter: blur(18px);
 }
 
 .navbar-brand {
@@ -81,7 +93,9 @@ a:hover {
   list-style: none;
   gap: 0.85rem;
   margin: 0;
-  padding: 0;
+  padding: 0.25rem 0 0 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navbar-nav li {
@@ -90,11 +104,12 @@ a:hover {
 
 .navbar-nav a {
   display: inline-block;
-  padding: 0.55rem 0.75rem;
+  padding: 0.55rem 0.85rem;
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--secondary-color);
-  background: rgba(74, 85, 104, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
 }
 
 .navbar-nav a:hover {
@@ -227,13 +242,21 @@ th {
 .site-content {
   line-height: 1.75;
   font-size: 1rem;
-  max-width: 720px;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 32px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 32px 80px rgba(8, 12, 32, 0.16);
 }
 
 .site-content h1,
 .site-content h2,
 .site-content h3 {
-  scroll-margin-top: 1.75rem;
+  scroll-margin-top: 5rem;
+  color: var(--secondary-color);
 }
 
 .site-content ul,
@@ -241,8 +264,13 @@ th {
   margin-left: 1.5rem;
 }
 
-.site-content p {
-  color: var(--secondary-color);
+.site-content p,
+.site-content li {
+  color: var(--muted-color);
+}
+
+.site-content a {
+  color: var(--primary-color);
 }
 
 .hero {
