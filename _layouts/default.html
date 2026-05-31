@@ -3,195 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | default: site.title }}</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: sans-serif; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #fff; color: #222; }
 
+    /* ── NAV ── */
     nav {
-      background: #222;
-      padding: 0 1.5rem;
+      background: #1a1a2e;
       display: flex;
       align-items: center;
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-
-    .site-title {
-      color: white;
-      font-weight: bold;
+    .nav-brand {
+      color: #fff;
+      font-weight: 700;
       text-decoration: none;
-      padding: 0.8rem 1rem 0.8rem 0;
-      margin-right: 1rem;
-      border-right: 1px solid #555;
+      padding: 0.9rem 1.2rem 0.9rem 0;
+      margin-right: 0.5rem;
+      border-right: 1px solid #444;
+      white-space: nowrap;
     }
-
-    ul#dynamic-nav {
+    .nav-list {
       list-style: none;
       display: flex;
-      align-items: center;
+      align-items: stretch;
+      height: 100%;
     }
-
-    ul#dynamic-nav > li > a {
+    .nav-list > li {
+      position: relative;
+      border-right: 1px solid #333;
+    }
+    .nav-list > li > a {
       display: block;
-      color: white;
-      padding: 0.8rem 1.2rem;
+      color: #ddd;
       text-decoration: none;
-      border-right: 1px solid #444;
+      padding: 0.9rem 1.2rem;
+      white-space: nowrap;
       cursor: pointer;
+      user-select: none;
     }
+    .nav-list > li > a:hover { background: #2d2d50; color: #fff; }
 
-    ul#dynamic-nav > li > a:hover { background: #444; }
-
-    li.has-submenu { position: relative; }
-
-    ul.submenu {
+    /* dropdown */
+    .nav-list > li > ul {
       display: none;
       position: absolute;
       top: 100%;
       left: 0;
-      background: #333;
+      background: #16213e;
       list-style: none;
-      min-width: 160px;
-      z-index: 999;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      min-width: 170px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.5);
+      z-index: 2000;
     }
-
-    ul.submenu li a {
+    .nav-list > li > ul > li > a {
       display: block;
-      color: white;
-      padding: 0.6rem 1.2rem;
+      color: #ccc;
       text-decoration: none;
-      border-bottom: 1px solid #444;
+      padding: 0.65rem 1.2rem;
+      border-bottom: 1px solid #2d2d50;
       white-space: nowrap;
     }
+    .nav-list > li > ul > li > a:hover { background: #0f3460; color: #fff; }
+    .nav-list > li.open > ul { display: block; }
 
-    ul.submenu li a:hover { background: #555; }
-    li.has-submenu.open > ul.submenu { display: block; }
-
-    main {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
+    /* ── TOOLBAR (back/forward/home) ── */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.5rem;
+      background: #f5f5f5;
+      border-bottom: 1px solid #ddd;
     }
+    .toolbar button {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .toolbar button:hover { background: #e8e8e8; }
+    .toolbar a {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.3rem 0.7rem;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.85rem;
+    }
+    .toolbar a:hover { background: #e8e8e8; }
 
-    main h1 { font-size: 1.6rem; margin: 1.5rem 0 0.5rem; }
-    main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #444; }
-    main p  { margin: 0.4rem 0; line-height: 1.6; }
-    main a  { color: #0066cc; }
+    /* ── MAIN ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    main h1 { font-size: 1.8rem; margin: 1.5rem 0 0.6rem; }
+    main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #333; }
+    main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #555; }
+    main p  { margin: 0.5rem 0; line-height: 1.7; }
+    main a  { color: #0055cc; }
+    main a:hover { text-decoration: underline; }
+    main pre, main code {
+      background: #f4f4f4;
+      border-radius: 4px;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.9rem;
+    }
+    main pre { padding: 1rem; overflow-x: auto; }
   </style>
 </head>
 <body>
 
+<!-- ── NAV built by Jekyll from contents/site.md ── -->
+{% capture site_src %}{% include_relative contents/site.md %}{% endcapture %}
+{% assign nav_lines = site_src | split: "\n" %}
+
 <nav>
-  <a class="site-title" href="/">Farshid</a>
-  <ul id="dynamic-nav">
+  <a class="nav-brand" href="/">Farshid</a>
+  <ul class="nav-list" id="nav-list">
+
+    {% assign i = 0 %}
+    {% assign total = nav_lines | size %}
+    {% for line in nav_lines %}
+      {% assign s = line | strip %}
+      {% assign h1_prefix = s | slice: 0, 2 %}
+      {% assign h2_prefix = s | slice: 0, 3 %}
+
+      {% if h1_prefix == "# " and h2_prefix != "## " %}
+        {% assign label = s | slice: 2, 100 | strip %}
+        {% assign label_id = label | downcase | replace: " ", "-" %}
+
+        {% comment %}Look ahead for ## children and direct link{% endcomment %}
+        {% assign has_children = false %}
+        {% assign direct_url = "" %}
+        {% assign j_start = forloop.index %}
+
+        {% for lookahead in nav_lines %}
+          {% if forloop.index <= j_start %}{% continue %}{% endif %}
+          {% assign ls = lookahead | strip %}
+          {% assign lh1 = ls | slice: 0, 2 %}
+          {% assign lh2 = ls | slice: 0, 3 %}
+          {% if lh1 == "# " and lh2 != "## " %}{% break %}{% endif %}
+          {% if lh2 == "## " %}{% assign has_children = true %}{% endif %}
+          {% if ls contains "](" and lh2 != "## " and direct_url == "" %}
+            {% assign direct_url = ls | split: "](" | last | split: ")" | first %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_children %}
+          <li>
+            {% if direct_url != "" %}
+              <a href="{{ direct_url }}">{{ label }}</a>
+            {% else %}
+              <a href="#">{{ label }}</a>
+            {% endif %}
+            <ul>
+              {% assign in_this_h1 = false %}
+              {% assign pending_h2_label = "" %}
+              {% assign pending_h2_url = "" %}
+              {% for subline in nav_lines %}
+                {% assign ss = subline | strip %}
+                {% assign sh1 = ss | slice: 0, 2 %}
+                {% assign sh2 = ss | slice: 0, 3 %}
+
+                {% if sh1 == "# " and sh2 != "## " %}
+                  {% if in_this_h1 %}
+                    {% if pending_h2_label != "" %}
+                      <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
+                      {% assign pending_h2_label = "" %}
+                      {% assign pending_h2_url = "" %}
+                    {% endif %}
+                    {% break %}
+                  {% endif %}
+                  {% assign this_label = ss | slice: 2, 100 | strip %}
+                  {% if this_label == label %}{% assign in_this_h1 = true %}{% endif %}
+
+                {% elsif in_this_h1 and sh2 == "## " %}
+                  {% if pending_h2_label != "" %}
+                    <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
+                    {% assign pending_h2_url = "" %}
+                  {% endif %}
+                  {% assign pending_h2_label = ss | slice: 3, 100 | strip %}
+
+                {% elsif in_this_h1 and ss contains "](" and pending_h2_label != "" %}
+                  {% assign pending_h2_url = ss | split: "](" | last | split: ")" | first %}
+                  <li><a href="{{ pending_h2_url }}">{{ pending_h2_label }}</a></li>
+                  {% assign pending_h2_label = "" %}
+                  {% assign pending_h2_url = "" %}
+                {% endif %}
+              {% endfor %}
+              {% if pending_h2_label != "" %}
+                <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
+              {% endif %}
+            </ul>
+          </li>
+        {% else %}
+          <li>
+            <a href="{% if direct_url != "" %}{{ direct_url }}{% else %}#{{ label_id }}{% endif %}">{{ label }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
     <li><a href="https://github.com/pirahansiah" target="_blank">GitHub</a></li>
   </ul>
 </nav>
 
+<!-- ── TOOLBAR ── -->
+<div class="toolbar">
+  <button onclick="history.back()" title="Back">&#8592;</button>
+  <button onclick="history.forward()" title="Forward">&#8594;</button>
+  <a href="/">&#8962; Home</a>
+</div>
+
+<!-- ── PAGE CONTENT ── -->
 <main>
   {{ content }}
 </main>
 
 <script>
-// Build nav on every page
-fetch('/contents/site.md')
-  .then(r => r.text())
-  .then(text => buildMenu(text));
-
-function buildMenu(text) {
-  const nav = document.getElementById('dynamic-nav');
-  const lines = text.split('\n');
-
-  // First pass: build structured data
-  // Each top item: { label, children: [{label, url}] }
-  const items = [];
-  let current = null;
-  let pendingH2 = null;
-
-  lines.forEach(line => {
-    const s = line.trim();
-    if (!s) return;
-
-    if (s.startsWith('## ')) {
-      // flush previous h2 without url
-      if (pendingH2 && current) {
-        current.children.push({ label: pendingH2, url: null });
-      }
-      pendingH2 = s.slice(3).trim();
-
-    } else if (s.startsWith('# ')) {
-      // flush pending h2
-      if (pendingH2 && current) {
-        current.children.push({ label: pendingH2, url: null });
-        pendingH2 = null;
-      }
-      // flush previous top item
-      current = { label: s.slice(2).trim(), children: [] };
-      items.push(current);
-
-    } else if (s.startsWith('[') && s.includes('](') && pendingH2) {
-      // this line is a link belonging to pendingH2
-      const url = s.split('](')[1].replace(')', '').trim();
-      if (current) current.children.push({ label: pendingH2, url: url });
-      pendingH2 = null;
-
-    } else if (pendingH2 && current) {
-      // non-link line after ##, flush h2 without url
-      current.children.push({ label: pendingH2, url: null });
-      pendingH2 = null;
-    }
-  });
-
-  // flush last pending
-  if (pendingH2 && current) {
-    current.children.push({ label: pendingH2, url: null });
-  }
-
-  // Second pass: build DOM — insert before GitHub link
-  const githubLi = nav.firstChild;
-
-  items.reverse().forEach(item => {
-    const li = document.createElement('li');
-
-    const a = document.createElement('a');
-    a.textContent = item.label;
-    a.href = '#';
-    li.appendChild(a);
-
-    if (item.children.length > 0) {
-      li.classList.add('has-submenu');
-      const ul = document.createElement('ul');
-      ul.className = 'submenu';
-
-      item.children.forEach(child => {
-        const childLi = document.createElement('li');
-        const childA = document.createElement('a');
-        childA.textContent = child.label;
-        childA.href = child.url || ('#' + child.label.toLowerCase().replace(/\s+/g,'-'));
-        childLi.appendChild(childA);
-        ul.appendChild(childLi);
-      });
-
-      li.appendChild(ul);
-    }
-
-    nav.insertBefore(li, githubLi);
-  });
-}
-
-// Click to open/close submenus
-document.addEventListener('click', function(e) {
-  const li = e.target.closest('li.has-submenu');
-  if (li) {
+  // Click to toggle dropdown, click elsewhere to close
+  document.getElementById('nav-list').addEventListener('click', function(e) {
+    const li = e.target.closest('li');
+    if (!li) return;
+    const ul = li.querySelector('ul');
+    if (!ul) return; // no dropdown, let link navigate normally
     e.preventDefault();
-    document.querySelectorAll('li.has-submenu.open').forEach(el => {
-      if (el !== li) el.classList.remove('open');
-    });
-    li.classList.toggle('open');
-  } else {
-    document.querySelectorAll('li.has-submenu.open').forEach(el => el.classList.remove('open'));
-  }
-});
+    const isOpen = li.classList.contains('open');
+    document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) li.classList.add('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('#nav-list')) {
+      document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
+    }
+  });
 </script>
 
 </body>
