@@ -124,7 +124,8 @@
 <body>
 
 <!-- ── NAV built by Jekyll from contents/site.md ── -->
-{% capture site_src %}{% include_relative contents/site.md %}{% endcapture %}
+{% capture site_src %}{% include /github/workspace/contents/site.md %}{% endcapture %}
+
 {% assign nav_lines = site_src | split: "\n" %}
 
 <nav>
