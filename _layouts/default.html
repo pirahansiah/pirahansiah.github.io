@@ -65,7 +65,6 @@
     }
 
     ul.submenu li a:hover { background: #555; }
-
     li.has-submenu.open > ul.submenu { display: block; }
 
     main {
@@ -76,10 +75,8 @@
 
     main h1 { font-size: 1.6rem; margin: 1.5rem 0 0.5rem; }
     main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #444; }
-    main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #666; }
     main p  { margin: 0.4rem 0; line-height: 1.6; }
     main a  { color: #0066cc; }
-    main br { display: block; margin: 0.3rem 0; }
   </style>
 </head>
 <body>
@@ -96,18 +93,105 @@
 </main>
 
 <script>
-  document.addEventListener('click', function(e) {
-    const li = e.target.closest('li.has-submenu');
-    if (li) {
-      e.preventDefault();
-      document.querySelectorAll('li.has-submenu.open').forEach(el => {
-        if (el !== li) el.classList.remove('open');
-      });
-      li.classList.toggle('open');
-    } else {
-      document.querySelectorAll('li.has-submenu.open').forEach(el => el.classList.remove('open'));
+// Build nav on every page
+fetch('/contents/site.md')
+  .then(r => r.text())
+  .then(text => buildMenu(text));
+
+function buildMenu(text) {
+  const nav = document.getElementById('dynamic-nav');
+  const lines = text.split('\n');
+
+  // First pass: build structured data
+  // Each top item: { label, children: [{label, url}] }
+  const items = [];
+  let current = null;
+  let pendingH2 = null;
+
+  lines.forEach(line => {
+    const s = line.trim();
+    if (!s) return;
+
+    if (s.startsWith('## ')) {
+      // flush previous h2 without url
+      if (pendingH2 && current) {
+        current.children.push({ label: pendingH2, url: null });
+      }
+      pendingH2 = s.slice(3).trim();
+
+    } else if (s.startsWith('# ')) {
+      // flush pending h2
+      if (pendingH2 && current) {
+        current.children.push({ label: pendingH2, url: null });
+        pendingH2 = null;
+      }
+      // flush previous top item
+      current = { label: s.slice(2).trim(), children: [] };
+      items.push(current);
+
+    } else if (s.startsWith('[') && s.includes('](') && pendingH2) {
+      // this line is a link belonging to pendingH2
+      const url = s.split('](')[1].replace(')', '').trim();
+      if (current) current.children.push({ label: pendingH2, url: url });
+      pendingH2 = null;
+
+    } else if (pendingH2 && current) {
+      // non-link line after ##, flush h2 without url
+      current.children.push({ label: pendingH2, url: null });
+      pendingH2 = null;
     }
   });
+
+  // flush last pending
+  if (pendingH2 && current) {
+    current.children.push({ label: pendingH2, url: null });
+  }
+
+  // Second pass: build DOM — insert before GitHub link
+  const githubLi = nav.firstChild;
+
+  items.reverse().forEach(item => {
+    const li = document.createElement('li');
+
+    const a = document.createElement('a');
+    a.textContent = item.label;
+    a.href = '#';
+    li.appendChild(a);
+
+    if (item.children.length > 0) {
+      li.classList.add('has-submenu');
+      const ul = document.createElement('ul');
+      ul.className = 'submenu';
+
+      item.children.forEach(child => {
+        const childLi = document.createElement('li');
+        const childA = document.createElement('a');
+        childA.textContent = child.label;
+        childA.href = child.url || ('#' + child.label.toLowerCase().replace(/\s+/g,'-'));
+        childLi.appendChild(childA);
+        ul.appendChild(childLi);
+      });
+
+      li.appendChild(ul);
+    }
+
+    nav.insertBefore(li, githubLi);
+  });
+}
+
+// Click to open/close submenus
+document.addEventListener('click', function(e) {
+  const li = e.target.closest('li.has-submenu');
+  if (li) {
+    e.preventDefault();
+    document.querySelectorAll('li.has-submenu.open').forEach(el => {
+      if (el !== li) el.classList.remove('open');
+    });
+    li.classList.toggle('open');
+  } else {
+    document.querySelectorAll('li.has-submenu.open').forEach(el => el.classList.remove('open'));
+  }
+});
 </script>
 
 </body>
