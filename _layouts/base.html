@@ -1,12 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% include head.html %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f7; color: #1d1d1f; }
+
+    /* ── NAV with Apple Liquid Glass Effect ── */
+    nav {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .nav-brand {
+      color: #1d1d1f;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.9rem 1.2rem 0.9rem 0;
+      margin-right: 0.5rem;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      white-space: nowrap;
+      font-size: 1.1rem;
+    }
+    .nav-list {
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      height: 100%;
+    }
+    .nav-list > li {
+      position: relative;
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .nav-list > li > a {
+      display: block;
+      color: #1d1d1f;
+      text-decoration: none;
+      padding: 0.9rem 1.2rem;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.2s ease-out;
+      font-weight: 500;
+    }
+    .nav-list > li > a:hover { 
+      background: rgba(0, 0, 0, 0.05);
+      color: #0a84ff;
+    }
+
+    /* dropdown with liquid glass */
+    .nav-list > li > ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      list-style: none;
+      min-width: 170px;
+      border-radius: 12px;
+      margin-top: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      z-index: 2000;
+      overflow: hidden;
+    }
+    .nav-list > li > ul > li > a {
+      display: block;
+      color: #1d1d1f;
+      text-decoration: none;
+      padding: 0.75rem 1.2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      white-space: nowrap;
+      transition: all 0.15s ease-out;
+      font-weight: 500;
+    }
+    .nav-list > li > ul > li:last-child > a {
+      border-bottom: none;
+    }
+    .nav-list > li > ul > li > a:hover { 
+      background: rgba(0, 0, 0, 0.08);
+      color: #0a84ff;
+    }
+    .nav-list > li.open > ul { display: block; }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    main h1 { font-size: 1.8rem; margin: 1.5rem 0 0.6rem; }
+    main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #333; }
+    main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #555; }
+    main p  { margin: 0.5rem 0; line-height: 1.7; }
+    main a  { color: #0a84ff; text-decoration: none; }
+    main a:hover { text-decoration: underline; }
+    main pre, main code {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.9rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    main pre { padding: 1rem; overflow-x: auto; border-radius: 8px; }
+  </style>
 </head>
 <body>
-  <main class="container">
-    {{ content }}
-  </main>
-  {% include footer.html %}
+
+<!-- ── NAV with menu from _data/menu.yml ── -->
+<nav>
+  <a class="nav-brand" href="/">Farshid</a>
+  <ul class="nav-list" id="nav-list">
+
+    {% for item in site.data.menu %}
+      {% if item.items %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          <ul>
+            {% for subitem in item.items %}
+              <li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    <li><a href="https://github.com/pirahansiah" target="_blank">GitHub</a></li>
+  </ul>
+</nav>
+
+<!-- ── PAGE CONTENT ── -->
+<main>
+  {{ content }}
+</main>
+
+{% include footer.html %}
+
+<script>
+  // Click to toggle dropdown, click elsewhere to close
+  document.getElementById('nav-list').addEventListener('click', function(e) {
+    const li = e.target.closest('li');
+    if (!li) return;
+    const ul = li.querySelector('ul');
+    if (!ul) return; // no dropdown, let link navigate normally
+    e.preventDefault();
+    const isOpen = li.classList.contains('open');
+    document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) li.classList.add('open');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('#nav-list')) {
+      document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
+    }
+  });
+</script>
+
 </body>
 </html>
