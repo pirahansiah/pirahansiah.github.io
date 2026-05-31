@@ -1,36 +1,33 @@
-# -----------------------------------------------------------------------------
 # Site settings
-# -----------------------------------------------------------------------------
-title: Dr. Farshid Pirahansiah
-description: >
-  Medical Image Processing | AI Solutions | Computer Vision Consultancy
-  Expert in MRI, CT, Ultrasound, and Deep Learning for Healthcare.
+title: Farshid Pirahansiah
+author: Farshid Pirahansiah
+email: pirahansiah@gmail.com
+url: https://www.pirahansiah.com
+baseurl: ""
+description: Computer Vision & AI Engineer
 
-author: Dr. Farshid Pirahansiah
-first_name: Farshid
-last_name: Pirahansiah
+# Jekyll settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Important for Project Site
-url: "https://pirahansiah.github.io"
-baseurl: "/draftSite" # project site root for preview at https://pirahansiah.github.io/draftSite
+# Theme
+theme: null
 
-# SEO & Metadata
-keywords: medical image processing, ai healthcare, computer vision, mri analysis, ct segmentation, deep learning, medical ai consultancy
-lang: en
+# Plugins
+plugins:
+  - jekyll-feed
 
-# Theme Settings
-last_updated: true
-back_to_top: true
-impressum_path:
-
-# -----------------------------------------------------------------------------
-# Appearance
-# -----------------------------------------------------------------------------
-remote_theme: alshedivat/al-folio
-locale: en-US
-timezone: Europe/Berlin
-
-# You can change colors later in _sass/_variables.scss
-
-# Safeguard for optional plugin configs
-third_party_libraries: {}
+# Exclude
+exclude:
+  - README.md
+  - run.sh
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .git/
+  - .gitignore
+  - contents/
+  - CNAME
+  - Ads.txt
