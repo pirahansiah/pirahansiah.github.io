@@ -70,10 +70,19 @@ a:hover {
   padding: 1.25rem 1rem;
   margin: 1rem auto 0;
   max-width: var(--max-width);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   border: 1px solid var(--border-color);
   border-radius: 24px;
   backdrop-filter: blur(18px);
+}
+
+.ios-liquid-glass {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
 }
 
 .navbar-brand {
@@ -115,6 +124,67 @@ a:hover {
 .navbar-nav a:hover {
   color: var(--text-color);
   background: rgba(74, 85, 104, 0.14);
+}
+
+.navbar-nav .has-submenu {
+  position: relative;
+}
+
+.navbar-nav .has-submenu > a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  z-index: 10;
+  min-width: 180px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(18px) saturate(180%);
+  padding: 0.5rem 0;
+}
+
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu {
+  display: block;
+}
+
+.submenu-item a {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.submenu-item a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 840px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+  }
+
+  .has-submenu:hover > .submenu,
+  .has-submenu:focus-within > .submenu {
+    display: block;
+  }
+
+  .submenu-item a {
+    width: 100%;
+  }
 }
 
 /* Container */
