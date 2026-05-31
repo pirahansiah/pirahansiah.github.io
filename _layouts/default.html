@@ -6,26 +6,31 @@
   <title>{{ page.title | default: site.title }}</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, sans-serif; background: #fff; color: #222; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f7; color: #1d1d1f; }
 
-    /* ── NAV ── */
+    /* ── NAV with Apple Liquid Glass Effect ── */
     nav {
-      background: #1a1a2e;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       display: flex;
       align-items: center;
       padding: 0 1.5rem;
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
     .nav-brand {
-      color: #fff;
-      font-weight: 700;
+      color: #1d1d1f;
+      font-weight: 600;
       text-decoration: none;
       padding: 0.9rem 1.2rem 0.9rem 0;
       margin-right: 0.5rem;
-      border-right: 1px solid #444;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
       white-space: nowrap;
+      font-size: 1.1rem;
     }
     .nav-list {
       list-style: none;
@@ -35,70 +40,101 @@
     }
     .nav-list > li {
       position: relative;
-      border-right: 1px solid #333;
+      border-right: 1px solid rgba(0, 0, 0, 0.05);
     }
     .nav-list > li > a {
       display: block;
-      color: #ddd;
+      color: #1d1d1f;
       text-decoration: none;
       padding: 0.9rem 1.2rem;
       white-space: nowrap;
       cursor: pointer;
       user-select: none;
+      transition: all 0.2s ease-out;
+      font-weight: 500;
     }
-    .nav-list > li > a:hover { background: #2d2d50; color: #fff; }
+    .nav-list > li > a:hover { 
+      background: rgba(0, 0, 0, 0.05);
+      color: #0a84ff;
+    }
 
-    /* dropdown */
+    /* dropdown with liquid glass */
     .nav-list > li > ul {
       display: none;
       position: absolute;
       top: 100%;
       left: 0;
-      background: #16213e;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
       list-style: none;
       min-width: 170px;
-      box-shadow: 0 6px 16px rgba(0,0,0,.5);
+      border-radius: 12px;
+      margin-top: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.6);
       z-index: 2000;
+      overflow: hidden;
     }
     .nav-list > li > ul > li > a {
       display: block;
-      color: #ccc;
+      color: #1d1d1f;
       text-decoration: none;
-      padding: 0.65rem 1.2rem;
-      border-bottom: 1px solid #2d2d50;
+      padding: 0.75rem 1.2rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
       white-space: nowrap;
+      transition: all 0.15s ease-out;
+      font-weight: 500;
     }
-    .nav-list > li > ul > li > a:hover { background: #0f3460; color: #fff; }
+    .nav-list > li > ul > li:last-child > a {
+      border-bottom: none;
+    }
+    .nav-list > li > ul > li > a:hover { 
+      background: rgba(0, 0, 0, 0.08);
+      color: #0a84ff;
+    }
     .nav-list > li.open > ul { display: block; }
 
     /* ── TOOLBAR (back/forward/home) ── */
     .toolbar {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      padding: 0.5rem 1.5rem;
-      background: #f5f5f5;
-      border-bottom: 1px solid #ddd;
+      gap: 0.6rem;
+      padding: 0.6rem 1.5rem;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
     .toolbar button {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 0.3rem 0.7rem;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      padding: 0.4rem 0.8rem;
       cursor: pointer;
       font-size: 1rem;
+      transition: all 0.15s ease-out;
     }
-    .toolbar button:hover { background: #e8e8e8; }
+    .toolbar button:hover { 
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(0, 0, 0, 0.15);
+    }
     .toolbar a {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 0.3rem 0.7rem;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      padding: 0.4rem 0.8rem;
       text-decoration: none;
-      color: #333;
+      color: #1d1d1f;
       font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.15s ease-out;
     }
-    .toolbar a:hover { background: #e8e8e8; }
+    .toolbar a:hover { 
+      background: rgba(255, 255, 255, 0.8);
+      border-color: rgba(0, 0, 0, 0.15);
+      color: #0a84ff;
+    }
 
     /* ── MAIN ── */
     main {
@@ -110,108 +146,39 @@
     main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #333; }
     main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #555; }
     main p  { margin: 0.5rem 0; line-height: 1.7; }
-    main a  { color: #0055cc; }
+    main a  { color: #0a84ff; text-decoration: none; }
     main a:hover { text-decoration: underline; }
     main pre, main code {
-      background: #f4f4f4;
-      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
       padding: 0.2rem 0.4rem;
       font-size: 0.9rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
     }
-    main pre { padding: 1rem; overflow-x: auto; }
+    main pre { padding: 1rem; overflow-x: auto; border-radius: 8px; }
   </style>
 </head>
 <body>
 
-<!-- ── NAV built by Jekyll from _includes/site.md ── -->
-{% capture site_src %}{% include site.md %}{% endcapture %}
-
-{% assign nav_lines = site_src | split: "\n" %}
-
+<!-- ── NAV with menu from _data/menu.yml ── -->
 <nav>
   <a class="nav-brand" href="/">Farshid</a>
   <ul class="nav-list" id="nav-list">
 
-    {% assign i = 0 %}
-    {% assign total = nav_lines | size %}
-    {% for line in nav_lines %}
-      {% assign s = line | strip %}
-      {% assign h1_prefix = s | slice: 0, 2 %}
-      {% assign h2_prefix = s | slice: 0, 3 %}
-
-      {% if h1_prefix == "# " and h2_prefix != "## " %}
-        {% assign label = s | slice: 2, 100 | strip %}
-        {% assign label_id = label | downcase | replace: " ", "-" %}
-
-        {% comment %}Look ahead for ## children and direct link{% endcomment %}
-        {% assign has_children = false %}
-        {% assign direct_url = "" %}
-        {% assign j_start = forloop.index %}
-
-        {% for lookahead in nav_lines %}
-          {% if forloop.index <= j_start %}{% continue %}{% endif %}
-          {% assign ls = lookahead | strip %}
-          {% assign lh1 = ls | slice: 0, 2 %}
-          {% assign lh2 = ls | slice: 0, 3 %}
-          {% if lh1 == "# " and lh2 != "## " %}{% break %}{% endif %}
-          {% if lh2 == "## " %}{% assign has_children = true %}{% endif %}
-          {% if ls contains "](" and lh2 != "## " and direct_url == "" %}
-            {% assign direct_url = ls | split: "](" | last | split: ")" | first %}
-          {% endif %}
-        {% endfor %}
-
-        {% if has_children %}
-          <li>
-            {% if direct_url != "" %}
-              <a href="{{ direct_url }}">{{ label }}</a>
-            {% else %}
-              <a href="#">{{ label }}</a>
-            {% endif %}
-            <ul>
-              {% assign in_this_h1 = false %}
-              {% assign pending_h2_label = "" %}
-              {% assign pending_h2_url = "" %}
-              {% for subline in nav_lines %}
-                {% assign ss = subline | strip %}
-                {% assign sh1 = ss | slice: 0, 2 %}
-                {% assign sh2 = ss | slice: 0, 3 %}
-
-                {% if sh1 == "# " and sh2 != "## " %}
-                  {% if in_this_h1 %}
-                    {% if pending_h2_label != "" %}
-                      <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-                      {% assign pending_h2_label = "" %}
-                      {% assign pending_h2_url = "" %}
-                    {% endif %}
-                    {% break %}
-                  {% endif %}
-                  {% assign this_label = ss | slice: 2, 100 | strip %}
-                  {% if this_label == label %}{% assign in_this_h1 = true %}{% endif %}
-
-                {% elsif in_this_h1 and sh2 == "## " %}
-                  {% if pending_h2_label != "" %}
-                    <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-                    {% assign pending_h2_url = "" %}
-                  {% endif %}
-                  {% assign pending_h2_label = ss | slice: 3, 100 | strip %}
-
-                {% elsif in_this_h1 and ss contains "](" and pending_h2_label != "" %}
-                  {% assign pending_h2_url = ss | split: "](" | last | split: ")" | first %}
-                  <li><a href="{{ pending_h2_url }}">{{ pending_h2_label }}</a></li>
-                  {% assign pending_h2_label = "" %}
-                  {% assign pending_h2_url = "" %}
-                {% endif %}
-              {% endfor %}
-              {% if pending_h2_label != "" %}
-                <li><a href="{% if pending_h2_url != "" %}{{ pending_h2_url }}{% else %}#{{ pending_h2_label | downcase | replace: " ","-" }}{% endif %}">{{ pending_h2_label }}</a></li>
-              {% endif %}
-            </ul>
-          </li>
-        {% else %}
-          <li>
-            <a href="{% if direct_url != "" %}{{ direct_url }}{% else %}#{{ label_id }}{% endif %}">{{ label }}</a>
-          </li>
-        {% endif %}
+    {% for item in site.data.menu %}
+      {% if item.items %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          <ul>
+            {% for subitem in item.items %}
+              <li><a href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
       {% endif %}
     {% endfor %}
 
