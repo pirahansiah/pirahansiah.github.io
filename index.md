@@ -21,15 +21,30 @@ permalink: /
   {% if stripped == "" %}{% continue %}{% endif %}
 
   {% assign link_target = "" %}
+  {% assign first3 = stripped | slice: 0, 3 %}
+  {% assign first2 = stripped | slice: 0, 2 %}
+  {% assign first10 = stripped | slice: 0, 10 %}
   {% if stripped contains "](" %}
     {% assign link_target = stripped | split: "(" | last | split: ")" | first %}
   {% elsif stripped contains "]{" %}
     {% assign link_target = stripped | split: "]{" | last | remove: "}" %}
-  {% elsif stripped startswith "/contents/" %}
+  {% elsif first10 == "/contents/" %}
     {% assign link_target = stripped %}
   {% endif %}
 
-  {% if stripped startswith "# " %}
+  {% if first3 == "## " %}
+    {% if current_h2 != "" %}
+      {% assign h2_href = current_h2_url %}
+      {% if h2_href == "" %}
+        {% assign h2_href = "#" | append: current_h2_id %}
+      {% endif %}
+      {% capture current_h1_children %}{{ current_h1_children }}<li class="submenu-item"><a href="{{ h2_href }}">{{ current_h2 }}</a></li>{% endcapture %}
+    {% endif %}
+    {% assign current_h2 = stripped | slice: 3, 100 | strip %}
+    {% assign current_h2_id = current_h2 | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
+    {% assign current_h2_url = "" %}
+    {% capture anchored_content %}{{ anchored_content }}<a id="{{ current_h2_id }}"></a>{{ line }}\n{% endcapture %}
+  {% elsif first2 == "# " %}
     {% if current_h2 != "" %}
       {% assign h2_href = current_h2_url %}
       {% if h2_href == "" %}
@@ -52,22 +67,10 @@ permalink: /
       {% endif %}
       {% capture current_h1_children %}{% endcapture %}
     {% endif %}
-    {% assign current_h1 = stripped | remove_first: "# " | strip %}
+    {% assign current_h1 = stripped | slice: 2, 100 | strip %}
     {% assign current_h1_id = current_h1 | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
     {% assign current_h1_url = "" %}
     {% capture anchored_content %}{{ anchored_content }}<a id="{{ current_h1_id }}"></a>{{ line }}\n{% endcapture %}
-  {% elsif stripped startswith "## " %}
-    {% if current_h2 != "" %}
-      {% assign h2_href = current_h2_url %}
-      {% if h2_href == "" %}
-        {% assign h2_href = "#" | append: current_h2_id %}
-      {% endif %}
-      {% capture current_h1_children %}{{ current_h1_children }}<li class="submenu-item"><a href="{{ h2_href }}">{{ current_h2 }}</a></li>{% endcapture %}
-    {% endif %}
-    {% assign current_h2 = stripped | remove_first: "## " | strip %}
-    {% assign current_h2_id = current_h2 | downcase | strip | replace: " ", "-" | replace: ".", "" | replace: "/", "" | replace: ":", "" | replace: "#", "" %}
-    {% assign current_h2_url = "" %}
-    {% capture anchored_content %}{{ anchored_content }}<a id="{{ current_h2_id }}"></a>{{ line }}\n{% endcapture %}
   {% elsif link_target != "" %}
     {% if current_h2 != "" %}
       {% assign current_h2_url = link_target %}
