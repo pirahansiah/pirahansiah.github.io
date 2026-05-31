@@ -24,3 +24,26 @@ fetch('/contents/site.md')
     document.getElementById('site-content').innerHTML = html;
   });
 </script>
+<!-- SVG Filter for the Liquid Distortion -->
+<svg style="display: none;">
+  <defs>
+    <filter id="liquid-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+    </filter>
+  </defs>
+</svg>
+
+<!-- Vanilla JS for Mouse Tracking (No Packages Needed) -->
+<script>
+  document.addEventListener('mousemove', (e) => {
+    const glassElements = document.querySelectorAll('.liquid-glass');
+    glassElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      el.style.setProperty('--mouse-x', `${x}%`);
+      el.style.setProperty('--mouse-y', `${y}%`);
+    });
+  });
+</script>

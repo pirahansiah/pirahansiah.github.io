@@ -485,4 +485,79 @@ th {
   .container {
     padding: 0 0.75rem 2rem;
   }
+
+
+
+
+  /* Apply this class to any menu, button, or item */
+.liquid-glass {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    /* This creates the "glossy highlight" that follows the mouse */
+    background-image: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.4) 0%,
+        transparent 60%
+    );
+}
+
+/* Liquid Refraction Effect using the SVG Filter below */
+.liquid-glass:hover {
+    filter: url(#liquid-refraction);
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Specific styling for buttons to make them pop */
+button.liquid-glass {
+    cursor: pointer;
+    padding: 12px 24px;
+    color: white;
+    font-weight: 600;
+}
+/* 1. The Glass Base: Apply to menus, buttons, and footers */
+header, footer, nav, button, .menu-item, .card {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    position: relative;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background: rgba(255, 255, 255, 0.1); /* iOS Light Glass */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    header, footer, nav, button {
+        background: rgba(0, 0, 0, 0.3); /* iOS Dark Glass */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* 3. The Mouse-Follow Highlight */
+header:hover, footer:hover, nav:hover, button:hover {
+    background-image: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.3) 0%,
+        transparent 80%
+    );
+    filter: url(#liquid-refraction); /* The liquid effect */
+    transform: translateY(-2px);
+}
+header, footer {
+    background: transparent !important; /* Forces the glass effect to show */
+    z-index: 100; /* Keeps it above content */
+}
 }

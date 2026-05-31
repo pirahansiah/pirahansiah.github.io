@@ -217,6 +217,29 @@
     }
   });
 </script>
+<!-- The Liquid Glass Filter (Hidden) -->
+<svg style="visibility: hidden; position: absolute;" width="0" height="0">
+  <defs>
+    <filter id="liquid-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+    </filter>
+  </defs>
+</svg>
 
+<!-- The Global Mouse Tracker -->
+<script>
+  document.addEventListener('mousemove', (e) => {
+    // Select all glass elements (menus, buttons, etc.)
+    const glassElements = document.querySelectorAll('header, footer, nav, button, .menu-item');
+    glassElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      el.style.setProperty('--mouse-x', `${x}%`);
+      el.style.setProperty('--mouse-y', `${y}%`);
+    });
+  });
+</script>
 </body>
 </html>
