@@ -7,6 +7,9 @@
   <meta name="author" content="{{ site.author }}">
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/glass.css' | relative_url }}">
+  {% if page.extra_css %}
+  <link rel="stylesheet" href="{{ '/assets/css/' | append: page.extra_css | relative_url }}">
+  {% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 </head>
 <body>
@@ -25,6 +28,7 @@
   <button type="button" class="liquid-glass-item" onclick="history.back()" title="Back" aria-label="Back">&#8592;</button>
   <button type="button" class="liquid-glass-item" onclick="history.forward()" title="Forward" aria-label="Forward">&#8594;</button>
   <a href="{{ '/' | relative_url }}" class="liquid-glass-item" title="Home">&#8962; Home</a>
+  <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item" title="Knowledge graph">&#9672; Graph</a>
 </div>
 
 <main class="site-main liquid-glass">

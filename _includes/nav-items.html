@@ -7,7 +7,7 @@
         <a href="{{ item.url | relative_url }}" class="liquid-glass-item nav-link">{{ item.title }}</a>
         <button type="button" class="nav-toggle liquid-glass-item" data-nav-toggle aria-expanded="false" aria-label="Expand {{ item.title }}">▾</button>
       {% else %}
-        <a href="#" class="liquid-glass-item" data-nav-toggle aria-expanded="false">{{ item.title }}</a>
+        <a href="#" class="liquid-glass-item nav-parent" data-nav-toggle aria-expanded="false">{{ item.title }}<span class="nav-chevron" aria-hidden="true">▾</span></a>
       {% endif %}
       <ul class="nav-sub">
         {% include nav-items.html items=children %}

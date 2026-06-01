@@ -1,6 +1,5 @@
 /**
  * Nav dropdown toggles + liquid-glass pointer tracking.
- * Menu tree is built at compile time from contents/site.md → _data/nav.yml
  */
 (function () {
   "use strict";
@@ -14,12 +13,18 @@
     for (var i = 0; i < open.length; i++) {
       if (exceptLi && open[i] === exceptLi) continue;
       open[i].classList.remove("open");
-      var t = open[i].querySelector("[data-nav-toggle]");
-      if (t) t.setAttribute("aria-expanded", "false");
+      var toggles = open[i].querySelectorAll("[data-nav-toggle]");
+      for (var j = 0; j < toggles.length; j++) {
+        toggles[j].setAttribute("aria-expanded", "false");
+      }
     }
   }
 
   navList.addEventListener("click", function (e) {
+    if (e.target.closest(".nav-sub a:not([data-nav-toggle])")) {
+      return;
+    }
+
     var toggle = e.target.closest("[data-nav-toggle]");
     if (!toggle) return;
 
@@ -30,7 +35,10 @@
     e.stopPropagation();
 
     var isOpen = li.classList.contains("open");
-    closeAll(li);
+
+    if (li.parentElement && li.parentElement.classList.contains("nav-list")) {
+      closeAll(li);
+    }
 
     if (!isOpen) {
       li.classList.add("open");
@@ -42,7 +50,9 @@
   });
 
   document.addEventListener("click", function (e) {
-    if (!e.target.closest("#site-nav")) closeAll();
+    if (!e.target.closest("#site-nav")) {
+      closeAll();
+    }
   });
 
   function trackGlassPointer(e) {

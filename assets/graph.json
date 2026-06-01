@@ -1,0 +1,133 @@
+{
+  "nodes": [
+    {
+      "id": "moc-cv3",
+      "label": "CV3",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-dl4",
+      "label": "DL4",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-llm5",
+      "label": "LLM5",
+      "url": "/contents/inbox/cv2ToT/",
+      "kind": "moc"
+    },
+    {
+      "id": "contents-inbox-cv2tot",
+      "label": "cv2ToT",
+      "url": "/contents/inbox/cv2ToT/",
+      "kind": "note"
+    },
+    {
+      "id": "moc-test",
+      "label": "test",
+      "url": "/contents/inbox/cv2ToT/",
+      "kind": "moc"
+    },
+    {
+      "id": "moc-dl",
+      "label": "DL",
+      "url": "/contents/inbox/cv2ToT/",
+      "kind": "moc"
+    },
+    {
+      "id": "moc-a",
+      "label": "a",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-b",
+      "label": "b",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-c",
+      "label": "c",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-v",
+      "label": "v",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-x-b",
+      "label": "[x] b",
+      "url": null,
+      "kind": "moc"
+    },
+    {
+      "id": "contents-readme",
+      "label": "README",
+      "url": "/Contents/README/",
+      "kind": "note"
+    }
+  ],
+  "links": [
+    {
+      "source": "moc-cv3",
+      "target": "moc-dl4",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-cv3",
+      "target": "moc-llm5",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-llm5",
+      "target": "contents-inbox-cv2tot",
+      "kind": "link"
+    },
+    {
+      "source": "moc-test",
+      "target": "contents-inbox-cv2tot",
+      "kind": "link"
+    },
+    {
+      "source": "moc-test",
+      "target": "moc-dl",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-dl",
+      "target": "contents-inbox-cv2tot",
+      "kind": "link"
+    },
+    {
+      "source": "moc-a",
+      "target": "moc-b",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-b",
+      "target": "moc-c",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-c",
+      "target": "moc-a",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-b",
+      "target": "moc-v",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-c",
+      "target": "moc-x-b",
+      "kind": "moc"
+    }
+  ]
+}

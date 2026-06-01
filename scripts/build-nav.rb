@@ -4,6 +4,7 @@
 # Parse Obsidian-style MOC (contents/site.md) → _data/nav.yml + assets/site-map.md
 # Run before Jekyll build (see run.sh). No gem plugins required.
 
+require "json"
 require "yaml"
 require "fileutils"
 
@@ -11,6 +12,7 @@ ROOT = File.expand_path("..", __dir__)
 SITE_MD = File.join(ROOT, "contents", "site.md")
 OUT_YML = File.join(ROOT, "_data", "nav.yml")
 OUT_ASSET = File.join(ROOT, "assets", "site-map.md")
+OUT_GRAPH = File.join(ROOT, "assets", "graph.json")
 
 def strip_front_matter(text)
   return text unless text.start_with?("---\n")
@@ -184,12 +186,103 @@ def append_link(menu, ctx, title, url)
   ctx[:last_node] = node
 end
 
+def slug_id(text)
+  text.to_s.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/^-|-$/, "")
+end
+
+def url_to_node_id(url)
+  return nil if url.nil? || url.empty?
+
+  path = url.sub(%r{\A/}, "").sub(%r{/\z}, "")
+  slug_id(path.gsub("/", "-"))
+end
+
+def extract_links_from_markdown(text, source_id)
+  links = []
+  text.scan(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/) do |ref, _label|
+    target = resolve_wiki(ref.strip)
+    tid = url_to_node_id(target)
+    links << { "source" => source_id, "target" => tid, "kind" => "wiki" } if tid
+  end
+
+  text.scan(/\[([^\]]+)\]\(([^)]+)\)/) do |_label, href|
+    next if href.match?(%r{\A(https?:|#|mailto:)}i)
+
+    target = normalize_url(href)
+    tid = url_to_node_id(target)
+    links << { "source" => source_id, "target" => tid, "kind" => "mdlink" } if tid
+  end
+
+  links
+end
+
+def build_graph(nav)
+  nodes = {}
+  links = []
+  seen_links = {}
+
+  add_link = lambda do |source, target, kind|
+    next if source.nil? || target.nil? || source == target
+
+    key = [source, target, kind].join("|")
+    return if seen_links[key]
+
+    seen_links[key] = true
+    links << { "source" => source, "target" => target, "kind" => kind }
+  end
+
+  add_node = lambda do |id, label, url: nil, kind: "note"|
+    nodes[id] ||= { "id" => id, "label" => label, "url" => url, "kind" => kind }
+  end
+
+  walk_nav = nil
+  walk_nav = lambda do |items, parent_id|
+    items.each do |item|
+      id = "moc-#{slug_id(item['title'])}"
+      add_node.call(id, item["title"], url: item["url"], kind: "moc")
+      add_link.call(parent_id, id, "moc") if parent_id
+
+      if item["url"]
+        file_id = url_to_node_id(item["url"])
+        if file_id
+          add_node.call(file_id, File.basename(item["url"].sub(%r{/\z}, "")), url: item["url"], kind: "note")
+          add_link.call(id, file_id, "link")
+        end
+      end
+
+      walk_nav.call(item["items"] || [], id)
+    end
+  end
+
+  walk_nav.call(nav, nil)
+
+  Dir.glob(File.join(ROOT, "contents", "**", "*.md")).each do |path|
+    next if File.basename(path) == "site.md"
+
+    rel = path.sub("#{ROOT}/", "").sub(/\.md\z/, "")
+    id = slug_id(rel.gsub("/", "-"))
+    label = File.basename(path, ".md")
+    url = "/#{rel}/"
+    add_node.call(id, label, url: url, kind: "note")
+
+    body = strip_front_matter(File.read(path))
+    extract_links_from_markdown(body, id).each do |link|
+      add_link.call(link["source"], link["target"], link["kind"])
+      tgt = nodes[link["target"]]
+      add_node.call(link["target"], link["target"], url: tgt&.dig("url"), kind: "note") unless nodes[link["target"]]
+    end
+  end
+
+  { "nodes" => nodes.values, "links" => links }
+end
+
 unless File.file?(SITE_MD)
   warn "Missing #{SITE_MD} — writing empty nav."
   FileUtils.mkdir_p(File.dirname(OUT_YML))
   File.write(OUT_YML, "---\n[]\n")
   FileUtils.mkdir_p(File.dirname(OUT_ASSET))
   File.write(OUT_ASSET, "")
+  File.write(OUT_GRAPH, JSON.pretty_generate({ "nodes" => [], "links" => [] }))
   exit 0
 end
 
@@ -202,5 +295,10 @@ File.write(OUT_YML, nav.to_yaml)
 FileUtils.mkdir_p(File.dirname(OUT_ASSET))
 File.write(OUT_ASSET, source)
 
+graph = build_graph(nav)
+FileUtils.mkdir_p(File.dirname(OUT_GRAPH))
+File.write(OUT_GRAPH, JSON.pretty_generate(graph))
+
 puts "Wrote #{nav.length} top-level nav items → #{OUT_YML}"
 puts "Copied site map → #{OUT_ASSET}"
+puts "Wrote graph (#{graph['nodes'].length} nodes, #{graph['links'].length} links) → #{OUT_GRAPH}"
