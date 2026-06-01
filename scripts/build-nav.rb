@@ -78,24 +78,39 @@ def resolve_wiki(ref)
   normalize_url("/contents/#{ref}")
 end
 
+def attach_link_to_heading(ctx, title, url)
+  heading = ctx[:last_heading]
+  return unless heading
+  return unless ctx[:last_heading_level] && ctx[:last_heading_level] >= 2
+  return if heading["url"]
+
+  heading["url"] = url
+  heading["title"] = title if heading["title"].to_s.empty?
+end
+
+# Menu rules (Obsidian MOC):
+#   #       → level 1 top menu only
+#   ## ###  → submenu under their parent #
+#   links on the line after ##/### attach to that heading (not separate menu items)
+#   lists, tasks, and other lines are ignored for the menu (still in site-map body)
 def parse_moc(text)
   menu = []
   ctx = {
     h1: nil,
     h2: nil,
     h3: nil,
-    last_node: nil,
-    list_stack: []
+    last_heading: nil,
+    last_heading_level: nil
   }
 
   strip_front_matter(text).each_line do |raw|
-    line = raw.chomp
-    stripped = line.strip
+    stripped = raw.strip
     next if stripped.empty? || stripped == "[]"
 
     if (m = stripped.match(/\A(#+)\s+(.+)\z/))
       level = m[1].length
-      next if level > 6
+      next unless [1, 2, 3].include?(level)
+
       info = parse_inline(m[2])
       node = { "title" => info[:title], "items" => [] }
       node["url"] = info[:url] if info[:url]
@@ -106,84 +121,38 @@ def parse_moc(text)
         ctx[:h1] = node
         ctx[:h2] = ctx[:h3] = nil
       when 2
-        unless ctx[:h1]
-          ctx[:h1] = { "title" => "Notes", "items" => [] }
-          menu << ctx[:h1]
-        end
+        next unless ctx[:h1]
+
         ctx[:h1]["items"] << node
         ctx[:h2] = node
         ctx[:h3] = nil
       when 3
         parent = ctx[:h2] || ctx[:h1]
+        next unless parent
+
         parent["items"] << node
         ctx[:h3] = node
-      else
-        (ctx[:h3] || ctx[:h2] || ctx[:h1])["items"] << node
       end
 
-      ctx[:last_node] = node
-      ctx[:list_stack] = []
+      ctx[:last_heading] = node
+      ctx[:last_heading_level] = level
       next
     end
 
-    if (m = line.match(/\A(\s*)[-*+]\s+(.+)\z/))
-      indent = m[1].length
-      info = parse_inline(m[2].strip)
-      node = { "title" => info[:title], "items" => [] }
-      node["url"] = info[:url] if info[:url]
-
-      parent = list_parent(ctx, indent)
-      parent["items"] << node
-
-      ctx[:list_stack].pop while ctx[:list_stack].any? && ctx[:list_stack].last[:indent] >= indent
-      ctx[:list_stack] << { indent: indent, node: node }
-      ctx[:last_node] = node
-      next
-    end
+    next unless stripped.match?(/\A(\[.+\]\(.+\)|\[\[.+\]\])\z/)
 
     if (m = stripped.match(/\A\[(.+?)\]\((.+?)\)\z/))
-      url = normalize_url(m[2])
-      if ctx[:last_node] && !ctx[:last_node]["url"]
-        ctx[:last_node]["url"] = url
-        ctx[:last_node]["title"] = m[1] if ctx[:last_node]["title"].to_s.empty?
-      else
-        append_link(menu, ctx, m[1], url)
-      end
+      attach_link_to_heading(ctx, m[1], normalize_url(m[2]))
       next
     end
 
     if stripped.match?(/\A\[\[.+?\]\]\z/)
       info = parse_inline(stripped)
-      if ctx[:last_node] && !ctx[:last_node]["url"]
-        ctx[:last_node]["url"] = info[:url]
-        ctx[:last_node]["title"] = info[:title] if ctx[:last_node]["title"].to_s.empty?
-      else
-        append_link(menu, ctx, info[:title], info[:url])
-      end
+      attach_link_to_heading(ctx, info[:title], info[:url])
     end
   end
 
   menu
-end
-
-def list_parent(ctx, indent)
-  if indent.positive?
-    entry = ctx[:list_stack].reverse.find { |s| s[:indent] < indent }
-    return entry[:node] if entry
-  end
-
-  ctx[:h3] || ctx[:h2] || ctx[:h1]
-end
-
-def append_link(menu, ctx, title, url)
-  node = { "title" => title, "url" => url, "items" => [] }
-  parent = ctx[:h3] || ctx[:h2] || ctx[:h1]
-  if parent
-    parent["items"] << node
-  else
-    menu << node
-  end
-  ctx[:last_node] = node
 end
 
 def slug_id(text)

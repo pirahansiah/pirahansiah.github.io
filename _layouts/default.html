@@ -15,7 +15,10 @@
 <body>
 
 <nav class="site-nav liquid-glass" id="site-nav">
-  <a class="nav-brand liquid-glass-item" href="{{ '/' | relative_url }}">{{ site.author | default: "Home" }}</a>
+  <div class="nav-header">
+    <a class="nav-brand liquid-glass-item" href="{{ '/' | relative_url }}">{{ site.author | default: "Home" }}</a>
+    <button type="button" class="nav-menu-btn liquid-glass-item" id="nav-menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+  </div>
   <ul class="nav-list" id="nav-list" aria-label="Site navigation">
     {% if site.data.nav and site.data.nav.size > 0 %}
       {% include nav-items.html items=site.data.nav %}

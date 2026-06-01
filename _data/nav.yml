@@ -3,26 +3,24 @@
   items:
   - title: DL4
     items: []
+    url: "/contents/inbox/a/"
   - title: LLM5
     items: []
-    url: "/contents/inbox/cv2ToT/"
+    url: "/contents/inbox/b/"
 - title: test
   items:
   - title: DL
     items: []
-    url: "/contents/inbox/cv2ToT/"
-  url: "/contents/inbox/cv2ToT/"
+    url: "/contents/inbox/d/"
 - title: a
   items:
   - title: b
     items:
     - title: c
-      items:
-      - title: a
-        items:
-        - title: b
-          items:
-          - title: v
-            items: []
-      - title: "[x] b"
-        items: []
+      items: []
+- title: a
+  items:
+  - title: b
+    items:
+    - title: c
+      items: []

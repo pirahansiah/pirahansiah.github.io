@@ -9,32 +9,44 @@
     {
       "id": "moc-dl4",
       "label": "DL4",
-      "url": null,
+      "url": "/contents/inbox/a/",
       "kind": "moc"
+    },
+    {
+      "id": "contents-inbox-a",
+      "label": "a",
+      "url": "/contents/inbox/a/",
+      "kind": "note"
     },
     {
       "id": "moc-llm5",
       "label": "LLM5",
-      "url": "/contents/inbox/cv2ToT/",
+      "url": "/contents/inbox/b/",
       "kind": "moc"
     },
     {
-      "id": "contents-inbox-cv2tot",
-      "label": "cv2ToT",
-      "url": "/contents/inbox/cv2ToT/",
+      "id": "contents-inbox-b",
+      "label": "b",
+      "url": "/contents/inbox/b/",
       "kind": "note"
     },
     {
       "id": "moc-test",
       "label": "test",
-      "url": "/contents/inbox/cv2ToT/",
+      "url": null,
       "kind": "moc"
     },
     {
       "id": "moc-dl",
       "label": "DL",
-      "url": "/contents/inbox/cv2ToT/",
+      "url": "/contents/inbox/d/",
       "kind": "moc"
+    },
+    {
+      "id": "contents-inbox-d",
+      "label": "d",
+      "url": "/contents/inbox/d/",
+      "kind": "note"
     },
     {
       "id": "moc-a",
@@ -55,21 +67,15 @@
       "kind": "moc"
     },
     {
-      "id": "moc-v",
-      "label": "v",
-      "url": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-x-b",
-      "label": "[x] b",
-      "url": null,
-      "kind": "moc"
-    },
-    {
       "id": "contents-readme",
       "label": "README",
       "url": "/Contents/README/",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-c",
+      "label": "c",
+      "url": "/Contents/inbox/c/",
       "kind": "note"
     }
   ],
@@ -80,18 +86,18 @@
       "kind": "moc"
     },
     {
+      "source": "moc-dl4",
+      "target": "contents-inbox-a",
+      "kind": "link"
+    },
+    {
       "source": "moc-cv3",
       "target": "moc-llm5",
       "kind": "moc"
     },
     {
       "source": "moc-llm5",
-      "target": "contents-inbox-cv2tot",
-      "kind": "link"
-    },
-    {
-      "source": "moc-test",
-      "target": "contents-inbox-cv2tot",
+      "target": "contents-inbox-b",
       "kind": "link"
     },
     {
@@ -101,7 +107,7 @@
     },
     {
       "source": "moc-dl",
-      "target": "contents-inbox-cv2tot",
+      "target": "contents-inbox-d",
       "kind": "link"
     },
     {
@@ -112,21 +118,6 @@
     {
       "source": "moc-b",
       "target": "moc-c",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-c",
-      "target": "moc-a",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "moc-v",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-c",
-      "target": "moc-x-b",
       "kind": "moc"
     }
   ]
