@@ -19,9 +19,14 @@
     text = text.trim();
     var md = text.match(/^\[(.+?)\]\((.+?)\)$/);
     if (md) {
+      var href = md[2].trim();
+      if (!/^(https?:|#|mailto:)/i.test(href)) {
+        if (!href.startsWith("/")) href = "/" + href;
+        if (!/\.\w{2,5}$/i.test(href) && !href.endsWith("/")) href += "/";
+      }
       return (
         '<a class="liquid-glass-item moc-item" href="' +
-        escapeHtml(md[2]) +
+        escapeHtml(href) +
         '">' +
         escapeHtml(md[1]) +
         "</a>"

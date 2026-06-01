@@ -20,16 +20,38 @@ def strip_front_matter(text)
   text.sub(/\A---\s*\n.*?\n---\s*\n/m, "")
 end
 
+def file_extension?(path)
+  path.match?(%r{\.[a-z0-9]{2,5}\z}i)
+end
+
+def content_url_for_path(path)
+  rel = path.sub("#{ROOT}/", "")
+  return "/#{rel}" if file_extension?(rel)
+
+  rel = rel.sub(/\.md\z/i, "")
+  "/#{rel}/"
+end
+
 def wiki_index
   @wiki_index ||= begin
     idx = {}
-    Dir.glob(File.join(ROOT, "contents", "**", "*.md")).each do |path|
-      base = File.basename(path, ".md")
-      rel = path.sub("#{ROOT}/", "").sub(/\.md\z/, "")
-      url = "/#{rel}/"
-      idx[base.downcase] = url
-      idx[rel.downcase] = url
-      idx[rel.sub("contents/", "").downcase] = url
+    patterns = [
+      File.join(ROOT, "contents", "**", "*.md"),
+      File.join(ROOT, "contents", "**", "*.html"),
+      File.join(ROOT, "contents", "**", "*.htm")
+    ]
+    patterns.each do |pattern|
+      Dir.glob(pattern).each do |path|
+        next if File.basename(path) == "site.md"
+
+        base = File.basename(path, File.extname(path))
+        rel = path.sub("#{ROOT}/", "")
+        url = content_url_for_path(path)
+        idx[base.downcase] = url
+        idx[rel.downcase] = url
+        idx[rel.sub("contents/", "").downcase] = url
+        idx[rel.sub(/\.(md|html?)\z/i, "").downcase] = url
+      end
     end
     idx
   end
@@ -39,10 +61,14 @@ def normalize_url(url)
   return url if url.nil? || url.empty?
   return url if url.match?(%r{\A(https?:|#|mailto:)}i)
 
-  url = url.sub(/\.md\z/i, "")
+  url = url.strip
   url = "/#{url}" unless url.start_with?("/")
-  url = "#{url}/" unless url.end_with?("/")
-  url
+  url = url.sub(/\.md\z/i, "") unless file_extension?(url)
+
+  return url if file_extension?(url)
+
+  url = url.sub(%r{/\z}, "")
+  "#{url}/"
 end
 
 def parse_inline(text)
@@ -81,7 +107,7 @@ end
 def attach_link_to_heading(ctx, title, url)
   heading = ctx[:last_heading]
   return unless heading
-  return unless ctx[:last_heading_level] && ctx[:last_heading_level] >= 2
+  return unless ctx[:last_heading_level] && ctx[:last_heading_level] >= 1
   return if heading["url"]
 
   heading["url"] = url
@@ -159,11 +185,23 @@ def slug_id(text)
   text.to_s.downcase.gsub(/[^a-z0-9]+/, "-").gsub(/^-|-$/, "")
 end
 
+def node_id_for_path(path)
+  rel = path.to_s.sub(%r{\A/}, "")
+  rel = rel.sub(%r{/\z}, "") unless file_extension?(rel)
+  rel = rel.sub(/\.(md|html?)\z/i, "")
+  slug_id(rel.tr("/", "-"))
+end
+
 def url_to_node_id(url)
   return nil if url.nil? || url.empty?
 
-  path = url.sub(%r{\A/}, "").sub(%r{/\z}, "")
-  slug_id(path.gsub("/", "-"))
+  node_id_for_path(url)
+end
+
+def graph_label_for_url(url)
+  base = File.basename(url)
+  base = File.basename(base, File.extname(base)) if file_extension?(base)
+  base
 end
 
 def extract_links_from_markdown(text, source_id)
@@ -179,7 +217,7 @@ def extract_links_from_markdown(text, source_id)
 
     target = normalize_url(href)
     tid = url_to_node_id(target)
-    links << { "source" => source_id, "target" => tid, "kind" => "mdlink" } if tid
+    links << { "source" => source_id, "target" => tid, "kind" => "mdlink", "url" => target } if tid
   end
 
   links
@@ -214,7 +252,7 @@ def build_graph(nav)
       if item["url"]
         file_id = url_to_node_id(item["url"])
         if file_id
-          add_node.call(file_id, File.basename(item["url"].sub(%r{/\z}, "")), url: item["url"], kind: "note")
+          add_node.call(file_id, graph_label_for_url(item["url"]), url: item["url"], kind: "note")
           add_link.call(id, file_id, "link")
         end
       end
@@ -225,20 +263,34 @@ def build_graph(nav)
 
   walk_nav.call(nav, nil)
 
-  Dir.glob(File.join(ROOT, "contents", "**", "*.md")).each do |path|
-    next if File.basename(path) == "site.md"
+  content_globs = [
+    File.join(ROOT, "contents", "**", "*.md"),
+    File.join(ROOT, "contents", "**", "*.html"),
+    File.join(ROOT, "contents", "**", "*.htm")
+  ]
+  content_globs.each do |pattern|
+    Dir.glob(pattern).each do |path|
+      next if File.basename(path) == "site.md"
 
-    rel = path.sub("#{ROOT}/", "").sub(/\.md\z/, "")
-    id = slug_id(rel.gsub("/", "-"))
-    label = File.basename(path, ".md")
-    url = "/#{rel}/"
-    add_node.call(id, label, url: url, kind: "note")
+      rel = path.sub("#{ROOT}/", "")
+      id = node_id_for_path(rel)
+      label = File.basename(path, File.extname(path))
+      url = content_url_for_path(path)
+      add_node.call(id, label, url: url, kind: "note")
 
-    body = strip_front_matter(File.read(path))
-    extract_links_from_markdown(body, id).each do |link|
-      add_link.call(link["source"], link["target"], link["kind"])
-      tgt = nodes[link["target"]]
-      add_node.call(link["target"], link["target"], url: tgt&.dig("url"), kind: "note") unless nodes[link["target"]]
+      body = File.read(path)
+      body = strip_front_matter(body) if path.end_with?(".md")
+      extract_links_from_markdown(body, id).each do |link|
+        add_link.call(link["source"], link["target"], link["kind"])
+        next if nodes[link["target"]]
+
+        add_node.call(
+          link["target"],
+          graph_label_for_url(link["url"] || link["target"]),
+          url: link["url"],
+          kind: "note"
+        )
+      end
     end
   end
 
