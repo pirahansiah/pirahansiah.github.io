@@ -15,15 +15,29 @@
       .replace(/"/g, "&quot;");
   }
 
+  var VIEWER_EXT =
+    "html htm pdf doc docx py cpp c h java js ts go rs rb php swift kt cs sh sql r json xml css txt csv png jpg jpeg gif webp svg pdf".split(
+      " "
+    );
+
+  function toMenuHref(href) {
+    if (/^(https?:|#|mailto:)/i.test(href)) return href;
+    if (!href.startsWith("/")) href = "/" + href;
+    if (href.indexOf("/view/") === 0) return href;
+    if (href.endsWith("/")) return href;
+    var m = href.match(/\.([a-z0-9]+)$/i);
+    if (m && VIEWER_EXT.indexOf(m[1].toLowerCase()) !== -1) {
+      return "/view/?p=" + encodeURIComponent(href);
+    }
+    if (!/\.\w{2,5}$/i.test(href)) href += "/";
+    return href;
+  }
+
   function parseInline(text) {
     text = text.trim();
     var md = text.match(/^\[(.+?)\]\((.+?)\)$/);
     if (md) {
-      var href = md[2].trim();
-      if (!/^(https?:|#|mailto:)/i.test(href)) {
-        if (!href.startsWith("/")) href = "/" + href;
-        if (!/\.\w{2,5}$/i.test(href) && !href.endsWith("/")) href += "/";
-      }
+      var href = toMenuHref(md[2].trim());
       return (
         '<a class="liquid-glass-item moc-item" href="' +
         escapeHtml(href) +

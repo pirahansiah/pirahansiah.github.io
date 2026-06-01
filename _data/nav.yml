@@ -1,7 +1,7 @@
 ---
 - title: About Me
   items: []
-  url: "/contents/cv/AboutMe.html"
+  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
 - title: CV3
   items:
   - title: DL4
@@ -16,7 +16,7 @@
     items:
     - title: Farshid
       items: []
-      url: "/contents/cv/AboutMe.html"
+      url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
     url: "/contents/inbox/d/"
   url: "/contents/inbox/c/"
 - title: a

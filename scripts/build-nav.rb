@@ -4,6 +4,7 @@
 # Parse Obsidian-style MOC (contents/site.md) → _data/nav.yml + assets/site-map.md
 # Run before Jekyll build (see run.sh). No gem plugins required.
 
+require "cgi"
 require "json"
 require "yaml"
 require "fileutils"
@@ -36,21 +37,22 @@ def wiki_index
   @wiki_index ||= begin
     idx = {}
     patterns = [
-      File.join(ROOT, "contents", "**", "*.md"),
-      File.join(ROOT, "contents", "**", "*.html"),
-      File.join(ROOT, "contents", "**", "*.htm")
+      File.join(ROOT, "contents", "**", "*"),
+      File.join(ROOT, "Contents", "**", "*")
     ]
     patterns.each do |pattern|
       Dir.glob(pattern).each do |path|
+        next unless File.file?(path)
         next if File.basename(path) == "site.md"
+        next unless path.include?("ontents/")
 
         base = File.basename(path, File.extname(path))
         rel = path.sub("#{ROOT}/", "")
-        url = content_url_for_path(path)
-        idx[base.downcase] = url
-        idx[rel.downcase] = url
-        idx[rel.sub("contents/", "").downcase] = url
-        idx[rel.sub(/\.(md|html?)\z/i, "").downcase] = url
+        raw = content_url_for_path(path)
+        idx[base.downcase] = raw
+        idx[rel.downcase] = raw
+        idx[rel.sub(/contents/i, "contents").downcase] = raw
+        idx[rel.sub(/\.(md|html?)\z/i, "").downcase] = raw
       end
     end
     idx
@@ -71,37 +73,77 @@ def normalize_url(url)
   "#{url}/"
 end
 
+# Static assets (html, pdf, code, …) open in /view/ so site menu + CSS stay visible.
+VIEWER_EXTENSIONS = %w[
+  html htm pdf doc docx xls xlsx ppt pptx zip
+  py cpp c cc h hpp hh java js ts jsx tsx go rs rb php swift kt cs
+  sh bash zsh sql r m mm yaml yml toml xml css scss txt csv
+  png jpg jpeg gif webp svg bmp ico mp4 webm
+].freeze
+
+def canonical_asset_path(url)
+  rel = url.to_s.sub(%r{\A/}, "").split("?").first
+  direct = File.join(ROOT, rel)
+  return "/#{rel}" if File.file?(direct)
+
+  base = File.basename(rel)
+  Dir.glob(File.join(ROOT, "**", base)).each do |found|
+    next if File.basename(found) == "site.md"
+
+    candidate = "/#{found.sub("#{ROOT}/", "")}"
+    return candidate if candidate.downcase == "/#{rel}".downcase
+  end
+
+  "/#{rel}"
+end
+
+def viewer_extension?(url)
+  ext = File.extname(url.to_s.split("?").first).delete_prefix(".").downcase
+  !ext.empty? && VIEWER_EXTENSIONS.include?(ext)
+end
+
+def menu_url(url)
+  return url if url.nil? || url.empty?
+  return url if url.match?(%r{\A(https?:|#|mailto:)}i)
+  return url if url.start_with?("/view/")
+
+  raw = canonical_asset_path(normalize_url(url))
+  return raw unless viewer_extension?(raw)
+
+  "/view/?p=#{CGI.escape(raw)}"
+end
+
 def parse_inline(text)
   text = text.to_s.strip
   return { title: "", url: nil } if text.empty?
 
   if (m = text.match(/\A\[(.+?)\]\((.+?)\)\z/))
-    return { title: m[1], url: normalize_url(m[2]) }
+    return { title: m[1], url: menu_url(m[2]) }
   end
 
   if (m = text.match(/\A\[\[(.+?)\|(.+?)\]\]\z/))
-    return { title: m[2].strip, url: resolve_wiki(m[1].strip) }
+    return { title: m[2].strip, url: menu_url(resolve_wiki_raw(m[1].strip)) }
   end
 
   if (m = text.match(/\A\[\[(.+?)\]\]\z/))
     ref = m[1]
     if ref.include?("|")
       path, label = ref.split("|", 2)
-      return { title: label.strip, url: resolve_wiki(path.strip) }
+      return { title: label.strip, url: menu_url(resolve_wiki_raw(path.strip)) }
     end
-    return { title: ref, url: resolve_wiki(ref) }
+    return { title: ref, url: menu_url(resolve_wiki_raw(ref)) }
   end
 
   { title: text, url: nil }
 end
 
-def resolve_wiki(ref)
+def resolve_wiki_raw(ref)
   ref = ref.sub(/\.md\z/i, "")
   key = File.basename(ref).downcase
   found = wiki_index[key] || wiki_index[ref.downcase]
-  return found if found
+  return canonical_asset_path(found) if found
 
-  normalize_url("/contents/#{ref}")
+  canonical_asset_path(normalize_url("/contents/#{ref}"))
 end
 
 def attach_link_to_heading(ctx, title, url)
@@ -168,7 +210,7 @@ def parse_moc(text)
     next unless stripped.match?(/\A(\[.+\]\(.+\)|\[\[.+\]\])\z/)
 
     if (m = stripped.match(/\A\[(.+?)\]\((.+?)\)\z/))
-      attach_link_to_heading(ctx, m[1], normalize_url(m[2]))
+      attach_link_to_heading(ctx, m[1], menu_url(m[2]))
       next
     end
 
@@ -207,17 +249,17 @@ end
 def extract_links_from_markdown(text, source_id)
   links = []
   text.scan(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/) do |ref, _label|
-    target = resolve_wiki(ref.strip)
-    tid = url_to_node_id(target)
-    links << { "source" => source_id, "target" => tid, "kind" => "wiki" } if tid
+    raw = resolve_wiki_raw(ref.strip)
+    tid = url_to_node_id(raw)
+    links << { "source" => source_id, "target" => tid, "kind" => "wiki", "url" => menu_url(raw), "raw" => raw } if tid
   end
 
   text.scan(/\[([^\]]+)\]\(([^)]+)\)/) do |_label, href|
     next if href.match?(%r{\A(https?:|#|mailto:)}i)
 
-    target = normalize_url(href)
-    tid = url_to_node_id(target)
-    links << { "source" => source_id, "target" => tid, "kind" => "mdlink", "url" => target } if tid
+    raw = canonical_asset_path(normalize_url(href))
+    tid = url_to_node_id(raw)
+    links << { "source" => source_id, "target" => tid, "kind" => "mdlink", "url" => menu_url(raw), "raw" => raw } if tid
   end
 
   links
@@ -264,19 +306,20 @@ def build_graph(nav)
   walk_nav.call(nav, nil)
 
   content_globs = [
-    File.join(ROOT, "contents", "**", "*.md"),
-    File.join(ROOT, "contents", "**", "*.html"),
-    File.join(ROOT, "contents", "**", "*.htm")
+    File.join(ROOT, "contents", "**", "*"),
+    File.join(ROOT, "Contents", "**", "*")
   ]
   content_globs.each do |pattern|
     Dir.glob(pattern).each do |path|
+      next unless File.file?(path)
       next if File.basename(path) == "site.md"
+      next unless path.include?("ontents/")
 
       rel = path.sub("#{ROOT}/", "")
       id = node_id_for_path(rel)
       label = File.basename(path, File.extname(path))
-      url = content_url_for_path(path)
-      add_node.call(id, label, url: url, kind: "note")
+      raw = content_url_for_path(path)
+      add_node.call(id, label, url: menu_url(raw), kind: "note")
 
       body = File.read(path)
       body = strip_front_matter(body) if path.end_with?(".md")

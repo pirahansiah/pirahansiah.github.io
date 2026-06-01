@@ -3,13 +3,13 @@
     {
       "id": "moc-about-me",
       "label": "About Me",
-      "url": "/contents/cv/AboutMe.html",
+      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
       "kind": "moc"
     },
     {
-      "id": "contents-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/contents/cv/AboutMe.html",
+      "id": "view-p-2fcontents-2fcv-2faboutme",
+      "label": "?p=%2Fcontents%2Fcv%2FAboutMe",
+      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
       "kind": "note"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "moc-farshid",
       "label": "Farshid",
-      "url": "/contents/cv/AboutMe.html",
+      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
       "kind": "moc"
     },
     {
@@ -91,16 +91,28 @@
       "kind": "moc"
     },
     {
+      "id": "contents-license",
+      "label": "LICENSE",
+      "url": "/Contents/LICENSE/",
+      "kind": "note"
+    },
+    {
       "id": "contents-readme",
       "label": "README",
       "url": "/Contents/README.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-aboutme",
+      "label": "AboutMe",
+      "url": "/view/?p=%2FContents%2Fcv%2FAboutMe.html",
       "kind": "note"
     }
   ],
   "links": [
     {
       "source": "moc-about-me",
-      "target": "contents-cv-aboutme",
+      "target": "view-p-2fcontents-2fcv-2faboutme",
       "kind": "link"
     },
     {
@@ -145,7 +157,7 @@
     },
     {
       "source": "moc-farshid",
-      "target": "contents-cv-aboutme",
+      "target": "view-p-2fcontents-2fcv-2faboutme",
       "kind": "link"
     },
     {
