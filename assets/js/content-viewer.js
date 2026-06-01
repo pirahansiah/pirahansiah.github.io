@@ -29,11 +29,32 @@
     return path.split("/").pop() || path;
   }
 
+  function normalizeContentPath(p) {
+    if (!p || typeof p !== "string") return "";
+
+    try {
+      p = decodeURIComponent(p.replace(/\+/g, " "));
+    } catch (err) {
+      /* keep as-is */
+    }
+
+    if (p.indexOf("/view/") !== -1 || p.indexOf("?p=") !== -1 || p.indexOf("&p=") !== -1) {
+      var q = p.indexOf("?") !== -1 ? p.slice(p.indexOf("?") + 1) : "";
+      var params = new URLSearchParams(q);
+      var inner = params.get("p") || params.get("path");
+      if (inner) return normalizeContentPath(inner);
+    }
+
+    p = p.trim();
+    if (p.startsWith("contents/")) p = "/" + p;
+    return p;
+  }
+
   function isSafePath(p) {
-    if (!p || typeof p !== "string") return false;
-    if (!p.startsWith("/contents/")) return false;
+    p = normalizeContentPath(p);
+    if (!p) return false;
     if (p.indexOf("..") !== -1) return false;
-    return true;
+    return /^\/contents\//i.test(p);
   }
 
   function showError(msg) {
@@ -133,13 +154,7 @@
   }
 
   var params = new URLSearchParams(window.location.search);
-  var path = params.get("p") || params.get("path") || "";
-
-  try {
-    path = decodeURIComponent(path);
-  } catch (err) {
-    path = "";
-  }
+  var path = normalizeContentPath(params.get("p") || params.get("path") || "");
 
   if (!path) {
     if (titleEl) titleEl.textContent = "No file selected";

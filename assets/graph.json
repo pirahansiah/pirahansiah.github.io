@@ -4,115 +4,126 @@
       "id": "moc-about-me",
       "label": "About Me",
       "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents/cv/AboutMe.html",
       "kind": "moc"
     },
     {
-      "id": "view-p-2fcontents-2fcv-2faboutme",
-      "label": "?p=%2Fcontents%2Fcv%2FAboutMe",
+      "id": "contents-cv-aboutme",
+      "label": "AboutMe",
       "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents/cv/AboutMe.html",
       "kind": "note"
     },
     {
       "id": "moc-cv3",
       "label": "CV3",
       "url": null,
+      "raw": null,
       "kind": "moc"
     },
     {
       "id": "moc-dl4",
       "label": "DL4",
       "url": "/contents/inbox/a/",
+      "raw": "/contents/inbox/a/",
       "kind": "moc"
     },
     {
       "id": "contents-inbox-a",
       "label": "a",
       "url": "/contents/inbox/a/",
+      "raw": "/contents/inbox/a/",
       "kind": "note"
     },
     {
       "id": "moc-llm5",
       "label": "LLM5",
       "url": "/contents/inbox/b/",
+      "raw": "/contents/inbox/b/",
       "kind": "moc"
     },
     {
       "id": "contents-inbox-b",
       "label": "b",
       "url": "/contents/inbox/b/",
+      "raw": "/contents/inbox/b/",
       "kind": "note"
     },
     {
       "id": "moc-test",
       "label": "test",
       "url": "/contents/inbox/c/",
+      "raw": "/contents/inbox/c/",
       "kind": "moc"
     },
     {
       "id": "contents-inbox-c",
       "label": "c",
       "url": "/contents/inbox/c/",
+      "raw": "/contents/inbox/c/",
       "kind": "note"
     },
     {
       "id": "moc-dl",
       "label": "DL",
       "url": "/contents/inbox/d/",
+      "raw": "/contents/inbox/d/",
       "kind": "moc"
     },
     {
       "id": "contents-inbox-d",
       "label": "d",
       "url": "/contents/inbox/d/",
+      "raw": "/contents/inbox/d/",
       "kind": "note"
     },
     {
       "id": "moc-farshid",
       "label": "Farshid",
       "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents/cv/AboutMe.html",
       "kind": "moc"
     },
     {
       "id": "moc-a",
       "label": "a",
       "url": null,
+      "raw": null,
       "kind": "moc"
     },
     {
       "id": "moc-b",
       "label": "b",
       "url": null,
+      "raw": null,
       "kind": "moc"
     },
     {
       "id": "moc-c",
       "label": "c",
       "url": null,
+      "raw": null,
       "kind": "moc"
     },
     {
       "id": "contents-license",
       "label": "LICENSE",
       "url": "/Contents/LICENSE/",
+      "raw": "/Contents/LICENSE/",
       "kind": "note"
     },
     {
       "id": "contents-readme",
       "label": "README",
       "url": "/Contents/README.md",
-      "kind": "note"
-    },
-    {
-      "id": "contents-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/view/?p=%2FContents%2Fcv%2FAboutMe.html",
+      "raw": "/Contents/README.md",
       "kind": "note"
     }
   ],
   "links": [
     {
       "source": "moc-about-me",
-      "target": "view-p-2fcontents-2fcv-2faboutme",
+      "target": "contents-cv-aboutme",
       "kind": "link"
     },
     {
@@ -157,7 +168,7 @@
     },
     {
       "source": "moc-farshid",
-      "target": "view-p-2fcontents-2fcv-2faboutme",
+      "target": "contents-cv-aboutme",
       "kind": "link"
     },
     {

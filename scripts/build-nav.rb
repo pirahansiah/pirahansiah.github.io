@@ -241,9 +241,28 @@ def url_to_node_id(url)
 end
 
 def graph_label_for_url(url)
-  base = File.basename(url)
+  raw = raw_path_from_url(url) || url.to_s
+  base = File.basename(raw.split("?").first)
   base = File.basename(base, File.extname(base)) if file_extension?(base)
   base
+end
+
+def raw_path_from_url(url)
+  return nil if url.nil? || url.empty?
+
+  if url.start_with?("/view/")
+    query = url.split("?", 2)[1]
+    return nil unless query
+
+    parsed = CGI.parse(query)
+    path = parsed["p"]&.first || parsed["path"]&.first
+    return CGI.unescape(path) if path && !path.empty?
+    return nil
+  end
+
+  return url if url.match?(%r{\A/contents/}i)
+
+  nil
 end
 
 def extract_links_from_markdown(text, source_id)
@@ -280,21 +299,29 @@ def build_graph(nav)
     links << { "source" => source, "target" => target, "kind" => kind }
   end
 
-  add_node = lambda do |id, label, url: nil, kind: "note"|
-    nodes[id] ||= { "id" => id, "label" => label, "url" => url, "kind" => kind }
+  add_node = lambda do |id, label, url: nil, raw: nil, kind: "note"|
+    entry = { "id" => id, "label" => label, "url" => url, "raw" => raw, "kind" => kind }
+    nodes[id] = entry unless nodes[id]
   end
 
   walk_nav = nil
   walk_nav = lambda do |items, parent_id|
     items.each do |item|
       id = "moc-#{slug_id(item['title'])}"
-      add_node.call(id, item["title"], url: item["url"], kind: "moc")
+      raw = raw_path_from_url(item["url"])
+      add_node.call(id, item["title"], url: item["url"], raw: raw, kind: "moc")
       add_link.call(parent_id, id, "moc") if parent_id
 
-      if item["url"]
-        file_id = url_to_node_id(item["url"])
-        if file_id
-          add_node.call(file_id, graph_label_for_url(item["url"]), url: item["url"], kind: "note")
+      if item["url"] && raw
+        file_id = url_to_node_id(raw)
+        if file_id && file_id != id
+          add_node.call(
+            file_id,
+            graph_label_for_url(raw),
+            url: item["url"],
+            raw: raw,
+            kind: "note"
+          )
           add_link.call(id, file_id, "link")
         end
       end
@@ -319,7 +346,7 @@ def build_graph(nav)
       id = node_id_for_path(rel)
       label = File.basename(path, File.extname(path))
       raw = content_url_for_path(path)
-      add_node.call(id, label, url: menu_url(raw), kind: "note")
+      add_node.call(id, label, url: menu_url(raw), raw: raw, kind: "note")
 
       body = File.read(path)
       body = strip_front_matter(body) if path.end_with?(".md")
@@ -329,8 +356,9 @@ def build_graph(nav)
 
         add_node.call(
           link["target"],
-          graph_label_for_url(link["url"] || link["target"]),
+          graph_label_for_url(link["raw"] || link["url"]),
           url: link["url"],
+          raw: link["raw"],
           kind: "note"
         )
       end

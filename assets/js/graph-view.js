@@ -66,6 +66,7 @@
         id: n.id,
         label: n.label || n.id,
         url: n.url || null,
+        raw: n.raw || null,
         kind: n.kind || "note",
         x: w / 2 + Math.cos(angle) * r,
         y: h / 2 + Math.sin(angle) * r,
@@ -237,11 +238,31 @@
     dragging = null;
   });
 
+  function resolveNodeUrl(n) {
+    if (!n) return null;
+    if (n.url) return n.url;
+    if (n.raw) {
+      if (/^\/contents\//i.test(n.raw)) {
+        if (/\/view\/\?/.test(n.raw)) return n.raw;
+        var ext = n.raw.split(".").pop().toLowerCase();
+        var staticExt =
+          "html htm pdf py cpp c h java js ts go rb php txt md json xml css png jpg".split(" ");
+        if (n.raw.endsWith("/")) return n.raw;
+        if (staticExt.indexOf(ext) !== -1 && ext !== "md") {
+          return "/view/?p=" + encodeURIComponent(n.raw);
+        }
+      }
+      return n.raw;
+    }
+    return null;
+  }
+
   canvas.addEventListener("click", function (e) {
     if (dragging) return;
     var hit = hitTest(screenPos(e));
-    if (hit && hit.url) {
-      window.location.href = hit.url;
+    var target = resolveNodeUrl(hit);
+    if (target) {
+      window.location.href = target;
     }
   });
 
