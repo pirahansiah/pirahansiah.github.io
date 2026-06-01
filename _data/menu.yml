@@ -1,13 +1,2 @@
-- title: CV3
-  url: "#cv3"
-  items:
-    - title: DL
-      url: "/contents/inbox/cv2ToT"
-    - title: LLM
-      url: "/contents/inbox/cv2ToT"
-
-- title: test
-  url: "#test"
-  items:
-    - title: DL
-      url: "/contents/inbox/cv2ToT"
+# Deprecated: navigation is built from contents/site.md at runtime.
+# Edit contents/site.md in the PKM submodule instead.

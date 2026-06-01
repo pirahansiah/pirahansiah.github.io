@@ -17,6 +17,10 @@ echo "[SETUP] Installing gems..."
 bundle install --quiet || bundle install
 
 echo ""
+echo "[NAV] Building menu from contents/site.md..."
+ruby scripts/build-nav.rb
+
+echo ""
 echo "[BUILD] Building Jekyll site..."
 bundle exec jekyll build
 

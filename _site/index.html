@@ -3,297 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Farshid Pirahansiah</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f7; color: #1d1d1f; }
-
-    /* ── NAV with Apple Liquid Glass Effect ── */
-    nav {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      display: flex;
-      align-items: center;
-      padding: 0 1.5rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    }
-    .nav-brand {
-      color: #1d1d1f;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 0.9rem 1.2rem 0.9rem 0;
-      margin-right: 0.5rem;
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
-      white-space: nowrap;
-      font-size: 1.1rem;
-    }
-    .nav-list {
-      list-style: none;
-      display: flex;
-      align-items: stretch;
-      height: 100%;
-    }
-    .nav-list > li {
-      position: relative;
-      border-right: 1px solid rgba(0, 0, 0, 0.05);
-    }
-    .nav-list > li > a {
-      display: block;
-      color: #1d1d1f;
-      text-decoration: none;
-      padding: 0.9rem 1.2rem;
-      white-space: nowrap;
-      cursor: pointer;
-      user-select: none;
-      transition: all 0.2s ease-out;
-      font-weight: 500;
-    }
-    .nav-list > li > a:hover { 
-      background: rgba(0, 0, 0, 0.05);
-      color: #0a84ff;
-    }
-
-    /* dropdown with liquid glass */
-    .nav-list > li > ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      list-style: none;
-      min-width: 170px;
-      border-radius: 12px;
-      margin-top: 8px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      z-index: 2000;
-      overflow: hidden;
-    }
-    .nav-list > li > ul > li > a {
-      display: block;
-      color: #1d1d1f;
-      text-decoration: none;
-      padding: 0.75rem 1.2rem;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      white-space: nowrap;
-      transition: all 0.15s ease-out;
-      font-weight: 500;
-    }
-    .nav-list > li > ul > li:last-child > a {
-      border-bottom: none;
-    }
-    .nav-list > li > ul > li > a:hover { 
-      background: rgba(0, 0, 0, 0.08);
-      color: #0a84ff;
-    }
-    .nav-list > li.open > ul { display: block; }
-
-    /* ── TOOLBAR (back/forward/home) ── */
-    .toolbar {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.6rem 1.5rem;
-      background: rgba(255, 255, 255, 0.5);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
-    .toolbar button {
-      background: rgba(255, 255, 255, 0.6);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      padding: 0.4rem 0.8rem;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: all 0.15s ease-out;
-    }
-    .toolbar button:hover { 
-      background: rgba(255, 255, 255, 0.8);
-      border-color: rgba(0, 0, 0, 0.15);
-    }
-    .toolbar a {
-      background: rgba(255, 255, 255, 0.6);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      padding: 0.4rem 0.8rem;
-      text-decoration: none;
-      color: #1d1d1f;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: all 0.15s ease-out;
-    }
-    .toolbar a:hover { 
-      background: rgba(255, 255, 255, 0.8);
-      border-color: rgba(0, 0, 0, 0.15);
-      color: #0a84ff;
-    }
-
-    /* ── MAIN ── */
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    main h1 { font-size: 1.8rem; margin: 1.5rem 0 0.6rem; }
-    main h2 { font-size: 1.3rem; margin: 1.2rem 0 0.4rem; color: #333; }
-    main h3 { font-size: 1.1rem; margin: 1rem 0 0.3rem; color: #555; }
-    main p  { margin: 0.5rem 0; line-height: 1.7; }
-    main a  { color: #0a84ff; text-decoration: none; }
-    main a:hover { text-decoration: underline; }
-    main pre, main code {
-      background: rgba(0, 0, 0, 0.05);
-      border-radius: 6px;
-      padding: 0.2rem 0.4rem;
-      font-size: 0.9rem;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    main pre { padding: 1rem; overflow-x: auto; border-radius: 8px; }
-  </style>
+  <meta name="description" content="Computer Vision & AI Engineer">
+  <meta name="author" content="Farshid Pirahansiah">
+  <title>Farshid Pirahansiah — Farshid Pirahansiah</title>
+  <link rel="stylesheet" href="/assets/css/glass.css">
+  <link rel="canonical" href="http://localhost:4000/">
 </head>
 <body>
 
-<!-- ── NAV with menu from _data/menu.yml ── -->
-<nav>
-  <a class="nav-brand" href="/">Farshid</a>
-  <ul class="nav-list" id="nav-list">
-
-    
-      
-        <li>
-          <a href="#cv3">CV3</a>
-          <ul>
-            
-              <li><a href="/contents/inbox/cv2ToT">DL</a></li>
-            
-              <li><a href="/contents/inbox/cv2ToT">LLM</a></li>
-            
-          </ul>
-        </li>
-      
-    
-      
-        <li>
-          <a href="#test">test</a>
-          <ul>
-            
-              <li><a href="/contents/inbox/cv2ToT">DL</a></li>
-            
-          </ul>
-        </li>
-      
-    
-
-    <li><a href="https://github.com/pirahansiah" target="_blank">GitHub</a></li>
-  </ul>
+<nav class="site-nav liquid-glass" id="site-nav">
+  <a class="nav-brand liquid-glass-item" href="/">Farshid Pirahansiah</a>
+  <ul class="nav-list" id="nav-list" aria-label="Site navigation"></ul>
 </nav>
 
-<!-- ── TOOLBAR ── -->
-<div class="toolbar">
-  <button onclick="history.back()" title="Back">&#8592;</button>
-  <button onclick="history.forward()" title="Forward">&#8594;</button>
-  <a href="/">&#8962; Home</a>
+<div class="toolbar liquid-glass">
+  <button type="button" class="liquid-glass-item" onclick="history.back()" title="Back" aria-label="Back">&#8592;</button>
+  <button type="button" class="liquid-glass-item" onclick="history.forward()" title="Forward" aria-label="Forward">&#8594;</button>
+  <a href="/" class="liquid-glass-item" title="Home">&#8962; Home</a>
 </div>
 
-<!-- ── PAGE CONTENT ── -->
-<main>
+<main class="site-main liquid-glass">
   <div id="site-content"></div>
 
 <script>
-fetch('/contents/site.md')
-  .then(r => r.text())
-  .then(text => {
-    let html = '';
-    text.split('\n').forEach(line => {
-      const s = line.trim();
-      if (!s) { html += '<br>'; return; }
-      if (s.startsWith('### ')) { html += `<h3>${s.slice(4)}</h3>`; return; }
-      if (s.startsWith('## '))  { html += `<h2>${s.slice(3)}</h2>`; return; }
-      if (s.startsWith('# '))   { html += `<h1>${s.slice(2)}</h1>`; return; }
-      const linkMatch = s.match(/^\[(.+?)\]\((.+?)\)$/);
-      if (linkMatch) { html += `<p><a href="${linkMatch[2]}">${linkMatch[1]}</a></p>`; return; }
-      html += `<p>${s}</p>`;
-    });
-    document.getElementById('site-content').innerHTML = html;
-  });
-</script>
+(function () {
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
 
-<!-- SVG Filter for the Liquid Distortion -->
-<svg style="display: none;">
-  <defs>
-    <filter id="liquid-refraction">
-      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
-    </filter>
-  </defs>
-</svg>
-
-<!-- Vanilla JS for Mouse Tracking (No Packages Needed) -->
-<script>
-  document.addEventListener('mousemove', (e) => {
-    const glassElements = document.querySelectorAll('.liquid-glass');
-    glassElements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      el.style.setProperty('--mouse-x', `${x}%`);
-      el.style.setProperty('--mouse-y', `${y}%`);
+  fetch('/contents/site.md')
+    .then(function (r) { return r.text(); })
+    .then(function (text) {
+      var html = '';
+      text.split('\n').forEach(function (line) {
+        var s = line.trim();
+        if (!s) { html += '<br>'; return; }
+        if (s.startsWith('### ')) {
+          html += '<h3 class="liquid-glass-item">' + escapeHtml(s.slice(4)) + '</h3>';
+          return;
+        }
+        if (s.startsWith('## ')) {
+          html += '<h2 class="liquid-glass-item">' + escapeHtml(s.slice(3)) + '</h2>';
+          return;
+        }
+        if (s.startsWith('# ')) {
+          html += '<h1 class="liquid-glass-item">' + escapeHtml(s.slice(2)) + '</h1>';
+          return;
+        }
+        var linkMatch = s.match(/^\[(.+?)\]\((.+?)\)$/);
+        if (linkMatch) {
+          html += '<p><a class="liquid-glass-item" href="' + escapeHtml(linkMatch[2]) + '">' +
+            escapeHtml(linkMatch[1]) + '</a></p>';
+          return;
+        }
+        html += '<p class="liquid-glass-item">' + escapeHtml(s) + '</p>';
+      });
+      document.getElementById('site-content').innerHTML = html;
+    })
+    .catch(function () {
+      document.getElementById('site-content').innerHTML =
+        '<p>Could not load <code>contents/site.md</code>.</p>';
     });
-  });
+})();
 </script>
 
 
 </main>
 
-<script>
-  // Click to toggle dropdown, click elsewhere to close
-  document.getElementById('nav-list').addEventListener('click', function(e) {
-    const li = e.target.closest('li');
-    if (!li) return;
-    const ul = li.querySelector('ul');
-    if (!ul) return; // no dropdown, let link navigate normally
-    e.preventDefault();
-    const isOpen = li.classList.contains('open');
-    document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) li.classList.add('open');
-  });
+<footer class="site-footer liquid-glass">
+  <p>&copy; 2026 Farshid Pirahansiah. All rights reserved.</p>
+  <p>
+    <a class="liquid-glass-item" href="https://github.com/pirahansiah" target="_blank" rel="noopener">GitHub</a>
+    &middot;
+    <a class="liquid-glass-item" href="https://linkedin.com/in/pirahansiah" target="_blank" rel="noopener">LinkedIn</a>
+  </p>
+</footer>
 
-  document.addEventListener('click', function(e) {
-    if (!e.target.closest('#nav-list')) {
-      document.querySelectorAll('#nav-list li.open').forEach(el => el.classList.remove('open'));
-    }
-  });
-</script>
-<!-- The Liquid Glass Filter (Hidden) -->
-<svg style="visibility: hidden; position: absolute;" width="0" height="0">
+<svg aria-hidden="true" focusable="false" width="0" height="0" style="position:absolute;overflow:hidden">
   <defs>
-    <filter id="liquid-refraction">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+    <filter id="liquid-shimmer" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
     </filter>
   </defs>
 </svg>
 
-<!-- The Global Mouse Tracker -->
-<script>
-  document.addEventListener('mousemove', (e) => {
-    // Select all glass elements (menus, buttons, etc.)
-    const glassElements = document.querySelectorAll('header, footer, nav, button, .menu-item');
-    glassElements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      el.style.setProperty('--mouse-x', `${x}%`);
-      el.style.setProperty('--mouse-y', `${y}%`);
-    });
-  });
-</script>
+<script src="/assets/js/site-nav.js" defer></script>
 </body>
 </html>

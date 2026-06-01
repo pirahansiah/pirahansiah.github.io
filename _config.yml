@@ -7,9 +7,16 @@ description: Computer Vision & AI Engineer
 
 # Jekyll settings
 markdown: kramdown
+permalink: pretty
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: "contents"
+    values:
+      layout: default
 
 # Theme
 theme: null
@@ -32,3 +39,5 @@ exclude:
   - .gitignore
   - CNAME
   - Ads.txt
+  - contents/site.md
+  - scripts/
