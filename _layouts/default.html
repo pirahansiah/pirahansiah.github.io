@@ -13,30 +13,40 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 </head>
 <body>
+  <div class="bg"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+  <div class="blob blob-5"></div>
 
-<nav class="site-nav liquid-glass" id="site-nav">
-  <div class="nav-header">
-    <a class="nav-brand liquid-glass-item" href="{{ '/' | relative_url }}">{{ site.author | default: "Home" }}</a>
-    <button type="button" class="nav-menu-btn liquid-glass-item" id="nav-menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+  <div class="nav-wrapper">
+    <nav class="site-nav liquid-glass" id="site-nav">
+      <div class="nav-header">
+        <a class="nav-brand liquid-glass-item" href="{{ '/' | relative_url }}">{{ site.author | default: "Home" }}</a>
+        <button type="button" class="nav-menu-btn liquid-glass-item" id="nav-menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      </div>
+      <ul class="nav-list" id="nav-list" aria-label="Site navigation">
+        {% if site.data.nav and site.data.nav.size > 0 %}
+          {% include nav-items.html items=site.data.nav %}
+        {% endif %}
+        <li><a href="https://github.com/pirahansiah" class="liquid-glass-item" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </nav>
   </div>
-  <ul class="nav-list" id="nav-list" aria-label="Site navigation">
-    {% if site.data.nav and site.data.nav.size > 0 %}
-      {% include nav-items.html items=site.data.nav %}
-    {% endif %}
-    <li><a href="https://github.com/pirahansiah" class="liquid-glass-item" target="_blank" rel="noopener">GitHub</a></li>
-  </ul>
-</nav>
 
-<div class="toolbar liquid-glass">
-  <button type="button" class="liquid-glass-item" onclick="history.back()" title="Back" aria-label="Back">&#8592;</button>
-  <button type="button" class="liquid-glass-item" onclick="history.forward()" title="Forward" aria-label="Forward">&#8594;</button>
-  <a href="{{ '/' | relative_url }}" class="liquid-glass-item" title="Home">&#8962; Home</a>
-  <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item" title="Knowledge graph">&#9672; Graph</a>
-</div>
+  <main class="site-main liquid-glass">
+    {{ content }}
+  </main>
 
-<main class="site-main liquid-glass">
-  {{ content }}
-</main>
+  <div class="toolbar liquid-glass bottom-toolbar" role="navigation" aria-label="Quick actions">
+    <button type="button" class="liquid-glass-item" onclick="history.back()" title="Back" aria-label="Back">&#8592;</button>
+    <button type="button" class="liquid-glass-item" onclick="history.forward()" title="Forward" aria-label="Forward">&#8594;</button>
+    <a href="{{ '/' | relative_url }}" class="liquid-glass-item" title="Home">Home</a>
+    <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item" title="Knowledge graph">Graph</a>
+    <a href="https://github.com/pirahansiah" class="liquid-glass-item" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+  </div>
+
 
 <footer class="site-footer liquid-glass">
   <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author }}. All rights reserved.</p>

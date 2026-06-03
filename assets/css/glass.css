@@ -57,6 +57,40 @@ body {
     radial-gradient(ellipse 80% 55% at 50% 100%, rgba(64, 200, 255, 0.35), transparent 50%),
     linear-gradient(160deg, #c8d4e8 0%, #e4dfe8 40%, #d8e8f4 100%);
   line-height: 1.65;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.18), transparent 30%),
+              radial-gradient(circle at 80% 15%, rgba(14, 165, 233, 0.16), transparent 30%),
+              radial-gradient(circle at 50% 80%, rgba(236, 72, 153, 0.14), transparent 28%),
+              radial-gradient(circle at 10% 70%, rgba(16, 185, 129, 0.14), transparent 24%);
+  z-index: 0;
+}
+
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.48;
+  filter: blur(20px);
+  pointer-events: none;
+  animation: blobFloat 9s ease-in-out infinite alternate;
+}
+
+.blob-1 { width: 110px; height: 110px; background: #a78bfa; top: 10%; left: 12%; animation-duration: 10s; }
+.blob-2 { width: 80px; height: 80px; background: #38bdf8; top: 32%; left: 62%; animation-duration: 8s; }
+.blob-3 { width: 130px; height: 130px; background: #f472b6; top: 18%; left: 42%; animation-duration: 11s; }
+.blob-4 { width: 60px; height: 60px; background: #fbbf24; top: 52%; left: 24%; animation-duration: 7s; }
+.blob-5 { width: 90px; height: 90px; background: #34d399; top: 58%; left: 72%; animation-duration: 9.5s; }
+
+@keyframes blobFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(-3deg); }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -150,19 +184,34 @@ body {
 }
 
 /* ── Top navigation ── */
+.nav-wrapper {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  animation: floatNav 6s ease-in-out infinite;
+}
+
+@keyframes floatNav {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
 .site-nav.liquid-glass {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   gap: 0;
-  padding: 0 1rem 0 1.25rem;
+  padding: 0.8rem 1.1rem;
   position: sticky;
-  top: 0;
+  top: 18px;
   z-index: 1000;
-  border-radius: 0;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border-radius: 36px;
+  max-width: min(100%, 1040px);
+  margin: 0 1rem;
+  border-left: 1px solid var(--glass-border-soft);
+  border-right: 1px solid var(--glass-border-soft);
+  border-top: 1px solid rgba(255,255,255,0.24);
 }
 
 .nav-header {
@@ -384,12 +433,23 @@ li.has-children:has(.nav-toggle) > a.nav-link {
 .toolbar {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-radius: 999px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottom-toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(98%, 960px);
+  z-index: 1001;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.24),
+    0 4px 18px rgba(0,0,0,0.12);
 }
 
 .toolbar button,
@@ -397,17 +457,17 @@ li.has-children:has(.nav-toggle) > a.nav-link {
   position: relative;
   font: inherit;
   font-size: 0.88rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text);
   text-decoration: none;
-  padding: 0.45rem 0.85rem;
-  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
   border: 1px solid var(--glass-border-soft);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px) saturate(160%);
-  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
   cursor: pointer;
-  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), color 0.25s var(--ease);
 }
 
 .toolbar button:hover,
@@ -415,12 +475,13 @@ li.has-children:has(.nav-toggle) > a.nav-link {
   background: var(--glass-bg-hover);
   color: var(--accent);
   box-shadow: var(--glass-shadow);
+  transform: translateY(-1px);
 }
 
 /* ── Main content panel ── */
 main.site-main {
   max-width: 880px;
-  margin: 1.5rem auto 3rem;
+  margin: 1.5rem auto 5.5rem;
   padding: 2rem 2.25rem;
   border-radius: var(--radius-lg);
 }
@@ -510,6 +571,7 @@ main.site-main pre {
     flex-direction: column;
     align-items: stretch;
     padding: 0.65rem 0.85rem;
+    margin: 0.5rem;
   }
 
   .nav-header {
