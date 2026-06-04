@@ -480,31 +480,32 @@ li.has-children:has(.nav-toggle) > a.nav-link {
 
 /* ── Main content panel ── */
 main.site-main {
-  max-width: 880px;
+  max-width: 1200px;
   margin: 1.5rem auto 5.5rem;
-  padding: 2rem 2.25rem;
-  border-radius: var(--radius-lg);
+  padding: 0;
+  border-radius: 0;
 }
 
 .presentation-panel {
-  width: min(100%, 1120px);
-  margin: 0 auto;
-  padding: 1.5rem;
-  border-radius: 32px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(20px) saturate(170%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
   z-index: 100;
+  min-height: calc(100vh - 200px);
 }
 
 .presentation-panel .reveal {
   width: 100% !important;
-  height: 75vh !important;
+  height: calc(100vh - 200px) !important;
   margin: 0 !important;
   display: flex !important;
   position: relative;
@@ -526,7 +527,7 @@ main.site-main {
 
 .presentation-panel .markmap {
   width: 100%;
-  height: 75vh;
+  height: calc(100vh - 200px);
   position: relative;
   z-index: 100;
 }
