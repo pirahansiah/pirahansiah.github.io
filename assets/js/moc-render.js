@@ -124,6 +124,6 @@
     .then(render)
     .catch(function () {
       root.innerHTML =
-        "<p>Could not load the site map. Run <code>ruby scripts/build-nav.rb</code> after editing <code>contents/site.md</code>.</p>";
+        "<p><em>Site map is being generated...</em><br><small>This message appears while GitHub Actions builds the site. It will be ready shortly.</small></p>";
     });
 })();
