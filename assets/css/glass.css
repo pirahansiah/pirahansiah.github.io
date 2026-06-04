@@ -486,6 +486,30 @@ main.site-main {
   border-radius: var(--radius-lg);
 }
 
+.presentation-panel {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(20px) saturate(170%);
+}
+
+.presentation-panel .reveal,
+.presentation-panel .markmap {
+  min-height: 75vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  .presentation-panel {
+    background: rgba(28, 28, 30, 0.70);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.36);
+  }
+}
+
 .presentation-page {
   min-height: 100vh;
   padding-top: 5.5rem;
