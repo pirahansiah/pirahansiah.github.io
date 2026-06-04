@@ -19,7 +19,7 @@ defaults:
       layout: default
 
 # Theme
-theme: null
+theme: jekyll-theme-cayman
 
 # Plugins
 plugins:
