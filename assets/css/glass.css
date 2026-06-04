@@ -517,24 +517,48 @@ main.site-main {
   height: 100% !important;
 }
 
+.reveal .controls,
 .presentation-panel .reveal .controls {
   bottom: auto !important;
-  top: 50% !important;
-  right: 20px !important;
-  transform: translateY(-50%) !important;
+  top: 20px !important;
+  right: 10% !important;
+  transform: none !important;
   z-index: 102 !important;
 }
 
+.reveal .controls button,
+.presentation-panel .reveal .controls button {
+  min-width: 48px !important;
+  min-height: 48px !important;
+  padding: 0.6rem !important;
+}
+
+.reveal .progress,
 .presentation-panel .reveal .progress {
   top: 16px !important;
-  right: 100px !important;
+  right: 10% !important;
   left: auto !important;
   bottom: auto !important;
   z-index: 102 !important;
   height: 4px !important;
-  width: calc(100% - 160px) !important;
+  width: calc(100% - 220px) !important;
   max-width: 420px !important;
 }
+
+@media (max-width: 900px) {
+  .reveal .controls,
+  .presentation-panel .reveal .controls {
+    right: 8% !important;
+    top: 16px !important;
+  }
+
+  .reveal .progress,
+  .presentation-panel .reveal .progress {
+    right: 8% !important;
+    width: calc(100% - 180px) !important;
+  }
+}
+
 
 .presentation-panel .markmap {
   width: 100%;
