@@ -18,9 +18,6 @@ defaults:
     values:
       layout: default
 
-# Theme
-theme: jekyll-theme-cayman
-
 # Plugins
 plugins:
   - jekyll-feed
