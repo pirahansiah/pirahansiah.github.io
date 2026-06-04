@@ -11,17 +11,38 @@
   <link rel="stylesheet" href="{{ page.extra_css | relative_url }}">
   {% endif %}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <style>
+    .presentation-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .presentation-nav-center {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .presentation-nav-center .liquid-glass-item {
+      padding: 0.7rem 1rem;
+    }
+  </style>
 </head>
 <body class="presentation-page">
-  <div class="presentation-toolbar liquid-glass" role="navigation" aria-label="Presentation controls">
-    <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
-    <a href="{{ '/contents/inbox/' | relative_url }}" class="liquid-glass-item">Inbox</a>
-    <button type="button" class="liquid-glass-item" onclick="history.back()">Back</button>
-    <button type="button" class="liquid-glass-item" onclick="history.forward()">Forward</button>
-  </div>
-
   <main class="presentation-main">
-    {{ content }}
+    <div class="presentation-content-wrapper">
+      <nav class="presentation-nav-center liquid-glass" role="navigation" aria-label="Presentation controls">
+        <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
+        <a href="{{ '/contents/inbox/' | relative_url }}" class="liquid-glass-item">Inbox</a>
+        <button type="button" class="liquid-glass-item" onclick="history.back()">Back</button>
+        <button type="button" class="liquid-glass-item" onclick="history.forward()">Forward</button>
+      </nav>
+      {{ content }}
+    </div>
   </main>
 
   <div class="presentation-footer liquid-glass" aria-hidden="true">
