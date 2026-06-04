@@ -1,27 +1,26 @@
 ---
 layout: default
-title: Knowledge Graph
-permalink: /graph/
+title: Hashtag Graph
+permalink: /graph-tags/
 extra_css: graph.css
 ---
 
-<div class="graph-page">
+<div class="graph-page" data-graph="/assets/graph-hashtags.json">
   <div class="graph-header">
-    <h1>Knowledge Graph</h1>
+    <h1>Hashtag Graph</h1>
     <span class="graph-stats" id="graph-stats">Loading…</span>
     <div class="graph-controls">
       <button type="button" id="graph-reset" class="liquid-glass-item">Reset layout</button>
       <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
-      <a href="{{ '/graph-tags/' | relative_url }}" class="liquid-glass-item">Hashtag graph</a>
+      <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item">Full graph</a>
     </div>
   </div>
-  <p class="graph-hint">Drag nodes · click a note to open · built from <code>contents/site.md</code> and wiki links in your notes</p>
+  <p class="graph-hint">Drag nodes · click a note to open · built from hashtags found in your contents</p>
   <div id="graph-wrap" class="liquid-glass">
-    <canvas id="graph-canvas" aria-label="Interactive knowledge graph"></canvas>
+    <canvas id="graph-canvas" aria-label="Interactive hashtag graph"></canvas>
   </div>
   <div class="graph-legend">
-    <span class="legend-moc">MOC / menu section</span>
-    <span class="legend-note">Markdown note</span>
+    <span class="legend-note">Note</span>
     <span class="legend-tag">Hashtag</span>
   </div>
 </div>

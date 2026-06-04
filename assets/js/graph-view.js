@@ -22,6 +22,7 @@
   var colors = {
     moc: "#5ac8fa",
     note: "#34c759",
+    tag: "#af52de",
     link: "rgba(120, 120, 128, 0.45)",
     mocEdge: "rgba(90, 200, 250, 0.55)",
     text: "#1d1d1f",
@@ -72,7 +73,7 @@
         y: h / 2 + Math.sin(angle) * r,
         vx: 0,
         vy: 0,
-        r: n.kind === "moc" ? 14 : 10
+        r: n.kind === "moc" ? 14 : n.kind === "tag" ? 12 : 10
       };
     });
 
@@ -168,7 +169,7 @@
     for (i = 0; i < simNodes.length; i++) {
       var n = simNodes[i];
       var active = dragging === n || hovered === n;
-      var fill = n.kind === "moc" ? colors.moc : colors.note;
+      var fill = n.kind === "moc" ? colors.moc : n.kind === "tag" ? colors.tag : colors.note;
 
       ctx.beginPath();
       ctx.arc(n.x, n.y, active ? n.r + 3 : n.r, 0, Math.PI * 2);
@@ -288,7 +289,8 @@
     });
   }
 
-  fetch("/assets/graph.json")
+  var graphFile = wrap.dataset.graph || "/assets/graph.json";
+  fetch(graphFile)
     .then(function (r) {
       if (!r.ok) throw new Error("no graph");
       return r.json();

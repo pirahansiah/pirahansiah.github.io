@@ -106,6 +106,10 @@ main.site-main:has(.graph-page) {
   background: #34c759;
 }
 
+.legend-tag::before {
+  background: #af52de;
+}
+
 .graph-hint {
   padding: 0 1.25rem 0.75rem;
   font-size: 0.8rem;

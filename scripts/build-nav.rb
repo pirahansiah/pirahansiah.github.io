@@ -14,6 +14,7 @@ SITE_MD = File.join(ROOT, "contents", "site.md")
 OUT_YML = File.join(ROOT, "_data", "nav.yml")
 OUT_ASSET = File.join(ROOT, "assets", "site-map.md")
 OUT_GRAPH = File.join(ROOT, "assets", "graph.json")
+OUT_HASHTAG_GRAPH = File.join(ROOT, "assets", "graph-hashtags.json")
 
 def strip_front_matter(text)
   return text unless text.start_with?("---\n")
@@ -285,7 +286,12 @@ def extract_links_from_markdown(text, source_id)
   links
 end
 
-def build_graph(nav)
+def extract_hashtags(text)
+  return [] unless text
+  text.to_s.scan(/(?:^|[\s\(\[\{])#([A-Za-z][A-Za-z0-9_-]*)/).flatten.uniq
+end
+
+def build_graph(nav, hashtag_mode: false)
   nodes = {}
   links = []
   seen_links = {}
@@ -351,17 +357,26 @@ def build_graph(nav)
 
       body = File.read(path, encoding: "UTF-8").scrub("")
       body = strip_front_matter(body) if path.end_with?(".md")
-      extract_links_from_markdown(body, id).each do |link|
-        add_link.call(link["source"], link["target"], link["kind"])
-        next if nodes[link["target"]]
 
-        add_node.call(
-          link["target"],
-          graph_label_for_url(link["raw"] || link["url"]),
-          url: link["url"],
-          raw: link["raw"],
-          kind: "note"
-        )
+      if hashtag_mode
+        extract_hashtags(body).each do |tag|
+          tag_id = "tag-#{slug_id(tag)}"
+          add_node.call(tag_id, "##{tag}", kind: "tag")
+          add_link.call(id, tag_id, "tag")
+        end
+      else
+        extract_links_from_markdown(body, id).each do |link|
+          add_link.call(link["source"], link["target"], link["kind"])
+          next if nodes[link["target"]]
+
+          add_node.call(
+            link["target"],
+            graph_label_for_url(link["raw"] || link["url"]),
+            url: link["url"],
+            raw: link["raw"],
+            kind: "note"
+          )
+        end
       end
     end
   end
@@ -389,9 +404,13 @@ FileUtils.mkdir_p(File.dirname(OUT_ASSET))
 File.write(OUT_ASSET, source)
 
 graph = build_graph(nav)
+hashtag_graph = build_graph(nav, hashtag_mode: true)
 FileUtils.mkdir_p(File.dirname(OUT_GRAPH))
 File.write(OUT_GRAPH, JSON.pretty_generate(graph))
+FileUtils.mkdir_p(File.dirname(OUT_HASHTAG_GRAPH))
+File.write(OUT_HASHTAG_GRAPH, JSON.pretty_generate(hashtag_graph))
 
 puts "Wrote #{nav.length} top-level nav items → #{OUT_YML}"
 puts "Copied site map → #{OUT_ASSET}"
 puts "Wrote graph (#{graph['nodes'].length} nodes, #{graph['links'].length} links) → #{OUT_GRAPH}"
+puts "Wrote hashtag graph (#{hashtag_graph['nodes'].length} nodes, #{hashtag_graph['links'].length} links) → #{OUT_HASHTAG_GRAPH}"
