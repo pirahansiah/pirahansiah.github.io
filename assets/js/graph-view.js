@@ -301,8 +301,12 @@
       loop();
       var stat = document.getElementById("graph-stats");
       if (stat) {
-        stat.textContent =
-          data.nodes.length + " notes · " + data.links.length + " links";
+        var onlyTags = Array.isArray(data.nodes) && data.nodes.every(function (n) {
+          return n.kind === "tag";
+        });
+        stat.textContent = onlyTags
+          ? data.nodes.length + " tags · " + data.links.length + " co-occurrences"
+          : data.nodes.length + " notes · " + data.links.length + " links";
       }
     })
     .catch(function () {

@@ -15,7 +15,7 @@ extra_css: graph.css
       <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item">Full graph</a>
     </div>
   </div>
-  <p class="graph-hint">Drag nodes · click a note to open · built from hashtags found in your contents</p>
+  <p class="graph-hint">Drag tags · built from hashtags found in your contents</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive hashtag graph"></canvas>
   </div>

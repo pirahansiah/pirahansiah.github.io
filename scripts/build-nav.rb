@@ -291,6 +291,50 @@ def extract_hashtags(text)
   text.to_s.scan(/(?:^|[\s\(\[\{])#([A-Za-z][A-Za-z0-9_-]*)/).flatten.uniq
 end
 
+def build_hashtag_graph
+  nodes = {}
+  links = []
+  seen_links = {}
+
+  add_node = lambda do |id, label|
+    nodes[id] ||= { "id" => id, "label" => label, "kind" => "tag" }
+  end
+
+  content_globs = [
+    File.join(ROOT, "contents", "**", "*"),
+    File.join(ROOT, "Contents", "**", "*")
+  ]
+
+  content_globs.each do |pattern|
+    Dir.glob(pattern).each do |path|
+      next unless File.file?(path)
+      next if File.basename(path) == "site.md"
+      next unless path.include?("ontents/")
+
+      body = File.read(path, encoding: "UTF-8").scrub("")
+      body = strip_front_matter(body) if path.end_with?(".md")
+      tags = extract_hashtags(body)
+      next if tags.empty?
+
+      tag_ids = tags.map { |tag| "tag-#{slug_id(tag)}" }
+      tags.each_with_index do |tag, index|
+        add_node.call(tag_ids[index], "##{tag}")
+      end
+
+      tag_ids.combination(2).each do |source, target|
+        next if source == target
+        key = [source, target].sort.join("|")
+        next if seen_links[key]
+
+        seen_links[key] = true
+        links << { "source" => source, "target" => target, "kind" => "cooccur" }
+      end
+    end
+  end
+
+  { "nodes" => nodes.values, "links" => links }
+end
+
 def build_graph(nav, hashtag_mode: false)
   nodes = {}
   links = []
@@ -404,7 +448,7 @@ FileUtils.mkdir_p(File.dirname(OUT_ASSET))
 File.write(OUT_ASSET, source)
 
 graph = build_graph(nav)
-hashtag_graph = build_graph(nav, hashtag_mode: true)
+hashtag_graph = build_hashtag_graph
 FileUtils.mkdir_p(File.dirname(OUT_GRAPH))
 File.write(OUT_GRAPH, JSON.pretty_generate(graph))
 FileUtils.mkdir_p(File.dirname(OUT_HASHTAG_GRAPH))
