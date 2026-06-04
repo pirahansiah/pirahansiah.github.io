@@ -32,6 +32,14 @@ jobs:
       - name: Build navigation from contents/site.md
         run: ruby scripts/build-nav.rb
 
+      - name: Commit and push updated nav files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _data/nav.yml assets/site-map.md assets/graph.json
+          git commit -m "[AUTO] Update navigation from site.md" || true
+          git push
+
       - name: Build site
         run: bundle exec jekyll build --destination ./_site
 
