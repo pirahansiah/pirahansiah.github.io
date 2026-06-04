@@ -267,6 +267,7 @@ end
 
 def extract_links_from_markdown(text, source_id)
   links = []
+  text = text.to_s.encode("UTF-8", invalid: :replace, undef: :replace, replace: "")
   text.scan(/\[\[([^\]|#]+)(?:\|([^\]]+))?\]\]/) do |ref, _label|
     raw = resolve_wiki_raw(ref.strip)
     tid = url_to_node_id(raw)
@@ -348,7 +349,7 @@ def build_graph(nav)
       raw = content_url_for_path(path)
       add_node.call(id, label, url: menu_url(raw), raw: raw, kind: "note")
 
-      body = File.read(path)
+      body = File.read(path, encoding: "UTF-8").scrub("")
       body = strip_front_matter(body) if path.end_with?(".md")
       extract_links_from_markdown(body, id).each do |link|
         add_link.call(link["source"], link["target"], link["kind"])
@@ -378,7 +379,7 @@ unless File.file?(SITE_MD)
   exit 0
 end
 
-source = File.read(SITE_MD)
+source = File.read(SITE_MD, encoding: "UTF-8").scrub("")
 nav = parse_moc(source)
 
 FileUtils.mkdir_p(File.dirname(OUT_YML))

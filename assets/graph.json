@@ -87,9 +87,16 @@
     {
       "id": "moc-a",
       "label": "a",
-      "url": null,
-      "raw": null,
+      "url": "/view/?p=%2Fcontents%2F%2FVolumes%2F4tb%2F2026-6%2FPKM%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents//Volumes/4tb/2026-6/PKM/contents/cv/AboutMe.html",
       "kind": "moc"
+    },
+    {
+      "id": "contents-volumes-4tb-2026-6-pkm-contents-cv-aboutme",
+      "label": "AboutMe",
+      "url": "/view/?p=%2Fcontents%2F%2FVolumes%2F4tb%2F2026-6%2FPKM%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents//Volumes/4tb/2026-6/PKM/contents/cv/AboutMe.html",
+      "kind": "note"
     },
     {
       "id": "moc-b",
@@ -101,8 +108,8 @@
     {
       "id": "moc-c",
       "label": "c",
-      "url": null,
-      "raw": null,
+      "url": "/view/?p=%2Fcontents%2F%2FVolumes%2F4tb%2F2026-6%2FPKM%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents//Volumes/4tb/2026-6/PKM/contents/cv/AboutMe.html",
       "kind": "moc"
     },
     {
@@ -117,6 +124,20 @@
       "label": "README",
       "url": "/Contents/README.md",
       "raw": "/Contents/README.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-c-png",
+      "label": "c",
+      "url": "/view/?p=%2FContents%2Finbox%2Fc.png",
+      "raw": "/Contents/inbox/c.png",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-c-py",
+      "label": "c",
+      "url": "/view/?p=%2FContents%2Finbox%2Fc.py",
+      "raw": "/Contents/inbox/c.py",
       "kind": "note"
     }
   ],
@@ -173,6 +194,11 @@
     },
     {
       "source": "moc-a",
+      "target": "contents-volumes-4tb-2026-6-pkm-contents-cv-aboutme",
+      "kind": "link"
+    },
+    {
+      "source": "moc-a",
       "target": "moc-b",
       "kind": "moc"
     },
@@ -180,6 +206,11 @@
       "source": "moc-b",
       "target": "moc-c",
       "kind": "moc"
+    },
+    {
+      "source": "moc-c",
+      "target": "contents-volumes-4tb-2026-6-pkm-contents-cv-aboutme",
+      "kind": "link"
     }
   ]
 }
