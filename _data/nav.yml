@@ -1,9 +1,13 @@
 ---
 - title: About Me
   items: []
+  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
 - title: Links
   items: []
+  url: "/contents/TOC/"
 - title: MOC
   items: []
+  url: "/contents/inbox/a/"
 - title: TOC
   items: []
+  url: "/contents/inbox/g/"
