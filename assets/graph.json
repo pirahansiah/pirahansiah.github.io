@@ -171,15 +171,15 @@
     {
       "id": "contents-license",
       "label": "LICENSE",
-      "url": "/Contents/LICENSE/",
-      "raw": "/Contents/LICENSE/",
+      "url": "/contents/LICENSE/",
+      "raw": "/contents/LICENSE/",
       "kind": "note"
     },
     {
       "id": "contents-readme",
       "label": "README",
-      "url": "/Contents/README.md",
-      "raw": "/Contents/README.md",
+      "url": "/contents/README.md",
+      "raw": "/contents/README.md",
       "kind": "note"
     },
     {
@@ -241,15 +241,15 @@
     {
       "id": "contents-inbox-c-png",
       "label": "c",
-      "url": "/view/?p=%2FContents%2Finbox%2Fc.png",
-      "raw": "/Contents/inbox/c.png",
+      "url": "/view/?p=%2Fcontents%2Finbox%2Fc.png",
+      "raw": "/contents/inbox/c.png",
       "kind": "note"
     },
     {
       "id": "contents-inbox-c-py",
       "label": "c",
-      "url": "/view/?p=%2FContents%2Finbox%2Fc.py",
-      "raw": "/Contents/inbox/c.py",
+      "url": "/view/?p=%2Fcontents%2Finbox%2Fc.py",
+      "raw": "/contents/inbox/c.py",
       "kind": "note"
     }
   ],
