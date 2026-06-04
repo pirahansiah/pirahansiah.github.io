@@ -517,20 +517,25 @@ main.site-main {
   height: 100% !important;
 }
 
+.reveal,
+.presentation-panel .reveal {
+  min-height: calc(100vh - 180px) !important;
+}
+
 .reveal .controls,
 .presentation-panel .reveal .controls {
   bottom: auto !important;
   top: 20px !important;
   right: 10% !important;
   transform: none !important;
-  z-index: 102 !important;
+  z-index: 1100 !important;
 }
 
 .reveal .controls button,
 .presentation-panel .reveal .controls button {
-  min-width: 48px !important;
-  min-height: 48px !important;
-  padding: 0.6rem !important;
+  min-width: 52px !important;
+  min-height: 52px !important;
+  padding: 0.7rem !important;
 }
 
 .reveal .progress,
@@ -539,7 +544,7 @@ main.site-main {
   right: 10% !important;
   left: auto !important;
   bottom: auto !important;
-  z-index: 102 !important;
+  z-index: 1100 !important;
   height: 4px !important;
   width: calc(100% - 220px) !important;
   max-width: 420px !important;
@@ -557,6 +562,10 @@ main.site-main {
     right: 8% !important;
     width: calc(100% - 180px) !important;
   }
+}
+
+main.site-main {
+  overflow: visible;
 }
 
 
