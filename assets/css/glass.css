@@ -519,16 +519,21 @@ main.site-main {
 
 .presentation-panel .reveal .controls {
   bottom: auto !important;
-  top: 20px !important;
+  top: 50% !important;
   right: 20px !important;
+  transform: translateY(-50%) !important;
   z-index: 102 !important;
 }
 
 .presentation-panel .reveal .progress {
-  top: 0 !important;
+  top: 16px !important;
+  right: 100px !important;
+  left: auto !important;
   bottom: auto !important;
   z-index: 102 !important;
   height: 4px !important;
+  width: calc(100% - 160px) !important;
+  max-width: 420px !important;
 }
 
 .presentation-panel .markmap {
