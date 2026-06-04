@@ -495,11 +495,26 @@ main.site-main {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(20px) saturate(170%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.presentation-panel .reveal,
+.presentation-panel .reveal {
+  width: 100% !important;
+  height: 75vh !important;
+  margin: 0 !important;
+  display: flex !important;
+}
+
+.presentation-panel .reveal .slides {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .presentation-panel .markmap {
-  min-height: 75vh;
+  width: 100%;
+  height: 75vh;
 }
 
 @media (prefers-color-scheme: dark) {
