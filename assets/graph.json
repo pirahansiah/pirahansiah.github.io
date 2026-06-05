@@ -3,9 +3,16 @@
     {
       "id": "moc-update",
       "label": "update",
-      "url": null,
-      "raw": null,
+      "url": "/contents/TOC/",
+      "raw": "/contents/TOC/",
       "kind": "moc"
+    },
+    {
+      "id": "contents-toc",
+      "label": "TOC",
+      "url": "/contents/TOC/",
+      "raw": "/contents/TOC/",
+      "kind": "note"
     },
     {
       "id": "moc-about-me2",
@@ -27,13 +34,6 @@
       "url": "/contents/TOC/",
       "raw": "/contents/TOC/",
       "kind": "moc"
-    },
-    {
-      "id": "contents-toc",
-      "label": "TOC",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "note"
     },
     {
       "id": "moc-moc2",
@@ -261,6 +261,11 @@
     }
   ],
   "links": [
+    {
+      "source": "moc-update",
+      "target": "contents-toc",
+      "kind": "link"
+    },
     {
       "source": "moc-about-me2",
       "target": "contents-cv-aboutme",
