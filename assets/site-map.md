@@ -1,3 +1,9 @@
+# update
+* [b FullMarkmap-autoloader with images](/Volumes/4tb/2026-6/pirahansiah.github.io/contents/inbox/FullMarkmapAutoloaderWithImages)
+* [a markmap-autoloader](/Volumes/4tb/2026-6/pirahansiah.github.io/contents/inbox/markmap-autoloader)
+* [c presentation](/Volumes/4tb/2026-6/pirahansiah.github.io/contents/inbox/presentation)
+
+
 # About Me2
 [About Me](/contents/cv/AboutMe.html)
 # Links2

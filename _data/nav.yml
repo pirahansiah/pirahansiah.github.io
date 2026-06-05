@@ -1,4 +1,6 @@
 ---
+- title: update
+  items: []
 - title: About Me2
   items: []
   url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
@@ -7,7 +9,7 @@
   url: "/contents/TOC/"
 - title: MOC2
   items: []
-  url: "/contents/inbox/a/"
+  url: "/contents/inbox/markmap-autoloader/"
 - title: TOC4
   items: []
   url: "/contents/inbox/g/"
@@ -19,7 +21,7 @@
   url: "/contents/TOC/"
 - title: MOC5
   items: []
-  url: "/contents/inbox/a/"
+  url: "/contents/inbox/markmap-autoloader/"
 - title: TOC6
   items: []
   url: "/contents/inbox/g/"
@@ -31,7 +33,7 @@
   url: "/contents/TOC/"
 - title: MOC8
   items: []
-  url: "/contents/inbox/a/"
+  url: "/contents/inbox/markmap-autoloader/"
 - title: TOC9
   items: []
   url: "/contents/inbox/g/"
@@ -43,7 +45,7 @@
   url: "/contents/TOC/"
 - title: MOC11
   items: []
-  url: "/contents/inbox/a/"
+  url: "/contents/inbox/markmap-autoloader/"
 - title: TOC12
   items: []
   url: "/contents/inbox/g/"
@@ -55,7 +57,7 @@
   url: "/contents/TOC/"
 - title: MOC15
   items: []
-  url: "/contents/inbox/a/"
+  url: "/contents/inbox/markmap-autoloader/"
 - title: TOC16
   items: []
   url: "/contents/inbox/g/"
