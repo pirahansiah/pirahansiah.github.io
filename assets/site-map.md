@@ -8,73 +8,73 @@ categories: system
 # 🗺 ATLAS
 ## B
 A
-[Knowledge Graph](/contents/pkm/atlas/knowledge-graph/)
+[Knowledge Graph](./pkm/atlas/knowledge-graph)
 
  Semantic network of intelligence assets.
 
 # update
 ## B
-[TOC](/contents/pkm/TOC)
+[TOC](./pkm/TOC)
 
 # About Me
 ## B
-[About Me](/contents/pkm/cv/AboutMe.html)
+[About Me](./pkm/cv/AboutMe)
 
 # Knowledge Graph
 ## B
-[Knowledge Graph](./contents/pkm/atlas/knowledge-graph/)
+[Knowledge Graph](./pkm/atlas/knowledge-graph)
 
 # 🚀 SOLUTIONS
 ## B
-[Industries](/contents/pkm/solutions/industries/)
+[Industries](./pkm/solutions/use-cases)
 
  Sector-specific integration models.
 ## B
-[Use Cases](/contents/pkm/solutions/use-cases/)
+[Use Cases](./pkm/solutions/use-cases)
 
  High-impact application scenarios.
 ## B
-[Transformation Framework](/contents/pkm/solutions/transformation-framework/)
+[Transformation Framework](./pkm/solutions/transformation-framework)
 
  Strategic implementation methodology.
 ## B
-[ROI Calculator](/contents/pkm/solutions/roi-calculator/)
+[ROI Calculator](./pkm/investors/growth-model)
 
  Value modeling and performance projections.
 
 # 📦 PRODUCTS
 ## B
-[Flagship Platform](/contents/pkm/products/flagship-platform/)
+[Flagship Platform](./pkm/products/offering)
 
  The core Liquid Glass UI/UX environment.
 ## B
-[AI Agents](/contents/pkm/products/ai-agents/)
+[AI Agents](./pkm/templates/prompt)
 
  Autonomous agentic workflows.
 ## B
-[Vision AI](/contents/pkm/products/vision-ai/)
+[Vision AI](./pkm/technology/system-design)
 
  Advanced computer vision and spatial logic.
 ## B
-[Edge AI](/contents/pkm/products/edge-ai/)
+[Edge AI](./pkm/products/offering)
 
  Distributed intelligence at the hardware perimeter.
 
 # 🛠 TECHNOLOGY
 ## B
-[Architecture](/contents/pkm/technology/architecture/)
+[Architecture](./pkm/technology/system-design)
 
  System-level design and data flow.
 ## B
-[The Forge](/contents/pkm/technology/forge/)
+[The Forge](./pkm/templates/presentation)
 
  Rapid R&D and implementation prototypes.
 ## B
-[Benchmarks](/contents/pkm/technology/benchmarks/)
+[Benchmarks](./pkm/technology/benchmarks)
 
  Performance verification and hardware metrics.
 ## B
-[Infrastructure](/contents/pkm/technology/infrastructure/)
+[Infrastructure](./pkm/templates/markmap-autoloader)
 
  Deployment and scaling foundations.
 
@@ -82,79 +82,79 @@ A
 
 # 📈 INVESTORS
 ## B
-[Growth Model](/contents/pkm/investors/growth-model/)
+[Growth Model](./pkm/investors/growth-model)
 
  Scaling trajectories and projections.
 ## B
-[Vision](/contents/pkm/investors/vision/)
+[Vision](./pkm/investors/vision/)
 
  Long-term objective and market disruption.
 ## B
-[Pitch Deck](/contents/pkm/investors/pitch-deck/)
+[Pitch Deck](./pkm/investors/pitch-deck/)
 
  Core venture presentation.
 ## B
-[Investment Highlights](/contents/pkm/investors/investment-highlights/)
+[Investment Highlights](./pkm/investors/investment-highlights/)
 
  Key defensibility factors and moats.
 ## B
-[Market Opportunity](/contents/pkm/investors/market-opportunity/)
+[Market Opportunity](./pkm/investors/market-opportunity)
 
  TAM / SAM / SOM analysis.
 
 # 💳 PRICING
 ## B
-[Costs & Tiers](/contents/pkm/pricing/costs/)
+[Costs & Tiers](./pkm/pricing/costs)
 
  Starter, Professional, and Enterprise structures.
 ## B
-[Licensing](/contents/pkm/pricing/licensing/)
+[Licensing](./pkm/pricing/licensing/)
 
  Software distribution and IP rights.
 ## B
-[Custom Solutions](/contents/pkm/pricing/custom-solutions/)
+[Custom Solutions](./pkm/pricing/custom-solutions/)
 
  Bespoke integration modeling.
 
 # 📜 LEGACY
 ## B
-[Intellectual Property](/contents/pkm/legacy/intellectual-property/)
+[Intellectual Property](./pkm/legacy/proof)
 
  Patents, trademarks, and logic protection.
 ## B
-[Track Record](/contents/pkm/legacy/track-record/)
+[Track Record](./pkm/legacy/track-record)
 
  Project history and milestone verification.
 ## B
-[Partnerships](/contents/pkm/legacy/partnerships/)
+[Partnerships](./pkm/templates/presentationFarshid)
 
  Ecosystem and strategic alliances.
 
 # 📡 PULSE
 ## B
-[Build Log](/contents/pkm/pulse/build-log/)
+[Build Log](./pkm/pulse/updates)
 
  Real-time development and operational stream.
 ## B
-[Updates](/contents/pkm/pulse/updates/)
+[Updates](./pkm/pulse/updates)
 
  Formal announcements and market releases.
 ## B
-[Market Insights](/contents/pkm/pulse/market-insights/)
+[Market Insights](./pkm/templates/prompt)
 
  Curated intelligence and trend tracking.
 
 # 🏢 ABOUT
 ## B
-[Company](/contents/pkm/about/company/)
+[Company](./pkm/about/company/)
 
  Founding mission and core values.
 ## B
-[Leadership](/contents/pkm/about/leadership/)
+[Leadership](./pkm/about/contact/)
 
  Strategic management and technical direction.
 ## B
-[Contact](/contents/pkm/about/contact/)
+[Contact](./pkm/about/contact)
 
  Global engagement channels.
 
@@ -162,14 +162,14 @@ A
 
 # 🔄 RECENT UPDATES
 ## B
-[TOC Index](/contents/pkm/TOC/)
+[TOC Index](./pkm/TOC)
 
  Complete Table of Contents.
 ## B
-[Markmap Autoloader](/inbox/markmap-autoloader/)
+[Markmap Autoloader](./inbox/markmap-autoloader/)
 
  Visualizing mental networks.
 ## B
-[Presentation](/inbox/presentation/)
+[Presentation](./inbox/presentation/)
 
  Active slide decks.

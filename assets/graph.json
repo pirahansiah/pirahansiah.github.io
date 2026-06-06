@@ -10,16 +10,9 @@
     {
       "id": "moc-b",
       "label": "B",
-      "url": "/contents/pkm/atlas/knowledge-graph/",
-      "raw": "/contents/pkm/atlas/knowledge-graph/",
+      "url": "/./pkm/atlas/knowledge-graph/",
+      "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-atlas-knowledge-graph",
-      "label": "knowledge-graph",
-      "url": "/contents/pkm/atlas/knowledge-graph/",
-      "raw": "/contents/pkm/atlas/knowledge-graph/",
-      "kind": "note"
     },
     {
       "id": "moc-update",
@@ -29,25 +22,11 @@
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-toc",
-      "label": "TOC",
-      "url": "/contents/pkm/TOC/",
-      "raw": "/contents/pkm/TOC/",
-      "kind": "note"
-    },
-    {
       "id": "moc-about-me",
       "label": "About Me",
       "url": null,
       "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html",
-      "raw": "/contents/pkm/cv/AboutMe.html",
-      "kind": "note"
     },
     {
       "id": "moc-knowledge-graph",
@@ -64,67 +43,11 @@
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-solutions-industries",
-      "label": "industries",
-      "url": "/contents/pkm/solutions/industries/",
-      "raw": "/contents/pkm/solutions/industries/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-solutions-use-cases",
-      "label": "use-cases",
-      "url": "/contents/pkm/solutions/use-cases/",
-      "raw": "/contents/pkm/solutions/use-cases/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-solutions-transformation-framework",
-      "label": "transformation-framework",
-      "url": "/contents/pkm/solutions/transformation-framework/",
-      "raw": "/contents/pkm/solutions/transformation-framework/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-solutions-roi-calculator",
-      "label": "roi-calculator",
-      "url": "/contents/pkm/solutions/roi-calculator/",
-      "raw": "/contents/pkm/solutions/roi-calculator/",
-      "kind": "note"
-    },
-    {
       "id": "moc-products",
       "label": "📦 PRODUCTS",
       "url": null,
       "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-products-flagship-platform",
-      "label": "flagship-platform",
-      "url": "/contents/pkm/products/flagship-platform/",
-      "raw": "/contents/pkm/products/flagship-platform/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-products-ai-agents",
-      "label": "ai-agents",
-      "url": "/contents/pkm/products/ai-agents/",
-      "raw": "/contents/pkm/products/ai-agents/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-products-vision-ai",
-      "label": "vision-ai",
-      "url": "/contents/pkm/products/vision-ai/",
-      "raw": "/contents/pkm/products/vision-ai/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-products-edge-ai",
-      "label": "edge-ai",
-      "url": "/contents/pkm/products/edge-ai/",
-      "raw": "/contents/pkm/products/edge-ai/",
-      "kind": "note"
     },
     {
       "id": "moc-technology",
@@ -134,74 +57,11 @@
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-technology-architecture",
-      "label": "architecture",
-      "url": "/contents/pkm/technology/architecture/",
-      "raw": "/contents/pkm/technology/architecture/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-technology-forge",
-      "label": "forge",
-      "url": "/contents/pkm/technology/forge/",
-      "raw": "/contents/pkm/technology/forge/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-technology-benchmarks",
-      "label": "benchmarks",
-      "url": "/contents/pkm/technology/benchmarks/",
-      "raw": "/contents/pkm/technology/benchmarks/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-technology-infrastructure",
-      "label": "infrastructure",
-      "url": "/contents/pkm/technology/infrastructure/",
-      "raw": "/contents/pkm/technology/infrastructure/",
-      "kind": "note"
-    },
-    {
       "id": "moc-investors",
       "label": "📈 INVESTORS",
       "url": null,
       "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-investors-growth-model",
-      "label": "growth-model",
-      "url": "/contents/pkm/investors/growth-model/",
-      "raw": "/contents/pkm/investors/growth-model/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-vision",
-      "label": "vision",
-      "url": "/contents/pkm/investors/vision/",
-      "raw": "/contents/pkm/investors/vision/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-pitch-deck",
-      "label": "pitch-deck",
-      "url": "/contents/pkm/investors/pitch-deck/",
-      "raw": "/contents/pkm/investors/pitch-deck/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-investment-highlights",
-      "label": "investment-highlights",
-      "url": "/contents/pkm/investors/investment-highlights/",
-      "raw": "/contents/pkm/investors/investment-highlights/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-market-opportunity",
-      "label": "market-opportunity",
-      "url": "/contents/pkm/investors/market-opportunity/",
-      "raw": "/contents/pkm/investors/market-opportunity/",
-      "kind": "note"
     },
     {
       "id": "moc-pricing",
@@ -211,53 +71,11 @@
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-pricing-costs",
-      "label": "costs",
-      "url": "/contents/pkm/pricing/costs/",
-      "raw": "/contents/pkm/pricing/costs/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pricing-licensing",
-      "label": "licensing",
-      "url": "/contents/pkm/pricing/licensing/",
-      "raw": "/contents/pkm/pricing/licensing/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pricing-custom-solutions",
-      "label": "custom-solutions",
-      "url": "/contents/pkm/pricing/custom-solutions/",
-      "raw": "/contents/pkm/pricing/custom-solutions/",
-      "kind": "note"
-    },
-    {
       "id": "moc-legacy",
       "label": "📜 LEGACY",
       "url": null,
       "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-legacy-intellectual-property",
-      "label": "intellectual-property",
-      "url": "/contents/pkm/legacy/intellectual-property/",
-      "raw": "/contents/pkm/legacy/intellectual-property/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-legacy-track-record",
-      "label": "track-record",
-      "url": "/contents/pkm/legacy/track-record/",
-      "raw": "/contents/pkm/legacy/track-record/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-legacy-partnerships",
-      "label": "partnerships",
-      "url": "/contents/pkm/legacy/partnerships/",
-      "raw": "/contents/pkm/legacy/partnerships/",
-      "kind": "note"
     },
     {
       "id": "moc-pulse",
@@ -267,53 +85,11 @@
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-pulse-build-log",
-      "label": "build-log",
-      "url": "/contents/pkm/pulse/build-log/",
-      "raw": "/contents/pkm/pulse/build-log/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pulse-updates",
-      "label": "updates",
-      "url": "/contents/pkm/pulse/updates/",
-      "raw": "/contents/pkm/pulse/updates/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pulse-market-insights",
-      "label": "market-insights",
-      "url": "/contents/pkm/pulse/market-insights/",
-      "raw": "/contents/pkm/pulse/market-insights/",
-      "kind": "note"
-    },
-    {
       "id": "moc-about",
       "label": "🏢 ABOUT",
       "url": null,
       "raw": null,
       "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-about-company",
-      "label": "company",
-      "url": "/contents/pkm/about/company/",
-      "raw": "/contents/pkm/about/company/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-about-leadership",
-      "label": "leadership",
-      "url": "/contents/pkm/about/leadership/",
-      "raw": "/contents/pkm/about/leadership/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-about-contact",
-      "label": "contact",
-      "url": "/contents/pkm/about/contact/",
-      "raw": "/contents/pkm/about/contact/",
-      "kind": "note"
     },
     {
       "id": "moc-recent-updates",
@@ -341,6 +117,13 @@
       "label": "MOC",
       "url": "/contents/pkm/MOC.md",
       "raw": "/contents/pkm/MOC.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-toc",
+      "label": "TOC",
+      "url": "/contents/pkm/TOC.md",
+      "raw": "/contents/pkm/TOC.md",
       "kind": "note"
     },
     {
@@ -400,10 +183,24 @@
       "kind": "note"
     },
     {
+      "id": "contents-pkm-about-company",
+      "label": "company",
+      "url": "/contents/pkm/about/company.md",
+      "raw": "/contents/pkm/about/company.md",
+      "kind": "note"
+    },
+    {
       "id": "contents-pkm-atlas-concept-maps",
       "label": "concept-maps",
       "url": "/contents/pkm/atlas/concept-maps.md",
       "raw": "/contents/pkm/atlas/concept-maps.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-atlas-knowledge-graph",
+      "label": "knowledge-graph",
+      "url": "/contents/pkm/atlas/knowledge-graph.md",
+      "raw": "/contents/pkm/atlas/knowledge-graph.md",
       "kind": "note"
     },
     {
@@ -425,6 +222,13 @@
       "label": "why-we-are-unique",
       "url": "/contents/pkm/atlas/why-we-are-unique.md",
       "raw": "/contents/pkm/atlas/why-we-are-unique.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-cv-aboutme",
+      "label": "AboutMe",
+      "url": "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html",
+      "raw": "/contents/pkm/cv/AboutMe.html",
       "kind": "note"
     },
     {
@@ -470,6 +274,13 @@
       "kind": "note"
     },
     {
+      "id": "contents-pkm-investors-growth-model",
+      "label": "growth-model",
+      "url": "/contents/pkm/investors/growth-model.md",
+      "raw": "/contents/pkm/investors/growth-model.md",
+      "kind": "note"
+    },
+    {
       "id": "contents-pkm-legacy-proof",
       "label": "proof",
       "url": "/contents/pkm/legacy/proof.md",
@@ -477,10 +288,31 @@
       "kind": "note"
     },
     {
+      "id": "contents-pkm-pricing-costs",
+      "label": "costs",
+      "url": "/contents/pkm/pricing/costs.md",
+      "raw": "/contents/pkm/pricing/costs.md",
+      "kind": "note"
+    },
+    {
       "id": "contents-pkm-products-offering",
       "label": "offering",
       "url": "/contents/pkm/products/offering.md",
       "raw": "/contents/pkm/products/offering.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-pulse-updates",
+      "label": "updates",
+      "url": "/contents/pkm/pulse/updates.md",
+      "raw": "/contents/pkm/pulse/updates.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-solutions-use-cases",
+      "label": "use-cases",
+      "url": "/contents/pkm/solutions/use-cases.md",
+      "raw": "/contents/pkm/solutions/use-cases.md",
       "kind": "note"
     },
     {
@@ -573,6 +405,27 @@
       "url": "/contents/pkm/templates/prompt.md",
       "raw": "/contents/pkm/templates/prompt.md",
       "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-master-indexer-py",
+      "label": "master_indexer",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2Fmaster_indexer.py",
+      "raw": "/contents/projects/RAG/master_indexer.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-readindex-py",
+      "label": "readIndex",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2FreadIndex.py",
+      "raw": "/contents/projects/RAG/readIndex.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-saveindex-py",
+      "label": "saveIndex",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2FsaveIndex.py",
+      "raw": "/contents/projects/RAG/saveIndex.py",
+      "kind": "note"
     }
   ],
   "links": [
@@ -582,29 +435,14 @@
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-atlas-knowledge-graph",
-      "kind": "link"
-    },
-    {
       "source": "moc-update",
       "target": "moc-b",
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-toc",
-      "kind": "link"
-    },
-    {
       "source": "moc-about-me",
       "target": "moc-b",
       "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-cv-aboutme",
-      "kind": "link"
     },
     {
       "source": "moc-knowledge-graph",
@@ -617,49 +455,9 @@
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-solutions-industries",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-solutions-use-cases",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-solutions-transformation-framework",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-solutions-roi-calculator",
-      "kind": "link"
-    },
-    {
       "source": "moc-products",
       "target": "moc-b",
       "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-products-flagship-platform",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-products-ai-agents",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-products-vision-ai",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-products-edge-ai",
-      "kind": "link"
     },
     {
       "source": "moc-technology",
@@ -667,54 +465,9 @@
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-technology-architecture",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-technology-forge",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-technology-benchmarks",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-technology-infrastructure",
-      "kind": "link"
-    },
-    {
       "source": "moc-investors",
       "target": "moc-b",
       "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-investors-growth-model",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-investors-vision",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-investors-pitch-deck",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-investors-investment-highlights",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-investors-market-opportunity",
-      "kind": "link"
     },
     {
       "source": "moc-pricing",
@@ -722,39 +475,9 @@
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-pricing-costs",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-pricing-licensing",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-pricing-custom-solutions",
-      "kind": "link"
-    },
-    {
       "source": "moc-legacy",
       "target": "moc-b",
       "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-legacy-intellectual-property",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-legacy-track-record",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-legacy-partnerships",
-      "kind": "link"
     },
     {
       "source": "moc-pulse",
@@ -762,39 +485,9 @@
       "kind": "moc"
     },
     {
-      "source": "moc-b",
-      "target": "contents-pkm-pulse-build-log",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-pulse-updates",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-pulse-market-insights",
-      "kind": "link"
-    },
-    {
       "source": "moc-about",
       "target": "moc-b",
       "kind": "moc"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-about-company",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-about-leadership",
-      "kind": "link"
-    },
-    {
-      "source": "moc-b",
-      "target": "contents-pkm-about-contact",
-      "kind": "link"
     },
     {
       "source": "moc-recent-updates",
