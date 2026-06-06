@@ -1,5 +1,6 @@
 
 ---
+
 layout: default
 title: Inbox A
 tags: pkm inbox ideas research notes
@@ -8,6 +9,9 @@ links: https://pirahansiah.github.io/inbox/a/
 references: strategic-connections, knowledge-graph
 related: about, technology
 backlinks: /contents/pkm/atlas/knowledge-graph.md
+
+---
+
 
 
 ## [Ideas]
