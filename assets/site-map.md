@@ -1,20 +1,23 @@
 
+
+sadfdsafsadfdsaf
+dsaf
+dsaf
+dsaf
+dsaf
+dsa
+fdsa
+f
+dsaf
+dfasd
+fdsa
+fdsa
+f
+dsf
+dsa
+fa
 the main links and site maps for indexing 
 
-
-
-## [Ideas]
-
-
-### Concept 1
-Placeholder for future content - to be fleshed out during research session.
-
-### Concept 2  
-Another idea that needs expansion and proper categorization.
-
----
-
-# site 
 
 site map 
 
@@ -22,7 +25,7 @@ site map
 
 
 # Solutions
-
+sadfdsafdsafasdfdsafasd
 
 ## Use Cases
 

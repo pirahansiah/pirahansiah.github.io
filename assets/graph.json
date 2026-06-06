@@ -1,13 +1,6 @@
 {
   "nodes": [
     {
-      "id": "moc-site",
-      "label": "site",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-solutions",
       "label": "Solutions",
       "url": null,
