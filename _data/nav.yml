@@ -3,64 +3,62 @@
   items:
   - title: Use Cases
     items: []
-    url: "/./solutions/use-cases.md"
+    url: "/./contents/pkm/solutions/use-cases/"
 - title: Products
   items:
   - title: Offering
     items: []
-    url: "/./products/offering.md"
+    url: "/./contents/pkm/products/offering/"
 - title: Technology
   items:
   - title: System Design
     items: []
-    url: "/./technology/system-design.md"
+    url: "/./contents/pkm/technology/system-design/"
 - title: Atlas
   items:
   - title: Knowledge Graph
     items: []
-    url: "/./atlas/knowledge-graph.md"
+    url: "/./contents/pkm/atlas/knowledge-graph/"
 - title: Investors RELATIONS
   items:
   - title: Growth Model
-    items:
-    - title: Growth Model
-      items: []
-      url: "/./investors/growth-model.md"
-    - title: VISION
-      items: []
-      url: "/./investors/growth-model.md"
-    - title: EVENTS & TRADE FAIRS
-      items: []
-      url: "/./investors/growth-model.md"
-    - title: PITCH DECK
-      items: []
-      url: "/./investors/growth-model.md"
-    - title: TESTIMONIALS
-      items: []
-      url: "/./investors/growth-model.md"
-    - title: INVESTMENT HIGHLIGHTS
-      items: []
-      url: "/./investors/growth-model.md"
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
+  - title: VISION
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
+  - title: EVENTS & TRADE FAIRS
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
+  - title: PITCH DECK
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
+  - title: TESTIMONIALS
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
+  - title: INVESTMENT HIGHLIGHTS
+    items: []
+    url: "/./contents/pkm/investors/growth-model/"
 - title: Pricing
   items:
   - title: Costs
     items: []
-    url: "/./pricing/costs.md"
+    url: "/./contents/pkm/pricing/costs/"
 - title: Legacy
   items:
   - title: Proof
     items: []
-    url: "/./legacy/proof.md"
+    url: "/./contents/pkm/legacy/proof/"
 - title: Pulse
   items:
   - title: Updates
     items: []
-    url: "/./pulse/updates.md"
+    url: "/./contents/pkm/pulse/updates/"
 - title: About
   items:
   - title: Company
     items: []
-    url: "/./about/company.md"
+    url: "/./contents/pkm/about/company/"
 - title: update
   items: []
-  url: "/contents/TOC/"
+  url: "/contents/pkm/TOC/"
