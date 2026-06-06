@@ -3,6 +3,7 @@
   items:
   - title: B
     items: []
+    url: "/contents/pkm/atlas/knowledge-graph/"
 - title: update
   items:
   - title: B
@@ -22,81 +23,113 @@
   items:
   - title: B
     items: []
+    url: "/contents/pkm/solutions/industries/"
   - title: B
     items: []
+    url: "/contents/pkm/solutions/use-cases/"
   - title: B
     items: []
+    url: "/contents/pkm/solutions/transformation-framework/"
   - title: B
     items: []
+    url: "/contents/pkm/solutions/roi-calculator/"
 - title: "\U0001F4E6 PRODUCTS"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/products/flagship-platform/"
   - title: B
     items: []
+    url: "/contents/pkm/products/ai-agents/"
   - title: B
     items: []
+    url: "/contents/pkm/products/vision-ai/"
   - title: B
     items: []
+    url: "/contents/pkm/products/edge-ai/"
 - title: "\U0001F6E0 TECHNOLOGY"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/technology/architecture/"
   - title: B
     items: []
+    url: "/contents/pkm/technology/forge/"
   - title: B
     items: []
+    url: "/contents/pkm/technology/benchmarks/"
   - title: B
     items: []
+    url: "/contents/pkm/technology/infrastructure/"
 - title: "\U0001F4C8 INVESTORS"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/investors/growth-model/"
   - title: B
     items: []
+    url: "/contents/pkm/investors/vision/"
   - title: B
     items: []
+    url: "/contents/pkm/investors/pitch-deck/"
   - title: B
     items: []
+    url: "/contents/pkm/investors/investment-highlights/"
   - title: B
     items: []
+    url: "/contents/pkm/investors/market-opportunity/"
 - title: "\U0001F4B3 PRICING"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/pricing/costs/"
   - title: B
     items: []
+    url: "/contents/pkm/pricing/licensing/"
   - title: B
     items: []
+    url: "/contents/pkm/pricing/custom-solutions/"
 - title: "\U0001F4DC LEGACY"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/legacy/intellectual-property/"
   - title: B
     items: []
+    url: "/contents/pkm/legacy/track-record/"
   - title: B
     items: []
+    url: "/contents/pkm/legacy/partnerships/"
 - title: "\U0001F4E1 PULSE"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/pulse/build-log/"
   - title: B
     items: []
+    url: "/contents/pkm/pulse/updates/"
   - title: B
     items: []
+    url: "/contents/pkm/pulse/market-insights/"
 - title: "\U0001F3E2 ABOUT"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/about/company/"
   - title: B
     items: []
+    url: "/contents/pkm/about/leadership/"
   - title: B
     items: []
+    url: "/contents/pkm/about/contact/"
 - title: "\U0001F504 RECENT UPDATES"
   items:
   - title: B
     items: []
+    url: "/contents/pkm/TOC/"
   - title: B
     items: []
+    url: "/inbox/markmap-autoloader/"
   - title: B
     items: []
+    url: "/inbox/presentation/"
