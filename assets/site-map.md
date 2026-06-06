@@ -1,25 +1,54 @@
-
+---
+layout: default
+title: Growth Model
+tags: investors growth strategy business model projections
+categories: investors
+links: https://pirahansiah.github.io/investors/growth-model/
+references: strategic-connections, use-cases
+related: pricing, investors
+backlinks: /contents/pkm/atlas/knowledge-graph.md
+---
 
 sadfdsafsadfdsaf
+
 dsaf
+
 dsaf
+
 dsaf
+
 dsaf
+
 dsa
+
 fdsa
+
 f
+
 dsaf
+
 dfasd
+
 fdsa
+
 fdsa
+
 f
+
 dsf
+
 dsa
+
 fa
+
 the main links and site maps for indexing 
 
 
+
+
+
 site map 
+
 
 
 
