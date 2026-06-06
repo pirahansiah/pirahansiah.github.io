@@ -1,6 +1,132 @@
 {
   "nodes": [
     {
+      "id": "moc-solutions",
+      "label": "Solutions",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-use-cases",
+      "label": "Use Cases",
+      "url": "/./solutions/use-cases.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-products",
+      "label": "Products",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-offering",
+      "label": "Offering",
+      "url": "/./products/offering.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-technology",
+      "label": "Technology",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-system-design",
+      "label": "System Design",
+      "url": "/./technology/system-design.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-atlas",
+      "label": "Atlas",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-knowledge-graph",
+      "label": "Knowledge Graph",
+      "url": "/./atlas/knowledge-graph.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-investors",
+      "label": "Investors",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-growth-model",
+      "label": "Growth Model",
+      "url": "/./investors/growth-model.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-pricing",
+      "label": "Pricing",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-costs",
+      "label": "Costs",
+      "url": "/./pricing/costs.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-legacy",
+      "label": "Legacy",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-proof",
+      "label": "Proof",
+      "url": "/./legacy/proof.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-pulse",
+      "label": "Pulse",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-updates",
+      "label": "Updates",
+      "url": "/./pulse/updates.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-about",
+      "label": "About",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-company",
+      "label": "Company",
+      "url": "/./about/company.md",
+      "raw": null,
+      "kind": "moc"
+    },
+    {
       "id": "moc-update",
       "label": "update",
       "url": "/contents/TOC/",
@@ -15,171 +141,17 @@
       "kind": "note"
     },
     {
-      "id": "moc-about-me2",
-      "label": "About Me2",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "note"
-    },
-    {
-      "id": "moc-links2",
-      "label": "Links2",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-moc2",
-      "label": "MOC2",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-inbox-markmap-autoloader",
-      "label": "markmap-autoloader",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "note"
-    },
-    {
-      "id": "moc-toc4",
-      "label": "TOC4",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-inbox-g",
-      "label": "g",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "note"
-    },
-    {
-      "id": "moc-about-me4",
-      "label": "About Me4",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-links4",
-      "label": "Links4",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-moc5",
-      "label": "MOC5",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc6",
-      "label": "TOC6",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-about-me7",
-      "label": "About Me7",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-links8",
-      "label": "Links8",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-moc8",
-      "label": "MOC8",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc9",
-      "label": "TOC9",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-about-me11",
-      "label": "About Me11",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-links11",
-      "label": "Links11",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-moc11",
-      "label": "MOC11",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc12",
-      "label": "TOC12",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-about-me15",
-      "label": "About Me15",
-      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
-      "raw": "/contents/cv/AboutMe.html",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-links15",
-      "label": "Links15",
-      "url": "/contents/TOC/",
-      "raw": "/contents/TOC/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-moc15",
-      "label": "MOC15",
-      "url": "/contents/inbox/markmap-autoloader/",
-      "raw": "/contents/inbox/markmap-autoloader/",
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc16",
-      "label": "TOC16",
-      "url": "/contents/inbox/g/",
-      "raw": "/contents/inbox/g/",
-      "kind": "moc"
-    },
-    {
       "id": "contents-license",
       "label": "LICENSE",
       "url": "/contents/LICENSE/",
       "raw": "/contents/LICENSE/",
+      "kind": "note"
+    },
+    {
+      "id": "contents-moc",
+      "label": "MOC",
+      "url": "/contents/MOC.md",
+      "raw": "/contents/MOC.md",
       "kind": "note"
     },
     {
@@ -211,6 +183,13 @@
       "kind": "note"
     },
     {
+      "id": "contents-inbox-markmap-autoloader",
+      "label": "markmap-autoloader",
+      "url": "/contents/inbox/markmap-autoloader/",
+      "raw": "/contents/inbox/markmap-autoloader/",
+      "kind": "note"
+    },
+    {
       "id": "contents-inbox-fullmarkmapautoloaderwithimages",
       "label": "FullMarkmapAutoloaderWithImages",
       "url": "/contents/inbox/FullMarkmapAutoloaderWithImages/",
@@ -229,6 +208,48 @@
       "label": "d",
       "url": "/contents/inbox/d/",
       "raw": "/contents/inbox/d/",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-aboutme",
+      "label": "AboutMe",
+      "url": "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html",
+      "raw": "/contents/cv/AboutMe.html",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-atlas-concept-maps",
+      "label": "concept-maps",
+      "url": "/contents/cv/atlas/concept-maps.md",
+      "raw": "/contents/cv/atlas/concept-maps.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-atlas-knowledge-graph",
+      "label": "knowledge-graph",
+      "url": "/contents/cv/atlas/knowledge-graph.md",
+      "raw": "/contents/cv/atlas/knowledge-graph.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-atlas-research-synthesis",
+      "label": "research-synthesis",
+      "url": "/contents/cv/atlas/research-synthesis.md",
+      "raw": "/contents/cv/atlas/research-synthesis.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-atlas-strategic-connections",
+      "label": "strategic-connections",
+      "url": "/contents/cv/atlas/strategic-connections.md",
+      "raw": "/contents/cv/atlas/strategic-connections.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-cv-atlas-why-we-are-unique",
+      "label": "why-we-are-unique",
+      "url": "/contents/cv/atlas/why-we-are-unique.md",
+      "raw": "/contents/cv/atlas/why-we-are-unique.md",
       "kind": "note"
     },
     {
@@ -253,10 +274,10 @@
       "kind": "note"
     },
     {
-      "id": "contents-inbox-b-m",
+      "id": "contents-inbox-b",
       "label": "b",
-      "url": "/view/?p=%2Fcontents%2Finbox%2Fb.m%2F",
-      "raw": "/contents/inbox/b.m/",
+      "url": "/contents/inbox/b.md",
+      "raw": "/contents/inbox/b.md",
       "kind": "note"
     },
     {
@@ -286,112 +307,120 @@
       "url": "/contents/inbox/prompt.md",
       "raw": "/contents/inbox/prompt.md",
       "kind": "note"
+    },
+    {
+      "id": "contents-pkm-about-company",
+      "label": "company",
+      "url": "/contents/pkm/about/company.md",
+      "raw": "/contents/pkm/about/company.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-atlas-knowledge-graph",
+      "label": "knowledge-graph",
+      "url": "/contents/pkm/atlas/knowledge-graph.md",
+      "raw": "/contents/pkm/atlas/knowledge-graph.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-investors-growth-model",
+      "label": "growth-model",
+      "url": "/contents/pkm/investors/growth-model.md",
+      "raw": "/contents/pkm/investors/growth-model.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-legacy-proof",
+      "label": "proof",
+      "url": "/contents/pkm/legacy/proof.md",
+      "raw": "/contents/pkm/legacy/proof.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-pricing-costs",
+      "label": "costs",
+      "url": "/contents/pkm/pricing/costs.md",
+      "raw": "/contents/pkm/pricing/costs.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-products-offering",
+      "label": "offering",
+      "url": "/contents/pkm/products/offering.md",
+      "raw": "/contents/pkm/products/offering.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-pulse-updates",
+      "label": "updates",
+      "url": "/contents/pkm/pulse/updates.md",
+      "raw": "/contents/pkm/pulse/updates.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-solutions-use-cases",
+      "label": "use-cases",
+      "url": "/contents/pkm/solutions/use-cases.md",
+      "raw": "/contents/pkm/solutions/use-cases.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-technology-system-design",
+      "label": "system-design",
+      "url": "/contents/pkm/technology/system-design.md",
+      "raw": "/contents/pkm/technology/system-design.md",
+      "kind": "note"
     }
   ],
   "links": [
     {
+      "source": "moc-solutions",
+      "target": "moc-use-cases",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-products",
+      "target": "moc-offering",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-technology",
+      "target": "moc-system-design",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-atlas",
+      "target": "moc-knowledge-graph",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-investors",
+      "target": "moc-growth-model",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-pricing",
+      "target": "moc-costs",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-legacy",
+      "target": "moc-proof",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-pulse",
+      "target": "moc-updates",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-about",
+      "target": "moc-company",
+      "kind": "moc"
+    },
+    {
       "source": "moc-update",
       "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me2",
-      "target": "contents-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-links2",
-      "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-moc2",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "link"
-    },
-    {
-      "source": "moc-toc4",
-      "target": "contents-inbox-g",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me4",
-      "target": "contents-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-links4",
-      "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-moc5",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "link"
-    },
-    {
-      "source": "moc-toc6",
-      "target": "contents-inbox-g",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me7",
-      "target": "contents-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-links8",
-      "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-moc8",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "link"
-    },
-    {
-      "source": "moc-toc9",
-      "target": "contents-inbox-g",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me11",
-      "target": "contents-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-links11",
-      "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-moc11",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "link"
-    },
-    {
-      "source": "moc-toc12",
-      "target": "contents-inbox-g",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me15",
-      "target": "contents-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-links15",
-      "target": "contents-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-moc15",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "link"
-    },
-    {
-      "source": "moc-toc16",
-      "target": "contents-inbox-g",
       "kind": "link"
     },
     {

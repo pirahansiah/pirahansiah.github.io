@@ -1,64 +1,49 @@
 ---
+- title: Solutions
+  items:
+  - title: Use Cases
+    items: []
+    url: "/./solutions/use-cases.md"
+- title: Products
+  items:
+  - title: Offering
+    items: []
+    url: "/./products/offering.md"
+- title: Technology
+  items:
+  - title: System Design
+    items: []
+    url: "/./technology/system-design.md"
+- title: Atlas
+  items:
+  - title: Knowledge Graph
+    items: []
+    url: "/./atlas/knowledge-graph.md"
+- title: Investors
+  items:
+  - title: Growth Model
+    items: []
+    url: "/./investors/growth-model.md"
+- title: Pricing
+  items:
+  - title: Costs
+    items: []
+    url: "/./pricing/costs.md"
+- title: Legacy
+  items:
+  - title: Proof
+    items: []
+    url: "/./legacy/proof.md"
+- title: Pulse
+  items:
+  - title: Updates
+    items: []
+    url: "/./pulse/updates.md"
+- title: About
+  items:
+  - title: Company
+    items: []
+    url: "/./about/company.md"
 - title: update
   items: []
   url: "/contents/TOC/"
-- title: About Me2
-  items: []
-  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
-- title: Links2
-  items: []
-  url: "/contents/TOC/"
-- title: MOC2
-  items: []
-  url: "/contents/inbox/markmap-autoloader/"
-- title: TOC4
-  items: []
-  url: "/contents/inbox/g/"
-- title: About Me4
-  items: []
-  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
-- title: Links4
-  items: []
-  url: "/contents/TOC/"
-- title: MOC5
-  items: []
-  url: "/contents/inbox/markmap-autoloader/"
-- title: TOC6
-  items: []
-  url: "/contents/inbox/g/"
-- title: About Me7
-  items: []
-  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
-- title: Links8
-  items: []
-  url: "/contents/TOC/"
-- title: MOC8
-  items: []
-  url: "/contents/inbox/markmap-autoloader/"
-- title: TOC9
-  items: []
-  url: "/contents/inbox/g/"
-- title: About Me11
-  items: []
-  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
-- title: Links11
-  items: []
-  url: "/contents/TOC/"
-- title: MOC11
-  items: []
-  url: "/contents/inbox/markmap-autoloader/"
-- title: TOC12
-  items: []
-  url: "/contents/inbox/g/"
-- title: About Me15
-  items: []
-  url: "/view/?p=%2Fcontents%2Fcv%2FAboutMe.html"
-- title: Links15
-  items: []
-  url: "/contents/TOC/"
-- title: MOC15
-  items: []
-  url: "/contents/inbox/markmap-autoloader/"
-- title: TOC16
-  items: []
-  url: "/contents/inbox/g/"
