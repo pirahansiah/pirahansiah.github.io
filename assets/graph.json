@@ -3,15 +3,15 @@
     {
       "id": "moc-update",
       "label": "update",
-      "url": "/contents/pkm/TOC/",
-      "raw": "/contents/pkm/TOC/",
+      "url": "/view/?p=%2Fpkm%2Fcv%2FAboutMe.html",
+      "raw": "/pkm/cv/AboutMe.html",
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-toc",
-      "label": "TOC",
-      "url": "/contents/pkm/TOC/",
-      "raw": "/contents/pkm/TOC/",
+      "id": "pkm-cv-aboutme",
+      "label": "AboutMe",
+      "url": "/view/?p=%2Fpkm%2Fcv%2FAboutMe.html",
+      "raw": "/pkm/cv/AboutMe.html",
       "kind": "note"
     },
     {
@@ -110,6 +110,13 @@
       "label": "MOC",
       "url": "/contents/pkm/MOC.md",
       "raw": "/contents/pkm/MOC.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-toc",
+      "label": "TOC",
+      "url": "/contents/pkm/TOC.md",
+      "raw": "/contents/pkm/TOC.md",
       "kind": "note"
     },
     {
@@ -403,63 +410,8 @@
   "links": [
     {
       "source": "moc-update",
-      "target": "contents-pkm-toc",
+      "target": "pkm-cv-aboutme",
       "kind": "link"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-knowledge-graph",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-solutions",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-products",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-technology",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-atlas",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-investors",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-pricing",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-legacy",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-pulse",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-about",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-update",
-      "target": "moc-recent-updates",
-      "kind": "moc"
     },
     {
       "source": "contents-pkm-toc",
