@@ -14,9 +14,14 @@
 ## Knowledge Graph
 [Knowledge Graph](./atlas/knowledge-graph.md)
 
-# Investors
+# Investors RELATIONS
 ## Growth Model
-[Growth Model](./investors/growth-model.md)
+### [Growth Model](./investors/growth-model.md)
+### [VISION](./investors/growth-model.md)
+### [EVENTS & TRADE FAIRS](./investors/growth-model.md)
+### [PITCH DECK](./investors/growth-model.md)
+### [TESTIMONIALS](./investors/growth-model.md)
+### [INVESTMENT HIGHLIGHTS](./investors/growth-model.md)
 
 # Pricing
 ## Costs

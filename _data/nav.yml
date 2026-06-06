@@ -19,11 +19,28 @@
   - title: Knowledge Graph
     items: []
     url: "/./atlas/knowledge-graph.md"
-- title: Investors
+- title: Investors RELATIONS
   items:
   - title: Growth Model
-    items: []
-    url: "/./investors/growth-model.md"
+    items:
+    - title: Growth Model
+      items: []
+      url: "/./investors/growth-model.md"
+    - title: VISION
+      items: []
+      url: "/./investors/growth-model.md"
+    - title: EVENTS & TRADE FAIRS
+      items: []
+      url: "/./investors/growth-model.md"
+    - title: PITCH DECK
+      items: []
+      url: "/./investors/growth-model.md"
+    - title: TESTIMONIALS
+      items: []
+      url: "/./investors/growth-model.md"
+    - title: INVESTMENT HIGHLIGHTS
+      items: []
+      url: "/./investors/growth-model.md"
 - title: Pricing
   items:
   - title: Costs
