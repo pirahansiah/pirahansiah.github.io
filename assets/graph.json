@@ -8,8 +8,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-knowledge-graph-contents-pkm-atlas-knowledge-graph-semantic-network-of-intelligence-assets",
-      "label": "**[Knowledge Graph](/contents/pkm/atlas/knowledge-graph/)** — Semantic network of intelligence assets.",
+      "id": "moc-b",
+      "label": "B",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -19,13 +19,6 @@
       "label": "update",
       "url": null,
       "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc",
-      "label": "TOC",
-      "url": "/contents/pkm/TOC/",
-      "raw": "/contents/pkm/TOC/",
       "kind": "moc"
     },
     {
@@ -64,64 +57,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-industries-contents-pkm-solutions-industries-sector-specific-integration-models",
-      "label": "**[Industries](/contents/pkm/solutions/industries/)** — Sector-specific integration models.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-use-cases-contents-pkm-solutions-use-cases-high-impact-application-scenarios",
-      "label": "**[Use Cases](/contents/pkm/solutions/use-cases/)** — High-impact application scenarios.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-transformation-framework-contents-pkm-solutions-transformation-framework-strategic-implementation-methodology",
-      "label": "**[Transformation Framework](/contents/pkm/solutions/transformation-framework/)** — Strategic implementation methodology.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-roi-calculator-contents-pkm-solutions-roi-calculator-value-modeling-and-performance-projections",
-      "label": "**[ROI Calculator](/contents/pkm/solutions/roi-calculator/)** — Value modeling and performance projections.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-products",
       "label": "📦 PRODUCTS",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-flagship-platform-contents-pkm-products-flagship-platform-the-core-liquid-glass-ui-ux-environment",
-      "label": "**[Flagship Platform](/contents/pkm/products/flagship-platform/)** — The core Liquid Glass UI/UX environment.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-ai-agents-contents-pkm-products-ai-agents-autonomous-agentic-workflows",
-      "label": "**[AI Agents](/contents/pkm/products/ai-agents/)** — Autonomous agentic workflows.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-vision-ai-contents-pkm-products-vision-ai-advanced-computer-vision-and-spatial-logic",
-      "label": "**[Vision AI](/contents/pkm/products/vision-ai/)** — Advanced computer vision and spatial logic.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-edge-ai-contents-pkm-products-edge-ai-distributed-intelligence-at-the-hardware-perimeter",
-      "label": "**[Edge AI](/contents/pkm/products/edge-ai/)** — Distributed intelligence at the hardware perimeter.",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -134,71 +71,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-architecture-contents-pkm-technology-architecture-system-level-design-and-data-flow",
-      "label": "**[Architecture](/contents/pkm/technology/architecture/)** — System-level design and data flow.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-the-forge-contents-pkm-technology-forge-rapid-r-d-and-implementation-prototypes",
-      "label": "**[The Forge](/contents/pkm/technology/forge/)** — Rapid R&D and implementation prototypes.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-benchmarks-contents-pkm-technology-benchmarks-performance-verification-and-hardware-metrics",
-      "label": "**[Benchmarks](/contents/pkm/technology/benchmarks/)** — Performance verification and hardware metrics.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-infrastructure-contents-pkm-technology-infrastructure-deployment-and-scaling-foundations",
-      "label": "**[Infrastructure](/contents/pkm/technology/infrastructure/)** — Deployment and scaling foundations.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-investors",
       "label": "📈 INVESTORS",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-growth-model-contents-pkm-investors-growth-model-scaling-trajectories-and-projections",
-      "label": "**[Growth Model](/contents/pkm/investors/growth-model/)** — Scaling trajectories and projections.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-vision-contents-pkm-investors-vision-long-term-objective-and-market-disruption",
-      "label": "**[Vision](/contents/pkm/investors/vision/)** — Long-term objective and market disruption.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-pitch-deck-contents-pkm-investors-pitch-deck-core-venture-presentation",
-      "label": "**[Pitch Deck](/contents/pkm/investors/pitch-deck/)** — Core venture presentation.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-investment-highlights-contents-pkm-investors-investment-highlights-key-defensibility-factors-and-moats",
-      "label": "**[Investment Highlights](/contents/pkm/investors/investment-highlights/)** — Key defensibility factors and moats.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-market-opportunity-contents-pkm-investors-market-opportunity-tam-sam-som-analysis",
-      "label": "**[Market Opportunity](/contents/pkm/investors/market-opportunity/)** — TAM / SAM / SOM analysis.",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -211,50 +85,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-costs-tiers-contents-pkm-pricing-costs-starter-professional-and-enterprise-structures",
-      "label": "**[Costs & Tiers](/contents/pkm/pricing/costs/)** — Starter, Professional, and Enterprise structures.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-licensing-contents-pkm-pricing-licensing-software-distribution-and-ip-rights",
-      "label": "**[Licensing](/contents/pkm/pricing/licensing/)** — Software distribution and IP rights.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-custom-solutions-contents-pkm-pricing-custom-solutions-bespoke-integration-modeling",
-      "label": "**[Custom Solutions](/contents/pkm/pricing/custom-solutions/)** — Bespoke integration modeling.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-legacy",
       "label": "📜 LEGACY",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-intellectual-property-contents-pkm-legacy-intellectual-property-patents-trademarks-and-logic-protection",
-      "label": "**[Intellectual Property](/contents/pkm/legacy/intellectual-property/)** — Patents, trademarks, and logic protection.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-track-record-contents-pkm-legacy-track-record-project-history-and-milestone-verification",
-      "label": "**[Track Record](/contents/pkm/legacy/track-record/)** — Project history and milestone verification.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-partnerships-contents-pkm-legacy-partnerships-ecosystem-and-strategic-alliances",
-      "label": "**[Partnerships](/contents/pkm/legacy/partnerships/)** — Ecosystem and strategic alliances.",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -267,27 +99,6 @@
       "kind": "moc"
     },
     {
-      "id": "moc-build-log-contents-pkm-pulse-build-log-real-time-development-and-operational-stream",
-      "label": "**[Build Log](/contents/pkm/pulse/build-log/)** — Real-time development and operational stream.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-updates-contents-pkm-pulse-updates-formal-announcements-and-market-releases",
-      "label": "**[Updates](/contents/pkm/pulse/updates/)** — Formal announcements and market releases.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-market-insights-contents-pkm-pulse-market-insights-curated-intelligence-and-trend-tracking",
-      "label": "**[Market Insights](/contents/pkm/pulse/market-insights/)** — Curated intelligence and trend tracking.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-about",
       "label": "🏢 ABOUT",
       "url": null,
@@ -295,50 +106,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-company-contents-pkm-about-company-founding-mission-and-core-values",
-      "label": "**[Company](/contents/pkm/about/company/)** — Founding mission and core values.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-leadership-contents-pkm-about-leadership-strategic-management-and-technical-direction",
-      "label": "**[Leadership](/contents/pkm/about/leadership/)** — Strategic management and technical direction.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-contact-contents-pkm-about-contact-global-engagement-channels",
-      "label": "**[Contact](/contents/pkm/about/contact/)** — Global engagement channels.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
       "id": "moc-recent-updates",
       "label": "🔄 RECENT UPDATES",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc-index-contents-pkm-toc-complete-table-of-contents",
-      "label": "**[TOC Index](/contents/pkm/TOC/)** — Complete Table of Contents.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-markmap-autoloader-inbox-markmap-autoloader-visualizing-mental-networks",
-      "label": "**[Markmap Autoloader](/inbox/markmap-autoloader/)** — Visualizing mental networks.",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-presentation-inbox-presentation-active-slide-decks",
-      "label": "**[Presentation](/inbox/presentation/)** — Active slide decks.",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -641,182 +410,77 @@
   "links": [
     {
       "source": "moc-atlas",
-      "target": "moc-knowledge-graph-contents-pkm-atlas-knowledge-graph-semantic-network-of-intelligence-assets",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-update",
-      "target": "moc-toc",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
-      "source": "moc-toc",
+      "source": "moc-b",
       "target": "contents-pkm-toc",
       "kind": "link"
     },
     {
       "source": "moc-about-me",
+      "target": "moc-b",
+      "kind": "moc"
+    },
+    {
+      "source": "moc-b",
       "target": "contents-pkm-cv-aboutme",
       "kind": "link"
     },
     {
-      "source": "moc-solutions",
-      "target": "moc-industries-contents-pkm-solutions-industries-sector-specific-integration-models",
+      "source": "moc-knowledge-graph",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-solutions",
-      "target": "moc-use-cases-contents-pkm-solutions-use-cases-high-impact-application-scenarios",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-solutions",
-      "target": "moc-transformation-framework-contents-pkm-solutions-transformation-framework-strategic-implementation-methodology",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-solutions",
-      "target": "moc-roi-calculator-contents-pkm-solutions-roi-calculator-value-modeling-and-performance-projections",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-products",
-      "target": "moc-flagship-platform-contents-pkm-products-flagship-platform-the-core-liquid-glass-ui-ux-environment",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-ai-agents-contents-pkm-products-ai-agents-autonomous-agentic-workflows",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-vision-ai-contents-pkm-products-vision-ai-advanced-computer-vision-and-spatial-logic",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-edge-ai-contents-pkm-products-edge-ai-distributed-intelligence-at-the-hardware-perimeter",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-technology",
-      "target": "moc-architecture-contents-pkm-technology-architecture-system-level-design-and-data-flow",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-the-forge-contents-pkm-technology-forge-rapid-r-d-and-implementation-prototypes",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-benchmarks-contents-pkm-technology-benchmarks-performance-verification-and-hardware-metrics",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-infrastructure-contents-pkm-technology-infrastructure-deployment-and-scaling-foundations",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-investors",
-      "target": "moc-growth-model-contents-pkm-investors-growth-model-scaling-trajectories-and-projections",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-vision-contents-pkm-investors-vision-long-term-objective-and-market-disruption",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-pitch-deck-contents-pkm-investors-pitch-deck-core-venture-presentation",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-investment-highlights-contents-pkm-investors-investment-highlights-key-defensibility-factors-and-moats",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-market-opportunity-contents-pkm-investors-market-opportunity-tam-sam-som-analysis",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-pricing",
-      "target": "moc-costs-tiers-contents-pkm-pricing-costs-starter-professional-and-enterprise-structures",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pricing",
-      "target": "moc-licensing-contents-pkm-pricing-licensing-software-distribution-and-ip-rights",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pricing",
-      "target": "moc-custom-solutions-contents-pkm-pricing-custom-solutions-bespoke-integration-modeling",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-legacy",
-      "target": "moc-intellectual-property-contents-pkm-legacy-intellectual-property-patents-trademarks-and-logic-protection",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-legacy",
-      "target": "moc-track-record-contents-pkm-legacy-track-record-project-history-and-milestone-verification",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-legacy",
-      "target": "moc-partnerships-contents-pkm-legacy-partnerships-ecosystem-and-strategic-alliances",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-pulse",
-      "target": "moc-build-log-contents-pkm-pulse-build-log-real-time-development-and-operational-stream",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pulse",
-      "target": "moc-updates-contents-pkm-pulse-updates-formal-announcements-and-market-releases",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pulse",
-      "target": "moc-market-insights-contents-pkm-pulse-market-insights-curated-intelligence-and-trend-tracking",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-about",
-      "target": "moc-company-contents-pkm-about-company-founding-mission-and-core-values",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-about",
-      "target": "moc-leadership-contents-pkm-about-leadership-strategic-management-and-technical-direction",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-about",
-      "target": "moc-contact-contents-pkm-about-contact-global-engagement-channels",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
       "source": "moc-recent-updates",
-      "target": "moc-toc-index-contents-pkm-toc-complete-table-of-contents",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-recent-updates",
-      "target": "moc-markmap-autoloader-inbox-markmap-autoloader-visualizing-mental-networks",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-recent-updates",
-      "target": "moc-presentation-inbox-presentation-active-slide-decks",
+      "target": "moc-b",
       "kind": "moc"
     },
     {
