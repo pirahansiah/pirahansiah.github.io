@@ -1,7 +1,10 @@
 ---
 - title: update
   items: []
-  url: "/view/?p=%2Fpkm%2Fcv%2FAboutMe.html"
+  url: "/contents/pkm/TOC/"
+- title: About Me
+  items: []
+  url: "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html"
 - title: Knowledge Graph
   items: []
   url: "/./contents/pkm/atlas/knowledge-graph/"

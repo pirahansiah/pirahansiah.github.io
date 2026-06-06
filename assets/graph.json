@@ -3,15 +3,29 @@
     {
       "id": "moc-update",
       "label": "update",
-      "url": "/view/?p=%2Fpkm%2Fcv%2FAboutMe.html",
-      "raw": "/pkm/cv/AboutMe.html",
+      "url": "/contents/pkm/TOC/",
+      "raw": "/contents/pkm/TOC/",
       "kind": "moc"
     },
     {
-      "id": "pkm-cv-aboutme",
+      "id": "contents-pkm-toc",
+      "label": "TOC",
+      "url": "/contents/pkm/TOC/",
+      "raw": "/contents/pkm/TOC/",
+      "kind": "note"
+    },
+    {
+      "id": "moc-about-me",
+      "label": "About Me",
+      "url": "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html",
+      "raw": "/contents/pkm/cv/AboutMe.html",
+      "kind": "moc"
+    },
+    {
+      "id": "contents-pkm-cv-aboutme",
       "label": "AboutMe",
-      "url": "/view/?p=%2Fpkm%2Fcv%2FAboutMe.html",
-      "raw": "/pkm/cv/AboutMe.html",
+      "url": "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html",
+      "raw": "/contents/pkm/cv/AboutMe.html",
       "kind": "note"
     },
     {
@@ -113,13 +127,6 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-toc",
-      "label": "TOC",
-      "url": "/contents/pkm/TOC.md",
-      "raw": "/contents/pkm/TOC.md",
-      "kind": "note"
-    },
-    {
       "id": "contents-volumes-4tb-2026-6-pkm-contents-cv-aboutme",
       "label": "AboutMe",
       "url": "/view/?p=%2Fcontents%2F%2FVolumes%2F4tb%2F2026-6%2FPKM%2Fcontents%2Fcv%2FAboutMe.html",
@@ -187,13 +194,6 @@
       "label": "knowledge-graph",
       "url": "/contents/pkm/atlas/knowledge-graph.md",
       "raw": "/contents/pkm/atlas/knowledge-graph.md",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/view/?p=%2Fcontents%2Fpkm%2Fcv%2FAboutMe.html",
-      "raw": "/contents/pkm/cv/AboutMe.html",
       "kind": "note"
     },
     {
@@ -410,7 +410,12 @@
   "links": [
     {
       "source": "moc-update",
-      "target": "pkm-cv-aboutme",
+      "target": "contents-pkm-toc",
+      "kind": "link"
+    },
+    {
+      "source": "moc-about-me",
+      "target": "contents-pkm-cv-aboutme",
       "kind": "link"
     },
     {
