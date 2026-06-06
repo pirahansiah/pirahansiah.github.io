@@ -1,64 +1,27 @@
 ---
-- title: Solutions
-  items:
-  - title: Use Cases
-    items: []
-    url: "/./contents/pkm/solutions/use-cases/"
-- title: Products
-  items:
-  - title: Offering
-    items: []
-    url: "/./contents/pkm/products/offering/"
-- title: Technology
-  items:
-  - title: System Design
-    items: []
-    url: "/./contents/pkm/technology/system-design/"
-- title: Atlas
+- title: update
   items:
   - title: Knowledge Graph
     items: []
     url: "/./contents/pkm/atlas/knowledge-graph/"
-- title: Investors RELATIONS
-  items:
-  - title: Growth Model
+  - title: "\U0001F680 SOLUTIONS"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-  - title: VISION
+  - title: "\U0001F4E6 PRODUCTS"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-  - title: EVENTS & TRADE FAIRS
+  - title: "\U0001F6E0 TECHNOLOGY"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-  - title: PITCH DECK
+  - title: "\U0001F5FA ATLAS"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-  - title: TESTIMONIALS
+  - title: "\U0001F4C8 INVESTORS"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-  - title: INVESTMENT HIGHLIGHTS
+  - title: "\U0001F4B3 PRICING"
     items: []
-    url: "/./contents/pkm/investors/growth-model/"
-- title: Pricing
-  items:
-  - title: Costs
+  - title: "\U0001F4DC LEGACY"
     items: []
-    url: "/./contents/pkm/pricing/costs/"
-- title: Legacy
-  items:
-  - title: Proof
+  - title: "\U0001F4E1 PULSE"
     items: []
-    url: "/./contents/pkm/legacy/proof/"
-- title: Pulse
-  items:
-  - title: Updates
+  - title: "\U0001F3E2 ABOUT"
     items: []
-    url: "/./contents/pkm/pulse/updates/"
-- title: About
-  items:
-  - title: Company
+  - title: "\U0001F504 RECENT UPDATES"
     items: []
-    url: "/./contents/pkm/about/company/"
-- title: update
-  items: []
   url: "/contents/pkm/TOC/"
