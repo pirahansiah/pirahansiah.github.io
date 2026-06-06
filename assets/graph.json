@@ -246,6 +246,20 @@
       "kind": "note"
     },
     {
+      "id": "contents-inbox-a",
+      "label": "a",
+      "url": "/contents/inbox/a.md",
+      "raw": "/contents/inbox/a.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-b-m",
+      "label": "b",
+      "url": "/view/?p=%2Fcontents%2Finbox%2Fb.m%2F",
+      "raw": "/contents/inbox/b.m/",
+      "kind": "note"
+    },
+    {
       "id": "contents-inbox-c-png",
       "label": "c",
       "url": "/view/?p=%2Fcontents%2Finbox%2Fc.png",
@@ -257,6 +271,20 @@
       "label": "c",
       "url": "/view/?p=%2Fcontents%2Finbox%2Fc.py",
       "raw": "/contents/inbox/c.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-presentationfarshid",
+      "label": "presentationFarshid",
+      "url": "/contents/inbox/presentationFarshid.md",
+      "raw": "/contents/inbox/presentationFarshid.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-prompt",
+      "label": "prompt",
+      "url": "/contents/inbox/prompt.md",
+      "raw": "/contents/inbox/prompt.md",
       "kind": "note"
     }
   ],
