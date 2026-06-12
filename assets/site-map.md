@@ -1,5 +1,5 @@
 ---
-layout: farshid-ai-cv-llm-default
+layout: farshid_default
 title: Sitemap
 tags: indexing, sitemap, architect, strategy
 categories: system

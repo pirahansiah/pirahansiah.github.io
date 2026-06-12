@@ -194,6 +194,62 @@
   }
 }
 
+/* ─── NAV DROPDOWN ────────────────────────────────────────────────── */
+.nav-list {
+  position: relative;
+}
+
+.nav-list > li {
+  position: relative;
+}
+
+.nav-sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  padding: 8px;
+  margin: 4px 0 0;
+  list-style: none;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.82);
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15), 0 1px 0 rgba(255,255,255,0.96) inset;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav-sub {
+    background: rgba(44,44,50,0.92);
+    border-color: rgba(255,255,255,0.14);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.48);
+  }
+}
+
+.has-children.open > .nav-sub {
+  display: flex;
+}
+
+.nav-sub li {
+  width: 100%;
+}
+
+.nav-sub li a {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.nav-toggle {
+  padding: 6px 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
 /* ─── FOOTER ─────────────────────────────────────────────────────── */
 .site-footer {
   text-align: center;
@@ -223,4 +279,51 @@ code,pre{background:rgba(180,170,210,0.14);border:1px solid rgba(180,160,220,0.2
 
 @media (prefers-reduced-motion:reduce){
   .liquid-glass,.liquid-glass-item,#farshid-cursor{transition:none!important;animation:none!important}
+}
+
+/* ─── MOBILE NAV ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-menu-btn {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 8px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255,255,255,0.82);
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+
+  .nav-open > .nav-list {
+    display: flex;
+  }
+
+  .nav-sub {
+    position: static;
+    box-shadow: none;
+    background: rgba(0,0,0,0.04);
+    border-radius: 12px;
+    margin: 4px 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .nav-list {
+      background: rgba(44,44,50,0.95);
+      border-color: rgba(255,255,255,0.14);
+    }
+
+    .nav-sub {
+      background: rgba(255,255,255,0.06);
+    }
+  }
 }

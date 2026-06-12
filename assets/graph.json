@@ -337,10 +337,10 @@
       "kind": "note"
     },
     {
-      "id": "contents-farshid-ai-cv-llm-site",
-      "label": "farshid-ai-cv-llm-site",
-      "url": "/Contents/farshid-ai-cv-llm-site.md",
-      "raw": "/Contents/farshid-ai-cv-llm-site.md",
+      "id": "contents-menus",
+      "label": "menus",
+      "url": "/Contents/menus.md",
+      "raw": "/Contents/menus.md",
       "kind": "note"
     },
     {
@@ -834,13 +834,6 @@
       "kind": "note"
     },
     {
-      "id": "contents-projects-rag-modelfile",
-      "label": "Modelfile",
-      "url": "/contents/projects/RAG/Modelfile/",
-      "raw": "/contents/projects/RAG/Modelfile/",
-      "kind": "note"
-    },
-    {
       "id": "contents-projects-rag-master-indexer-py",
       "label": "master_indexer",
       "url": "/view/?p=%2FContents%2Fprojects%2FRAG%2Fmaster_indexer.py",
@@ -1034,137 +1027,137 @@
       "kind": "moc"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-atlas-knowledge-graph",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-toc",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-cv-aboutme",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-solutions-use-cases",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-solutions-transformation-framework",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-investors-growth-model",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-products-offering",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-templates-prompt",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-technology-system-design",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-templates-presentation",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-technology-benchmarks",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-templates-markmap-autoloader",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-investors-vision",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-investors-pitch-deck",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-investors-investment-highlights",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-investors-market-opportunity",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-pricing-costs",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-pricing-licensing",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-pricing-custom-solutions",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-legacy-proof",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-legacy-track-record",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-templates-farshid-ai-cv-llm",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-pulse-updates",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-about-company",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "pkm-about-contact",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "inbox-markmap-autoloader",
       "kind": "mdlink"
     },
     {
-      "source": "contents-farshid-ai-cv-llm-site",
+      "source": "contents-menus",
       "target": "inbox-presentation",
       "kind": "mdlink"
     },
