@@ -3,25 +3,25 @@
   items:
   - title: Knowledge Graph
     items: []
-    url: "/./pkm/atlas/knowledge-graph/"
+    url: "/contents/pkm/atlas/knowledge-graph/"
 - title: update2
   items:
   - title: TOC
     items: []
-    url: "/./pkm/TOC/"
+    url: "/contents/pkm/TOC/"
 - title: About Me2
   items:
   - title: About Me
     items: []
-    url: "/./pkm/cv/AboutMe/"
+    url: "/contents/pkm/cv/AboutMe/"
 - title: Knowledge Graph
   items:
   - title: Knowledge Graph
     items: []
-    url: "/./pkm/atlas/knowledge-graph/"
+    url: "/contents/pkm/atlas/knowledge-graph/"
   - title: Transformation Framework
     items: []
-    url: "/./pkm/solutions/transformation-framework/"
+    url: "/contents/pkm/solutions/transformation-framework/"
   - title: Presentation
     items: []
-    url: "/./inbox/presentation/"
+    url: "/contents/inbox/presentation/"
