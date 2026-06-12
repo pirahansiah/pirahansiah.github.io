@@ -288,7 +288,19 @@ end
 
 def extract_hashtags(text)
   return [] unless text
-  text.to_s.scan(/(?:^|[\s\(\[\{])#([A-Za-z][A-Za-z0-9_-]*)/).flatten.uniq
+  raw = text.to_s.scan(/(?:^|[\s\(\[\{])#([A-Za-z][A-Za-z0-9_-]*)/).flatten.uniq
+  raw.select do |tag|
+    next false if tag.length < 3
+    next false if tag.length > 30
+    next false if tag.match?(/\A[0-9a-fA-F]{3,8}\z/)
+    next false if tag.match?(/\A[A-Z]/) && tag.match?(/[a-z]/) && !tag.match?(/\A[A-Z][a-z]+\z/)
+    next false if tag.match?(/\A[A-Z]{2,}\z/)
+    next false if tag.match?(/\A[0-9]+\z/)
+    next false if tag.match?(/\A[a-z]+[0-9]+\z/)
+    next false if tag.match?(/[0-9][A-Z]/)
+    next false if tag.count("A-Z") > tag.length * 0.3
+    true
+  end
 end
 
 def build_hashtag_graph
