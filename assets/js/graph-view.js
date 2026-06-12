@@ -1,5 +1,6 @@
 /**
  * Obsidian-style interactive knowledge graph.
+ * Click to select (highlight connections), double-click to open.
  */
 (function () {
   "use strict";
@@ -14,6 +15,7 @@
   var simNodes = [];
   var dragging = null;
   var hovered = null;
+  var selected = null;
   var panX = 0;
   var panY = 0;
   var lastPanX = 0;
@@ -23,6 +25,7 @@
   var panStartY = 0;
   var mouseDownX = 0;
   var mouseDownY = 0;
+  var lastClickTime = 0;
   var frozen = false;
 
   var STORAGE_KEY = "graph_positions_" + (wrap.dataset.graph || "default");
@@ -34,7 +37,8 @@
     link: "rgba(120, 120, 128, 0.25)",
     mocEdge: "rgba(90, 200, 250, 0.40)",
     text: "#1d1d1f",
-    highlight: "#0071e3"
+    highlight: "#0071e3",
+    selected: "#ff9500"
   };
 
   var isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -76,6 +80,17 @@
       if (links[i].source === idx || links[i].target === idx) c++;
     }
     return c;
+  }
+
+  function getConnected(node) {
+    var result = {};
+    if (!node) return result;
+    var idx = simNodes.indexOf(node);
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].source === idx) result[links[i].target] = true;
+      if (links[i].target === idx) result[links[i].source] = true;
+    }
+    return result;
   }
 
   function initSimulation(data) {
@@ -172,62 +187,73 @@
     ctx.save();
     ctx.translate(panX, panY);
 
-    var connectedTo = {};
-    if (hovered) {
-      for (var i = 0; i < links.length; i++) {
-        if (simNodes[links[i].source] === hovered) connectedTo[links[i].target] = true;
-        if (simNodes[links[i].target] === hovered) connectedTo[links[i].source] = true;
-      }
-    }
+    var activeNode = selected || hovered;
+    var connectedTo = getConnected(activeNode);
 
     for (var i = 0; i < links.length; i++) {
       var a = simNodes[links[i].source];
       var b = simNodes[links[i].target];
       if (!a || !b) continue;
-      var isHL = hovered && (a === hovered || b === hovered);
-      var isDim = hovered && !isHL;
+      var isHL = activeNode && (a === activeNode || b === activeNode);
+      var isSL = selected && (a === selected || b === selected);
+      var isDim = activeNode && !isHL && !isSL;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
-      ctx.strokeStyle = isHL ? colors.highlight : isDim ? "rgba(120,120,128,0.08)" : links[i].kind === "moc" ? colors.mocEdge : colors.link;
-      ctx.lineWidth = isHL ? 2.5 : isDim ? 0.5 : 1;
+      ctx.strokeStyle = isHL ? colors.highlight : isSL ? colors.selected : isDim ? "rgba(120,120,128,0.06)" : links[i].kind === "moc" ? colors.mocEdge : colors.link;
+      ctx.lineWidth = isHL ? 2.5 : isSL ? 2 : isDim ? 0.4 : 1;
       ctx.stroke();
     }
 
     for (var i = 0; i < simNodes.length; i++) {
       var n = simNodes[i];
-      var isH = dragging === n || hovered === n;
-      var isC = hovered && connectedTo[i];
-      var isD = hovered && !isH && !isC;
+      var isSel = selected === n;
+      var isHov = hovered === n;
+      var isConn = activeNode && connectedTo[i];
+      var isDim = activeNode && !isSel && !isHov && !isConn;
       var fill = n.kind === "moc" ? colors.moc : n.kind === "tag" ? colors.tag : colors.note;
-      var alpha = isD ? 0.2 : isH ? 1 : 0.82;
-      var nodeR = isH ? n.r + 3 : n.r;
+      if (isSel) fill = colors.selected;
+      var alpha = isDim ? 0.15 : isSel || isHov ? 1 : 0.82;
+      var nodeR = isSel ? n.r + 4 : isHov ? n.r + 2 : n.r;
 
       ctx.globalAlpha = alpha;
       ctx.beginPath();
       ctx.arc(n.x, n.y, nodeR, 0, Math.PI * 2);
       ctx.fillStyle = fill;
       ctx.fill();
-      ctx.strokeStyle = isH ? colors.highlight : "rgba(255,255,255,0.55)";
-      ctx.lineWidth = isH ? 2.5 : 0.7;
+      ctx.strokeStyle = isSel ? colors.selected : isHov ? colors.highlight : "rgba(255,255,255,0.55)";
+      ctx.lineWidth = isSel ? 3 : isHov ? 2.5 : 0.7;
       ctx.stroke();
 
-      if (isH || isC || (!hovered && n.connections > 1)) {
+      var shortLabel = n.label.length > 3 ? n.label.substring(0, 3) : n.label;
+      if (isSel || isHov) {
+        ctx.fillStyle = isSel ? colors.selected : colors.text;
+        ctx.font = "700 13px system-ui";
+        ctx.textAlign = "center";
+        ctx.fillText(n.label, n.x, n.y + nodeR + 14);
+      } else if (isConn) {
         ctx.fillStyle = colors.text;
-        ctx.font = isH ? "700 12px system-ui" : "500 10px system-ui";
+        ctx.font = "600 10px system-ui";
         ctx.textAlign = "center";
         ctx.fillText(n.label, n.x, n.y + nodeR + 13);
+      } else {
+        ctx.fillStyle = isDim ? "rgba(120,120,128,0.3)" : colors.text;
+        ctx.globalAlpha = isDim ? 0.3 : 0.65;
+        ctx.font = "500 9px system-ui";
+        ctx.textAlign = "center";
+        ctx.fillText(shortLabel, n.x, n.y + nodeR + 11);
       }
       ctx.globalAlpha = 1;
     }
 
     ctx.restore();
 
-    if (hovered && hovered.label) {
-      var sx = hovered.x + panX;
-      var sy = hovered.y + panY - hovered.r - 12;
-      var kind = hovered.kind === "moc" ? "Section" : hovered.kind === "tag" ? "Tag" : "Note";
-      var text = kind + ": " + hovered.label;
+    if (activeNode && activeNode.label) {
+      var sx = activeNode.x + panX;
+      var sy = activeNode.y + panY - activeNode.r - 14;
+      var kindLabel = activeNode.kind === "moc" ? "Section" : activeNode.kind === "tag" ? "Tag" : "Note";
+      var text = kindLabel + ": " + activeNode.label;
+      if (selected && !hovered) text += " (double-click to open)";
       ctx.font = "600 11px system-ui";
       var tw = ctx.measureText(text).width;
       var pad = 7;
@@ -242,7 +268,7 @@
       ctx.roundRect(boxX, boxY, boxW, boxH, 5);
       ctx.fill();
       ctx.stroke();
-      ctx.fillStyle = colors.text;
+      ctx.fillStyle = isSel ? colors.selected : colors.text;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(text, sx, boxY + boxH / 2);
@@ -325,19 +351,48 @@
     var didDrag = movedX > 5 || movedY > 5;
 
     if (dragging) {
-      if (!didDrag) {
-        frozen = false;
-        var url = resolveNodeUrl(dragging);
-        if (url) window.location.href = url;
-      } else {
+      if (didDrag) {
         savePositions();
+      } else {
+        var now = Date.now();
+        var hit = dragging;
+        dragging = null;
+        isPanning = false;
+        frozen = false;
+        canvas.style.cursor = hovered ? "pointer" : "grab";
+
+        if (now - lastClickTime < 350) {
+          var url = resolveNodeUrl(hit);
+          if (url) window.location.href = url;
+          lastClickTime = 0;
+        } else {
+          if (selected === hit) {
+            selected = null;
+          } else {
+            selected = hit;
+          }
+          lastClickTime = now;
+        }
+        return;
       }
-      dragging = null;
     } else if (isPanning && !didDrag) {
       var hit = hitTest(screenPos(e));
       if (hit) {
-        var url = resolveNodeUrl(hit);
-        if (url) window.location.href = url;
+        var now = Date.now();
+        if (now - lastClickTime < 350) {
+          var url = resolveNodeUrl(hit);
+          if (url) window.location.href = url;
+          lastClickTime = 0;
+        } else {
+          if (selected === hit) {
+            selected = null;
+          } else {
+            selected = hit;
+          }
+          lastClickTime = now;
+        }
+      } else {
+        selected = null;
       }
     }
 
@@ -390,16 +445,34 @@
 
     if (dragging) {
       if (!didDrag) {
+        var now = Date.now();
+        var hit = dragging;
+        dragging = null;
+        isPanning = false;
         frozen = false;
-        var url = resolveNodeUrl(dragging);
-        if (url) window.location.href = url;
+
+        if (now - lastClickTime < 350) {
+          var url = resolveNodeUrl(hit);
+          if (url) window.location.href = url;
+          lastClickTime = 0;
+        } else {
+          if (selected === hit) {
+            selected = null;
+          } else {
+            selected = hit;
+          }
+          lastClickTime = now;
+        }
       } else {
         savePositions();
+        dragging = null;
+        isPanning = false;
+        frozen = false;
       }
-      dragging = null;
+    } else {
+      isPanning = false;
+      frozen = false;
     }
-    isPanning = false;
-    frozen = false;
   });
 
   canvas.addEventListener("wheel", function (e) {
@@ -412,6 +485,7 @@
   if (resetBtn) {
     resetBtn.addEventListener("click", function () {
       panX = panY = 0;
+      selected = null;
       frozen = false;
       try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
       initSimulation({ nodes: nodes, links: links });
