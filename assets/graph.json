@@ -379,6 +379,13 @@
       "kind": "note"
     },
     {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm",
+      "label": "farshid-ai-cv-llm",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm.md",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm.md",
+      "kind": "note"
+    },
+    {
       "id": "contents-pkm-templates-markmap-autoloader",
       "label": "markmap-autoloader",
       "url": "/contents/pkm/templates/markmap-autoloader.md",
@@ -393,17 +400,17 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-templates-presentationfarshid",
-      "label": "presentationFarshid",
-      "url": "/contents/pkm/templates/presentationFarshid.md",
-      "raw": "/contents/pkm/templates/presentationFarshid.md",
-      "kind": "note"
-    },
-    {
       "id": "contents-pkm-templates-prompt",
       "label": "prompt",
       "url": "/contents/pkm/templates/prompt.md",
       "raw": "/contents/pkm/templates/prompt.md",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-modelfile",
+      "label": "Modelfile",
+      "url": "/contents/projects/RAG/Modelfile/",
+      "raw": "/contents/projects/RAG/Modelfile/",
       "kind": "note"
     },
     {

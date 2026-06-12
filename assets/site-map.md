@@ -126,7 +126,7 @@ A
 
  Project history and milestone verification.
 ## B
-[Partnerships](./pkm/templates/presentationFarshid)
+[Partnerships](./pkm/templates/farshid-ai-cv-llm)
 
  Ecosystem and strategic alliances.
 
