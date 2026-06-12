@@ -407,6 +407,195 @@
       "kind": "note"
     },
     {
+      "id": "tag-about",
+      "label": "#about",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-publications",
+      "label": "#publications",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-patents",
+      "label": "#patents",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-books",
+      "label": "#books",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-journals",
+      "label": "#journals",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-conference-papers",
+      "label": "#conference-papers",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-keynotes",
+      "label": "#keynotes",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-hardware-platforms",
+      "label": "#hardware--platforms",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-products-tools",
+      "label": "#products--tools",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-open-source",
+      "label": "#open-source",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-technical-content",
+      "label": "#technical-content",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-guides-tutorials",
+      "label": "#guides--tutorials",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-career-business",
+      "label": "#career--business",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-courses",
+      "label": "#courses",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-workshops-events",
+      "label": "#workshops--events",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-knowledge-management",
+      "label": "#knowledge-management",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-topics-projects",
+      "label": "#topics--projects",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-community",
+      "label": "#community",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-social",
+      "label": "#social",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-faceaugmentation",
+      "label": "#FaceAugmentation",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-surveillance",
+      "label": "#Surveillance",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-digitaladvertising",
+      "label": "#DigitalAdvertising",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-facialrecognition",
+      "label": "#FacialRecognition",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-targetedads",
+      "label": "#TargetedAds",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-vehicledetection",
+      "label": "#VehicleDetection",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-imageprocessing",
+      "label": "#ImageProcessing",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-trafficsurveillance",
+      "label": "#TrafficSurveillance",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
       "label": "farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
       "url": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
@@ -780,6 +969,141 @@
     {
       "source": "contents-pkm-atlas-strategic-connections",
       "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-about",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-publications",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-patents",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-books",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-journals",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-conference-papers",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-keynotes",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-hardware-platforms",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-products-tools",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-open-source",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-technical-content",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-guides-tutorials",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-career-business",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-courses",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-workshops-events",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-knowledge-management",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-topics-projects",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-community",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-social",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-faceaugmentation",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-surveillance",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-digitaladvertising",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-facialrecognition",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-targetedads",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-vehicledetection",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-imageprocessing",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-trafficsurveillance",
       "kind": "tag"
     },
     {
