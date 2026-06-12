@@ -20,9 +20,12 @@ extra_css: graph.css
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive hashtag graph"></canvas>
   </div>
-  <div class="graph-legend">
-    <span class="legend-note">File</span>
-    <span class="legend-tag">Hashtag</span>
+  <div class="graph-bottom-bar">
+    <a id="graph-open-btn" class="liquid-glass-item graph-open-btn" href="#" style="display:none"></a>
+    <div class="graph-legend">
+      <span class="legend-note">File</span>
+      <span class="legend-tag">Hashtag</span>
+    </div>
   </div>
 </div>
 

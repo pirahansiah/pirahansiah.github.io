@@ -16,14 +16,17 @@ extra_css: graph.css
       <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
     </div>
   </div>
-  <p class="graph-hint">Click a node to open · drag to rearrange · purple = hashtags</p>
+  <p class="graph-hint">Tap a node to select · tap again to deselect</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive knowledge graph"></canvas>
   </div>
-  <div class="graph-legend">
-    <span class="legend-moc">Section</span>
-    <span class="legend-note">Note</span>
-    <span class="legend-tag">Hashtag</span>
+  <div class="graph-bottom-bar">
+    <a id="graph-open-btn" class="liquid-glass-item graph-open-btn" href="#" style="display:none"></a>
+    <div class="graph-legend">
+      <span class="legend-moc">Section</span>
+      <span class="legend-note">Note</span>
+      <span class="legend-tag">Hashtag</span>
+    </div>
   </div>
 </div>
 

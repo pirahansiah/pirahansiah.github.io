@@ -1,6 +1,6 @@
 /**
  * Obsidian-style interactive knowledge graph.
- * Click to select (highlight connections), double-click to open.
+ * Click/tap to select, "Open" button to navigate.
  */
 (function () {
   "use strict";
@@ -25,10 +25,11 @@
   var panStartY = 0;
   var mouseDownX = 0;
   var mouseDownY = 0;
-  var lastClickTime = 0;
   var frozen = false;
 
   var STORAGE_KEY = "graph_positions_" + (wrap.dataset.graph || "default");
+
+  var openBtn = document.getElementById("graph-open-btn");
 
   var colors = {
     moc: "#5ac8fa",
@@ -46,6 +47,20 @@
     colors.text = "#f5f5f7";
     colors.link = "rgba(180, 180, 190, 0.18)";
     colors.mocEdge = "rgba(90, 200, 250, 0.45)";
+  }
+
+  function showOpenButton(node) {
+    if (!openBtn || !node) { hideOpenButton(); return; }
+    var url = resolveNodeUrl(node);
+    if (!url) { hideOpenButton(); return; }
+    var kindLabel = node.kind === "moc" ? "Section" : node.kind === "tag" ? "Tag" : "Note";
+    openBtn.innerHTML = kindLabel + ": <strong>" + node.label + "</strong> &nbsp;→ Open";
+    openBtn.href = url;
+    openBtn.style.display = "inline-flex";
+  }
+
+  function hideOpenButton() {
+    if (openBtn) openBtn.style.display = "none";
   }
 
   function resize() {
@@ -195,13 +210,12 @@
       var b = simNodes[links[i].target];
       if (!a || !b) continue;
       var isHL = activeNode && (a === activeNode || b === activeNode);
-      var isSL = selected && (a === selected || b === selected);
-      var isDim = activeNode && !isHL && !isSL;
+      var isDim = activeNode && !isHL;
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
-      ctx.strokeStyle = isHL ? colors.highlight : isSL ? colors.selected : isDim ? "rgba(120,120,128,0.06)" : links[i].kind === "moc" ? colors.mocEdge : colors.link;
-      ctx.lineWidth = isHL ? 2.5 : isSL ? 2 : isDim ? 0.4 : 1;
+      ctx.strokeStyle = isHL ? colors.highlight : isDim ? "rgba(120,120,128,0.06)" : links[i].kind === "moc" ? colors.mocEdge : colors.link;
+      ctx.lineWidth = isHL ? 2.5 : isDim ? 0.4 : 1;
       ctx.stroke();
     }
 
@@ -247,33 +261,6 @@
     }
 
     ctx.restore();
-
-    if (activeNode && activeNode.label) {
-      var sx = activeNode.x + panX;
-      var sy = activeNode.y + panY - activeNode.r - 14;
-      var kindLabel = activeNode.kind === "moc" ? "Section" : activeNode.kind === "tag" ? "Tag" : "Note";
-      var text = kindLabel + ": " + activeNode.label;
-      if (selected && !hovered) text += " (double-click to open)";
-      ctx.font = "600 11px system-ui";
-      var tw = ctx.measureText(text).width;
-      var pad = 7;
-      var boxW = tw + pad * 2;
-      var boxH = 22;
-      var boxX = sx - boxW / 2;
-      var boxY = sy - boxH;
-      ctx.fillStyle = isDark ? "rgba(44,44,48,0.96)" : "rgba(255,255,255,0.94)";
-      ctx.strokeStyle = isDark ? "rgba(255,255,255,0.10)" : "rgba(0,0,0,0.06)";
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.roundRect(boxX, boxY, boxW, boxH, 5);
-      ctx.fill();
-      ctx.stroke();
-      ctx.fillStyle = isSel ? colors.selected : colors.text;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(text, sx, boxY + boxH / 2);
-      ctx.textBaseline = "alphabetic";
-    }
   }
 
   function loop() {
@@ -307,6 +294,16 @@
       return n.raw;
     }
     return null;
+  }
+
+  function selectNode(node) {
+    if (selected === node) {
+      selected = null;
+      hideOpenButton();
+    } else {
+      selected = node;
+      showOpenButton(node);
+    }
   }
 
   canvas.addEventListener("mousedown", function (e) {
@@ -354,45 +351,16 @@
       if (didDrag) {
         savePositions();
       } else {
-        var now = Date.now();
-        var hit = dragging;
-        dragging = null;
-        isPanning = false;
-        frozen = false;
-        canvas.style.cursor = hovered ? "pointer" : "grab";
-
-        if (now - lastClickTime < 350) {
-          var url = resolveNodeUrl(hit);
-          if (url) window.location.href = url;
-          lastClickTime = 0;
-        } else {
-          if (selected === hit) {
-            selected = null;
-          } else {
-            selected = hit;
-          }
-          lastClickTime = now;
-        }
-        return;
+        selectNode(dragging);
       }
+      dragging = null;
     } else if (isPanning && !didDrag) {
       var hit = hitTest(screenPos(e));
       if (hit) {
-        var now = Date.now();
-        if (now - lastClickTime < 350) {
-          var url = resolveNodeUrl(hit);
-          if (url) window.location.href = url;
-          lastClickTime = 0;
-        } else {
-          if (selected === hit) {
-            selected = null;
-          } else {
-            selected = hit;
-          }
-          lastClickTime = now;
-        }
+        selectNode(hit);
       } else {
         selected = null;
+        hideOpenButton();
       }
     }
 
@@ -445,34 +413,14 @@
 
     if (dragging) {
       if (!didDrag) {
-        var now = Date.now();
-        var hit = dragging;
-        dragging = null;
-        isPanning = false;
-        frozen = false;
-
-        if (now - lastClickTime < 350) {
-          var url = resolveNodeUrl(hit);
-          if (url) window.location.href = url;
-          lastClickTime = 0;
-        } else {
-          if (selected === hit) {
-            selected = null;
-          } else {
-            selected = hit;
-          }
-          lastClickTime = now;
-        }
+        selectNode(dragging);
       } else {
         savePositions();
-        dragging = null;
-        isPanning = false;
-        frozen = false;
       }
-    } else {
-      isPanning = false;
-      frozen = false;
+      dragging = null;
     }
+    isPanning = false;
+    frozen = false;
   });
 
   canvas.addEventListener("wheel", function (e) {
@@ -486,6 +434,7 @@
     resetBtn.addEventListener("click", function () {
       panX = panY = 0;
       selected = null;
+      hideOpenButton();
       frozen = false;
       try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
       initSimulation({ nodes: nodes, links: links });
