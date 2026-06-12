@@ -1,5 +1,5 @@
 /**
- * Obsidian-style interactive knowledge graph (vanilla JS + canvas, no libraries).
+ * Obsidian-style interactive knowledge graph (vanilla JS + canvas).
  */
 (function () {
   "use strict";
@@ -23,16 +23,23 @@
     moc: "#5ac8fa",
     note: "#34c759",
     tag: "#af52de",
-    link: "rgba(120, 120, 128, 0.45)",
-    mocEdge: "rgba(90, 200, 250, 0.55)",
+    link: "rgba(120, 120, 128, 0.30)",
+    mocEdge: "rgba(90, 200, 250, 0.45)",
     text: "#1d1d1f",
-    highlight: "#0071e3"
+    textMuted: "rgba(29, 29, 31, 0.6)",
+    highlight: "#0071e3",
+    tooltipBg: "rgba(255, 255, 255, 0.92)",
+    tooltipBorder: "rgba(0, 0, 0, 0.08)"
   };
 
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+  var isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (isDark) {
     colors.text = "#f5f5f7";
-    colors.link = "rgba(180, 180, 190, 0.35)";
-    colors.mocEdge = "rgba(90, 200, 250, 0.65)";
+    colors.textMuted = "rgba(245, 245, 247, 0.5)";
+    colors.link = "rgba(180, 180, 190, 0.20)";
+    colors.mocEdge = "rgba(90, 200, 250, 0.50)";
+    colors.tooltipBg = "rgba(44, 44, 48, 0.94)";
+    colors.tooltipBorder = "rgba(255, 255, 255, 0.12)";
   }
 
   function resize() {
@@ -54,6 +61,14 @@
     return map;
   }
 
+  function countConnections(nodeIdx) {
+    var count = 0;
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].source === nodeIdx || links[i].target === nodeIdx) count++;
+    }
+    return count;
+  }
+
   function initSimulation(data) {
     nodes = data.nodes || [];
     links = data.links || [];
@@ -62,22 +77,38 @@
 
     simNodes = nodes.map(function (n, i) {
       var angle = (i / Math.max(nodes.length, 1)) * Math.PI * 2;
-      var r = Math.min(w, h) * 0.28;
+      var r = Math.min(w, h) * 0.30;
       return {
         id: n.id,
         label: n.label || n.id,
         url: n.url || null,
         raw: n.raw || null,
         kind: n.kind || "note",
-        x: w / 2 + Math.cos(angle) * r,
-        y: h / 2 + Math.sin(angle) * r,
+        x: w / 2 + Math.cos(angle) * r + (Math.random() - 0.5) * 60,
+        y: h / 2 + Math.sin(angle) * r + (Math.random() - 0.5) * 60,
         vx: 0,
         vy: 0,
-        r: n.kind === "moc" ? 14 : n.kind === "tag" ? 12 : 10
+        r: 0,
+        connections: 0
       };
     });
 
     var idx = indexNodes();
+    for (var i = 0; i < simNodes.length; i++) {
+      simNodes[i].connections = countConnections(i);
+    }
+
+    for (var i = 0; i < simNodes.length; i++) {
+      var n = simNodes[i];
+      if (n.kind === "moc") {
+        n.r = 12 + Math.min(n.connections * 1.5, 8);
+      } else if (n.kind === "tag") {
+        n.r = 8 + Math.min(n.connections * 1.2, 6);
+      } else {
+        n.r = 6 + Math.min(n.connections * 0.8, 6);
+      }
+    }
+
     links = links
       .map(function (l) {
         return {
@@ -96,18 +127,13 @@
     var h = wrap.clientHeight;
     var cx = w / 2 + panX;
     var cy = h / 2 + panY;
-    var i;
-    var j;
-    var dx;
-    var dy;
-    var dist;
-    var force;
+    var i, j, dx, dy, dist, force;
 
     for (i = 0; i < simNodes.length; i++) {
       dx = cx - simNodes[i].x;
       dy = cy - simNodes[i].y;
-      simNodes[i].vx += dx * 0.002;
-      simNodes[i].vy += dy * 0.002;
+      simNodes[i].vx += dx * 0.001;
+      simNodes[i].vy += dy * 0.001;
     }
 
     for (i = 0; i < simNodes.length; i++) {
@@ -115,7 +141,7 @@
         dx = simNodes[i].x - simNodes[j].x;
         dy = simNodes[i].y - simNodes[j].y;
         dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        force = 520 / (dist * dist);
+        force = 600 / (dist * dist);
         simNodes[i].vx += (dx / dist) * force;
         simNodes[i].vy += (dy / dist) * force;
         simNodes[j].vx -= (dx / dist) * force;
@@ -130,7 +156,7 @@
       dx = b.x - a.x;
       dy = b.y - a.y;
       dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      force = (dist - 90) * 0.035;
+      force = (dist - 100) * 0.030;
       a.vx += (dx / dist) * force;
       a.vy += (dy / dist) * force;
       b.vx -= (dx / dist) * force;
@@ -139,8 +165,8 @@
 
     for (i = 0; i < simNodes.length; i++) {
       if (dragging === simNodes[i]) continue;
-      simNodes[i].vx *= 0.86;
-      simNodes[i].vy *= 0.86;
+      simNodes[i].vx *= 0.88;
+      simNodes[i].vy *= 0.88;
       simNodes[i].x += simNodes[i].vx;
       simNodes[i].y += simNodes[i].vy;
     }
@@ -154,40 +180,105 @@
     ctx.translate(panX, panY);
 
     var i;
+
+    var connectedTo = {};
+    if (hovered) {
+      for (i = 0; i < links.length; i++) {
+        if (simNodes[links[i].source] === hovered) {
+          connectedTo[links[i].target] = true;
+        }
+        if (simNodes[links[i].target] === hovered) {
+          connectedTo[links[i].source] = true;
+        }
+      }
+    }
+
     for (i = 0; i < links.length; i++) {
       var a = simNodes[links[i].source];
       var b = simNodes[links[i].target];
       if (!a || !b) continue;
+
+      var isHighlighted = hovered && (a === hovered || b === hovered);
+      var isDimmed = hovered && !isHighlighted;
+
       ctx.beginPath();
       ctx.moveTo(a.x, a.y);
       ctx.lineTo(b.x, b.y);
-      ctx.strokeStyle = links[i].kind === "moc" ? colors.mocEdge : colors.link;
-      ctx.lineWidth = links[i].kind === "moc" ? 2 : 1;
+      ctx.strokeStyle = isHighlighted
+        ? colors.highlight
+        : isDimmed
+          ? "rgba(120, 120, 128, 0.10)"
+          : links[i].kind === "moc"
+            ? colors.mocEdge
+            : colors.link;
+      ctx.lineWidth = isHighlighted ? 2 : isDimmed ? 0.5 : 1;
       ctx.stroke();
     }
 
     for (i = 0; i < simNodes.length; i++) {
       var n = simNodes[i];
-      var active = dragging === n || hovered === n;
+      var isHovered = dragging === n || hovered === n;
+      var isConnected = hovered && connectedTo[i];
+      var isDimmed = hovered && !isHovered && !isConnected;
+
       var fill = n.kind === "moc" ? colors.moc : n.kind === "tag" ? colors.tag : colors.note;
+      var alpha = isDimmed ? 0.25 : isHovered ? 1 : 0.85;
+      var nodeR = isHovered ? n.r + 3 : n.r;
+
+      ctx.globalAlpha = alpha;
 
       ctx.beginPath();
-      ctx.arc(n.x, n.y, active ? n.r + 3 : n.r, 0, Math.PI * 2);
+      ctx.arc(n.x, n.y, nodeR, 0, Math.PI * 2);
       ctx.fillStyle = fill;
-      ctx.globalAlpha = active ? 1 : 0.88;
       ctx.fill();
-      ctx.globalAlpha = 1;
-      ctx.strokeStyle = active ? colors.highlight : "rgba(255,255,255,0.65)";
-      ctx.lineWidth = active ? 2.5 : 1;
+
+      ctx.strokeStyle = isHovered ? colors.highlight : "rgba(255,255,255,0.60)";
+      ctx.lineWidth = isHovered ? 2.5 : 0.8;
       ctx.stroke();
 
-      ctx.fillStyle = colors.text;
-      ctx.font = "600 11px system-ui, -apple-system, sans-serif";
-      ctx.textAlign = "center";
-      ctx.fillText(n.label, n.x, n.y + n.r + 14);
+      if (isHovered || isConnected || (!hovered && n.connections > 2)) {
+        ctx.fillStyle = colors.text;
+        ctx.font = isHovered
+          ? "700 12px system-ui, -apple-system, sans-serif"
+          : "500 10px system-ui, -apple-system, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText(n.label, n.x, n.y + nodeR + 13);
+      }
+
+      ctx.globalAlpha = 1;
     }
 
     ctx.restore();
+
+    if (hovered && hovered.label) {
+      var sx = hovered.x + panX;
+      var sy = hovered.y + panY - hovered.r - 10;
+      var label = hovered.label;
+      var kind = hovered.kind === "moc" ? "Section" : hovered.kind === "tag" ? "Tag" : "Note";
+      var text = kind + ": " + label;
+
+      ctx.font = "600 12px system-ui, -apple-system, sans-serif";
+      var tw = ctx.measureText(text).width;
+      var pad = 8;
+      var boxW = tw + pad * 2;
+      var boxH = 24;
+      var boxX = sx - boxW / 2;
+      var boxY = sy - boxH;
+
+      ctx.fillStyle = colors.tooltipBg;
+      ctx.strokeStyle = colors.tooltipBorder;
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.roundRect(boxX, boxY, boxW, boxH, 6);
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = colors.text;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, sx, boxY + boxH / 2);
+      ctx.textBaseline = "alphabetic";
+    }
   }
 
   function loop() {
@@ -209,7 +300,7 @@
       var n = simNodes[i];
       var dx = pos.x - n.x;
       var dy = pos.y - n.y;
-      if (dx * dx + dy * dy <= (n.r + 6) * (n.r + 6)) return n;
+      if (dx * dx + dy * dy <= (n.r + 8) * (n.r + 8)) return n;
     }
     return null;
   }
@@ -237,6 +328,38 @@
 
   window.addEventListener("mouseup", function () {
     dragging = null;
+  });
+
+  canvas.addEventListener("touchstart", function (e) {
+    if (e.touches.length !== 1) return;
+    var touch = e.touches[0];
+    var rect = canvas.getBoundingClientRect();
+    var pos = { x: touch.clientX - rect.left - panX, y: touch.clientY - rect.top - panY };
+    var hit = hitTest(pos);
+    if (hit) {
+      dragging = hit;
+      hit.vx = hit.vy = 0;
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  canvas.addEventListener("touchmove", function (e) {
+    if (!dragging || e.touches.length !== 1) return;
+    e.preventDefault();
+    var touch = e.touches[0];
+    var rect = canvas.getBoundingClientRect();
+    dragging.x = touch.clientX - rect.left - panX;
+    dragging.y = touch.clientY - rect.top - panY;
+    dragging.vx = dragging.vy = 0;
+  }, { passive: false });
+
+  canvas.addEventListener("touchend", function () {
+    if (dragging) {
+      var hit = dragging;
+      dragging = null;
+      var url = resolveNodeUrl(hit);
+      if (url) window.location.href = url;
+    }
   });
 
   function resolveNodeUrl(n) {
@@ -271,14 +394,16 @@
     "wheel",
     function (e) {
       e.preventDefault();
-      scale = Math.max(0.5, Math.min(2, scale - e.deltaY * 0.001));
+      scale = Math.max(0.3, Math.min(3, scale - e.deltaY * 0.001));
       panX += e.deltaX * 0.5;
       panY += e.deltaY * 0.5;
     },
     { passive: false }
   );
 
-  window.addEventListener("resize", resize);
+  window.addEventListener("resize", function () {
+    resize();
+  });
 
   var resetBtn = document.getElementById("graph-reset");
   if (resetBtn) {
@@ -286,6 +411,20 @@
       panX = panY = 0;
       scale = 1;
       initSimulation({ nodes: nodes, links: links });
+    });
+  }
+
+  var zoomInBtn = document.getElementById("graph-zoom-in");
+  if (zoomInBtn) {
+    zoomInBtn.addEventListener("click", function () {
+      scale = Math.min(3, scale + 0.2);
+    });
+  }
+
+  var zoomOutBtn = document.getElementById("graph-zoom-out");
+  if (zoomOutBtn) {
+    zoomOutBtn.addEventListener("click", function () {
+      scale = Math.max(0.3, scale - 0.2);
     });
   }
 
@@ -301,7 +440,7 @@
       loop();
       var stat = document.getElementById("graph-stats");
       if (stat) {
-        var onlyTags = Array.isArray(data.nodes) && data.nodes.every(function (n) {
+        var onlyTags = Array.isArray(data.nodes) && data.nodes.length > 0 && data.nodes.every(function (n) {
           return n.kind === "tag";
         });
         stat.textContent = onlyTags
@@ -312,7 +451,7 @@
     .catch(function () {
       var stat = document.getElementById("graph-stats");
       if (stat) {
-        stat.textContent = "Graph data missing — run ruby scripts/build-nav.rb";
+        stat.textContent = "Graph data missing";
       }
     });
 })();
