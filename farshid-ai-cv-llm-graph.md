@@ -1,5 +1,5 @@
 ---
-layout: farshid-ai-cv-llm-default
+layout: farshid_default
 title: Knowledge Graph
 permalink: /graph/
 extra_css: graph.css

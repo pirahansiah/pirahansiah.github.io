@@ -16,7 +16,7 @@ defaults:
   - scope:
       path: "contents"
     values:
-      layout: farshid-ai-cv-llm-default
+      layout: farshid_default
 
 # Plugins
 plugins:
