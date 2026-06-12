@@ -358,6 +358,7 @@ code,pre{
     border-radius: 20px;
     box-shadow: 0 16px 48px rgba(80, 60, 160, 0.18);
     z-index: 1000;
+    overflow: visible;
   }
 
   .nav-open > .nav-list {
@@ -365,14 +366,36 @@ code,pre{
   }
 
   .nav-sub {
-    position: static;
-    transform: none;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    min-width: 0;
+    width: 100%;
     box-shadow: none;
     background: rgba(0, 0, 0, 0.04);
+    border: none;
     border-radius: 14px;
-    margin: 8px 0;
+    margin: 4px 0 8px;
     opacity: 1;
     visibility: visible;
+    transition: none;
+  }
+
+  .has-children.open > .nav-sub {
+    display: flex;
+    transform: none !important;
+  }
+
+  .has-children {
+    flex-direction: column;
+  }
+
+  .has-children > a,
+  .has-children > .nav-link {
+    width: 100%;
+    justify-content: center;
   }
 
   @media (prefers-color-scheme: dark) {
