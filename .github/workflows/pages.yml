@@ -32,7 +32,7 @@ jobs:
           ruby-version: "3.2"
           bundler-cache: true
 
-      - name: Build navigation from contents/site.md
+      - name: Build navigation from contents/menus.md
         run: ruby scripts/build-nav.rb
 
       - name: Setup git credentials for pushing generated files
