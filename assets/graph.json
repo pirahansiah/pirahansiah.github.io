@@ -1,8 +1,8 @@
 {
   "nodes": [
     {
-      "id": "moc-atlas",
-      "label": "🗺 ATLAS",
+      "id": "moc-atlas2",
+      "label": "🗺 ATLAS2",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -15,8 +15,8 @@
       "kind": "moc"
     },
     {
-      "id": "moc-update",
-      "label": "update",
+      "id": "moc-update2",
+      "label": "update2",
       "url": null,
       "raw": null,
       "kind": "moc"
@@ -29,30 +29,16 @@
       "kind": "moc"
     },
     {
+      "id": "moc-about-me2",
+      "label": "About Me2",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
       "id": "moc-about-me",
       "label": "About Me",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-solutions",
-      "label": "🚀 SOLUTIONS",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-industries",
-      "label": "Industries",
-      "url": "/./pkm/solutions/use-cases/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-use-cases",
-      "label": "Use Cases",
-      "url": "/./pkm/solutions/use-cases/",
+      "url": "/./pkm/cv/AboutMe/",
       "raw": null,
       "kind": "moc"
     },
@@ -60,258 +46,6 @@
       "id": "moc-transformation-framework",
       "label": "Transformation Framework",
       "url": "/./pkm/solutions/transformation-framework/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-roi-calculator",
-      "label": "ROI Calculator",
-      "url": "/./pkm/investors/growth-model/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-products",
-      "label": "📦 PRODUCTS",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-flagship-platform",
-      "label": "Flagship Platform",
-      "url": "/./pkm/products/offering/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-ai-agents",
-      "label": "AI Agents",
-      "url": "/./pkm/templates/prompt/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-vision-ai",
-      "label": "Vision AI",
-      "url": "/./pkm/technology/system-design/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-edge-ai",
-      "label": "Edge AI",
-      "url": "/./pkm/products/offering/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-technology",
-      "label": "🛠 TECHNOLOGY",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-architecture",
-      "label": "Architecture",
-      "url": "/./pkm/technology/system-design/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-the-forge",
-      "label": "The Forge",
-      "url": "/./pkm/templates/presentation/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-benchmarks",
-      "label": "Benchmarks",
-      "url": "/./pkm/technology/benchmarks/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-infrastructure",
-      "label": "Infrastructure",
-      "url": "/./pkm/templates/markmap-autoloader/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-investors",
-      "label": "📈 INVESTORS",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-growth-model",
-      "label": "Growth Model",
-      "url": "/./pkm/investors/growth-model/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-vision",
-      "label": "Vision",
-      "url": "/./pkm/investors/vision/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-pitch-deck",
-      "label": "Pitch Deck",
-      "url": "/./pkm/investors/pitch-deck/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-investment-highlights",
-      "label": "Investment Highlights",
-      "url": "/./pkm/investors/investment-highlights/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-market-opportunity",
-      "label": "Market Opportunity",
-      "url": "/./pkm/investors/market-opportunity/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-pricing",
-      "label": "💳 PRICING",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-costs-tiers",
-      "label": "Costs & Tiers",
-      "url": "/./pkm/pricing/costs/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-licensing",
-      "label": "Licensing",
-      "url": "/./pkm/pricing/licensing/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-custom-solutions",
-      "label": "Custom Solutions",
-      "url": "/./pkm/pricing/custom-solutions/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-legacy",
-      "label": "📜 LEGACY",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-intellectual-property",
-      "label": "Intellectual Property",
-      "url": "/./pkm/legacy/proof/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-track-record",
-      "label": "Track Record",
-      "url": "/./pkm/legacy/track-record/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-partnerships",
-      "label": "Partnerships",
-      "url": "/./pkm/templates/farshid-ai-cv-llm/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-pulse",
-      "label": "📡 PULSE",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-build-log",
-      "label": "Build Log",
-      "url": "/./pkm/pulse/updates/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-updates",
-      "label": "Updates",
-      "url": "/./pkm/pulse/updates/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-market-insights",
-      "label": "Market Insights",
-      "url": "/./pkm/templates/prompt/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-about",
-      "label": "🏢 ABOUT",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-company",
-      "label": "Company",
-      "url": "/./pkm/about/company/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-leadership",
-      "label": "Leadership",
-      "url": "/./pkm/about/contact/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-contact",
-      "label": "Contact",
-      "url": "/./pkm/about/contact/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-recent-updates",
-      "label": "🔄 RECENT UPDATES",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-toc-index",
-      "label": "TOC Index",
-      "url": "/./pkm/TOC/",
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-markmap-autoloader",
-      "label": "Markmap Autoloader",
-      "url": "/./inbox/markmap-autoloader/",
       "raw": null,
       "kind": "moc"
     },
@@ -337,10 +71,10 @@
       "kind": "note"
     },
     {
-      "id": "contents-menus",
-      "label": "menus",
-      "url": "/Contents/menus.md",
-      "raw": "/Contents/menus.md",
+      "id": "contents-menus-copy",
+      "label": "menus copy",
+      "url": "/Contents/menus copy.md",
+      "raw": "/Contents/menus copy.md",
       "kind": "note"
     },
     {
@@ -530,6 +264,13 @@
       "label": "presentation",
       "url": "/./inbox/presentation/",
       "raw": "/./inbox/presentation/",
+      "kind": "note"
+    },
+    {
+      "id": "contents-menus",
+      "label": "menus",
+      "url": "/Contents/menus.md",
+      "raw": "/Contents/menus.md",
       "kind": "note"
     },
     {
@@ -857,174 +598,164 @@
   ],
   "links": [
     {
-      "source": "moc-atlas",
+      "source": "moc-atlas2",
       "target": "moc-knowledge-graph",
       "kind": "moc"
     },
     {
-      "source": "moc-update",
+      "source": "moc-update2",
       "target": "moc-toc",
       "kind": "moc"
     },
     {
-      "source": "moc-solutions",
-      "target": "moc-industries",
+      "source": "moc-about-me2",
+      "target": "moc-about-me",
       "kind": "moc"
     },
     {
-      "source": "moc-solutions",
-      "target": "moc-use-cases",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-solutions",
+      "source": "moc-knowledge-graph",
       "target": "moc-transformation-framework",
       "kind": "moc"
     },
     {
-      "source": "moc-solutions",
-      "target": "moc-roi-calculator",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-flagship-platform",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-ai-agents",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-vision-ai",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-products",
-      "target": "moc-edge-ai",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-architecture",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-the-forge",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-benchmarks",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-technology",
-      "target": "moc-infrastructure",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-growth-model",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-vision",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-pitch-deck",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-investment-highlights",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-investors",
-      "target": "moc-market-opportunity",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pricing",
-      "target": "moc-costs-tiers",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pricing",
-      "target": "moc-licensing",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pricing",
-      "target": "moc-custom-solutions",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-legacy",
-      "target": "moc-intellectual-property",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-legacy",
-      "target": "moc-track-record",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-legacy",
-      "target": "moc-partnerships",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pulse",
-      "target": "moc-build-log",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pulse",
-      "target": "moc-updates",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-pulse",
-      "target": "moc-market-insights",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-about",
-      "target": "moc-company",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-about",
-      "target": "moc-leadership",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-about",
-      "target": "moc-contact",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-recent-updates",
-      "target": "moc-toc-index",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-recent-updates",
-      "target": "moc-markmap-autoloader",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-recent-updates",
+      "source": "moc-knowledge-graph",
       "target": "moc-presentation",
       "kind": "moc"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-atlas-knowledge-graph",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-toc",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-cv-aboutme",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-solutions-use-cases",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-solutions-transformation-framework",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-investors-growth-model",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-products-offering",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-templates-prompt",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-technology-system-design",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-templates-presentation",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-technology-benchmarks",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-templates-markmap-autoloader",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-investors-vision",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-investors-pitch-deck",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-investors-investment-highlights",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-investors-market-opportunity",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-pricing-costs",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-pricing-licensing",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-pricing-custom-solutions",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-legacy-proof",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-legacy-track-record",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-templates-farshid-ai-cv-llm",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-pulse-updates",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-about-company",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "pkm-about-contact",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "inbox-markmap-autoloader",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus-copy",
+      "target": "inbox-presentation",
+      "kind": "mdlink"
     },
     {
       "source": "contents-menus",
@@ -1043,117 +774,7 @@
     },
     {
       "source": "contents-menus",
-      "target": "pkm-solutions-use-cases",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
       "target": "pkm-solutions-transformation-framework",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-investors-growth-model",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-products-offering",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-templates-prompt",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-technology-system-design",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-templates-presentation",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-technology-benchmarks",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-templates-markmap-autoloader",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-investors-vision",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-investors-pitch-deck",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-investors-investment-highlights",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-investors-market-opportunity",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-pricing-costs",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-pricing-licensing",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-pricing-custom-solutions",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-legacy-proof",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-legacy-track-record",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-templates-farshid-ai-cv-llm",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-pulse-updates",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-about-company",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "pkm-about-contact",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus",
-      "target": "inbox-markmap-autoloader",
       "kind": "mdlink"
     },
     {

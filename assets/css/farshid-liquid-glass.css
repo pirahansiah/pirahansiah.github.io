@@ -409,3 +409,5 @@ code,pre{
     }
   }
 }
+
+.site-nav::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome/Safari */
