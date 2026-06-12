@@ -33,21 +33,8 @@ jobs:
           bundler-cache: true
 
       - name: Build navigation from contents/menus.md
-        run: ruby scripts/build-nav.rb
-
-      - name: Setup git credentials for pushing generated files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-
-      - name: Commit generated navigation files
-        run: |
-          git add _data/nav.yml assets/site-map.md assets/graph.json
-          if ! git diff --quiet --cached; then
-            git commit -m "Auto update navigation data [skip ci]"
-            git push origin HEAD:main
-          fi
+          ruby scripts/build-nav.rb || echo "build-nav.rb failed, using committed nav.yml"
 
       - name: Build site
         run: bundle exec jekyll build --destination ./_site
