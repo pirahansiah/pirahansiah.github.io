@@ -8,7 +8,7 @@
   <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/farshid-macos27.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/farshid-liquid-glass.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/farshid-cursor.css' | relative_url }}">
+
   {% if page.extra_css %}
   <link rel="stylesheet" href="{{ '/assets/css/' | append: page.extra_css | relative_url }}">
   {% endif %}
@@ -42,7 +42,7 @@
 {% include footer.html %}
 {% include glass-effects.html %}
 <script id="nav-data" type="application/json">{{ site.data.nav | jsonify }}</script>
-<script src="{{ '/assets/js/farshid-cursor.js' | relative_url }}" defer></script>
+
 <script src="{{ '/assets/js/farshid-site-nav.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/js/farshid-link-router.js' | relative_url }}" defer></script>
 </body>
