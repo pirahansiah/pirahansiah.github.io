@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Farshid Liquid-Glass Cursor — macOS 27 / iOS 27
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Hide system cursor everywhere */
+body, body * { cursor: none !important; }
+
+/* ─── Cursor shell ────────────────────────────────────────────────── */
+#farshid-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 50px; height: 50px;
+  pointer-events: none;
+  z-index: 999999;
+  transform: translate(-50%,-50%) translate(0px,0px);
+  will-change: transform;
+  transition:
+    width  .16s cubic-bezier(.34,1.56,.64,1),
+    height .16s cubic-bezier(.34,1.56,.64,1),
+    opacity .2s ease;
+}
+
+/* ─── Frosted glass body ──────────────────────────────────────────── */
+#farshid-cursor .cursor-glass {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.30);
+  backdrop-filter: blur(16px) saturate(210%) brightness(1.12);
+  -webkit-backdrop-filter: blur(16px) saturate(210%) brightness(1.12);
+  border: 1.5px solid rgba(255,255,255,0.88);
+  box-shadow:
+    0 4px 22px rgba(100,80,200,0.16),
+    0 1px 0 rgba(255,255,255,0.98) inset,
+    0 -1px 0 rgba(180,150,255,0.18) inset;
+  transition:
+    border-radius .16s cubic-bezier(.34,1.56,.64,1),
+    background .16s ease,
+    box-shadow .16s ease;
+}
+
+/* ─── Top-left highlight ──────────────────────────────────────────── */
+#farshid-cursor .cursor-shine {
+  position: absolute;
+  top: 7px; left: 9px;
+  width: 40%; height: 30%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.88), transparent);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+/* ─── Iridescent inner ring ───────────────────────────────────────── */
+#farshid-cursor .cursor-ring {
+  position: absolute; inset: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,180,255,0.20);
+  pointer-events: none;
+  transition: border-radius .16s cubic-bezier(.34,1.56,.64,1), border-color .16s ease;
+}
+
+/* ─── Centre dot ──────────────────────────────────────────────────── */
+#farshid-cursor .cursor-dot {
+  position: absolute; top: 50%; left: 50%;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: rgba(10,132,255,0.78);
+  box-shadow: 0 0 8px rgba(10,132,255,0.46);
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition: width .13s ease, height .13s ease, box-shadow .13s ease, background .13s ease;
+}
+
+/* ─── STATE: hovering interactive ────────────────────────────────── */
+#farshid-cursor.is-hovered { width: 68px; height: 38px; }
+
+#farshid-cursor.is-hovered .cursor-glass {
+  border-radius: 999px;
+  background: rgba(255,255,255,0.52);
+  box-shadow:
+    0 6px 28px rgba(10,132,255,0.22),
+    0 1px 0 rgba(255,255,255,1.0) inset,
+    0 -1px 0 rgba(10,132,255,0.10) inset;
+}
+#farshid-cursor.is-hovered .cursor-ring {
+  border-radius: 999px;
+  border-color: rgba(10,132,255,0.18);
+}
+#farshid-cursor.is-hovered .cursor-dot {
+  width: 6px; height: 6px;
+  background: rgba(10,132,255,1.0);
+  box-shadow: 0 0 12px rgba(10,132,255,0.58);
+}
+
+/* ─── STATE: clicking ────────────────────────────────────────────── */
+#farshid-cursor.is-clicking { width: 40px; height: 40px; }
+#farshid-cursor.is-clicking .cursor-glass {
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 2px 10px rgba(100,80,200,0.22), 0 1px 0 rgba(255,255,255,1.0) inset;
+}
+
+/* ─── STATE: text magnifier ──────────────────────────────────────── */
+#farshid-cursor.is-text { width: 100px; height: 40px; }
+#farshid-cursor.is-text .cursor-glass {
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(20px) contrast(1.2) brightness(1.1) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) contrast(1.2) brightness(1.1) saturate(180%);
+  border-color: rgba(255,255,255,0.4);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+#farshid-cursor.is-text .cursor-dot {
+  width: 2px; height: 24px;
+  border-radius: 2px;
+  background: rgba(10,132,255,1);
+  box-shadow: none;
+}
+#farshid-cursor.is-text .cursor-shine,
+#farshid-cursor.is-text .cursor-ring { opacity: 0; }
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  #farshid-cursor .cursor-glass {
+    background: rgba(255,255,255,0.13);
+    border-color: rgba(255,255,255,0.36);
+    box-shadow: 0 4px 22px rgba(0,0,0,0.34), 0 1px 0 rgba(255,255,255,0.20) inset;
+  }
+}

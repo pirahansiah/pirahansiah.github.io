@@ -10,7 +10,7 @@ require "yaml"
 require "fileutils"
 
 ROOT = File.expand_path("..", __dir__)
-SITE_MD = File.join(ROOT, "contents", "site.md")
+SITE_MD = File.join(ROOT, "contents", "farshid-ai-cv-llm-site.md")
 OUT_YML = File.join(ROOT, "_data", "nav.yml")
 OUT_ASSET = File.join(ROOT, "assets", "site-map.md")
 OUT_GRAPH = File.join(ROOT, "assets", "graph.json")

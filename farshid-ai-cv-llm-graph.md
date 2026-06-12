@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: farshid-ai-cv-llm-default
 title: Knowledge Graph
 permalink: /graph/
 extra_css: graph.css
@@ -15,7 +15,7 @@ extra_css: graph.css
       <a href="{{ '/graph-tags/' | relative_url }}" class="liquid-glass-item">Hashtag graph</a>
     </div>
   </div>
-  <p class="graph-hint">Drag nodes · click a note to open · built from <code>contents/site.md</code> and wiki links in your notes</p>
+  <p class="graph-hint">Drag nodes · click a note to open · built from <code>contents/farshid-ai-cv-llm-site.md</code> and wiki links in your notes</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive knowledge graph"></canvas>
   </div>

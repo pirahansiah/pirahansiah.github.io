@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: farshid-ai-cv-llm-default
 title: Farshid Pirahansiah
 permalink: /
 ---

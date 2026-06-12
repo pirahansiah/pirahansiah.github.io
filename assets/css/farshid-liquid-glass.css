@@ -1,0 +1,226 @@
+/* ═══════════════════════════════════════════════════════════════════
+   Farshid Liquid Glass — macOS 27 / iOS 27
+   ═══════════════════════════════════════════════════════════════════ */
+@import url("./farshid-macos27.css");
+
+*,*::before,*::after{box-sizing:border-box}
+
+/* ─── BASE GLASS ─────────────────────────────────────────────────── */
+.liquid-glass,
+.liquid-glass-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  color: var(--text);
+  transition:
+    background   0.20s ease,
+    box-shadow   0.20s ease,
+    transform    0.16s ease,
+    border-color 0.20s ease;
+}
+
+/* top-left shimmer — the iOS 27 signature */
+.liquid-glass::before,
+.liquid-glass-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.60) 0%,
+    rgba(255,255,255,0.00) 50%,
+    rgba(200,180,255,0.07) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.liquid-glass:hover,
+.liquid-glass-item:hover {
+  background: var(--glass-bg-hover);
+  border-color: rgba(255,255,255,0.95);
+  box-shadow: 0 12px 36px rgba(100,80,200,0.14), 0 1px 0 rgba(255,255,255,1.0) inset;
+}
+
+.liquid-glass-item:hover {
+  color: var(--farshid-blue);
+  transform: translateY(-1px);
+}
+
+/* ─── ACTIVE / SELECTED PILL ─────────────────────────────────────── */
+.liquid-glass-item.active,
+.liquid-glass-item[aria-current="page"],
+.nav-list a.active,
+.nav-list a[aria-current="page"] {
+  background: var(--pill-active-bg);
+  border-color: var(--pill-active-border);
+  box-shadow: var(--pill-active-shadow);
+  color: var(--farshid-blue);
+  border-radius: 999px !important;
+}
+
+/* ─── NAVBAR WRAP ────────────────────────────────────────────────── */
+.nav-wrapper {
+  position: sticky;
+  top: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.site-nav,
+.site-nav.liquid-glass {
+  display: flex;
+  flex-wrap: nowrap; /* Horizontal menu */
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.46);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255,255,255,0.80);
+  border-radius: 999px;
+  box-shadow:
+    0 6px 28px rgba(100,80,200,0.10),
+    0 1px 0    rgba(255,255,255,0.96) inset;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 4px;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-nav.liquid-glass {
+    background: rgba(30,30,36,0.70);
+    border-color: rgba(255,255,255,0.14);
+    box-shadow: 0 6px 28px rgba(0,0,0,0.34), 0 1px 0 rgba(255,255,255,0.07) inset;
+  }
+}
+
+/* ─── NAV ITEMS — always pill-shaped ────────────────────────────── */
+.nav-brand,
+.nav-list a,
+.nav-list li > a,
+.nav-toggle,
+.nav-menu-btn,
+.liquid-glass-item,
+.moc-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: 999px !important;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255,255,255,0.28);
+  border: 1px solid rgba(255,255,255,0.52);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  white-space: nowrap;
+  transition: all 0.16s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.nav-brand:hover,
+.nav-list a:hover,
+.nav-list li > a:hover {
+  background: rgba(255,255,255,0.65);
+  border-color: rgba(255,255,255,0.92);
+  color: var(--farshid-blue);
+  box-shadow: 0 4px 16px rgba(10,132,255,0.16), 0 1px 0 rgba(255,255,255,1.0) inset;
+}
+
+/* ─── TOOLBAR ────────────────────────────────────────────────────── */
+.toolbar.liquid-glass {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.52);
+  backdrop-filter: blur(24px) saturate(170%);
+  -webkit-backdrop-filter: blur(24px) saturate(170%);
+  border: 1px solid rgba(255,255,255,0.80);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(100,80,200,0.09), 0 1px 0 rgba(255,255,255,0.95) inset;
+}
+
+.bottom-toolbar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* ─── MAIN CONTENT PANEL ─────────────────────────────────────────── */
+.site-main.liquid-glass {
+  background: rgba(255,255,255,0.44);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border: 1px solid rgba(255,255,255,0.78);
+  border-radius: 28px;
+  box-shadow: var(--glass-shadow-lg);
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-main.liquid-glass {
+    background: rgba(22,22,28,0.68);
+    border-color: rgba(255,255,255,0.10);
+  }
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+/* ─── PILL UTILITY CLASSES ───────────────────────────────────────── */
+.glass-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 999px !important;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+.glass-pill:hover{background:rgba(255,255,255,0.58);border-color:rgba(255,255,255,0.82);color:var(--text)}
+
+/* ─── CODE ───────────────────────────────────────────────────────── */
+code,pre{background:rgba(180,170,210,0.14);border:1px solid rgba(180,160,220,0.22);border-radius:12px;font-size:0.9em}
+
+@media (prefers-reduced-motion:reduce){
+  .liquid-glass,.liquid-glass-item,#farshid-cursor{transition:none!important;animation:none!important}
+}

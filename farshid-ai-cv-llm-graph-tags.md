@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: farshid-ai-cv-llm-default
 title: Hashtag Graph
 permalink: /graph-tags/
 extra_css: graph.css

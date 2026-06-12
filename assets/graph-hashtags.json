@@ -31,11 +31,6 @@
       "kind": "tag"
     },
     {
-      "id": "tag-git",
-      "label": "#git",
-      "kind": "tag"
-    },
-    {
       "id": "tag-f5a623",
       "label": "#f5a623",
       "kind": "tag"
@@ -46,8 +41,13 @@
       "kind": "tag"
     },
     {
-      "id": "tag-mindmaps",
-      "label": "#mindmaps",
+      "id": "tag-liquid-refraction",
+      "label": "#liquid-refraction",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-fff",
+      "label": "#fff",
       "kind": "tag"
     },
     {
@@ -129,6 +129,16 @@
       "id": "tag-o",
       "label": "#O",
       "kind": "tag"
+    },
+    {
+      "id": "tag-git",
+      "label": "#git",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-query-emb",
+      "label": "#query_emb",
+      "kind": "tag"
     }
   ],
   "links": [
@@ -165,6 +175,11 @@
     {
       "source": "tag-f5a623",
       "target": "tag-code",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-liquid-refraction",
+      "target": "tag-fff",
       "kind": "cooccur"
     },
     {

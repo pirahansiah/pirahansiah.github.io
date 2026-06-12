@@ -1,0 +1,79 @@
+/* Farshid macOS 27 / iOS 27 — Apple liquid glass token file */
+
+:root {
+  --farshid-blue:   #0a84ff;
+  --farshid-purple: #bf5af2;
+  --farshid-pink:   #ff375f;
+  --farshid-teal:   #5ac8fa;
+
+  --glass-bg:            rgba(255,255,255,0.36);
+  --glass-bg-strong:     rgba(255,255,255,0.58);
+  --glass-bg-hover:      rgba(255,255,255,0.62);
+  --glass-border:        rgba(255,255,255,0.82);
+  --glass-border-subtle: rgba(200,195,230,0.28);
+  --glass-shadow:
+    0 6px 24px rgba(100,80,200,0.10),
+    0 1px 0   rgba(255,255,255,0.96) inset,
+    0 -1px 0  rgba(180,160,220,0.12) inset;
+  --glass-shadow-lg:
+    0 18px 48px rgba(80,60,160,0.13),
+    0  1px 0   rgba(255,255,255,0.92) inset;
+
+  --pill-active-bg:     rgba(255,255,255,0.82);
+  --pill-active-border: rgba(255,255,255,0.96);
+  --pill-active-shadow:
+    0 4px 18px rgba(10,132,255,0.20),
+    0 1px 0    rgba(255,255,255,1.00) inset,
+    0 0   0 1px rgba(10,132,255,0.14);
+
+  --background: #e2e8f5;
+  --text:       #1c1c1e;
+  --text-muted: #6e6e73;
+  --accent:     var(--farshid-blue);
+
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --glass-bg:            rgba(32,32,36,0.60);
+    --glass-bg-strong:     rgba(44,44,50,0.78);
+    --glass-bg-hover:      rgba(56,56,64,0.72);
+    --glass-border:        rgba(255,255,255,0.18);
+    --glass-border-subtle: rgba(255,255,255,0.09);
+    --glass-shadow:
+      0 6px 24px rgba(0,0,0,0.32),
+      0 1px 0   rgba(255,255,255,0.10) inset;
+    --glass-shadow-lg:
+      0 18px 48px rgba(0,0,0,0.48);
+    --pill-active-bg:     rgba(58,58,66,0.92);
+    --pill-active-border: rgba(255,255,255,0.22);
+    --pill-active-shadow:
+      0 4px 18px rgba(10,132,255,0.28),
+      0 1px 0    rgba(255,255,255,0.10) inset;
+    --background: #1c1c1e;
+    --text:       #f5f5f7;
+    --text-muted: #8e8e93;
+  }
+}
+
+body {
+  color: var(--text);
+  background-color: var(--background);
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(120,200,255,0.22) 0%, transparent 40%),
+    radial-gradient(circle at 80% 15%, rgba(180,140,255,0.18) 0%, transparent 36%),
+    radial-gradient(circle at 50% 90%, rgba(255,160,200,0.16) 0%, transparent 40%);
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f0f14;
+    background-image:
+      radial-gradient(circle at 12% 10%, rgba(10,132,255,0.12) 0%, transparent 30%),
+      radial-gradient(circle at 85% 12%, rgba(190,100,255,0.12) 0%, transparent 28%),
+      radial-gradient(circle at 50% 92%, rgba(255,80,140,0.10) 0%, transparent 32%);
+  }
+}

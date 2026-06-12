@@ -16,7 +16,7 @@ defaults:
   - scope:
       path: "contents"
     values:
-      layout: default
+      layout: farshid-ai-cv-llm-default
 
 # Plugins
 plugins:
@@ -36,5 +36,5 @@ exclude:
   - .gitignore
   - CNAME
   - Ads.txt
-  - contents/site.md
+  - contents/farshid-ai-cv-llm-site.md
   - scripts/

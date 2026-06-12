@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: farshid-ai-cv-llm-default
 title: View
 permalink: /view/
-extra_css: viewer.css
+extra_css: farshid-ai-cv-llm-viewer.css
 ---
 
 <div class="content-viewer" id="content-viewer">
@@ -18,4 +18,4 @@ extra_css: viewer.css
   </div>
 </div>
 
-<script src="{{ '/assets/js/content-viewer.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/farshid-ai-cv-llm-content-viewer.js' | relative_url }}" defer></script>

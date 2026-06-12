@@ -1,135 +1,135 @@
 ---
 - title: "\U0001F5FA ATLAS"
   items:
-  - title: B
+  - title: Knowledge Graph
     items: []
     url: "/./pkm/atlas/knowledge-graph/"
 - title: update
   items:
-  - title: B
+  - title: TOC
     items: []
     url: "/./pkm/TOC/"
 - title: About Me
   items:
-  - title: B
+  - title: About Me
     items: []
     url: "/./pkm/cv/AboutMe/"
 - title: Knowledge Graph
   items:
-  - title: B
+  - title: Knowledge Graph
     items: []
     url: "/./pkm/atlas/knowledge-graph/"
 - title: "\U0001F680 SOLUTIONS"
   items:
-  - title: B
+  - title: Industries
     items: []
     url: "/./pkm/solutions/use-cases/"
-  - title: B
+  - title: Use Cases
     items: []
     url: "/./pkm/solutions/use-cases/"
-  - title: B
+  - title: Transformation Framework
     items: []
     url: "/./pkm/solutions/transformation-framework/"
-  - title: B
+  - title: ROI Calculator
     items: []
     url: "/./pkm/investors/growth-model/"
 - title: "\U0001F4E6 PRODUCTS"
   items:
-  - title: B
+  - title: Flagship Platform
     items: []
     url: "/./pkm/products/offering/"
-  - title: B
+  - title: AI Agents
     items: []
     url: "/./pkm/templates/prompt/"
-  - title: B
+  - title: Vision AI
     items: []
     url: "/./pkm/technology/system-design/"
-  - title: B
+  - title: Edge AI
     items: []
     url: "/./pkm/products/offering/"
 - title: "\U0001F6E0 TECHNOLOGY"
   items:
-  - title: B
+  - title: Architecture
     items: []
     url: "/./pkm/technology/system-design/"
-  - title: B
+  - title: The Forge
     items: []
     url: "/./pkm/templates/presentation/"
-  - title: B
+  - title: Benchmarks
     items: []
     url: "/./pkm/technology/benchmarks/"
-  - title: B
+  - title: Infrastructure
     items: []
     url: "/./pkm/templates/markmap-autoloader/"
 - title: "\U0001F4C8 INVESTORS"
   items:
-  - title: B
+  - title: Growth Model
     items: []
     url: "/./pkm/investors/growth-model/"
-  - title: B
+  - title: Vision
     items: []
     url: "/./pkm/investors/vision/"
-  - title: B
+  - title: Pitch Deck
     items: []
     url: "/./pkm/investors/pitch-deck/"
-  - title: B
+  - title: Investment Highlights
     items: []
     url: "/./pkm/investors/investment-highlights/"
-  - title: B
+  - title: Market Opportunity
     items: []
     url: "/./pkm/investors/market-opportunity/"
 - title: "\U0001F4B3 PRICING"
   items:
-  - title: B
+  - title: Costs & Tiers
     items: []
     url: "/./pkm/pricing/costs/"
-  - title: B
+  - title: Licensing
     items: []
     url: "/./pkm/pricing/licensing/"
-  - title: B
+  - title: Custom Solutions
     items: []
     url: "/./pkm/pricing/custom-solutions/"
 - title: "\U0001F4DC LEGACY"
   items:
-  - title: B
+  - title: Intellectual Property
     items: []
     url: "/./pkm/legacy/proof/"
-  - title: B
+  - title: Track Record
     items: []
     url: "/./pkm/legacy/track-record/"
-  - title: B
+  - title: Partnerships
     items: []
-    url: "/./pkm/templates/presentationFarshid/"
+    url: "/./pkm/templates/farshid-ai-cv-llm/"
 - title: "\U0001F4E1 PULSE"
   items:
-  - title: B
+  - title: Build Log
     items: []
     url: "/./pkm/pulse/updates/"
-  - title: B
+  - title: Updates
     items: []
     url: "/./pkm/pulse/updates/"
-  - title: B
+  - title: Market Insights
     items: []
     url: "/./pkm/templates/prompt/"
 - title: "\U0001F3E2 ABOUT"
   items:
-  - title: B
+  - title: Company
     items: []
     url: "/./pkm/about/company/"
-  - title: B
+  - title: Leadership
     items: []
     url: "/./pkm/about/contact/"
-  - title: B
+  - title: Contact
     items: []
     url: "/./pkm/about/contact/"
 - title: "\U0001F504 RECENT UPDATES"
   items:
-  - title: B
+  - title: TOC Index
     items: []
     url: "/./pkm/TOC/"
-  - title: B
+  - title: Markmap Autoloader
     items: []
     url: "/./inbox/markmap-autoloader/"
-  - title: B
+  - title: Presentation
     items: []
     url: "/./inbox/presentation/"
