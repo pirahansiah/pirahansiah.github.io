@@ -29,9 +29,7 @@ end
 def content_url_for_path(path)
   rel = path.sub("#{ROOT}/", "")
   rel = rel.sub(/\.md\z/i, "")
-  return "/#{rel}" if file_extension?(rel)
-
-  "/#{rel}/"
+  "/#{rel}"
 end
 
 def wiki_index
@@ -64,8 +62,7 @@ def normalize_url(url)
 
   return url if file_extension?(url)
 
-  url = url.sub(%r{/\z}, "")
-  "#{url}/"
+  url
 end
 
 # Static assets (html, pdf, code, …) open in /view/ so site menu + CSS stay visible.
