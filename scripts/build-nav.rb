@@ -28,9 +28,9 @@ end
 
 def content_url_for_path(path)
   rel = path.sub("#{ROOT}/", "")
+  rel = rel.sub(/\.md\z/i, "")
   return "/#{rel}" if file_extension?(rel)
 
-  rel = rel.sub(/\.md\z/i, "")
   "/#{rel}/"
 end
 

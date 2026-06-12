@@ -94,15 +94,15 @@
     {
       "id": "contents-readme",
       "label": "README",
-      "url": "/Contents/README.md",
-      "raw": "/Contents/README.md",
+      "url": "/Contents/README/",
+      "raw": "/Contents/README/",
       "kind": "note"
     },
     {
       "id": "contents-menus-copy",
       "label": "menus copy",
-      "url": "/Contents/menus copy.md",
-      "raw": "/Contents/menus copy.md",
+      "url": "/Contents/menus copy/",
+      "raw": "/Contents/menus copy/",
       "kind": "note"
     },
     {
@@ -262,15 +262,15 @@
     {
       "id": "contents-menus",
       "label": "menus",
-      "url": "/Contents/menus.md",
-      "raw": "/Contents/menus.md",
+      "url": "/Contents/menus/",
+      "raw": "/Contents/menus/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-moc",
       "label": "MOC",
-      "url": "/Contents/pkm/MOC.md",
-      "raw": "/Contents/pkm/MOC.md",
+      "url": "/Contents/pkm/MOC/",
+      "raw": "/Contents/pkm/MOC/",
       "kind": "note"
     },
     {
@@ -318,8 +318,8 @@
     {
       "id": "contents-pkm-atlas-concept-maps",
       "label": "concept-maps",
-      "url": "/Contents/pkm/atlas/concept-maps.md",
-      "raw": "/Contents/pkm/atlas/concept-maps.md",
+      "url": "/Contents/pkm/atlas/concept-maps/",
+      "raw": "/Contents/pkm/atlas/concept-maps/",
       "kind": "note"
     },
     {
@@ -339,8 +339,8 @@
     {
       "id": "contents-pkm-atlas-research-synthesis",
       "label": "research-synthesis",
-      "url": "/Contents/pkm/atlas/research-synthesis.md",
-      "raw": "/Contents/pkm/atlas/research-synthesis.md",
+      "url": "/Contents/pkm/atlas/research-synthesis/",
+      "raw": "/Contents/pkm/atlas/research-synthesis/",
       "kind": "note"
     },
     {
@@ -353,64 +353,64 @@
     {
       "id": "contents-pkm-atlas-strategic-connections",
       "label": "strategic-connections",
-      "url": "/Contents/pkm/atlas/strategic-connections.md",
-      "raw": "/Contents/pkm/atlas/strategic-connections.md",
+      "url": "/Contents/pkm/atlas/strategic-connections/",
+      "raw": "/Contents/pkm/atlas/strategic-connections/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-atlas-why-we-are-unique",
       "label": "why-we-are-unique",
-      "url": "/Contents/pkm/atlas/why-we-are-unique.md",
-      "raw": "/Contents/pkm/atlas/why-we-are-unique.md",
+      "url": "/Contents/pkm/atlas/why-we-are-unique/",
+      "raw": "/Contents/pkm/atlas/why-we-are-unique/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-a",
       "label": "a",
-      "url": "/Contents/pkm/inbox/a.md",
-      "raw": "/Contents/pkm/inbox/a.md",
+      "url": "/Contents/pkm/inbox/a/",
+      "raw": "/Contents/pkm/inbox/a/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-b",
       "label": "b",
-      "url": "/Contents/pkm/inbox/b.md",
-      "raw": "/Contents/pkm/inbox/b.md",
+      "url": "/Contents/pkm/inbox/b/",
+      "raw": "/Contents/pkm/inbox/b/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-c",
       "label": "c",
-      "url": "/Contents/pkm/inbox/c.md",
-      "raw": "/Contents/pkm/inbox/c.md",
+      "url": "/Contents/pkm/inbox/c/",
+      "raw": "/Contents/pkm/inbox/c/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-d",
       "label": "d",
-      "url": "/Contents/pkm/inbox/d.md",
-      "raw": "/Contents/pkm/inbox/d.md",
+      "url": "/Contents/pkm/inbox/d/",
+      "raw": "/Contents/pkm/inbox/d/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-e",
       "label": "e",
-      "url": "/Contents/pkm/inbox/e.md",
-      "raw": "/Contents/pkm/inbox/e.md",
+      "url": "/Contents/pkm/inbox/e/",
+      "raw": "/Contents/pkm/inbox/e/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-inbox-f",
       "label": "f",
-      "url": "/Contents/pkm/inbox/f.md",
-      "raw": "/Contents/pkm/inbox/f.md",
+      "url": "/Contents/pkm/inbox/f/",
+      "raw": "/Contents/pkm/inbox/f/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
       "label": "farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages/",
       "kind": "note"
     },
     {
@@ -437,22 +437,22 @@
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-a",
       "label": "farshid-ai-cv-llm-a",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-a.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-a.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-a/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-a/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-b",
       "label": "farshid-ai-cv-llm-b",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-b.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-b.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-b/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-b/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-c",
       "label": "farshid-ai-cv-llm-c",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-c.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-c.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-c/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-c/",
       "kind": "note"
     },
     {
@@ -465,8 +465,8 @@
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
       "label": "farshid-ai-cv-llm-markmap-autoloader",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader/",
       "kind": "note"
     },
     {
@@ -479,15 +479,15 @@
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-presentation",
       "label": "farshid-ai-cv-llm-presentation",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation/",
       "kind": "note"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-prompt",
       "label": "farshid-ai-cv-llm-prompt",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt.md",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt.md",
+      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt/",
+      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt/",
       "kind": "note"
     }
   ],
