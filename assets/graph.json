@@ -834,6 +834,13 @@
       "kind": "note"
     },
     {
+      "id": "contents-projects-rag-modelfile",
+      "label": "Modelfile",
+      "url": "/contents/projects/RAG/Modelfile/",
+      "raw": "/contents/projects/RAG/Modelfile/",
+      "kind": "note"
+    },
+    {
       "id": "contents-projects-rag-master-indexer-py",
       "label": "master_indexer",
       "url": "/view/?p=%2FContents%2Fprojects%2FRAG%2Fmaster_indexer.py",
