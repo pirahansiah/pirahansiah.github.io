@@ -58,6 +58,7 @@ def normalize_url(url)
   return url if url.match?(%r{\A(https?:|#|mailto:)}i)
 
   url = url.strip
+  url = url.sub(%r{\A\./}, "/contents/")
   url = "/#{url}" unless url.start_with?("/")
   url = url.sub(/\.md\z/i, "") unless file_extension?(url)
 
