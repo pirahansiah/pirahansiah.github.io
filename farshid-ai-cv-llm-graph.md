@@ -12,12 +12,13 @@ extra_css: graph.css
     <div class="graph-controls">
       <button type="button" id="graph-zoom-in" class="liquid-glass-item" title="Zoom in">+</button>
       <button type="button" id="graph-zoom-out" class="liquid-glass-item" title="Zoom out">−</button>
+      <button type="button" id="graph-freeze" class="liquid-glass-item">Freeze</button>
       <button type="button" id="graph-reset" class="liquid-glass-item">Reset</button>
       <a href="{{ '/graph-tags/' | relative_url }}" class="liquid-glass-item">Hashtags</a>
       <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
     </div>
   </div>
-  <p class="graph-hint">Drag nodes · click to open · scroll to zoom</p>
+  <p class="graph-hint">Drag nodes to rearrange · click to open · scroll to zoom · positions saved automatically</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive knowledge graph"></canvas>
   </div>

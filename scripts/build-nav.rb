@@ -37,24 +37,17 @@ end
 def wiki_index
   @wiki_index ||= begin
     idx = {}
-    patterns = [
-      File.join(ROOT, "contents", "**", "*"),
-      File.join(ROOT, "Contents", "**", "*")
-    ]
-    patterns.each do |pattern|
-      Dir.glob(pattern).each do |path|
-        next unless File.file?(path)
-        next if File.basename(path) == "site.md"
-        next unless path.include?("ontents/")
+    Dir.glob(File.join(ROOT, "contents", "**", "*")).each do |path|
+      next unless File.file?(path)
+      next if File.basename(path) == "site.md"
 
-        base = File.basename(path, File.extname(path))
-        rel = path.sub("#{ROOT}/", "")
-        raw = content_url_for_path(path)
-        idx[base.downcase] = raw
-        idx[rel.downcase] = raw
-        idx[rel.sub(/contents/i, "contents").downcase] = raw
-        idx[rel.sub(/\.(md|html?)\z/i, "").downcase] = raw
-      end
+      base = File.basename(path, File.extname(path))
+      rel = path.sub("#{ROOT}/", "")
+      raw = content_url_for_path(path)
+      idx[base.downcase] = raw
+      idx[rel.downcase] = raw
+      idx[rel.sub(/contents/i, "contents").downcase] = raw
+      idx[rel.sub(/\.(md|html?)\z/i, "").downcase] = raw
     end
     idx
   end
@@ -293,7 +286,6 @@ def extract_hashtags(text)
     next false if tag.length < 3
     next false if tag.length > 30
     next false if tag.match?(/\A[0-9a-fA-F]{3,8}\z/)
-    next false if tag.match?(/\A[A-Z]/) && tag.match?(/[a-z]/) && !tag.match?(/\A[A-Z][a-z]+\z/)
     next false if tag.match?(/\A[A-Z]{2,}\z/)
     next false if tag.match?(/\A[0-9]+\z/)
     next false if tag.match?(/\A[a-z]+[0-9]+\z/)
@@ -312,35 +304,28 @@ def build_hashtag_graph
     nodes[id] ||= { "id" => id, "label" => label, "kind" => "tag" }
   end
 
-  content_globs = [
-    File.join(ROOT, "contents", "**", "*"),
-    File.join(ROOT, "Contents", "**", "*")
-  ]
+  Dir.glob(File.join(ROOT, "contents", "**", "*.md")).each do |path|
+    next unless File.file?(path)
 
-  content_globs.each do |pattern|
-    Dir.glob(pattern).each do |path|
-      next unless File.file?(path)
-      next if File.basename(path) == "site.md"
-      next unless path.include?("ontents/")
+    body = File.read(path, encoding: "UTF-8").scrub("")
+    body = strip_front_matter(body)
+    tags = extract_hashtags(body)
+    next if tags.empty?
 
-      body = File.read(path, encoding: "UTF-8").scrub("")
-      body = strip_front_matter(body) if path.end_with?(".md")
-      tags = extract_hashtags(body)
-      next if tags.empty?
+    file_id = node_id_for_path(path.sub("#{ROOT}/", ""))
+    tag_ids = tags.map { |tag| "tag-#{slug_id(tag)}" }
+    tags.each_with_index do |tag, index|
+      add_node.call(tag_ids[index], "##{tag}")
+      links << { "source" => file_id, "target" => tag_ids[index], "kind" => "tag" } unless links.any? { |l| l["source"] == file_id && l["target"] == tag_ids[index] }
+    end
 
-      tag_ids = tags.map { |tag| "tag-#{slug_id(tag)}" }
-      tags.each_with_index do |tag, index|
-        add_node.call(tag_ids[index], "##{tag}")
-      end
+    tag_ids.combination(2).each do |source, target|
+      next if source == target
+      key = [source, target].sort.join("|")
+      next if seen_links[key]
 
-      tag_ids.combination(2).each do |source, target|
-        next if source == target
-        key = [source, target].sort.join("|")
-        next if seen_links[key]
-
-        seen_links[key] = true
-        links << { "source" => source, "target" => target, "kind" => "cooccur" }
-      end
+      seen_links[key] = true
+      links << { "source" => source, "target" => target, "kind" => "cooccur" }
     end
   end
 
@@ -395,44 +380,36 @@ def build_graph(nav, hashtag_mode: false)
 
   walk_nav.call(nav, nil)
 
-  content_globs = [
-    File.join(ROOT, "contents", "**", "*"),
-    File.join(ROOT, "Contents", "**", "*")
-  ]
-  content_globs.each do |pattern|
-    Dir.glob(pattern).each do |path|
-      next unless File.file?(path)
-      next if File.basename(path) == "site.md"
-      next unless path.include?("ontents/")
+  Dir.glob(File.join(ROOT, "contents", "**", "*.md")).each do |path|
+    next unless File.file?(path)
 
-      rel = path.sub("#{ROOT}/", "")
-      id = node_id_for_path(rel)
-      label = File.basename(path, File.extname(path))
-      raw = content_url_for_path(path)
-      add_node.call(id, label, url: menu_url(raw), raw: raw, kind: "note")
+    rel = path.sub("#{ROOT}/", "")
+    id = node_id_for_path(rel)
+    label = File.basename(path, File.extname(path))
+    raw = content_url_for_path(path)
+    add_node.call(id, label, url: menu_url(raw), raw: raw, kind: "note")
 
-      body = File.read(path, encoding: "UTF-8").scrub("")
-      body = strip_front_matter(body) if path.end_with?(".md")
+    body = File.read(path, encoding: "UTF-8").scrub("")
+    body = strip_front_matter(body)
 
-      if hashtag_mode
-        extract_hashtags(body).each do |tag|
-          tag_id = "tag-#{slug_id(tag)}"
-          add_node.call(tag_id, "##{tag}", kind: "tag")
-          add_link.call(id, tag_id, "tag")
-        end
-      else
-        extract_links_from_markdown(body, id).each do |link|
-          add_link.call(link["source"], link["target"], link["kind"])
-          next if nodes[link["target"]]
+    if hashtag_mode
+      extract_hashtags(body).each do |tag|
+        tag_id = "tag-#{slug_id(tag)}"
+        add_node.call(tag_id, "##{tag}", kind: "tag")
+        add_link.call(id, tag_id, "tag")
+      end
+    else
+      extract_links_from_markdown(body, id).each do |link|
+        add_link.call(link["source"], link["target"], link["kind"])
+        next if nodes[link["target"]]
 
-          add_node.call(
-            link["target"],
-            graph_label_for_url(link["raw"] || link["url"]),
-            url: link["url"],
-            raw: link["raw"],
-            kind: "note"
-          )
-        end
+        add_node.call(
+          link["target"],
+          graph_label_for_url(link["raw"] || link["url"]),
+          url: link["url"],
+          raw: link["raw"],
+          kind: "note"
+        )
       end
     end
   end

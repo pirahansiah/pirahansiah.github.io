@@ -12,12 +12,13 @@ extra_css: graph.css
     <div class="graph-controls">
       <button type="button" id="graph-zoom-in" class="liquid-glass-item" title="Zoom in">+</button>
       <button type="button" id="graph-zoom-out" class="liquid-glass-item" title="Zoom out">−</button>
+      <button type="button" id="graph-freeze" class="liquid-glass-item">Freeze</button>
       <button type="button" id="graph-reset" class="liquid-glass-item">Reset</button>
       <a href="{{ '/graph/' | relative_url }}" class="liquid-glass-item">Full graph</a>
       <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
     </div>
   </div>
-  <p class="graph-hint">Tags that appear together in the same file are connected</p>
+  <p class="graph-hint">Tags that appear together in the same file are connected · drag to rearrange</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive hashtag graph"></canvas>
   </div>

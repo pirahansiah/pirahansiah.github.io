@@ -57,13 +57,6 @@
       "kind": "moc"
     },
     {
-      "id": "contents-license",
-      "label": "LICENSE",
-      "url": "/Contents/LICENSE/",
-      "raw": "/Contents/LICENSE/",
-      "kind": "note"
-    },
-    {
       "id": "contents-readme",
       "label": "README",
       "url": "/Contents/README.md",
@@ -386,13 +379,6 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/view/?p=%2FContents%2Fpkm%2Fcv%2FAboutMe.html",
-      "raw": "/Contents/pkm/cv/AboutMe.html",
-      "kind": "note"
-    },
-    {
       "id": "contents-pkm-inbox-a",
       "label": "a",
       "url": "/Contents/pkm/inbox/a.md",
@@ -526,20 +512,6 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-c-png",
-      "label": "farshid-ai-cv-llm-c",
-      "url": "/view/?p=%2FContents%2Fpkm%2Ftemplates%2Ffarshid-ai-cv-llm-c.png",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-c.png",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-c-py",
-      "label": "farshid-ai-cv-llm-c",
-      "url": "/view/?p=%2FContents%2Fpkm%2Ftemplates%2Ffarshid-ai-cv-llm-c.py",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-c.py",
-      "kind": "note"
-    },
-    {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
       "label": "farshid-ai-cv-llm-markmap-autoloader",
       "url": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader.md",
@@ -565,34 +537,6 @@
       "label": "farshid-ai-cv-llm",
       "url": "/Contents/pkm/templates/farshid-ai-cv-llm.md",
       "raw": "/Contents/pkm/templates/farshid-ai-cv-llm.md",
-      "kind": "note"
-    },
-    {
-      "id": "contents-projects-rag-modelfile",
-      "label": "Modelfile",
-      "url": "/Contents/projects/RAG/Modelfile/",
-      "raw": "/Contents/projects/RAG/Modelfile/",
-      "kind": "note"
-    },
-    {
-      "id": "contents-projects-rag-master-indexer-py",
-      "label": "master_indexer",
-      "url": "/view/?p=%2FContents%2Fprojects%2FRAG%2Fmaster_indexer.py",
-      "raw": "/Contents/projects/RAG/master_indexer.py",
-      "kind": "note"
-    },
-    {
-      "id": "contents-projects-rag-readindex-py",
-      "label": "readIndex",
-      "url": "/view/?p=%2FContents%2Fprojects%2FRAG%2FreadIndex.py",
-      "raw": "/Contents/projects/RAG/readIndex.py",
-      "kind": "note"
-    },
-    {
-      "id": "contents-projects-rag-saveindex-py",
-      "label": "saveIndex",
-      "url": "/view/?p=%2FContents%2Fprojects%2FRAG%2FsaveIndex.py",
-      "raw": "/Contents/projects/RAG/saveIndex.py",
       "kind": "note"
     }
   ],
