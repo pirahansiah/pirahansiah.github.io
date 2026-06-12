@@ -1,5 +1,5 @@
 /**
- * Obsidian-style interactive knowledge graph with drag-to-rearrange.
+ * Obsidian-style interactive knowledge graph.
  */
 (function () {
   "use strict";
@@ -14,7 +14,6 @@
   var simNodes = [];
   var dragging = null;
   var hovered = null;
-  var scale = 1;
   var panX = 0;
   var panY = 0;
   var lastPanX = 0;
@@ -22,7 +21,8 @@
   var isPanning = false;
   var panStartX = 0;
   var panStartY = 0;
-  var animId = 0;
+  var mouseDownX = 0;
+  var mouseDownY = 0;
   var frozen = false;
 
   var STORAGE_KEY = "graph_positions_" + (wrap.dataset.graph || "default");
@@ -34,9 +34,7 @@
     link: "rgba(120, 120, 128, 0.25)",
     mocEdge: "rgba(90, 200, 250, 0.40)",
     text: "#1d1d1f",
-    highlight: "#0071e3",
-    tooltipBg: "rgba(255, 255, 255, 0.94)",
-    tooltipBorder: "rgba(0, 0, 0, 0.06)"
+    highlight: "#0071e3"
   };
 
   var isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -44,8 +42,6 @@
     colors.text = "#f5f5f7";
     colors.link = "rgba(180, 180, 190, 0.18)";
     colors.mocEdge = "rgba(90, 200, 250, 0.45)";
-    colors.tooltipBg = "rgba(44, 44, 48, 0.96)";
-    colors.tooltipBorder = "rgba(255, 255, 255, 0.10)";
   }
 
   function resize() {
@@ -63,9 +59,7 @@
     try {
       var saved = localStorage.getItem(STORAGE_KEY);
       return saved ? JSON.parse(saved) : {};
-    } catch (e) {
-      return {};
-    }
+    } catch (e) { return {}; }
   }
 
   function savePositions() {
@@ -73,25 +67,15 @@
     for (var i = 0; i < simNodes.length; i++) {
       pos[simNodes[i].id] = { x: simNodes[i].x, y: simNodes[i].y };
     }
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(pos));
-    } catch (e) {}
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(pos)); } catch (e) {}
   }
 
-  function indexNodes() {
-    var map = {};
-    for (var i = 0; i < simNodes.length; i++) {
-      map[simNodes[i].id] = i;
-    }
-    return map;
-  }
-
-  function countConnections(nodeIdx) {
-    var count = 0;
+  function countConnections(idx) {
+    var c = 0;
     for (var i = 0; i < links.length; i++) {
-      if (links[i].source === nodeIdx || links[i].target === nodeIdx) count++;
+      if (links[i].source === idx || links[i].target === idx) c++;
     }
-    return count;
+    return c;
   }
 
   function initSimulation(data) {
@@ -100,54 +84,36 @@
     var w = wrap.clientWidth;
     var h = wrap.clientHeight;
     var saved = loadPositions();
+    var idxMap = {};
 
     simNodes = nodes.map(function (n, i) {
+      idxMap[n.id] = i;
       var sx = saved[n.id];
       if (sx && sx.x && sx.y) {
-        return {
-          id: n.id, label: n.label || n.id, url: n.url || null,
-          raw: n.raw || null, kind: n.kind || "note",
-          x: sx.x, y: sx.y, vx: 0, vy: 0, r: 0, connections: 0
-        };
+        return { id: n.id, label: n.label || n.id, url: n.url || null, raw: n.raw || null, kind: n.kind || "note", x: sx.x, y: sx.y, vx: 0, vy: 0, r: 0, connections: 0 };
       }
       var angle = (i / Math.max(nodes.length, 1)) * Math.PI * 2;
-      var r = Math.min(w, h) * 0.30;
-      return {
-        id: n.id, label: n.label || n.id, url: n.url || null,
-        raw: n.raw || null, kind: n.kind || "note",
-        x: w / 2 + Math.cos(angle) * r + (Math.random() - 0.5) * 40,
-        y: h / 2 + Math.sin(angle) * r + (Math.random() - 0.5) * 40,
-        vx: 0, vy: 0, r: 0, connections: 0
-      };
+      var radius = Math.min(w, h) * 0.30;
+      return { id: n.id, label: n.label || n.id, url: n.url || null, raw: n.raw || null, kind: n.kind || "note", x: w / 2 + Math.cos(angle) * radius, y: h / 2 + Math.sin(angle) * radius, vx: 0, vy: 0, r: 0, connections: 0 };
     });
 
-    var idx = indexNodes();
     for (var i = 0; i < simNodes.length; i++) {
       simNodes[i].connections = countConnections(i);
+      var n = simNodes[i];
+      if (n.kind === "moc") n.r = 10 + Math.min(n.connections * 1.5, 8);
+      else if (n.kind === "tag") n.r = 8 + Math.min(n.connections * 1.2, 6);
+      else n.r = 5 + Math.min(n.connections * 0.8, 6);
     }
 
-    for (var i = 0; i < simNodes.length; i++) {
-      var n = simNodes[i];
-      if (n.kind === "moc") {
-        n.r = 10 + Math.min(n.connections * 1.5, 8);
-      } else if (n.kind === "tag") {
-        n.r = 8 + Math.min(n.connections * 1.2, 6);
-      } else {
-        n.r = 5 + Math.min(n.connections * 0.8, 6);
+    var resolved = [];
+    for (var i = 0; i < links.length; i++) {
+      var s = idxMap[links[i].source];
+      var t = idxMap[links[i].target];
+      if (s !== undefined && t !== undefined) {
+        resolved.push({ source: s, target: t, kind: links[i].kind || "link" });
       }
     }
-
-    links = links
-      .map(function (l) {
-        return {
-          source: idx[l.source],
-          target: idx[l.target],
-          kind: l.kind || "link"
-        };
-      })
-      .filter(function (l) {
-        return l.source !== undefined && l.target !== undefined;
-      });
+    links = resolved;
   }
 
   function tick() {
@@ -156,22 +122,19 @@
     var h = wrap.clientHeight;
     var cx = w / 2 + panX;
     var cy = h / 2 + panY;
-    var i, j, dx, dy, dist, force;
 
-    for (i = 0; i < simNodes.length; i++) {
+    for (var i = 0; i < simNodes.length; i++) {
       if (simNodes[i] === dragging) continue;
-      dx = cx - simNodes[i].x;
-      dy = cy - simNodes[i].y;
-      simNodes[i].vx += dx * 0.0008;
-      simNodes[i].vy += dy * 0.0008;
+      simNodes[i].vx += (cx - simNodes[i].x) * 0.0008;
+      simNodes[i].vy += (cy - simNodes[i].y) * 0.0008;
     }
 
-    for (i = 0; i < simNodes.length; i++) {
-      for (j = i + 1; j < simNodes.length; j++) {
-        dx = simNodes[i].x - simNodes[j].x;
-        dy = simNodes[i].y - simNodes[j].y;
-        dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        force = 500 / (dist * dist);
+    for (var i = 0; i < simNodes.length; i++) {
+      for (var j = i + 1; j < simNodes.length; j++) {
+        var dx = simNodes[i].x - simNodes[j].x;
+        var dy = simNodes[i].y - simNodes[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        var force = 500 / (dist * dist);
         simNodes[i].vx += (dx / dist) * force;
         simNodes[i].vy += (dy / dist) * force;
         simNodes[j].vx -= (dx / dist) * force;
@@ -179,21 +142,21 @@
       }
     }
 
-    for (i = 0; i < links.length; i++) {
+    for (var i = 0; i < links.length; i++) {
       var a = simNodes[links[i].source];
       var b = simNodes[links[i].target];
       if (!a || !b) continue;
-      dx = b.x - a.x;
-      dy = b.y - a.y;
-      dist = Math.sqrt(dx * dx + dy * dy) || 1;
-      force = (dist - 100) * 0.025;
+      var dx = b.x - a.x;
+      var dy = b.y - a.y;
+      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      var force = (dist - 100) * 0.025;
       a.vx += (dx / dist) * force;
       a.vy += (dy / dist) * force;
       b.vx -= (dx / dist) * force;
       b.vy -= (dy / dist) * force;
     }
 
-    for (i = 0; i < simNodes.length; i++) {
+    for (var i = 0; i < simNodes.length; i++) {
       if (dragging === simNodes[i]) continue;
       simNodes[i].vx *= 0.88;
       simNodes[i].vy *= 0.88;
@@ -209,16 +172,15 @@
     ctx.save();
     ctx.translate(panX, panY);
 
-    var i;
     var connectedTo = {};
     if (hovered) {
-      for (i = 0; i < links.length; i++) {
+      for (var i = 0; i < links.length; i++) {
         if (simNodes[links[i].source] === hovered) connectedTo[links[i].target] = true;
         if (simNodes[links[i].target] === hovered) connectedTo[links[i].source] = true;
       }
     }
 
-    for (i = 0; i < links.length; i++) {
+    for (var i = 0; i < links.length; i++) {
       var a = simNodes[links[i].source];
       var b = simNodes[links[i].target];
       if (!a || !b) continue;
@@ -232,7 +194,7 @@
       ctx.stroke();
     }
 
-    for (i = 0; i < simNodes.length; i++) {
+    for (var i = 0; i < simNodes.length; i++) {
       var n = simNodes[i];
       var isH = dragging === n || hovered === n;
       var isC = hovered && connectedTo[i];
@@ -273,8 +235,8 @@
       var boxH = 22;
       var boxX = sx - boxW / 2;
       var boxY = sy - boxH;
-      ctx.fillStyle = colors.tooltipBg;
-      ctx.strokeStyle = colors.tooltipBorder;
+      ctx.fillStyle = isDark ? "rgba(44,44,48,0.96)" : "rgba(255,255,255,0.94)";
+      ctx.strokeStyle = isDark ? "rgba(255,255,255,0.10)" : "rgba(0,0,0,0.06)";
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.roundRect(boxX, boxY, boxW, boxH, 5);
@@ -291,7 +253,7 @@
   function loop() {
     tick();
     draw();
-    animId = requestAnimationFrame(loop);
+    requestAnimationFrame(loop);
   }
 
   function screenPos(e) {
@@ -314,7 +276,6 @@
     if (n.url) return n.url;
     if (n.raw) {
       if (/^\/contents\//i.test(n.raw)) {
-        if (/\/view\/\?/.test(n.raw)) return n.raw;
         if (n.raw.endsWith("/")) return n.raw;
       }
       return n.raw;
@@ -323,6 +284,8 @@
   }
 
   canvas.addEventListener("mousedown", function (e) {
+    mouseDownX = e.clientX;
+    mouseDownY = e.clientY;
     var pos = screenPos(e);
     var hit = hitTest(pos);
     if (hit) {
@@ -342,9 +305,8 @@
 
   window.addEventListener("mousemove", function (e) {
     if (dragging) {
-      var pos = screenPos(e);
-      dragging.x = pos.x;
-      dragging.y = pos.y;
+      dragging.x = screenPos(e).x;
+      dragging.y = screenPos(e).y;
       dragging.vx = dragging.vy = 0;
       return;
     }
@@ -357,26 +319,38 @@
     canvas.style.cursor = hovered ? "pointer" : "grab";
   });
 
-  window.addEventListener("mouseup", function () {
-    if (dragging) {
-      savePositions();
-      frozen = false;
-    }
-    dragging = null;
-    isPanning = false;
-    canvas.style.cursor = hovered ? "pointer" : "grab";
-  });
+  window.addEventListener("mouseup", function (e) {
+    var movedX = Math.abs(e.clientX - mouseDownX);
+    var movedY = Math.abs(e.clientY - mouseDownY);
+    var didDrag = movedX > 5 || movedY > 5;
 
-  canvas.addEventListener("click", function (e) {
-    if (Math.abs(e.clientX - panStartX) > 5 || Math.abs(e.clientY - panStartY) > 5) return;
-    var hit = hitTest(screenPos(e));
-    var target = resolveNodeUrl(hit);
-    if (target) window.location.href = target;
+    if (dragging) {
+      if (!didDrag) {
+        frozen = false;
+        var url = resolveNodeUrl(dragging);
+        if (url) window.location.href = url;
+      } else {
+        savePositions();
+      }
+      dragging = null;
+    } else if (isPanning && !didDrag) {
+      var hit = hitTest(screenPos(e));
+      if (hit) {
+        var url = resolveNodeUrl(hit);
+        if (url) window.location.href = url;
+      }
+    }
+
+    isPanning = false;
+    frozen = false;
+    canvas.style.cursor = hovered ? "pointer" : "grab";
   });
 
   canvas.addEventListener("touchstart", function (e) {
     if (e.touches.length !== 1) return;
     var touch = e.touches[0];
+    mouseDownX = touch.clientX;
+    mouseDownY = touch.clientY;
     var rect = canvas.getBoundingClientRect();
     var pos = { x: touch.clientX - rect.left - panX, y: touch.clientY - rect.top - panY };
     var hit = hitTest(pos);
@@ -384,23 +358,22 @@
       dragging = hit;
       hit.vx = hit.vy = 0;
       frozen = true;
-      e.preventDefault();
     } else {
       isPanning = true;
       panStartX = touch.clientX;
       panStartY = touch.clientY;
       lastPanX = panX;
       lastPanY = panY;
-      e.preventDefault();
     }
+    e.preventDefault();
   }, { passive: false });
 
   canvas.addEventListener("touchmove", function (e) {
     if (e.touches.length !== 1) return;
     var touch = e.touches[0];
     e.preventDefault();
+    var rect = canvas.getBoundingClientRect();
     if (dragging) {
-      var rect = canvas.getBoundingClientRect();
       dragging.x = touch.clientX - rect.left - panX;
       dragging.y = touch.clientY - rect.top - panY;
       dragging.vx = dragging.vy = 0;
@@ -410,21 +383,27 @@
     }
   }, { passive: false });
 
-  canvas.addEventListener("touchend", function () {
+  canvas.addEventListener("touchend", function (e) {
+    var movedX = Math.abs((e.changedTouches[0] || {}).clientX - mouseDownX);
+    var movedY = Math.abs((e.changedTouches[0] || {}).clientY - mouseDownY);
+    var didDrag = movedX > 10 || movedY > 10;
+
     if (dragging) {
-      savePositions();
-      frozen = false;
-      var hit = dragging;
+      if (!didDrag) {
+        frozen = false;
+        var url = resolveNodeUrl(dragging);
+        if (url) window.location.href = url;
+      } else {
+        savePositions();
+      }
       dragging = null;
-      isPanning = false;
-    } else {
-      isPanning = false;
     }
+    isPanning = false;
+    frozen = false;
   });
 
   canvas.addEventListener("wheel", function (e) {
     e.preventDefault();
-    scale = Math.max(0.2, Math.min(4, scale - e.deltaY * 0.001));
   }, { passive: false });
 
   window.addEventListener("resize", resize);
@@ -433,44 +412,32 @@
   if (resetBtn) {
     resetBtn.addEventListener("click", function () {
       panX = panY = 0;
-      scale = 1;
       frozen = false;
       try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
       initSimulation({ nodes: nodes, links: links });
     });
   }
 
-  var zoomInBtn = document.getElementById("graph-zoom-in");
-  if (zoomInBtn) zoomInBtn.addEventListener("click", function () { scale = Math.min(4, scale + 0.3); });
-
-  var zoomOutBtn = document.getElementById("graph-zoom-out");
-  if (zoomOutBtn) zoomOutBtn.addEventListener("click", function () { scale = Math.max(0.2, scale - 0.3); });
-
   var freezeBtn = document.getElementById("graph-freeze");
   if (freezeBtn) {
     freezeBtn.addEventListener("click", function () {
       frozen = !frozen;
       freezeBtn.textContent = frozen ? "Unfreeze" : "Freeze";
-      if (!frozen) savePositions();
     });
   }
 
   var graphFile = wrap.dataset.graph || "/assets/graph.json";
   fetch(graphFile)
-    .then(function (r) {
-      if (!r.ok) throw new Error("no graph");
-      return r.json();
-    })
+    .then(function (r) { if (!r.ok) throw new Error("no graph"); return r.json(); })
     .then(function (data) {
       resize();
       initSimulation(data);
       loop();
       var stat = document.getElementById("graph-stats");
       if (stat) {
-        var onlyTags = data.nodes.length > 0 && data.nodes.every(function (n) { return n.kind === "tag"; });
-        stat.textContent = onlyTags
-          ? data.nodes.length + " tags · " + data.links.length + " co-occurrences"
-          : data.nodes.length + " notes · " + data.links.length + " links";
+        var tagCount = data.nodes.filter(function (n) { return n.kind === "tag"; }).length;
+        var noteCount = data.nodes.filter(function (n) { return n.kind !== "tag"; }).length;
+        stat.textContent = noteCount + " notes · " + tagCount + " tags · " + data.links.length + " links";
       }
     })
     .catch(function () {

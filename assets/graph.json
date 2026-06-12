@@ -351,6 +351,20 @@
       "kind": "note"
     },
     {
+      "id": "tag-farshid",
+      "label": "#farshid",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-pirahansiah",
+      "label": "#pirahansiah",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
       "id": "contents-pkm-atlas-knowledge-graph",
       "label": "knowledge-graph",
       "url": "/Contents/pkm/atlas/knowledge-graph.md",
@@ -363,6 +377,13 @@
       "url": "/Contents/pkm/atlas/research-synthesis.md",
       "raw": "/Contents/pkm/atlas/research-synthesis.md",
       "kind": "note"
+    },
+    {
+      "id": "tag-drfarshidpirahansiah",
+      "label": "#drfarshidpirahansiah",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
     },
     {
       "id": "contents-pkm-atlas-strategic-connections",
@@ -477,6 +498,13 @@
       "kind": "note"
     },
     {
+      "id": "tag-code",
+      "label": "#code",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
       "id": "c-png",
       "label": "c",
       "url": "/view/?p=%2Fc.png",
@@ -512,11 +540,25 @@
       "kind": "note"
     },
     {
+      "id": "tag-liquid-refraction",
+      "label": "#liquid-refraction",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
       "label": "farshid-ai-cv-llm-markmap-autoloader",
       "url": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader.md",
       "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader.md",
       "kind": "note"
+    },
+    {
+      "id": "tag-git",
+      "label": "#git",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-presentation",
@@ -767,6 +809,51 @@
       "kind": "mdlink"
     },
     {
+      "source": "contents-pkm-atlas-concept-maps",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-concept-maps",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-research-synthesis",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-research-synthesis",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-research-synthesis",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-strategic-connections",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-strategic-connections",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-atlas-strategic-connections",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
+      "target": "tag-code",
+      "kind": "tag"
+    },
+    {
       "source": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
       "target": "c-png",
       "kind": "mdlink"
@@ -775,6 +862,16 @@
       "source": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
       "target": "c-py",
       "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-templates-farshid-ai-cv-llm-c",
+      "target": "tag-liquid-refraction",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
+      "target": "tag-git",
+      "kind": "tag"
     }
   ]
 }

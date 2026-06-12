@@ -392,25 +392,23 @@ def build_graph(nav, hashtag_mode: false)
     body = File.read(path, encoding: "UTF-8").scrub("")
     body = strip_front_matter(body)
 
-    if hashtag_mode
-      extract_hashtags(body).each do |tag|
-        tag_id = "tag-#{slug_id(tag)}"
-        add_node.call(tag_id, "##{tag}", kind: "tag")
-        add_link.call(id, tag_id, "tag")
-      end
-    else
-      extract_links_from_markdown(body, id).each do |link|
-        add_link.call(link["source"], link["target"], link["kind"])
-        next if nodes[link["target"]]
+    extract_hashtags(body).each do |tag|
+      tag_id = "tag-#{slug_id(tag)}"
+      add_node.call(tag_id, "##{tag}", kind: "tag")
+      add_link.call(id, tag_id, "tag")
+    end
 
-        add_node.call(
-          link["target"],
-          graph_label_for_url(link["raw"] || link["url"]),
-          url: link["url"],
-          raw: link["raw"],
-          kind: "note"
-        )
-      end
+    extract_links_from_markdown(body, id).each do |link|
+      add_link.call(link["source"], link["target"], link["kind"])
+      next if nodes[link["target"]]
+
+      add_node.call(
+        link["target"],
+        graph_label_for_url(link["raw"] || link["url"]),
+        url: link["url"],
+        raw: link["raw"],
+        kind: "note"
+      )
     end
   end
 
