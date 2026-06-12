@@ -456,6 +456,13 @@
       "kind": "tag"
     },
     {
+      "id": "tag-camera-calibration-expertise",
+      "label": "#camera-calibration-expertise",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
       "id": "tag-hardware-platforms",
       "label": "#hardware--platforms",
       "url": null,
@@ -484,15 +491,36 @@
       "kind": "tag"
     },
     {
-      "id": "tag-guides-tutorials",
-      "label": "#guides--tutorials",
+      "id": "tag-cuda-gpu-programming",
+      "label": "#cuda--gpu-programming",
       "url": null,
       "raw": null,
       "kind": "tag"
     },
     {
-      "id": "tag-career-business",
-      "label": "#career--business",
+      "id": "tag-optical-flow",
+      "label": "#optical-flow",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-optimization",
+      "label": "#optimization",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-ai-llm",
+      "label": "#ai--llm",
+      "url": null,
+      "raw": null,
+      "kind": "tag"
+    },
+    {
+      "id": "tag-cv-coaching-roadmap",
+      "label": "#cv-coaching-roadmap",
       "url": null,
       "raw": null,
       "kind": "tag"
@@ -507,90 +535,6 @@
     {
       "id": "tag-workshops-events",
       "label": "#workshops--events",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-knowledge-management",
-      "label": "#knowledge-management",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-topics-projects",
-      "label": "#topics--projects",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-community",
-      "label": "#community",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-social",
-      "label": "#social",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-faceaugmentation",
-      "label": "#FaceAugmentation",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-surveillance",
-      "label": "#Surveillance",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-digitaladvertising",
-      "label": "#DigitalAdvertising",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-facialrecognition",
-      "label": "#FacialRecognition",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-targetedads",
-      "label": "#TargetedAds",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-vehicledetection",
-      "label": "#VehicleDetection",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-imageprocessing",
-      "label": "#ImageProcessing",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-trafficsurveillance",
-      "label": "#TrafficSurveillance",
       "url": null,
       "raw": null,
       "kind": "tag"
@@ -1008,6 +952,11 @@
     },
     {
       "source": "contents-pkm-legacy-proof",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
       "target": "tag-hardware-platforms",
       "kind": "tag"
     },
@@ -1028,12 +977,27 @@
     },
     {
       "source": "contents-pkm-legacy-proof",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "tag"
     },
     {
       "source": "contents-pkm-legacy-proof",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-optimization",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-ai-llm",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "tag"
     },
     {
@@ -1044,66 +1008,6 @@
     {
       "source": "contents-pkm-legacy-proof",
       "target": "tag-workshops-events",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-knowledge-management",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-topics-projects",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-community",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-social",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-faceaugmentation",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-surveillance",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-digitaladvertising",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-facialrecognition",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-targetedads",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-vehicledetection",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-imageprocessing",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-trafficsurveillance",
       "kind": "tag"
     },
     {

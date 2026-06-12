@@ -51,6 +51,11 @@
       "kind": "tag"
     },
     {
+      "id": "tag-camera-calibration-expertise",
+      "label": "#camera-calibration-expertise",
+      "kind": "tag"
+    },
+    {
       "id": "tag-hardware-platforms",
       "label": "#hardware--platforms",
       "kind": "tag"
@@ -71,13 +76,28 @@
       "kind": "tag"
     },
     {
-      "id": "tag-guides-tutorials",
-      "label": "#guides--tutorials",
+      "id": "tag-cuda-gpu-programming",
+      "label": "#cuda--gpu-programming",
       "kind": "tag"
     },
     {
-      "id": "tag-career-business",
-      "label": "#career--business",
+      "id": "tag-optical-flow",
+      "label": "#optical-flow",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-optimization",
+      "label": "#optimization",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-ai-llm",
+      "label": "#ai--llm",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-cv-coaching-roadmap",
+      "label": "#cv-coaching-roadmap",
       "kind": "tag"
     },
     {
@@ -88,66 +108,6 @@
     {
       "id": "tag-workshops-events",
       "label": "#workshops--events",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-knowledge-management",
-      "label": "#knowledge-management",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-topics-projects",
-      "label": "#topics--projects",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-community",
-      "label": "#community",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-social",
-      "label": "#social",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-faceaugmentation",
-      "label": "#FaceAugmentation",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-surveillance",
-      "label": "#Surveillance",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-digitaladvertising",
-      "label": "#DigitalAdvertising",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-facialrecognition",
-      "label": "#FacialRecognition",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-targetedads",
-      "label": "#TargetedAds",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-vehicledetection",
-      "label": "#VehicleDetection",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-imageprocessing",
-      "label": "#ImageProcessing",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-trafficsurveillance",
-      "label": "#TrafficSurveillance",
       "kind": "tag"
     },
     {
@@ -259,6 +219,11 @@
     },
     {
       "source": "contents-pkm-legacy-proof",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
       "target": "tag-hardware-platforms",
       "kind": "tag"
     },
@@ -279,12 +244,27 @@
     },
     {
       "source": "contents-pkm-legacy-proof",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "tag"
     },
     {
       "source": "contents-pkm-legacy-proof",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-optimization",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-ai-llm",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-legacy-proof",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "tag"
     },
     {
@@ -295,66 +275,6 @@
     {
       "source": "contents-pkm-legacy-proof",
       "target": "tag-workshops-events",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-knowledge-management",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-topics-projects",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-community",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-social",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-faceaugmentation",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-surveillance",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-digitaladvertising",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-facialrecognition",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-targetedads",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-vehicledetection",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-imageprocessing",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
-      "target": "tag-trafficsurveillance",
       "kind": "tag"
     },
     {
@@ -389,6 +309,11 @@
     },
     {
       "source": "tag-about",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-about",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -409,12 +334,27 @@
     },
     {
       "source": "tag-about",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-about",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-about",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-about",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-about",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -425,66 +365,6 @@
     {
       "source": "tag-about",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-about",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -514,6 +394,11 @@
     },
     {
       "source": "tag-publications",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-publications",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -534,12 +419,27 @@
     },
     {
       "source": "tag-publications",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-publications",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-publications",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-publications",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-publications",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -550,66 +450,6 @@
     {
       "source": "tag-publications",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-publications",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -634,6 +474,11 @@
     },
     {
       "source": "tag-patents",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-patents",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -654,12 +499,27 @@
     },
     {
       "source": "tag-patents",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-patents",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-patents",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-patents",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-patents",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -670,66 +530,6 @@
     {
       "source": "tag-patents",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-patents",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -749,6 +549,11 @@
     },
     {
       "source": "tag-books",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-books",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -769,12 +574,27 @@
     },
     {
       "source": "tag-books",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-books",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-books",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-books",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-books",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -785,66 +605,6 @@
     {
       "source": "tag-books",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-books",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -859,6 +619,11 @@
     },
     {
       "source": "tag-journals",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-journals",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -879,12 +644,27 @@
     },
     {
       "source": "tag-journals",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-journals",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-journals",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-journals",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-journals",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -895,66 +675,6 @@
     {
       "source": "tag-journals",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-journals",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -964,6 +684,11 @@
     },
     {
       "source": "tag-conference-papers",
+      "target": "tag-camera-calibration-expertise",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-conference-papers",
       "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
@@ -984,12 +709,27 @@
     },
     {
       "source": "tag-conference-papers",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-conference-papers",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-conference-papers",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-conference-papers",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-conference-papers",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1003,63 +743,8 @@
       "kind": "cooccur"
     },
     {
-      "source": "tag-conference-papers",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-conference-papers",
-      "target": "tag-trafficsurveillance",
+      "source": "tag-keynotes",
+      "target": "tag-camera-calibration-expertise",
       "kind": "cooccur"
     },
     {
@@ -1084,12 +769,27 @@
     },
     {
       "source": "tag-keynotes",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-keynotes",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-keynotes",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-keynotes",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-keynotes",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1103,63 +803,58 @@
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-knowledge-management",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-hardware-platforms",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-topics-projects",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-products-tools",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-community",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-open-source",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-social",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-technical-content",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-faceaugmentation",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-surveillance",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-optical-flow",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-digitaladvertising",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-optimization",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-facialrecognition",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-ai-llm",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-targetedads",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-vehicledetection",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-keynotes",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-keynotes",
-      "target": "tag-trafficsurveillance",
+      "source": "tag-camera-calibration-expertise",
+      "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
@@ -1179,12 +874,27 @@
     },
     {
       "source": "tag-hardware-platforms",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-hardware-platforms",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-hardware-platforms",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-hardware-platforms",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-hardware-platforms",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1195,66 +905,6 @@
     {
       "source": "tag-hardware-platforms",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-hardware-platforms",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -1269,12 +919,27 @@
     },
     {
       "source": "tag-products-tools",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-products-tools",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-products-tools",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-products-tools",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-products-tools",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1285,66 +950,6 @@
     {
       "source": "tag-products-tools",
       "target": "tag-workshops-events",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-products-tools",
-      "target": "tag-trafficsurveillance",
       "kind": "cooccur"
     },
     {
@@ -1354,12 +959,27 @@
     },
     {
       "source": "tag-open-source",
-      "target": "tag-guides-tutorials",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-open-source",
-      "target": "tag-career-business",
+      "target": "tag-optical-flow",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-open-source",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-open-source",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-open-source",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1373,73 +993,28 @@
       "kind": "cooccur"
     },
     {
-      "source": "tag-open-source",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-open-source",
-      "target": "tag-trafficsurveillance",
+      "source": "tag-technical-content",
+      "target": "tag-cuda-gpu-programming",
       "kind": "cooccur"
     },
     {
       "source": "tag-technical-content",
-      "target": "tag-guides-tutorials",
+      "target": "tag-optical-flow",
       "kind": "cooccur"
     },
     {
       "source": "tag-technical-content",
-      "target": "tag-career-business",
+      "target": "tag-optimization",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-technical-content",
+      "target": "tag-ai-llm",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-technical-content",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
@@ -1453,663 +1028,108 @@
       "kind": "cooccur"
     },
     {
-      "source": "tag-technical-content",
-      "target": "tag-knowledge-management",
+      "source": "tag-cuda-gpu-programming",
+      "target": "tag-optical-flow",
       "kind": "cooccur"
     },
     {
-      "source": "tag-technical-content",
-      "target": "tag-topics-projects",
+      "source": "tag-cuda-gpu-programming",
+      "target": "tag-optimization",
       "kind": "cooccur"
     },
     {
-      "source": "tag-technical-content",
-      "target": "tag-community",
+      "source": "tag-cuda-gpu-programming",
+      "target": "tag-ai-llm",
       "kind": "cooccur"
     },
     {
-      "source": "tag-technical-content",
-      "target": "tag-social",
+      "source": "tag-cuda-gpu-programming",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
-      "source": "tag-technical-content",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-technical-content",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-career-business",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
+      "source": "tag-cuda-gpu-programming",
       "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-guides-tutorials",
+      "source": "tag-cuda-gpu-programming",
       "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
-      "source": "tag-guides-tutorials",
-      "target": "tag-knowledge-management",
+      "source": "tag-optical-flow",
+      "target": "tag-optimization",
       "kind": "cooccur"
     },
     {
-      "source": "tag-guides-tutorials",
-      "target": "tag-topics-projects",
+      "source": "tag-optical-flow",
+      "target": "tag-ai-llm",
       "kind": "cooccur"
     },
     {
-      "source": "tag-guides-tutorials",
-      "target": "tag-community",
+      "source": "tag-optical-flow",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
-      "source": "tag-guides-tutorials",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-guides-tutorials",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-career-business",
+      "source": "tag-optical-flow",
       "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
+      "source": "tag-optical-flow",
       "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-knowledge-management",
+      "source": "tag-optimization",
+      "target": "tag-ai-llm",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-topics-projects",
+      "source": "tag-optimization",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-community",
+      "source": "tag-optimization",
+      "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-social",
+      "source": "tag-optimization",
+      "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-faceaugmentation",
+      "source": "tag-ai-llm",
+      "target": "tag-cv-coaching-roadmap",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-surveillance",
+      "source": "tag-ai-llm",
+      "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-digitaladvertising",
+      "source": "tag-ai-llm",
+      "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-facialrecognition",
+      "source": "tag-cv-coaching-roadmap",
+      "target": "tag-courses",
       "kind": "cooccur"
     },
     {
-      "source": "tag-career-business",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-career-business",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-career-business",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-career-business",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
+      "source": "tag-cv-coaching-roadmap",
       "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
       "source": "tag-courses",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-courses",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-knowledge-management",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-workshops-events",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-topics-projects",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-knowledge-management",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-community",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-topics-projects",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-social",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-community",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-faceaugmentation",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-social",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-surveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-faceaugmentation",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-digitaladvertising",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-surveillance",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-digitaladvertising",
-      "target": "tag-facialrecognition",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-digitaladvertising",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-digitaladvertising",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-digitaladvertising",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-digitaladvertising",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-facialrecognition",
-      "target": "tag-targetedads",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-facialrecognition",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-facialrecognition",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-facialrecognition",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-targetedads",
-      "target": "tag-vehicledetection",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-targetedads",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-targetedads",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-vehicledetection",
-      "target": "tag-imageprocessing",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-vehicledetection",
-      "target": "tag-trafficsurveillance",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-imageprocessing",
-      "target": "tag-trafficsurveillance",
+      "target": "tag-workshops-events",
       "kind": "cooccur"
     },
     {
