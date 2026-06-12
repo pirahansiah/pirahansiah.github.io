@@ -16,6 +16,26 @@
       "kind": "tag"
     },
     {
+      "id": "tag-farshid",
+      "label": "#farshid",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-pirahansiah",
+      "label": "#pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-drfarshidpirahansiah",
+      "label": "#drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-ai",
+      "label": "#AI",
+      "kind": "tag"
+    },
+    {
       "id": "tag-f5f3ee",
       "label": "#f5f3ee",
       "kind": "tag"
@@ -155,6 +175,36 @@
     {
       "source": "tag-bb",
       "target": "tag-cc",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-farshid",
+      "target": "tag-pirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-farshid",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-pirahansiah",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-farshid",
+      "target": "tag-ai",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-pirahansiah",
+      "target": "tag-ai",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-drfarshidpirahansiah",
+      "target": "tag-ai",
       "kind": "cooccur"
     },
     {
