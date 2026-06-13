@@ -14,11 +14,11 @@ permalink: /
 
 **[Decision Frameworks](/contents/pkm/atlas/decision-frameworks/)** — Strategic logic and mental models.
 
-* [concept-maps](/contents/pkm/atlas/concept-maps) 
-* [knowledge-graph](/contents/pkm/atlas/knowledge-graph) 
-* [research-synthesis](/contents/pkm/atlas/research-synthesis) 
-* [strategic-connections](/contents/pkm/atlas/strategic-connections) 
-* [unique](/contents/pkm/atlas/why-we-are-unique) 
+* [concept-maps](/contents/pkm/concept-maps) 
+* [knowledge-graph](/contents/pkm/knowledge-graph) 
+* [research-synthesis](/contents/pkm/research-synthesis) 
+* [strategic-connections](/contents/pkm/strategic-connections) 
+* [unique](/contents/pkm/why-we-are-unique) 
 * [site](site)
 
 # update

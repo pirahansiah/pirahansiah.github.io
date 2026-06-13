@@ -7,7 +7,7 @@ categories: system
 
 # 🗺 ATLAS2
 ## Knowledge Graph
-[Knowledge Graph](/contents/pkm/atlas/knowledge-graph)
+[Knowledge Graph](/contents/pkm/knowledge-graph)
 
  Semantic network of intelligence assets.
 
@@ -21,7 +21,7 @@ categories: system
 
 # Knowledge Graph
 ## Knowledge Graph
-[Knowledge Graph](/contents/pkm/atlas/knowledge-graph)
+[Knowledge Graph](/contents/pkm/knowledge-graph)
 
 ## Transformation Framework
 [Transformation Framework](/contents/pkm/solutions/transformation-framework)
