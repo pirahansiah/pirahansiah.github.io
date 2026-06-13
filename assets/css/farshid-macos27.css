@@ -29,8 +29,8 @@
     0 0   0 1px rgba(10, 132, 255, 0.14);
 
   --background: #e5e2d8;
-  --text:       #1c1c1e;
-  --text-muted: #6e6e73;
+  --text:       #000000;
+  --text-muted: #333333;
   --accent:     #3a7a3a;
 
   --mouse-x: 50%;
