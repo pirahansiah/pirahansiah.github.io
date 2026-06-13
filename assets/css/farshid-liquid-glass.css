@@ -395,7 +395,7 @@ code,pre{
   .has-children > a,
   .has-children > .nav-link {
     width: 100%;
-    justify-content: center;
+  justify-content: flex-start;
   }
 
   @media (prefers-color-scheme: dark) {
