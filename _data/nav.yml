@@ -1,13 +1,13 @@
 ---
 - title: "ATLAS"
   items:
-  - title: Knowledge Graph
+  - title: Knowledge Graph & Taxonomy
     url: "/contents/pkm/knowledge-graph"
   - title: all files
     url: "/contents/pkm/system-design"
   - title: all links
     url: "/contents/pkm/use-cases"
-    
+
   - title: Research Synthesis
     url: "/contents/pkm/research-synthesis"
   - title: Concept Maps
