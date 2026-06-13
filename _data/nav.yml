@@ -1,27 +1,53 @@
 ---
-- title: "\U0001F5FA ATLAS2"
+- title: "ATLAS"
   items:
   - title: Knowledge Graph
-    items: []
-    url: "/contents/pkm/atlas/knowledge-graph"
-- title: update2
+    url: "/contents/pkm/knowledge-graph"
+  - title: Research Synthesis
+    url: "/contents/pkm/research-synthesis"
+  - title: Concept Maps
+    url: "/contents/pkm/concept-maps"
+  - title: Strategic Connections
+    url: "/contents/pkm/strategic-connections"
+- title: "SOLUTIONS"
+  items:
+  - title: Use Cases
+    url: "/contents/pkm/use-cases"
+  - title: Transformation Framework
+    url: "/contents/pkm/transformation-framework"
+- title: "PRODUCTS"
+  items:
+  - title: Offering
+    url: "/contents/pkm/offering"
+- title: "TECHNOLOGY"
+  items:
+  - title: System Design
+    url: "/contents/pkm/system-design"
+- title: "INVESTORS"
+  items:
+  - title: Growth Model
+    url: "/contents/pkm/growth-model"
+- title: "PRICING"
+  items:
+  - title: Costs
+    url: "/contents/pkm/costs"
+- title: "LEGACY"
+  items:
+  - title: Proof
+    url: "/contents/pkm/proof"
+- title: "PULSE"
+  items:
+  - title: Updates
+    url: "/contents/pkm/updates"
+- title: "ABOUT"
+  items:
+  - title: Company
+    url: "/contents/pkm/company"
+  - title: About Me
+    url: "/contents/pkm/AboutMe"
+- title: "MORE"
   items:
   - title: TOC
-    items: []
     url: "/contents/pkm/TOC"
-- title: About Me2
-  items:
-  - title: About Me
-    items: []
-    url: "/contents/pkm/cv/AboutMe"
-- title: Knowledge Graph
-  items:
-  - title: Knowledge Graph
-    items: []
-    url: "/contents/pkm/atlas/knowledge-graph"
-  - title: Transformation Framework
-    items: []
-    url: "/contents/pkm/solutions/transformation-framework"
-  - title: Presentation
-    items: []
-    url: "/contents/inbox/presentation"
+  - title: MOC
+    url: "/contents/pkm/MOC"

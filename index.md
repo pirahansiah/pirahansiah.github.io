@@ -5,7 +5,10 @@ permalink: /
 ---
 
 # 🗺 ATLAS
-
+## all files
+[system-design](system-design)
+## all links
+[use-cases](/contents/pkm/use-cases)
 **[Knowledge Graph](/contents/pkm/knowledge-graph/)** — Semantic network of intelligence assets.
 
 **[Research Synthesis](/contents/pkm/research-synthesis/)** — Distilled insights from scientific literature.
