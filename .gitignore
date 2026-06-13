@@ -11,7 +11,6 @@ _site
 ._*
 
 .idea/
-.vscode/
 
 node_modules/
 dist/
