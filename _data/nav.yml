@@ -3,6 +3,11 @@
   items:
   - title: Knowledge Graph
     url: "/contents/pkm/knowledge-graph"
+  - title: all files
+    url: "/contents/pkm/system-design"
+  - title: all links
+    url: "/contents/pkm/use-cases"
+    
   - title: Research Synthesis
     url: "/contents/pkm/research-synthesis"
   - title: Concept Maps
