@@ -90,6 +90,7 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-start;
   gap: 6px;
   padding: 6px 12px;
   background: rgba(255, 255, 255, 0.52);
@@ -127,6 +128,7 @@
   padding: 0;
   gap: 4px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 /* ─── NAV ITEMS — iOS 27 pill style ─────────────────────────────── */
@@ -358,6 +360,7 @@ code,pre{
     right: 0;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     padding: 12px;
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(32px) saturate(200%);
@@ -367,6 +370,15 @@ code,pre{
     box-shadow: 0 16px 48px rgba(80, 60, 160, 0.18);
     z-index: 1000;
     overflow: visible;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list a {
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .nav-open > .nav-list {
