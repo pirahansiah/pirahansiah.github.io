@@ -17,14 +17,14 @@ categories: system
 
 # About Me2
 ## About Me
-[About Me](/contents/pkm/cv/AboutMe)
+[About Me](/contents/pkm/AboutMe)
 
 # Knowledge Graph
 ## Knowledge Graph
 [Knowledge Graph](/contents/pkm/knowledge-graph)
 
 ## Transformation Framework
-[Transformation Framework](/contents/pkm/solutions/transformation-framework)
+[Transformation Framework](/contents/pkm/transformation-framework)
 
  Visualizing mental networks.
 ## Presentation

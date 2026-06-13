@@ -6,7 +6,7 @@ categories: pulse
 links: https://pirahansiah.github.io/
 references: system-design, knowledge-graph
 related: offering, growth-model
-backlinks: /contents/pkm/atlas/knowledge-graph.md
+backlinks: /contents/pkm/knowledge-graph
 created: "{{date:YYYY-MM-DD}}"
 ---
 

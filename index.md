@@ -6,13 +6,13 @@ permalink: /
 
 # 🗺 ATLAS
 
-**[Knowledge Graph](/contents/pkm/atlas/knowledge-graph/)** — Semantic network of intelligence assets.
+**[Knowledge Graph](/contents/pkm/knowledge-graph/)** — Semantic network of intelligence assets.
 
-**[Research Synthesis](/contents/pkm/atlas/research-synthesis/)** — Distilled insights from scientific literature.
+**[Research Synthesis](/contents/pkm/research-synthesis/)** — Distilled insights from scientific literature.
 
-**[Maps of Content](/contents/pkm/atlas/maps-of-content/)** — High-level conceptual navigation.
+**[Maps of Content](/contents/pkm/maps-of-content/)** — High-level conceptual navigation.
 
-**[Decision Frameworks](/contents/pkm/atlas/decision-frameworks/)** — Strategic logic and mental models.
+**[Decision Frameworks](/contents/pkm/decision-frameworks/)** — Strategic logic and mental models.
 
 * [concept-maps](/contents/pkm/concept-maps) 
 * [knowledge-graph](/contents/pkm/knowledge-graph) 
@@ -31,62 +31,62 @@ permalink: /
 * [c presentation](/contents/inbox/presentation)
 
 # About Me
-[About Me](/contents/pkm/cv/AboutMe.html)
+[About Me](/contents/pkm/AboutMe.html)
 
 # Knowledge Graph
 
-[Knowledge Graph](./contents/pkm/atlas/knowledge-graph/)
+[Knowledge Graph](./contents/pkm/knowledge-graph/)
 * Knowledge Graph
 * Research
 * Maps
 * Connections
 
 # 🚀 SOLUTIONS
-*   **[Industries](/contents/pkm/solutions/industries/)** — Sector-specific integration models.
-*   **[Use Cases](/contents/pkm/solutions/use-cases/)** — High-impact application scenarios.
-*   **[Transformation Framework](/contents/pkm/solutions/transformation-framework/)** — Strategic implementation methodology.
-*   **[ROI Calculator](/contents/pkm/solutions/roi-calculator/)** — Value modeling and performance projections.
+*   **[Industries](/contents/pkm/industries/)** — Sector-specific integration models.
+*   **[Use Cases](/contents/pkm/use-cases/)** — High-impact application scenarios.
+*   **[Transformation Framework](/contents/pkm/transformation-framework/)** — Strategic implementation methodology.
+*   **[ROI Calculator](/contents/pkm/roi-calculator/)** — Value modeling and performance projections.
 
 # 📦 PRODUCTS
-*   **[Flagship Platform](/contents/pkm/products/flagship-platform/)** — The core Liquid Glass UI/UX environment.
-*   **[AI Agents](/contents/pkm/products/ai-agents/)** — Autonomous agentic workflows.
-*   **[Vision AI](/contents/pkm/products/vision-ai/)** — Advanced computer vision and spatial logic.
-*   **[Edge AI](/contents/pkm/products/edge-ai/)** — Distributed intelligence at the hardware perimeter.
+*   **[Flagship Platform](/contents/pkm/flagship-platform/)** — The core Liquid Glass UI/UX environment.
+*   **[AI Agents](/contents/pkm/ai-agents/)** — Autonomous agentic workflows.
+*   **[Vision AI](/contents/pkm/vision-ai/)** — Advanced computer vision and spatial logic.
+*   **[Edge AI](/contents/pkm/edge-ai/)** — Distributed intelligence at the hardware perimeter.
 
 # 🛠 TECHNOLOGY
-*   **[Architecture](/contents/pkm/technology/architecture/)** — System-level design and data flow.
-*   **[The Forge](/contents/pkm/technology/forge/)** — Rapid R&D and implementation prototypes.
-*   **[Benchmarks](/contents/pkm/technology/benchmarks/)** — Performance verification and hardware metrics.
-*   **[Infrastructure](/contents/pkm/technology/infrastructure/)** — Deployment and scaling foundations.
+*   **[Architecture](/contents/pkm/architecture/)** — System-level design and data flow.
+*   **[The Forge](/contents/pkm/forge/)** — Rapid R&D and implementation prototypes.
+*   **[Benchmarks](/contents/pkm/benchmarks/)** — Performance verification and hardware metrics.
+*   **[Infrastructure](/contents/pkm/infrastructure/)** — Deployment and scaling foundations.
 
 
 
 # 📈 INVESTORS
-*   **[Growth Model](/contents/pkm/investors/growth-model/)** — Scaling trajectories and projections.
-*   **[Vision](/contents/pkm/investors/vision/)** — Long-term objective and market disruption.
-*   **[Pitch Deck](/contents/pkm/investors/pitch-deck/)** — Core venture presentation.
-*   **[Investment Highlights](/contents/pkm/investors/investment-highlights/)** — Key defensibility factors and moats.
-*   **[Market Opportunity](/contents/pkm/investors/market-opportunity/)** — TAM / SAM / SOM analysis.
+*   **[Growth Model](/contents/pkm/growth-model/)** — Scaling trajectories and projections.
+*   **[Vision](/contents/pkm/vision/)** — Long-term objective and market disruption.
+*   **[Pitch Deck](/contents/pkm/pitch-deck/)** — Core venture presentation.
+*   **[Investment Highlights](/contents/pkm/investment-highlights/)** — Key defensibility factors and moats.
+*   **[Market Opportunity](/contents/pkm/market-opportunity/)** — TAM / SAM / SOM analysis.
 
 # 💳 PRICING
-*   **[Costs & Tiers](/contents/pkm/pricing/costs/)** — Starter, Professional, and Enterprise structures.
-*   **[Licensing](/contents/pkm/pricing/licensing/)** — Software distribution and IP rights.
-*   **[Custom Solutions](/contents/pkm/pricing/custom-solutions/)** — Bespoke integration modeling.
+*   **[Costs & Tiers](/contents/pkm/costs/)** — Starter, Professional, and Enterprise structures.
+*   **[Licensing](/contents/pkm/licensing/)** — Software distribution and IP rights.
+*   **[Custom Solutions](/contents/pkm/custom-solutions/)** — Bespoke integration modeling.
 
 # 📜 LEGACY
-*   **[Intellectual Property](/contents/pkm/legacy/intellectual-property/)** — Patents, trademarks, and logic protection.
-*   **[Track Record](/contents/pkm/legacy/track-record/)** — Project history and milestone verification.
-*   **[Partnerships](/contents/pkm/legacy/partnerships/)** — Ecosystem and strategic alliances.
+*   **[Intellectual Property](/contents/pkm/intellectual-property/)** — Patents, trademarks, and logic protection.
+*   **[Track Record](/contents/pkm/track-record/)** — Project history and milestone verification.
+*   **[Partnerships](/contents/pkm/partnerships/)** — Ecosystem and strategic alliances.
 
 # 📡 PULSE
-*   **[Build Log](/contents/pkm/pulse/build-log/)** — Real-time development and operational stream.
-*   **[Updates](/contents/pkm/pulse/updates/)** — Formal announcements and market releases.
-*   **[Market Insights](/contents/pkm/pulse/market-insights/)** — Curated intelligence and trend tracking.
+*   **[Build Log](/contents/pkm/build-log/)** — Real-time development and operational stream.
+*   **[Updates](/contents/pkm/updates/)** — Formal announcements and market releases.
+*   **[Market Insights](/contents/pkm/market-insights/)** — Curated intelligence and trend tracking.
 
 # 🏢 ABOUT
-*   **[Company](/contents/pkm/about/company/)** — Founding mission and core values.
-*   **[Leadership](/contents/pkm/about/leadership/)** — Strategic management and technical direction.
-*   **[Contact](/contents/pkm/about/contact/)** — Global engagement channels.
+*   **[Company](/contents/pkm/company/)** — Founding mission and core values.
+*   **[Leadership](/contents/pkm/leadership/)** — Strategic management and technical direction.
+*   **[Contact](/contents/pkm/contact/)** — Global engagement channels.
 
 ---
 
