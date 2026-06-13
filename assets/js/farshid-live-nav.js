@@ -8,9 +8,7 @@
   var navList = document.getElementById("nav-list");
   if (!navList) return;
 
-  var MENUS_URL = (window.location.pathname.includes("/contents/")
-    ? "/contents/menus.md"
-    : "/menus.md");
+  var MENUS_URL = "/contents/menus.md";
 
   function parseMenusMd(md) {
     var lines = md.split("\n");
