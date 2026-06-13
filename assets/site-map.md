@@ -7,27 +7,27 @@ categories: system
 
 # 🗺 ATLAS2
 ## Knowledge Graph
-[Knowledge Graph](./pkm/atlas/knowledge-graph)
+[Knowledge Graph](/contents/pkm/atlas/knowledge-graph)
 
  Semantic network of intelligence assets.
 
 # update2
 ## TOC
-[TOC](./pkm/TOC)
+[TOC](/contents/pkm/TOC)
 
 # About Me2
 ## About Me
-[About Me](./pkm/cv/AboutMe)
+[About Me](/contents/pkm/cv/AboutMe)
 
 # Knowledge Graph
 ## Knowledge Graph
-[Knowledge Graph](./pkm/atlas/knowledge-graph)
+[Knowledge Graph](/contents/pkm/atlas/knowledge-graph)
 
 ## Transformation Framework
-[Transformation Framework](./pkm/solutions/transformation-framework)
+[Transformation Framework](/contents/pkm/solutions/transformation-framework)
 
  Visualizing mental networks.
 ## Presentation
-[Presentation](./inbox/presentation)
+[Presentation](/contents/inbox/presentation)
 
  Active slide decks.

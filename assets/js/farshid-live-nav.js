@@ -72,13 +72,6 @@
         var linkTitle = linkMatch[1].trim();
         var linkUrl = linkMatch[2].trim();
         if (linkUrl.endsWith(".md")) linkUrl = linkUrl.replace(/\.md$/, "");
-        if (linkUrl.startsWith("./")) linkUrl = "/contents/" + linkUrl.substring(2);
-
-        // Ensure we have a group
-        if (!currentGroup) {
-          currentGroup = { title: "Menu", items: [] };
-          items.push(currentGroup);
-        }
         currentGroup.items.push({ title: linkTitle, url: linkUrl });
       }
     }
