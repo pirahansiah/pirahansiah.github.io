@@ -16,46 +16,68 @@
     var lines = md.split("\n");
     var items = [];
     var currentGroup = null;
+    var inFrontmatter = false;
 
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i].trim();
       if (!line) continue;
 
-      // Skip frontmatter
-      if (line === "---") continue;
-
-      // ## heading = group title
-      if (/^##\s+/.test(line)) {
-        var groupTitle = line.replace(/^##\s+/, "").trim();
-        if (groupTitle && groupTitle !== "all files" && groupTitle !== "all links") {
-          currentGroup = { title: groupTitle, items: [] };
-          items.push(currentGroup);
-        }
+      // Skip frontmatter (between first two ---)
+      if (line === "---") {
+        inFrontmatter = !inFrontmatter;
         continue;
       }
+      if (inFrontmatter) continue;
 
-      // # heading = top-level menu item (skip "all files", "all links")
+      // # heading = top-level menu item
       if (/^#\s+/.test(line)) {
-        var topTitle = line.replace(/^#\s+/, "").replace(/[🗺️]/g, "").trim();
-        if (topTitle && topTitle !== "all files" && topTitle !== "all links") {
+        var topTitle = line.replace(/^#\s+/, "").replace(/[\u{1F5FA}\u{FE0F}\u{1F4CD}]/gu, "").trim();
+        if (topTitle) {
           currentGroup = { title: topTitle, items: [] };
           items.push(currentGroup);
         }
         continue;
       }
 
+      // ## heading = sub menu item (skip labels, not groups)
+      if (/^##\s+/.test(line)) {
+        var subTitle = line.replace(/^##\s+/, "").trim();
+        if (subTitle && subTitle !== "all files" && subTitle !== "all links") {
+          // If this ## has no links under it, treat as a simple link label
+          // Check next non-empty line
+          var nextLine = "";
+          for (var j = i + 1; j < lines.length; j++) {
+            var nl = lines[j].trim();
+            if (nl) { nextLine = nl; break; }
+          }
+          if (nextLine && /^\[/.test(nextLine)) {
+            // Next line is a link — this ## is a group
+            currentGroup = { title: subTitle, items: [] };
+            items.push(currentGroup);
+          } else {
+            // No link follows — add as a standalone item to current group
+            if (!currentGroup) {
+              currentGroup = { title: "Menu", items: [] };
+              items.push(currentGroup);
+            }
+            currentGroup.items.push({ title: subTitle, url: "#" });
+          }
+        }
+        continue;
+      }
+
       // [text](url) = link item
       var linkMatch = line.match(/^\[([^\]]+)\]\(([^)]+)\)/);
-      if (linkMatch && currentGroup) {
+      if (linkMatch) {
         var linkTitle = linkMatch[1].trim();
         var linkUrl = linkMatch[2].trim();
-        // Convert .md links to clean URLs for GitHub Pages
-        if (linkUrl.endsWith(".md")) {
-          linkUrl = linkUrl.replace(/\.md$/, "");
-        }
-        // Make relative URLs work
-        if (linkUrl.startsWith("./")) {
-          linkUrl = "/contents/" + linkUrl.substring(2);
+        if (linkUrl.endsWith(".md")) linkUrl = linkUrl.replace(/\.md$/, "");
+        if (linkUrl.startsWith("./")) linkUrl = "/contents/" + linkUrl.substring(2);
+
+        // Ensure we have a group
+        if (!currentGroup) {
+          currentGroup = { title: "Menu", items: [] };
+          items.push(currentGroup);
         }
         currentGroup.items.push({ title: linkTitle, url: linkUrl });
       }
@@ -65,7 +87,7 @@
   }
 
   function buildNav(items) {
-    // Remove static nav items (keep only the GitHub link)
+    // Remove all static nav items except GitHub link
     var existing = navList.querySelectorAll("li");
     for (var i = existing.length - 1; i >= 0; i--) {
       if (!existing[i].querySelector('a[href*="github.com"]')) {
@@ -73,7 +95,9 @@
       }
     }
 
-    // Build from parsed menus.md
+    var githubLink = navList.querySelector('a[href*="github.com"]');
+    var insertBefore = githubLink ? githubLink.parentElement : null;
+
     for (var g = 0; g < items.length; g++) {
       var group = items[g];
       var li = document.createElement("li");
@@ -89,7 +113,7 @@
         var chevron = document.createElement("span");
         chevron.className = "nav-chevron";
         chevron.setAttribute("aria-hidden", "true");
-        chevron.textContent = " ▾";
+        chevron.textContent = " \u25BE";
         toggle.appendChild(chevron);
         li.appendChild(toggle);
 
@@ -113,10 +137,8 @@
         li.appendChild(a);
       }
 
-      // Insert before the GitHub link
-      var githubLink = navList.querySelector('a[href*="github.com"]');
-      if (githubLink) {
-        navList.insertBefore(li, githubLink.parentElement);
+      if (insertBefore) {
+        navList.insertBefore(li, insertBefore);
       } else {
         navList.appendChild(li);
       }
