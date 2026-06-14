@@ -30,6 +30,7 @@
         {% if site.data.nav and site.data.nav.size > 0 %}
           {% include nav-items.html items=site.data.nav %}
         {% endif %}
+        <li><a href="{{ '/search/' | relative_url }}" class="liquid-glass-item" title="Search">&#128269; Search</a></li>
       </ul>
     </nav>
   </div>
