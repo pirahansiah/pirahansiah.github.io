@@ -12,6 +12,11 @@ I help companies ship AI products faster. With a PhD in Computer Vision and 11+ 
 
 ---
 
+## Update
+
+**[Update](/contents/menus)** — Latest posts 
+
+
 ## What I Do
 
 **[Use Cases](/contents/pkm/use-cases)** — Identify high-impact AI applications for your industry
