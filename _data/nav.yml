@@ -23,5 +23,5 @@
     url: "/contents/pkm/company"
   - title: TOC
     url: "/contents/pkm/TOC"
-- title: "GitHub"
-  url: "https://github.com/pirahansiah"
+  - title: "GitHub"
+    url: "https://github.com/pirahansiah"
