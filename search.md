@@ -5,11 +5,12 @@ permalink: /search/
 ---
 
 <style>
-  .search-box {
+  .google-search-box {
     max-width: 600px;
-    margin: 0 auto 2rem;
+    margin: 2rem auto;
+    text-align: center;
   }
-  .search-box input {
+  .google-search-box input {
     width: 100%;
     padding: 14px 20px;
     font-size: 16px;
@@ -20,68 +21,41 @@ permalink: /search/
     outline: none;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    box-sizing: border-box;
   }
-  .search-box input::placeholder { color: var(--text-muted); }
-  .search-box input:focus { border-color: var(--accent); }
-  .search-results { max-width: 700px; margin: 0 auto; }
-  .search-result {
-    padding: 16px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  .search-result a {
-    color: var(--text);
-    text-decoration: none;
+  .google-search-box input::placeholder { color: var(--text-muted); }
+  .google-search-box input:focus { border-color: var(--accent); }
+  .google-search-box button {
+    margin-top: 12px;
+    padding: 12px 32px;
+    font-size: 15px;
+    background: #3a7a3a;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     font-weight: 600;
-    font-size: 1.05em;
   }
-  .search-result a:hover { color: var(--accent); }
-  .search-result p {
-    color: var(--text-muted);
-    font-size: 0.88em;
-    margin: 4px 0 0;
-    line-height: 1.5;
-  }
-  .search-count { color: var(--text-muted); font-size: 0.85em; margin-bottom: 1rem; text-align: center; }
+  .google-search-box button:hover { background: #2d6a2d; }
+  .search-note { color: var(--text-muted); font-size: 0.85em; margin-top: 1rem; text-align: center; }
 </style>
 
-<div class="search-box">
-  <input type="text" id="search-input" placeholder="Search content..." autofocus>
+<div class="google-search-box">
+  <h2>Search this site</h2>
+  <form onsubmit="googleSearch(event)">
+    <input type="text" id="search-input" placeholder="Search pirahansiah.github.io..." autofocus>
+    <br>
+    <button type="submit">Search</button>
+  </form>
+  <p class="search-note">Powered by Google</p>
 </div>
-<div class="search-count" id="search-count"></div>
-<div class="search-results" id="search-results"></div>
 
 <script>
-(function() {
-  var input = document.getElementById("search-input");
-  var results = document.getElementById("search-results");
-  var count = document.getElementById("search-count");
-  var data = [];
-
-  fetch("/assets/search-index.json?t=" + Date.now())
-    .then(function(r) { return r.json(); })
-    .then(function(d) { data = d; });
-
-  input.addEventListener("input", function() {
-    var q = input.value.trim().toLowerCase();
-    if (q.length < 2) { results.innerHTML = ""; count.textContent = ""; return; }
-
-    var found = data.filter(function(item) {
-      return item.title.toLowerCase().indexOf(q) !== -1 ||
-             item.body.toLowerCase().indexOf(q) !== -1;
-    });
-
-    count.textContent = found.length + " result" + (found.length !== 1 ? "s" : "");
-    results.innerHTML = found.map(function(item) {
-      var snippet = item.body;
-      var idx = snippet.toLowerCase().indexOf(q);
-      if (idx !== -1) {
-        var start = Math.max(0, idx - 60);
-        var end = Math.min(snippet.length, idx + q.length + 60);
-        snippet = (start > 0 ? "..." : "") + snippet.substring(start, end) + (end < snippet.length ? "..." : "");
-        snippet = snippet.replace(new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi"), "<strong>$1</strong>");
-      }
-      return '<div class="search-result"><a href="' + item.url + '">' + item.title + '</a><p>' + snippet + '</p></div>';
-    }).join("");
-  });
-})();
+function googleSearch(e) {
+  e.preventDefault();
+  var q = document.getElementById("search-input").value.trim();
+  if (q) {
+    window.location.href = "https://www.google.com/search?q=site:pirahansiah.github.io+" + encodeURIComponent(q);
+  }
+}
 </script>
