@@ -64,5 +64,5 @@ I help companies ship AI products faster. With a PhD in Computer Vision and 11+ 
 ---
 
 <div style="text-align: center; padding: 40px 0;">
-  <a href="/contents/pkm/AboutMe" style="display: inline-block; padding: 14px 32px; background: #3a7a3a; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Let's Talk →</a>
+  <a href="https://www.linkedin.com/in/pirahansiah/" style="display: inline-block; padding: 14px 32px; background: #3a7a3a; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Let's Talk →</a>
 </div>
