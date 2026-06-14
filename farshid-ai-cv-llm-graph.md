@@ -8,6 +8,7 @@ extra_css: graph.css
 <div class="graph-page">
   <div class="graph-header">
     <h1>Knowledge Graph</h1>
+    <a id="graph-open-btn" class="liquid-glass-item graph-open-btn" href="#" style="display:none"></a>
     <span class="graph-stats" id="graph-stats">Loading…</span>
     <div class="graph-controls">
       <button type="button" id="graph-freeze" class="liquid-glass-item">Freeze</button>
@@ -16,12 +17,11 @@ extra_css: graph.css
       <a href="{{ '/' | relative_url }}" class="liquid-glass-item">Home</a>
     </div>
   </div>
-  <p class="graph-hint">Tap a node to select · tap again to deselect</p>
+  <p class="graph-hint">Concept Maps · Tap a node to select · tap again to deselect</p>
   <div id="graph-wrap" class="liquid-glass">
     <canvas id="graph-canvas" aria-label="Interactive knowledge graph"></canvas>
   </div>
   <div class="graph-bottom-bar">
-    <a id="graph-open-btn" class="liquid-glass-item graph-open-btn" href="#" style="display:none"></a>
     <div class="graph-legend">
       <span class="legend-moc">Section</span>
       <span class="legend-note">Note</span>
