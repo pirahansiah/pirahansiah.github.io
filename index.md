@@ -33,7 +33,7 @@ I help companies ship AI products faster. With a PhD in Computer Vision and 11+ 
 |:---|:---|
 | **Edge AI** | Hailo, Axelera Metis, NVIDIA Jetson, Raspberry Pi |
 | **Computer Vision** | Object detection, 3D reconstruction, medical imaging |
-| **MLOps** | CI/CD, containerised deployment, real-time monitoring |
+| **LLMOps** | CI/CD, containerised deployment, real-time monitoring |
 | **Product Management** | Technical roadmap, stakeholder alignment, go-to-market |
 
 ---
