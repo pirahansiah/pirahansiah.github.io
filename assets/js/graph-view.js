@@ -53,25 +53,10 @@
     if (!openBtn || !node) { hideOpenButton(); return; }
     var url = resolveNodeUrl(node);
     if (!url) { hideOpenButton(); return; }
-    if (url.match?(%r{\Ahttps?://}i)) {
-      var kindLabel = node.kind === "moc" ? "Section" : node.kind === "tag" ? "Tag" : "Note";
-      openBtn.innerHTML = kindLabel + ": <strong>" + node.label + "</strong> &nbsp;\u2192 Open";
-      openBtn.href = url;
-      openBtn.style.display = "inline-flex";
-      return;
-    }
-    fetch(url, { method: "HEAD", redirect: "follow" })
-      .then(function (r) {
-        if (r.ok) {
-          var kindLabel = node.kind === "moc" ? "Section" : node.kind === "tag" ? "Tag" : "Note";
-          openBtn.innerHTML = kindLabel + ": <strong>" + node.label + "</strong> &nbsp;\u2192 Open";
-          openBtn.href = url;
-          openBtn.style.display = "inline-flex";
-        } else {
-          hideOpenButton();
-        }
-      })
-      .catch(function () { hideOpenButton(); });
+    var kindLabel = node.kind === "moc" ? "Section" : node.kind === "tag" ? "Tag" : "Note";
+    openBtn.innerHTML = kindLabel + ": <strong>" + node.label + "</strong> &nbsp;\u2192 Open";
+    openBtn.href = url;
+    openBtn.style.display = "inline-flex";
   }
 
   function hideOpenButton() {
