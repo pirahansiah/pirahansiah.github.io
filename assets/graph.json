@@ -1,39 +1,123 @@
 {
   "nodes": [
     {
-      "id": "moc-atlas2",
-      "label": "🗺 ATLAS2",
+      "id": "moc-sitemap",
+      "label": "Sitemap",
       "url": null,
       "raw": null,
       "kind": "moc"
     },
     {
-      "id": "moc-knowledge-graph",
-      "label": "Knowledge Graph",
-      "url": "/contents/pkm/atlas/knowledge-graph",
-      "raw": "/contents/pkm/atlas/knowledge-graph",
+      "id": "moc-atlas",
+      "label": "ATLAS",
+      "url": null,
+      "raw": null,
       "kind": "moc"
     },
     {
-      "id": "contents-pkm-atlas-knowledge-graph",
-      "label": "knowledge-graph",
-      "url": "/contents/pkm/atlas/knowledge-graph",
-      "raw": "/contents/pkm/atlas/knowledge-graph",
+      "id": "moc-solutions",
+      "label": "SOLUTIONS",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-about",
+      "label": "ABOUT",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "moc-resources",
+      "label": "RESOURCES",
+      "url": null,
+      "raw": null,
+      "kind": "moc"
+    },
+    {
+      "id": "contents-readme",
+      "label": "README",
+      "url": "/contents/README",
+      "raw": "/contents/README",
       "kind": "note"
     },
     {
-      "id": "moc-update2",
-      "label": "update2",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
+      "id": "contents-menus",
+      "label": "menus",
+      "url": "/contents/menus",
+      "raw": "/contents/menus",
+      "kind": "note"
     },
     {
-      "id": "moc-toc",
-      "label": "TOC",
-      "url": "/contents/pkm/TOC",
-      "raw": "/contents/pkm/TOC",
-      "kind": "moc"
+      "id": "contents-pkm-knowledge-graph",
+      "label": "knowledge-graph",
+      "url": "/contents/pkm/knowledge-graph",
+      "raw": "/contents/pkm/knowledge-graph",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-research-synthesis",
+      "label": "research-synthesis",
+      "url": "/contents/pkm/research-synthesis",
+      "raw": "/contents/pkm/research-synthesis",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-strategic-connections",
+      "label": "strategic-connections",
+      "url": "/contents/pkm/strategic-connections",
+      "raw": "/contents/pkm/strategic-connections",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-concept-maps",
+      "label": "concept-maps",
+      "url": "/contents/pkm/concept-maps",
+      "raw": "/contents/pkm/concept-maps",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-use-cases",
+      "label": "use-cases",
+      "url": "/contents/pkm/use-cases",
+      "raw": "/contents/pkm/use-cases",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-system-design",
+      "label": "system-design",
+      "url": "/contents/pkm/system-design",
+      "raw": "/contents/pkm/system-design",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-offering",
+      "label": "offering",
+      "url": "/contents/pkm/offering",
+      "raw": "/contents/pkm/offering",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-aboutme",
+      "label": "AboutMe",
+      "url": "/contents/pkm/AboutMe",
+      "raw": "/contents/pkm/AboutMe",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-company",
+      "label": "company",
+      "url": "/contents/pkm/company",
+      "raw": "/contents/pkm/company",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-why-we-are-unique",
+      "label": "why-we-are-unique",
+      "url": "/contents/pkm/why-we-are-unique",
+      "raw": "/contents/pkm/why-we-are-unique",
+      "kind": "note"
     },
     {
       "id": "contents-pkm-toc",
@@ -43,234 +127,38 @@
       "kind": "note"
     },
     {
-      "id": "moc-about-me2",
-      "label": "About Me2",
-      "url": null,
-      "raw": null,
-      "kind": "moc"
-    },
-    {
-      "id": "moc-about-me",
-      "label": "About Me",
-      "url": "/contents/pkm/cv/AboutMe",
-      "raw": "/contents/pkm/cv/AboutMe",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-cv-aboutme",
-      "label": "AboutMe",
-      "url": "/contents/pkm/cv/AboutMe",
-      "raw": "/contents/pkm/cv/AboutMe",
-      "kind": "note"
-    },
-    {
-      "id": "moc-transformation-framework",
-      "label": "Transformation Framework",
-      "url": "/contents/pkm/solutions/transformation-framework",
-      "raw": "/contents/pkm/solutions/transformation-framework",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-pkm-solutions-transformation-framework",
-      "label": "transformation-framework",
-      "url": "/contents/pkm/solutions/transformation-framework",
-      "raw": "/contents/pkm/solutions/transformation-framework",
-      "kind": "note"
-    },
-    {
-      "id": "moc-presentation",
-      "label": "Presentation",
-      "url": "/contents/inbox/presentation",
-      "raw": "/contents/inbox/presentation",
-      "kind": "moc"
-    },
-    {
-      "id": "contents-inbox-presentation",
-      "label": "presentation",
-      "url": "/contents/inbox/presentation",
-      "raw": "/contents/inbox/presentation",
-      "kind": "note"
-    },
-    {
-      "id": "contents-readme",
-      "label": "README",
-      "url": "/Contents/README",
-      "raw": "/Contents/README",
-      "kind": "note"
-    },
-    {
-      "id": "contents-menus-copy",
-      "label": "menus copy",
-      "url": "/Contents/menus copy",
-      "raw": "/Contents/menus copy",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-solutions-use-cases",
-      "label": "use-cases",
-      "url": "/contents/pkm/solutions/use-cases",
-      "raw": "/contents/pkm/solutions/use-cases",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-growth-model",
-      "label": "growth-model",
-      "url": "/contents/pkm/investors/growth-model",
-      "raw": "/contents/pkm/investors/growth-model",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-products-offering",
-      "label": "offering",
-      "url": "/contents/pkm/products/offering",
-      "raw": "/contents/pkm/products/offering",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-prompt",
-      "label": "prompt",
-      "url": "/contents/pkm/templates/prompt",
-      "raw": "/contents/pkm/templates/prompt",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-technology-system-design",
-      "label": "system-design",
-      "url": "/contents/pkm/technology/system-design",
-      "raw": "/contents/pkm/technology/system-design",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-presentation",
-      "label": "presentation",
-      "url": "/contents/pkm/templates/presentation",
-      "raw": "/contents/pkm/templates/presentation",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-technology-benchmarks",
-      "label": "benchmarks",
-      "url": "/contents/pkm/technology/benchmarks",
-      "raw": "/contents/pkm/technology/benchmarks",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-markmap-autoloader",
-      "label": "markmap-autoloader",
-      "url": "/contents/pkm/templates/markmap-autoloader",
-      "raw": "/contents/pkm/templates/markmap-autoloader",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-vision",
-      "label": "vision",
-      "url": "/contents/pkm/investors/vision",
-      "raw": "/contents/pkm/investors/vision",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-pitch-deck",
-      "label": "pitch-deck",
-      "url": "/contents/pkm/investors/pitch-deck",
-      "raw": "/contents/pkm/investors/pitch-deck",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-investment-highlights",
-      "label": "investment-highlights",
-      "url": "/contents/pkm/investors/investment-highlights",
-      "raw": "/contents/pkm/investors/investment-highlights",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-investors-market-opportunity",
-      "label": "market-opportunity",
-      "url": "/contents/pkm/investors/market-opportunity",
-      "raw": "/contents/pkm/investors/market-opportunity",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pricing-costs",
-      "label": "costs",
-      "url": "/contents/pkm/pricing/costs",
-      "raw": "/contents/pkm/pricing/costs",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pricing-licensing",
-      "label": "licensing",
-      "url": "/contents/pkm/pricing/licensing",
-      "raw": "/contents/pkm/pricing/licensing",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pricing-custom-solutions",
-      "label": "custom-solutions",
-      "url": "/contents/pkm/pricing/custom-solutions",
-      "raw": "/contents/pkm/pricing/custom-solutions",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-legacy-proof",
-      "label": "proof",
-      "url": "/contents/pkm/legacy/proof",
-      "raw": "/contents/pkm/legacy/proof",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-legacy-track-record",
-      "label": "track-record",
-      "url": "/contents/pkm/legacy/track-record",
-      "raw": "/contents/pkm/legacy/track-record",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm",
-      "label": "farshid-ai-cv-llm",
-      "url": "/contents/pkm/templates/farshid-ai-cv-llm",
-      "raw": "/contents/pkm/templates/farshid-ai-cv-llm",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-pulse-updates",
-      "label": "updates",
-      "url": "/contents/pkm/pulse/updates",
-      "raw": "/contents/pkm/pulse/updates",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-about-company",
-      "label": "company",
-      "url": "/contents/pkm/about/company",
-      "raw": "/contents/pkm/about/company",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-about-contact",
-      "label": "contact",
-      "url": "/contents/pkm/about/contact",
-      "raw": "/contents/pkm/about/contact",
-      "kind": "note"
-    },
-    {
-      "id": "contents-inbox-markmap-autoloader",
-      "label": "markmap-autoloader",
-      "url": "/contents/inbox/markmap-autoloader",
-      "raw": "/contents/inbox/markmap-autoloader",
-      "kind": "note"
-    },
-    {
-      "id": "contents-menus",
-      "label": "menus",
-      "url": "/Contents/menus",
-      "raw": "/Contents/menus",
-      "kind": "note"
-    },
-    {
       "id": "contents-pkm-moc",
       "label": "MOC",
-      "url": "/Contents/pkm/MOC",
-      "raw": "/Contents/pkm/MOC",
+      "url": "/contents/pkm/MOC",
+      "raw": "/contents/pkm/MOC",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-growth-model",
+      "label": "growth-model",
+      "url": "/contents/pkm/growth-model",
+      "raw": "/contents/pkm/growth-model",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-costs",
+      "label": "costs",
+      "url": "/contents/pkm/costs",
+      "raw": "/contents/pkm/costs",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-proof",
+      "label": "proof",
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-updates",
+      "label": "updates",
+      "url": "/contents/pkm/updates",
+      "raw": "/contents/pkm/updates",
       "kind": "note"
     },
     {
@@ -285,6 +173,20 @@
       "label": "e",
       "url": "/contents/inbox/e",
       "raw": "/contents/inbox/e",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-presentation",
+      "label": "presentation",
+      "url": "/contents/inbox/presentation",
+      "raw": "/contents/inbox/presentation",
+      "kind": "note"
+    },
+    {
+      "id": "contents-inbox-markmap-autoloader",
+      "label": "markmap-autoloader",
+      "url": "/contents/inbox/markmap-autoloader",
+      "raw": "/contents/inbox/markmap-autoloader",
       "kind": "note"
     },
     {
@@ -316,241 +218,437 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-atlas-concept-maps",
-      "label": "concept-maps",
-      "url": "/Contents/pkm/atlas/concept-maps",
-      "raw": "/Contents/pkm/atlas/concept-maps",
-      "kind": "note"
-    },
-    {
-      "id": "tag-farshid",
-      "label": "#farshid",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "tag-pirahansiah",
-      "label": "#pirahansiah",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "contents-pkm-atlas-research-synthesis",
-      "label": "research-synthesis",
-      "url": "/Contents/pkm/atlas/research-synthesis",
-      "raw": "/Contents/pkm/atlas/research-synthesis",
-      "kind": "note"
-    },
-    {
-      "id": "tag-drfarshidpirahansiah",
-      "label": "#drfarshidpirahansiah",
-      "url": null,
-      "raw": null,
-      "kind": "tag"
-    },
-    {
-      "id": "contents-pkm-atlas-strategic-connections",
-      "label": "strategic-connections",
-      "url": "/Contents/pkm/atlas/strategic-connections",
-      "raw": "/Contents/pkm/atlas/strategic-connections",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-atlas-why-we-are-unique",
-      "label": "why-we-are-unique",
-      "url": "/Contents/pkm/atlas/why-we-are-unique",
-      "raw": "/Contents/pkm/atlas/why-we-are-unique",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-inbox-a",
+      "id": "contents-pkm-a",
       "label": "a",
-      "url": "/Contents/pkm/inbox/a",
-      "raw": "/Contents/pkm/inbox/a",
+      "url": "/contents/pkm/a",
+      "raw": "/contents/pkm/a",
       "kind": "note"
     },
     {
-      "id": "contents-pkm-inbox-b",
+      "id": "contents-pkm-b",
       "label": "b",
-      "url": "/Contents/pkm/inbox/b",
-      "raw": "/Contents/pkm/inbox/b",
+      "url": "/contents/pkm/b",
+      "raw": "/contents/pkm/b",
       "kind": "note"
     },
     {
-      "id": "contents-pkm-inbox-c",
+      "id": "contents-pkm-c",
       "label": "c",
-      "url": "/Contents/pkm/inbox/c",
-      "raw": "/Contents/pkm/inbox/c",
+      "url": "/contents/pkm/c",
+      "raw": "/contents/pkm/c",
       "kind": "note"
     },
     {
-      "id": "contents-pkm-inbox-d",
+      "id": "contents-pkm-d",
       "label": "d",
-      "url": "/Contents/pkm/inbox/d",
-      "raw": "/Contents/pkm/inbox/d",
+      "url": "/contents/pkm/d",
+      "raw": "/contents/pkm/d",
       "kind": "note"
     },
     {
-      "id": "contents-pkm-inbox-e",
+      "id": "contents-pkm-e",
       "label": "e",
-      "url": "/Contents/pkm/inbox/e",
-      "raw": "/Contents/pkm/inbox/e",
+      "url": "/contents/pkm/e",
+      "raw": "/contents/pkm/e",
       "kind": "note"
     },
     {
-      "id": "contents-pkm-inbox-f",
+      "id": "contents-pkm-f",
       "label": "f",
-      "url": "/Contents/pkm/inbox/f",
-      "raw": "/Contents/pkm/inbox/f",
+      "url": "/contents/pkm/f",
+      "raw": "/contents/pkm/f",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-menus-copy",
+      "label": "menus copy",
+      "url": "/contents/pkm/menus copy",
+      "raw": "/contents/pkm/menus copy",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-transformation-framework",
+      "label": "transformation-framework",
+      "url": "/contents/pkm/transformation-framework",
+      "raw": "/contents/pkm/transformation-framework",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-prompt",
+      "label": "prompt",
+      "url": "/contents/pkm/templates/prompt",
+      "raw": "/contents/pkm/templates/prompt",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-presentation",
+      "label": "presentation",
+      "url": "/contents/pkm/templates/presentation",
+      "raw": "/contents/pkm/templates/presentation",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-benchmarks",
+      "label": "benchmarks",
+      "url": "/contents/pkm/benchmarks",
+      "raw": "/contents/pkm/benchmarks",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-markmap-autoloader",
+      "label": "markmap-autoloader",
+      "url": "/contents/pkm/templates/markmap-autoloader",
+      "raw": "/contents/pkm/templates/markmap-autoloader",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-vision",
+      "label": "vision",
+      "url": "/contents/pkm/vision",
+      "raw": "/contents/pkm/vision",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-pitch-deck",
+      "label": "pitch-deck",
+      "url": "/contents/pkm/pitch-deck",
+      "raw": "/contents/pkm/pitch-deck",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-investment-highlights",
+      "label": "investment-highlights",
+      "url": "/contents/pkm/investment-highlights",
+      "raw": "/contents/pkm/investment-highlights",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-market-opportunity",
+      "label": "market-opportunity",
+      "url": "/contents/pkm/market-opportunity",
+      "raw": "/contents/pkm/market-opportunity",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-licensing",
+      "label": "licensing",
+      "url": "/contents/pkm/licensing",
+      "raw": "/contents/pkm/licensing",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-custom-solutions",
+      "label": "custom-solutions",
+      "url": "/contents/pkm/custom-solutions",
+      "raw": "/contents/pkm/custom-solutions",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-track-record",
+      "label": "track-record",
+      "url": "/contents/pkm/track-record",
+      "raw": "/contents/pkm/track-record",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm",
+      "label": "farshid-ai-cv-llm",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-contact",
+      "label": "contact",
+      "url": "/contents/pkm/contact",
+      "raw": "/contents/pkm/contact",
       "kind": "note"
     },
     {
       "id": "tag-about",
       "label": "#about",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-publications",
       "label": "#publications",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-patents",
       "label": "#patents",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-books",
       "label": "#books",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-journals",
       "label": "#journals",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-conference-papers",
       "label": "#conference-papers",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-keynotes",
       "label": "#keynotes",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-camera-calibration-expertise",
       "label": "#camera-calibration-expertise",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-hardware-platforms",
       "label": "#hardware--platforms",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-products-tools",
       "label": "#products--tools",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-open-source",
       "label": "#open-source",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-technical-content",
       "label": "#technical-content",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-cuda-gpu-programming",
       "label": "#cuda--gpu-programming",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-optical-flow",
       "label": "#optical-flow",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-optimization",
       "label": "#optimization",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-ai-llm",
       "label": "#ai--llm",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-cv-coaching-roadmap",
       "label": "#cv-coaching-roadmap",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-courses",
       "label": "#courses",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
     },
     {
       "id": "tag-workshops-events",
       "label": "#workshops--events",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/proof",
+      "raw": "/contents/pkm/proof",
       "kind": "tag"
+    },
+    {
+      "id": "tag-farshid",
+      "label": "#farshid",
+      "url": "/contents/pkm/research-synthesis",
+      "raw": "/contents/pkm/research-synthesis",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-pirahansiah",
+      "label": "#pirahansiah",
+      "url": "/contents/pkm/research-synthesis",
+      "raw": "/contents/pkm/research-synthesis",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-drfarshidpirahansiah",
+      "label": "#drfarshidpirahansiah",
+      "url": "/contents/pkm/research-synthesis",
+      "raw": "/contents/pkm/research-synthesis",
+      "kind": "tag"
+    },
+    {
+      "id": "contents-license",
+      "label": "LICENSE",
+      "url": "/contents/LICENSE",
+      "raw": "/contents/LICENSE",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-a",
+      "label": "farshid-ai-cv-llm-a",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-a",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-a",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-b",
+      "label": "farshid-ai-cv-llm-b",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-b",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-b",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-c",
+      "label": "farshid-ai-cv-llm-c",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-c",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-c",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-c-png",
+      "label": "farshid-ai-cv-llm-c",
+      "url": "/view/?p=%2Fcontents%2Fpkm%2Ftemplates%2Ffarshid-ai-cv-llm-c.png",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-c.png",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-c-py",
+      "label": "farshid-ai-cv-llm-c",
+      "url": "/view/?p=%2Fcontents%2Fpkm%2Ftemplates%2Ffarshid-ai-cv-llm-c.py",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-c.py",
+      "kind": "note"
     },
     {
       "id": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
       "label": "farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
+      "label": "farshid-ai-cv-llm-markmap-autoloader",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-presentation",
+      "label": "farshid-ai-cv-llm-presentation",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-presentation",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-presentation",
+      "kind": "note"
+    },
+    {
+      "id": "contents-pkm-templates-farshid-ai-cv-llm-prompt",
+      "label": "farshid-ai-cv-llm-prompt",
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-prompt",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-prompt",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-mimo-lfm-modelfile",
+      "label": "mimo-lfm.Modelfile",
+      "url": "/contents/projects/mimo-lfm.Modelfile",
+      "raw": "/contents/projects/mimo-lfm.Modelfile",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-master-indexer-py",
+      "label": "master_indexer",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2Fmaster_indexer.py",
+      "raw": "/contents/projects/RAG/master_indexer.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-modelfile",
+      "label": "Modelfile",
+      "url": "/contents/projects/RAG/Modelfile",
+      "raw": "/contents/projects/RAG/Modelfile",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-readindex-py",
+      "label": "readIndex",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2FreadIndex.py",
+      "raw": "/contents/projects/RAG/readIndex.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-rag-saveindex-py",
+      "label": "saveIndex",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2FRAG%2FsaveIndex.py",
+      "raw": "/contents/projects/RAG/saveIndex.py",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-setup-mimo-sh",
+      "label": "setup-mimo",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2Fsetup-mimo.sh",
+      "raw": "/contents/projects/setup-mimo.sh",
+      "kind": "note"
+    },
+    {
+      "id": "contents-projects-todo-push-sh",
+      "label": "push",
+      "url": "/view/?p=%2Fcontents%2Fprojects%2Ftodo%2Fpush.sh",
+      "raw": "/contents/projects/todo/push.sh",
+      "kind": "note"
+    },
+    {
+      "id": "contents-weekly-2026-jun-w24",
+      "label": "2026-Jun-W24",
+      "url": "/contents/weekly/2026-Jun-W24",
+      "raw": "/contents/weekly/2026-Jun-W24",
       "kind": "note"
     },
     {
       "id": "tag-code",
       "label": "#code",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-FullMarkmapAutoloaderWithImages",
       "kind": "tag"
     },
     {
@@ -568,251 +666,89 @@
       "kind": "note"
     },
     {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-a",
-      "label": "farshid-ai-cv-llm-a",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-a",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-a",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-b",
-      "label": "farshid-ai-cv-llm-b",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-b",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-b",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-c",
-      "label": "farshid-ai-cv-llm-c",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-c",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-c",
-      "kind": "note"
-    },
-    {
       "id": "tag-liquid-refraction",
       "label": "#liquid-refraction",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-c",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-c",
       "kind": "tag"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
-      "label": "farshid-ai-cv-llm-markmap-autoloader",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
-      "kind": "note"
     },
     {
       "id": "tag-git",
       "label": "#git",
-      "url": null,
-      "raw": null,
+      "url": "/contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
+      "raw": "/contents/pkm/templates/farshid-ai-cv-llm-markmap-autoloader",
       "kind": "tag"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-presentation",
-      "label": "farshid-ai-cv-llm-presentation",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-presentation",
-      "kind": "note"
-    },
-    {
-      "id": "contents-pkm-templates-farshid-ai-cv-llm-prompt",
-      "label": "farshid-ai-cv-llm-prompt",
-      "url": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt",
-      "raw": "/Contents/pkm/templates/farshid-ai-cv-llm-prompt",
-      "kind": "note"
     }
   ],
   "links": [
     {
-      "source": "moc-atlas2",
-      "target": "moc-knowledge-graph",
+      "source": "moc-sitemap",
+      "target": "moc-atlas",
       "kind": "moc"
     },
     {
-      "source": "moc-knowledge-graph",
-      "target": "contents-pkm-atlas-knowledge-graph",
-      "kind": "link"
-    },
-    {
-      "source": "moc-update2",
-      "target": "moc-toc",
+      "source": "moc-sitemap",
+      "target": "moc-solutions",
       "kind": "moc"
     },
     {
-      "source": "moc-toc",
-      "target": "contents-pkm-toc",
-      "kind": "link"
-    },
-    {
-      "source": "moc-about-me2",
-      "target": "moc-about-me",
+      "source": "moc-sitemap",
+      "target": "moc-about",
       "kind": "moc"
     },
     {
-      "source": "moc-about-me",
-      "target": "contents-pkm-cv-aboutme",
-      "kind": "link"
-    },
-    {
-      "source": "moc-knowledge-graph",
-      "target": "moc-transformation-framework",
+      "source": "moc-sitemap",
+      "target": "moc-resources",
       "kind": "moc"
     },
     {
-      "source": "moc-transformation-framework",
-      "target": "contents-pkm-solutions-transformation-framework",
-      "kind": "link"
-    },
-    {
-      "source": "moc-knowledge-graph",
-      "target": "moc-presentation",
-      "kind": "moc"
-    },
-    {
-      "source": "moc-presentation",
-      "target": "contents-inbox-presentation",
-      "kind": "link"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-atlas-knowledge-graph",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-toc",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-cv-aboutme",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-solutions-use-cases",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-solutions-transformation-framework",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-investors-growth-model",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-products-offering",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-templates-prompt",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-technology-system-design",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-templates-presentation",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-technology-benchmarks",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-templates-markmap-autoloader",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-investors-vision",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-investors-pitch-deck",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-investors-investment-highlights",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-investors-market-opportunity",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-pricing-costs",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-pricing-licensing",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-pricing-custom-solutions",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-legacy-proof",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-legacy-track-record",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-templates-farshid-ai-cv-llm",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-pulse-updates",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-about-company",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-pkm-about-contact",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-inbox-markmap-autoloader",
-      "kind": "mdlink"
-    },
-    {
-      "source": "contents-menus-copy",
-      "target": "contents-inbox-presentation",
+      "source": "contents-menus",
+      "target": "contents-pkm-knowledge-graph",
       "kind": "mdlink"
     },
     {
       "source": "contents-menus",
-      "target": "contents-pkm-atlas-knowledge-graph",
+      "target": "contents-pkm-research-synthesis",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-strategic-connections",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-concept-maps",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-use-cases",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-system-design",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-offering",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-aboutme",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-company",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-why-we-are-unique",
       "kind": "mdlink"
     },
     {
@@ -822,17 +758,27 @@
     },
     {
       "source": "contents-menus",
-      "target": "contents-pkm-cv-aboutme",
+      "target": "contents-pkm-moc",
       "kind": "mdlink"
     },
     {
       "source": "contents-menus",
-      "target": "contents-pkm-solutions-transformation-framework",
+      "target": "contents-pkm-growth-model",
       "kind": "mdlink"
     },
     {
       "source": "contents-menus",
-      "target": "contents-inbox-presentation",
+      "target": "contents-pkm-costs",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-proof",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-menus",
+      "target": "contents-pkm-updates",
       "kind": "mdlink"
     },
     {
@@ -876,139 +822,479 @@
       "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-concept-maps",
-      "target": "tag-farshid",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-knowledge-graph",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-concept-maps",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-toc",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-farshid",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-aboutme",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-use-cases",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-transformation-framework",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-farshid",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-growth-model",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-offering",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "tag"
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-templates-prompt",
+      "kind": "mdlink"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-system-design",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-templates-presentation",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-benchmarks",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-templates-markmap-autoloader",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-vision",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-pitch-deck",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-investment-highlights",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-market-opportunity",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-costs",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-licensing",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-custom-solutions",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-proof",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-track-record",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-updates",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-company",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-pkm-contact",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-inbox-markmap-autoloader",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-menus-copy",
+      "target": "contents-inbox-presentation",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-proof",
       "target": "tag-about",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-publications",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-patents",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-books",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-journals",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-conference-papers",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-keynotes",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-camera-calibration-expertise",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-hardware-platforms",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-products-tools",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-open-source",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-technical-content",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-cuda-gpu-programming",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-optical-flow",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-optimization",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-ai-llm",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-cv-coaching-roadmap",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-courses",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-workshops-events",
       "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-license",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-menus",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-a",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-aboutme",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-b",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-c",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-company",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-concept-maps",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-costs",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-d",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-e",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-f",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-growth-model",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-knowledge-graph",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-menus-copy",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-moc",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-offering",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-proof",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-research-synthesis",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-strategic-connections",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-a",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-b",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-c",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-c-png",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-c-py",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-markmap-autoloader",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-presentation",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm-prompt",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-templates-farshid-ai-cv-llm",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-toc",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-updates",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-use-cases",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-pkm-why-we-are-unique",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-mimo-lfm-modelfile",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-rag-master-indexer-py",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-rag-modelfile",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-rag-readindex-py",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-rag-saveindex-py",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-setup-mimo-sh",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-projects-todo-push-sh",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-readme",
+      "kind": "mdlink"
+    },
+    {
+      "source": "contents-pkm-system-design",
+      "target": "contents-weekly-2026-jun-w24",
+      "kind": "mdlink"
     },
     {
       "source": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",

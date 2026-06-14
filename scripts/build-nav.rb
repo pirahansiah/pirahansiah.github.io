@@ -29,7 +29,8 @@ end
 def content_url_for_path(path)
   rel = path.sub("#{ROOT}/", "")
   rel = rel.sub(/\.md\z/i, "")
-  "/#{rel}"
+  url = "/#{rel}"
+  url.sub(%r{\A/[Cc]ontents}, "/contents")
 end
 
 def wiki_index
@@ -392,7 +393,8 @@ def build_graph(nav, hashtag_mode: false)
 
     extract_hashtags(body).each do |tag|
       tag_id = "tag-#{slug_id(tag)}"
-      add_node.call(tag_id, "##{tag}", kind: "tag")
+      tag_url = menu_url(raw)
+      add_node.call(tag_id, "##{tag}", url: tag_url, raw: raw, kind: "tag")
       add_link.call(id, tag_id, "tag")
     end
 

@@ -1,21 +1,6 @@
 {
   "nodes": [
     {
-      "id": "tag-farshid",
-      "label": "#farshid",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-pirahansiah",
-      "label": "#pirahansiah",
-      "kind": "tag"
-    },
-    {
-      "id": "tag-drfarshidpirahansiah",
-      "label": "#drfarshidpirahansiah",
-      "kind": "tag"
-    },
-    {
       "id": "tag-about",
       "label": "#about",
       "kind": "tag"
@@ -111,6 +96,21 @@
       "kind": "tag"
     },
     {
+      "id": "tag-farshid",
+      "label": "#farshid",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-pirahansiah",
+      "label": "#pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "id": "tag-drfarshidpirahansiah",
+      "label": "#drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
       "id": "tag-code",
       "label": "#code",
       "kind": "tag"
@@ -128,152 +128,97 @@
   ],
   "links": [
     {
-      "source": "contents-pkm-atlas-concept-maps",
-      "target": "tag-farshid",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-atlas-concept-maps",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
-    },
-    {
-      "source": "tag-farshid",
-      "target": "tag-pirahansiah",
-      "kind": "cooccur"
-    },
-    {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-farshid",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-atlas-research-synthesis",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "tag"
-    },
-    {
-      "source": "tag-farshid",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "cooccur"
-    },
-    {
-      "source": "tag-pirahansiah",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "cooccur"
-    },
-    {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-farshid",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-pirahansiah",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-atlas-strategic-connections",
-      "target": "tag-drfarshidpirahansiah",
-      "kind": "tag"
-    },
-    {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-about",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-publications",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-patents",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-books",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-journals",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-conference-papers",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-keynotes",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-camera-calibration-expertise",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-hardware-platforms",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-products-tools",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-open-source",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-technical-content",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-cuda-gpu-programming",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-optical-flow",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-optimization",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-ai-llm",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-cv-coaching-roadmap",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-courses",
       "kind": "tag"
     },
     {
-      "source": "contents-pkm-legacy-proof",
+      "source": "contents-pkm-proof",
       "target": "tag-workshops-events",
       "kind": "tag"
     },
@@ -1131,6 +1076,51 @@
       "source": "tag-courses",
       "target": "tag-workshops-events",
       "kind": "cooccur"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-research-synthesis",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "tag-farshid",
+      "target": "tag-pirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-farshid",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "tag-pirahansiah",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "cooccur"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-farshid",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-pirahansiah",
+      "kind": "tag"
+    },
+    {
+      "source": "contents-pkm-strategic-connections",
+      "target": "tag-drfarshidpirahansiah",
+      "kind": "tag"
     },
     {
       "source": "contents-pkm-templates-farshid-ai-cv-llm-fullmarkmapautoloaderwithimages",
