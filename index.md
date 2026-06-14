@@ -1,100 +1,68 @@
 ---
 layout: farshid_default
-title: Farshid Pirahansiah
+title: Dr. Farshid Pirahansiah — Technical Product Manager & AI Engineer
 permalink: /
 ---
-Welcome 
 
-# 🗺 ATLAS
-## all files
-[system-design](system-design)
-## all links
-[use-cases](/contents/pkm/use-cases)
-**[Knowledge Graph](/contents/pkm/knowledge-graph/)** — Semantic network of intelligence assets.
+# Technical Product Manager & AI Engineer
 
-**[Research Synthesis](/contents/pkm/research-synthesis/)** — Distilled insights from scientific literature.
+**Bridging R&D and production — from prototype to deployment.**
 
-**[Maps of Content](/contents/pkm/maps-of-content/)** — High-level conceptual navigation.
-
-**[Decision Frameworks](/contents/pkm/decision-frameworks/)** — Strategic logic and mental models.
-
-* [concept-maps](/contents/pkm/concept-maps) 
-* [knowledge-graph](/contents/pkm/knowledge-graph) 
-* [research-synthesis](/contents/pkm/research-synthesis) 
-* [strategic-connections](/contents/pkm/strategic-connections) 
-* [unique](/contents/pkm/why-we-are-unique) 
-* [site](site)
-
-# update
-
-
-[TOC](/contents/pkm/TOC)
-
-* [b FullMarkmap-autoloader with images](/contents/inbox/FullMarkmapAutoloaderWithImages)
-* [a markmap-autoloader](/contents/inbox/markmap-autoloader)
-* [c presentation](/contents/inbox/presentation)
-
-# About Me
-[About Me](/contents/pkm/AboutMe.html)
-
-# Knowledge Graph
-
-[Knowledge Graph](./contents/pkm/knowledge-graph/)
-* Knowledge Graph
-* Research
-* Maps
-* Connections
-
-# 🚀 SOLUTIONS
-*   **[Industries](/contents/pkm/industries/)** — Sector-specific integration models.
-*   **[Use Cases](/contents/pkm/use-cases/)** — High-impact application scenarios.
-*   **[Transformation Framework](/contents/pkm/transformation-framework/)** — Strategic implementation methodology.
-*   **[ROI Calculator](/contents/pkm/roi-calculator/)** — Value modeling and performance projections.
-
-# 📦 PRODUCTS
-*   **[Flagship Platform](/contents/pkm/flagship-platform/)** — The core Liquid Glass UI/UX environment.
-*   **[AI Agents](/contents/pkm/ai-agents/)** — Autonomous agentic workflows.
-*   **[Vision AI](/contents/pkm/vision-ai/)** — Advanced computer vision and spatial logic.
-*   **[Edge AI](/contents/pkm/edge-ai/)** — Distributed intelligence at the hardware perimeter.
-
-# 🛠 TECHNOLOGY
-*   **[Architecture](/contents/pkm/architecture/)** — System-level design and data flow.
-*   **[The Forge](/contents/pkm/forge/)** — Rapid R&D and implementation prototypes.
-*   **[Benchmarks](/contents/pkm/benchmarks/)** — Performance verification and hardware metrics.
-*   **[Infrastructure](/contents/pkm/infrastructure/)** — Deployment and scaling foundations.
-
-
-
-# 📈 INVESTORS
-*   **[Growth Model](/contents/pkm/growth-model/)** — Scaling trajectories and projections.
-*   **[Vision](/contents/pkm/vision/)** — Long-term objective and market disruption.
-*   **[Pitch Deck](/contents/pkm/pitch-deck/)** — Core venture presentation.
-*   **[Investment Highlights](/contents/pkm/investment-highlights/)** — Key defensibility factors and moats.
-*   **[Market Opportunity](/contents/pkm/market-opportunity/)** — TAM / SAM / SOM analysis.
-
-# 💳 PRICING
-*   **[Costs & Tiers](/contents/pkm/costs/)** — Starter, Professional, and Enterprise structures.
-*   **[Licensing](/contents/pkm/licensing/)** — Software distribution and IP rights.
-*   **[Custom Solutions](/contents/pkm/custom-solutions/)** — Bespoke integration modeling.
-
-# 📜 LEGACY
-*   **[Intellectual Property](/contents/pkm/intellectual-property/)** — Patents, trademarks, and logic protection.
-*   **[Track Record](/contents/pkm/track-record/)** — Project history and milestone verification.
-*   **[Partnerships](/contents/pkm/partnerships/)** — Ecosystem and strategic alliances.
-
-# 📡 PULSE
-*   **[Build Log](/contents/pkm/build-log/)** — Real-time development and operational stream.
-*   **[Updates](/contents/pkm/updates/)** — Formal announcements and market releases.
-*   **[Market Insights](/contents/pkm/market-insights/)** — Curated intelligence and trend tracking.
-
-# 🏢 ABOUT
-*   **[Company](/contents/pkm/company/)** — Founding mission and core values.
-*   **[Leadership](/contents/pkm/leadership/)** — Strategic management and technical direction.
-*   **[Contact](/contents/pkm/contact/)** — Global engagement channels.
+I help companies ship AI products faster. With a PhD in Computer Vision and 11+ years in edge AI, medical imaging, and MLOps, I turn complex technology into reliable, scalable products.
 
 ---
 
-# 🔄 RECENT UPDATES
-*   **[TOC Index](/contents/pkm/TOC/)** — Complete Table of Contents.
-*   **[Markmap Autoloader](/inbox/markmap-autoloader/)** — Visualizing mental networks.
-*   **[Presentation](/inbox/presentation/)** — Active slide decks.
+## What I Do
+
+**[Use Cases](/contents/pkm/use-cases)** — Identify high-impact AI applications for your industry
+
+**[System Design](/contents/pkm/system-design)** — Architecture for edge AI, multi-camera, and cloud ML pipelines
+
+**[Offering](/contents/pkm/offering)** — Product strategy from concept to market
+
+---
+
+## Expertise
+
+| Domain | Focus |
+|:---|:---|
+| **Edge AI** | Hailo, Axelera Metis, NVIDIA Jetson, Raspberry Pi |
+| **Computer Vision** | Object detection, 3D reconstruction, medical imaging |
+| **MLOps** | CI/CD, containerised deployment, real-time monitoring |
+| **Product Management** | Technical roadmap, stakeholder alignment, go-to-market |
+
+---
+
+## Why Work With Me
+
+**[Why We Are Unique](/contents/pkm/why-we-are-unique)** — PhD-level depth meets production pragmatism
+
+**[Strategic Connections](/contents/pkm/strategic-connections)** — Linking research to market-ready solutions
+
+**[Knowledge Graph](/contents/pkm/knowledge-graph)** — Structured intelligence across projects and IP
+
+---
+
+## Proof of Work
+
+**[Growth Model](/contents/pkm/growth-model)** — Scaling trajectories and projections
+
+**[Costs](/contents/pkm/costs)** — Transparent pricing for consulting engagements
+
+**[Track Record](/contents/pkm/proof)** — Patents, publications, and delivery history
+
+---
+
+## Get Started
+
+**[About Me](/contents/pkm/AboutMe)** — Full background, publications, and project portfolio
+
+**[Company](/contents/pkm/company)** — Mission and values
+
+**[Updates](/contents/pkm/updates)** — Recent work and insights
+
+---
+
+<div style="text-align: center; padding: 40px 0;">
+  <a href="/contents/pkm/AboutMe" style="display: inline-block; padding: 14px 32px; background: #3a7a3a; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 16px;">Let's Talk →</a>
+</div>
